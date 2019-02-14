@@ -1,0 +1,76 @@
+/* View screen size */
+.viewHeight {
+  height: 100vh;
+}
+
+.viewWidth {
+  width: 100vw;
+  max-width: 100%;
+}
+
+/* Full sizes */
+.fullWidth {
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.fullHeight {
+  min-height: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+/* Height sizes */
+.height20 {
+  height: 20px;
+  max-height: 20px;
+  min-height: 20px;
+}
+
+.height32 {
+  height: 2rem;
+  max-height: 2rem;
+  min-height: 2rem;
+}
+
+.height48 {
+  height: 48px;
+  max-height: 48px;
+  min-height: 48px;
+}
+
+.height80 {
+    height: 80px;
+    max-height: 80px;
+    min-height: 80px;
+}
+
+.height500 {
+  height: 500px;
+}
+
+/* Width sizes */
+.minWidth200 {
+  min-width: 11em;
+}
+
+.max-width80 {
+  max-width: 200px;
+}
+
+.max-width-160 {
+  max-width: 160px;
+}
+
+.maxWidthLarge {
+  max-width: 41rem;
+}
+
+.maxWidthMedium {
+  max-width: 31rem;
+}
+
+.maxWidthSmall {
+  max-width: 21rem;
+}

@@ -1,0 +1,41 @@
+@import "../sass/mixins.scss";
+
+.initiafy-wrapper {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 64px);
+}
+
+.initiafy-sidenav {
+    min-width: 200px;
+    background: #ffffff;
+    @include shadow-std();
+}
+
+.initiafy-content {
+    padding: 24px;
+    flex-basis:  100%
+}
+
+@media only screen and (max-width: 960px) {
+    .initiafy-content {
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .initiafy-content {
+        padding: 6px;
+    }
+}
+
+/* Overlayer */
+.bgOverlayer {
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--BackgroundPage);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

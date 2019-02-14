@@ -1,0 +1,109 @@
+body {
+  color: var(--Black);
+  background-color: var(--BackgroundPage);
+}
+
+.primaryColor, .primary-color {
+  color: var(--PMain);
+}
+.primaryBackgroundColor, .primary-bgcolor {
+  background-color: var(--PMain);
+}
+.primary-border {
+  border: 1px solid var(--PMain);
+}
+
+.secondary-color {
+  color: var(--SMain);
+}
+.secondary-bgcolor {
+  background-color: var(--SMain);
+}
+.secondary-border {
+  border: 1px solid var(--SMain);
+}
+
+.black-color {
+  color: var(--Black);
+}
+.black-bgcolor {
+  background-color: var(--Black);
+}
+.black-border {
+  border: 1px solid var(--Black);
+}
+
+.grey-color {
+  color: var(--Grey);
+}
+.grey-bgcolor {
+  background-color: var(--Grey);
+}
+.grey-border {
+  border: 1px solid var(--Grey);
+}
+
+.disable-color {
+  color: var(--Disable);
+}
+.disable-bgcolor {
+  background-color: var(--Disable);
+}
+.disable-border {
+  border: 1px solid var(--Disable);
+}
+
+.ripple-color {
+  color: var(--Ripple);
+}
+.ripple-bgcolor {
+  background-color: var(--Ripple);
+}
+
+.hover-color {
+  color: var(--Hover);
+}
+.hover-bgcolor {
+  background-color: var(--Hover);
+}
+
+.rag-red-color {
+  color: var(--RagRed);
+}
+.rag-red-bgcolor {
+  background-color: var(--RagRed);
+}
+
+.rag-amber-color {
+  color: var(--RagAmber);
+}
+.rag-amber-bgcolor {
+  background-color: var(--RagAmber);
+}
+
+.rag-green-color {
+  color: var(--RagGreen);
+}
+.rag-green-bgcolor {
+  background-color: var(--RagGreen);
+}
+
+.bgDropdownButtons {
+  background-color: var(--BackgroundPage);
+}
+
+.white-color {
+  color: #ffffff;
+}
+
+.bgWhite, .white-bgcolor {
+  background-color: #ffffff;
+}
+
+.white-border, .white-border {
+  border-color: #ffffff;
+}
+
+.bgOverlayer {
+    background-color: var(--BackgroundPage);
+}

@@ -1,0 +1,84 @@
+/* Display */
+.flex {
+  display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+  .flex.regular-mobile {
+      flex-direction: column;
+      margin-bottom: 10px;
+  }
+}
+
+.flex-important {
+  display: flex !important;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+/* Flex  */
+.flexAuto {
+  flex: 1 1 auto;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexRowReverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexColumnReverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexNoWrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Flex Grow */
+.flexGrow99 {
+  flex-grow: 99;
+}
+
+.flexGrow {
+  flex: 1;
+}
+
+.flexGrow2 {
+  flex: 2;
+}
+
+.flexGrow25 {
+  flex: 0.25;
+}
+
+/* Basis */
+.basis280 {
+  flex-basis: 280px;
+}

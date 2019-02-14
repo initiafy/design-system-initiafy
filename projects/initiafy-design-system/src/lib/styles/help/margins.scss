@@ -1,0 +1,95 @@
+/* Standard responsive margins */
+.margin-std {
+  margin: 24px;
+}
+
+.margin-std-half {
+  margin: 12px;
+}
+
+@media only screen and (max-width: 960px) {
+  .margin-std {
+    margin: 12px; 
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .margin-std,
+  .margin-std-half {
+    margin: 6px; 
+  }
+}
+
+/* Margin options 0/4/8/12/16/20/24/28/32 */
+@for $i from 8 through 0 {
+  .margin-#{$i*4} { margin: #{$i*4}px; }
+  .margin-x-#{$i*4} { margin-left: #{$i*4}px; margin-right: #{$i*4}px; }
+  .margin-y-#{$i*4} { margin-top: #{$i*4}px; margin-bottom: #{$i*4}px; }
+  .margin-top-#{$i*4} { margin-top: #{$i*4}px; }
+  .margin-bottom-#{$i*4} { margin-bottom: #{$i*4}px; }
+  .margin-left-#{$i*4} { margin-left: #{$i*4}px; }
+  .margin-right-#{$i*4} { margin-right: #{$i*4}px; }
+}
+
+/* Margin auto */
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.margin-x-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-top-auto {
+  margin-top: auto;
+}
+
+.margin-bottom-auto {
+  margin-bottom: auto;
+}
+
+.margin-y-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+/* Margin in internal elements */
+.elements-margin-right > * {
+  margin-right: 24px; 
+}
+.elements-margin-right > *:last-child {
+  margin-right: 0; 
+}
+.elements-margin-left > * {
+  margin-left: 24px; 
+}
+.elements-margin-left > *:last-child {
+  margin-left: 0; 
+}
+
+@media only screen and (max-width: 960px) {
+  .elements-margin-right > * {
+      margin-right: 12px; 
+  }
+  .elements-margin-left > * {
+      margin-left: 12px; 
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .elements-margin-right > * {
+      margin-right: 6px; 
+  }
+  .elements-margin-left > * {
+      margin-left: 6px; 
+  }
+}

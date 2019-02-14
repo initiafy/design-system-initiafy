@@ -1,0 +1,36 @@
+.filter-sidenav-container {
+    min-width: 230px;
+    background-color: white;
+    padding: 24px;
+ }
+ 
+ @media only screen and (max-width: 960px) {
+    .filter-sidenav-container {
+      padding: 12px;
+      .mat-form-field-infix {
+         width: 206px;
+      }
+    }
+ }
+ 
+ @media only screen and (max-width: 700px) {
+    .filter-sidenav-container {
+        padding: 6px;
+    }
+    .mat-form-field-infix {
+       width: 206px;
+    }
+ }
+ 
+ .filter-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+ }
+ 
+ ::ng-deep .mat-drawer-side.mat-drawer-end {
+    border-left: none;
+    -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
+ }

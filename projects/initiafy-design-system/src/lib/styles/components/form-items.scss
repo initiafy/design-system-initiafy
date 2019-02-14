@@ -1,0 +1,112 @@
+@import "../sass/mixins.scss";
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
+}
+
+button, input[type=button] {
+  border: none;
+  padding: 0;
+}
+input, button, textarea, select {
+  outline: none;
+}
+
+.button {
+  padding: 0 16px;
+  line-height: 36px;
+  outline: none;
+  border-radius: 100px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &.main.primary {
+    @include button-main(var(--PMain));
+  }
+
+  &.main.secondary {
+    @include button-main(var(--SMain));
+  }
+
+  &.stroke.primary {
+    @include button-stroke(var(--PMain));
+  }
+
+  &.stroke.secondary {
+    @include button-stroke(var(--SMain));
+  }
+
+  &.disable {
+    @include button-disable(var(--Disable));
+  }
+
+  &:hover {
+    @include shadow-btn();
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  .icon {
+    vertical-align: middle;
+    font-size: 20px;
+    margin-top: -2px;
+  }
+}
+
+
+// BUTTONS
+button[mat-button],
+button[mat-raised-button],
+button[mat-stroked-button],
+button[mat-flat-button] {
+    border-radius: 24px;
+}
+
+button[mat-button]:hover,
+button[mat-raised-button]:hover,
+button[mat-stroked-button]:hover,
+button[mat-flat-button]:hover {
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+button[mat-stroked-button] {
+    border-width: 2px;
+}
+
+// Dropdown with button
+.buttonDropdown div.mat-select-arrow-wrapper {
+    display: none;
+}
+.buttonDropdown mat-select {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.buttonDropdown button span.mat-button-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.buttonDropdown button {
+    background-color: #f8f8f8;
+}
+
+.buttonDropdown button span.mat-button-wrapper mat-icon {
+    margin-left: 1rem;
+}
+
+.buttonDropdownPanel {
+    transform: scaleY(1) translateX(calc(25%)) !important;
+
+    min-width: 100% !important;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version*/
+}

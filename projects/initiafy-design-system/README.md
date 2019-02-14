@@ -1,0 +1,19 @@
+## Adding the library
+
+Run `npm install initiafy-design-system` to add the library to your project.
+
+## Including global css
+
+Add the file dist/lib/styles/style.min.css to your angular.json file
+
+## Peer dependencies
+
+"gulp": "^4.0.0"
+"gulp-concat": "^2.6.1"
+"gulp-minify-css": "^1.2.4"
+"gulp-sass": "^4.0.2"
+"ng-packagr": "^4.7.0"
+
+## Further help
+
+Check this project on github

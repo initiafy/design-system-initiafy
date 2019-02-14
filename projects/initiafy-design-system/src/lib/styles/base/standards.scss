@@ -1,0 +1,25 @@
+@import "../sass/mixins.scss";
+
+/* Border-radius */
+.radius-std {
+    border-radius: 4px;
+}
+
+.radius-all {
+    border-radius: 1000px;
+}
+
+.no-radius {
+    border-radius: 0;
+}
+
+/* Background */
+.bg-std {
+    background: var(--BackgroundPage);
+}
+
+/* Shadow */
+.shadow-std {
+    @include shadow-std();
+}
+

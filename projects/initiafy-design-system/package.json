@@ -1,0 +1,19 @@
+{
+  "name": "initiafy-design-system",
+  "version": "0.0.9",
+  "scripts": {
+    "build": "ng-packagr -p package.json",
+    "postbuild": "gulp"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2",
+    "ng-packagr": "^4.7.0"
+  }
+}
