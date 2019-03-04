@@ -44,15 +44,15 @@ input:-webkit-autofill {
     padding: 0 8px;
   }
 
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   .icon {
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
-  }
-
-  span {
-    display: inline-block;
-    vertical-align: middle;
   }
 }
 
