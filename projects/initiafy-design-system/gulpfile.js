@@ -1,7 +1,6 @@
 var gulp = require('gulp')
 var sass = require('gulp-sass')
 var concat = require('gulp-concat')
-var minify = require('gulp-minify-css')
 
 gulp.task('default', gulp.series((done) => {
     gulp.src([
@@ -11,8 +10,7 @@ gulp.task('default', gulp.series((done) => {
         "src/lib/styles/components/*.scss",
         "src/lib/styles/help/*.scss"
     ])
-    .pipe(sass().on('error', sass.logError))
-    .pipe(minify())
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('./dist/lib/styles/'));
     done();
