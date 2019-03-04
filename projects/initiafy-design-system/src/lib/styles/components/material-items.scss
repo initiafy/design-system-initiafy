@@ -1,3 +1,5 @@
+@import "../imports/variables";
+
 .mat-badge-content {
   font-weight: 600;
   font-size: 12px;
@@ -92,7 +94,6 @@
 mat-card.mat-card {
   background: white;
   color: var(--Black);
-  padding: 24px;
   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, .2) !important;
   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, .2) !important;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, .2) !important;
@@ -104,12 +105,6 @@ mat-card.mat-card {
   }
  }
  
- @media only screen and (max-width: 700px) {
-  mat-card.mat-card {
-    padding: 6px;
-  }
- }
-
 .mat-card-title {
   font-size: 24px;
   font-weight: 500;
@@ -126,6 +121,10 @@ mat-card.mat-card {
 
 mat-card-footer.mat-card-footer {
   margin: 0;
+}
+
+.mat-checkbox-layout {
+  white-space: normal;
 }
 
 .mat-checkbox-layout .mat-checkbox-label {
@@ -1458,6 +1457,9 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   background: white;
   color: var(--Black);
 }
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
 
 .mat-action-row {
   border-top-color: rgba(0, 0, 0, 0.12);
@@ -1894,8 +1896,9 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
   background-color: var(--SMain, #2f9eb9);
 }
-.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
-  background-color: rgba(47, 158, 185, 0.54);
+.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar,
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: #ccc
 }
 .mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-ripple-element {
   background-color: var(--SMain, #2f9eb9);
@@ -1923,10 +1926,10 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-disabled .mat-slide-toggle-thumb {
-  background-color: #bdbdbd;
+  background-color: #666 !important;
 }
 .mat-disabled .mat-slide-toggle-bar {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #ccc;
 }
 
 .mat-slide-toggle-thumb {
@@ -2272,7 +2275,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 
 .selected-tab {
   border-left: 4px solid var(--PMain, #ac1641);
-  background-color: #f8f8f8;
+  background-color: var(--BackgroundDefault);
 }
 
 .selected-text {
@@ -2322,7 +2325,7 @@ table[mat-table] {
 }
 
 .buttonDropdown button {
-  background-color: #f8f8f8;
+  background-color: var(--BackgroundDefault);
 }
 
 .buttonDropdown button span.mat-button-wrapper mat-icon {
@@ -2363,8 +2366,20 @@ mat-sidenav-content {
   align-items: center;
 }
 .mat-list-item {
-  padding-left: 24px;
+  padding-left: $spacing;
   padding-right: 0px;
   height: 36px !important;
   font-size: 1rem;
+}
+
+.mat-card.section-box {
+  border-radius: 0;
+}
+
+.mat-card.section-box:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.mat-card.section-box:last-child {
+  border-radius: 0 0 4px 4px;
 }

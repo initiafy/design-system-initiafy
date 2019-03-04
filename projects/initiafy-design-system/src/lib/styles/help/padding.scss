@@ -1,3 +1,5 @@
+@import "../imports/variables";
+
 /* Padding options 0/4/8/12/16/20/24/28/32 */
 @for $i from 8 through 0 {
   .padding-#{$i*4} { padding: #{$i*4}px; }
@@ -11,7 +13,7 @@
 
 /* Standard responsive padding */
 .padding-std {
-  padding: 24px;
+  padding: $spacing;
 }
 
 .padding-std-half {

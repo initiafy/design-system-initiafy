@@ -1,7 +1,7 @@
 <button 
-  type="button" 
-  id="lib-button" 
-  class="button main primary"
-  (click)="handleButtonClick()">
-  Click Me!
+  type="button"
+  class="button {{type}} {{color}}"
+  [ngClass]="{ 'button': icon && !text }">
+  <i *ngIf="icon" class="material-icons">{{ icon }}</i>
+  <span *ngIf="text">{{ text }}</span>  
 </button>

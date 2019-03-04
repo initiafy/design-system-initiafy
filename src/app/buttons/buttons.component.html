@@ -1,6 +1,32 @@
 <div class="white-bgcolor radius-std shadow-std padding-std buttons">
     <h1 class="default margin-top-0">Buttons</h1>
-    <p>Standard buttons, flat and stroked, primary/secondary/disabled colors.</p>
+    <p>Standard buttons: type: main and stroked; colors: primary,secondary and disabled; with icon; with text.</p>
+
+    <div class="initiafy-grid three-columns">
+        <div class="initiafy-grid-row">
+            <h2>Primary buttons</h2>
+            <initiafy-button
+                color="primary"
+                text="Action"
+                icon="add"
+                type="main"
+                ></initiafy-button>
+            <button class="button main primary ripple"> Action </button>
+            <button class="button main primary ripple"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>
+            <button class="button stroke primary"> Action </button>
+        </div>
+        <div class="initiafy-grid-row">
+            <h2>Secondary buttons</h2>
+            <button class="button main secondary ripple"> Action </button>
+            <button class="button main secondary ripple"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>
+            <button class="button stroke secondary"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>        
+        </div>
+        <div class="initiafy-grid-row">
+            <h2>Disabled buttons</h2>
+            <button class="button disable"> Action </button>
+            <button class="button disable"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>
+        </div>
+    </div>
 
     <div class="initiafy-grid three-columns">
         <div class="initiafy-grid-row">

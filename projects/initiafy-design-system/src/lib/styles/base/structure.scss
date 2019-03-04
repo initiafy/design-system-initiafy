@@ -1,4 +1,5 @@
-@import "../sass/mixins.scss";
+@import "../imports/mixins";
+@import "../imports/variables";
 
 .initiafy-wrapper {
     display: flex;
@@ -13,19 +14,13 @@
 }
 
 .initiafy-content {
-    padding: 24px;
+    padding: $spacing;
     flex-basis:  100%
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: $media-mobile) {
     .initiafy-content {
-        padding: 12px;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .initiafy-content {
-        padding: 6px;
+        padding: $spacing-mobile;
     }
 }
 

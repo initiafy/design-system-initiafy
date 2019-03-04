@@ -4,6 +4,9 @@ var concat = require('gulp-concat')
 
 gulp.task('default', gulp.series((done) => {
     gulp.src([
+        "src/lib/styles/imports/fonts.scss",
+        "src/lib/styles/imports/animations.scss",
+        "src/lib/styles/imports/colors.scss",
         "src/lib/styles/theme/*.scss",
         "src/lib/styles/sass/*.scss",
         "src/lib/styles/base/*.scss",

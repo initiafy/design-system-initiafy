@@ -13,22 +13,13 @@ body {
   line-height: 1.5;
 }
 
-p {
+p, li {
   font-size: 14px;
 }
 
-/* Font Family */
-.lato {
-  font-family: 'Lato', sans-serif;
-}
-
-.montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Font-size options 8/12/.../76/80 */
-@for $i from 2 through 20 {
-  .text-#{$i*4} { font-size: #{$i*4}px; }
+/* Font-size options 8/12/.../100 */
+@for $i from 2 through 50 {
+  .text#{$i*2} { font-size: #{$i*2}px; }
 }
 
 /* Responsive */
@@ -82,7 +73,11 @@ p {
 .break-word {
   word-break: break-word;
 }
-
 .no-wrap {
-  white-space: nowrap; 
+  white-space: nowrap;
+}
+
+/* Line height */
+.lineHeight1andHalf {
+  line-height: 1.5;
 }

@@ -1,9 +1,11 @@
+@import "../imports/variables";
+
 /* Display */
 .flex {
   display: flex;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: $media-mobile) {
   .flex.regular-mobile {
       flex-direction: column;
       margin-bottom: 10px;

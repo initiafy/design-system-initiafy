@@ -1,4 +1,5 @@
-@import "../sass/mixins.scss";
+@import "../imports/mixins";
+@import "../imports/variables";
 
 .selectionBoxesHolder, .selection-boxes-holder {
     align-items: center;
@@ -8,7 +9,7 @@
     .selectionBoxes, .selection-boxes {
         height: 210px;
         width: 210px;
-        margin: 24px;
+        margin: $spacing;
         color: rgba(0, 0, 0, 0.54);
         cursor: pointer;
 
@@ -18,13 +19,13 @@
         }
     }
     
-    @media only screen and (max-width: 960px) {
+    @media only screen and (max-width: $media-tablet) {
         .selectionBoxes, .selection-boxes {
             margin: 12px;
         }
     }
     
-    @media only screen and (max-width: 700px) {
+    @media only screen and (max-width: $media-mobile) {
         .selectionBoxes, .selection-boxes {
             margin: 6px;
         }
@@ -51,7 +52,7 @@
     }
 }
     
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: $media-mobile-small) {
     .selection-boxes-holder.flex.row  {
         flex-direction: column;
     }

@@ -1,5 +1,7 @@
-.initiafy-header-wrapper,
-#initiafyMainHeader {
+@import "../imports/variables";
+
+#initiafyMainHeader, 
+.initiafy-header-wrapper {
   height: 64px;
 }
 
@@ -16,11 +18,7 @@
   align-items: center;
   background-color: white;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
-  padding: 0 24px;
-}
-
-.initiafy-header-menu {
-  margin: 8px auto 0 16px;
+  padding: 0 $spacing;
 }
 
 .initiafy-header-items  {
@@ -30,6 +28,7 @@
   justify-content: flex-end;
   justify-content: space-between;
   align-items: center;
+
   .initiafy-header-item {
     height: 20px;
   }    
@@ -43,4 +42,8 @@
   flex: 0 1 1em;
   padding: 0.7em 0 0.8em 0;
   box-sizing: border-box;
+}
+
+.initiafy-header-menu {
+  margin: 8px auto 0 16px;
 }

@@ -1,3 +1,5 @@
+@import "../imports/variables";
+
 * {  
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -5,8 +7,19 @@
 }
 
 body {
+  background-color: var(--BackgroundDefault);
   margin: 0;
-  padding: 0;
+}
+
+/* Content */
+.initiafy-content {
+  padding: $spacing;
+}
+
+@media only screen and (max-width: $media-tablet) {
+  .initiafy-content {
+    padding: $spacing-mobile;
+  }
 }
 
 /* Scrollbar */
@@ -15,8 +28,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -33,4 +46,18 @@ body {
 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+/* Buttons */
+button,
+input[type=button] {
+  border: none;
+  padding: 0;
+}
+input, 
+button,
+textarea,
+select,
+mat-select {
+  outline: none;
 }

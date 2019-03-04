@@ -28,7 +28,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "src/assets/styles/style.min.css"
+              "projects/initiafy-design-system/dist/lib/styles/style.min.css"
             ],
             "scripts": []
           },
@@ -85,7 +85,7 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/styles.scss",
-              "src/assets/styles/style.min.css"
+              "projects/initiafy-design-system/dist/lib/styles/style.min.css"
             ],
             "scripts": [],
             "assets": [
