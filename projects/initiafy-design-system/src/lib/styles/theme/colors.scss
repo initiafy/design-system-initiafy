@@ -1,6 +1,5 @@
 body {
   color: var(--Black);
-  background-color: var(--BackgroundPage);
 }
 
 .primaryColor, .primary-color {
@@ -29,9 +28,6 @@ body {
 .black-bgcolor {
   background-color: var(--Black);
 }
-.black-border {
-  border: 1px solid var(--Black);
-}
 
 .grey-color {
   color: var(--Grey);
@@ -39,8 +35,8 @@ body {
 .grey-bgcolor {
   background-color: var(--Grey);
 }
-.grey-border {
-  border: 1px solid var(--Grey);
+.grey-bordercolor {
+  border-color: var(--Grey);
 }
 
 .disable-color {
@@ -49,15 +45,15 @@ body {
 .disable-bgcolor {
   background-color: var(--Disable);
 }
-.disable-border {
-  border: 1px solid var(--Disable);
-}
 
 .ripple-color {
   color: var(--Ripple);
 }
 .ripple-bgcolor {
   background-color: var(--Ripple);
+}
+.ripple-bordercolor {
+  border-color: var(--Ripple);
 }
 
 .hover-color {
@@ -68,28 +64,33 @@ body {
 }
 
 .rag-red-color {
-  color: var(--RagRed);
+  color: #f44336;
 }
 .rag-red-bgcolor {
-  background-color: var(--RagRed);
+  background-color: #f44336;
 }
 
 .rag-amber-color {
-  color: var(--RagAmber);
+  color: #ffc108;
 }
 .rag-amber-bgcolor {
-  background-color: var(--RagAmber);
+  background-color: #ffc108;
 }
 
 .rag-green-color {
-  color: var(--RagGreen);
+  color: #348424;
 }
 .rag-green-bgcolor {
-  background-color: var(--RagGreen);
+  background-color: #348424;
 }
 
 .bgDropdownButtons {
-  background-color: var(--BackgroundPage);
+  background-color: var(--BackgroundDefault);
+}
+
+.colSmallDetails {
+  color: #D2D2D2;
+  fill: #D2D2D2;
 }
 
 .white-color {
@@ -100,10 +101,45 @@ body {
   background-color: #ffffff;
 }
 
-.white-border, .white-border {
+.white-border {
   border-color: #ffffff;
 }
 
 .bgOverlayer {
-    background-color: var(--BackgroundPage);
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--BackgroundDefault);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightIconWithHover {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.lightIconWithHover:hover {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.mediumText {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+/* Standards */
+.bg-hover, .bg-hover-hover:hover {
+  background: var(--Hover);
+}
+
+.bg-std, .bg-std-hover:hover {
+  background: var(--BackgroundDefault);
+}
+
+.std-bordercolor {
+  border-color: var(--BackgroundDefault);
 }

@@ -1,16 +1,18 @@
+@import "../imports/variables";
+
 .actionBar, .actionBar.mat-card {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 24px;
-    margin-bottom: 24px;
+    padding: $spacing;
+    margin-bottom: $spacing;
     
-    @media (max-width: 959px) {
+    @media (max-width: $media-tablet) {
         padding: 12px;
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: $media-mobile) {
         padding: 4px;
     }
 
@@ -25,7 +27,7 @@
         flex-grow: 1;
         max-width: 200px;
     
-        @media (min-width: 700px) {
+        @media (min-width: $media-mobile) {
             margin-left: 16px;
         }
     }

@@ -50,17 +50,21 @@
   height: 500px;
 }
 
+.min-height-65 {
+  min-height: 65px;
+}
+
 /* Width sizes */
+.max-width-160 {
+  max-width: 160px;
+}
+
 .minWidth200 {
   min-width: 11em;
 }
 
 .max-width80 {
   max-width: 200px;
-}
-
-.max-width-160 {
-  max-width: 160px;
 }
 
 .maxWidthLarge {

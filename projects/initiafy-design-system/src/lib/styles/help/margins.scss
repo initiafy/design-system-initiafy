@@ -1,6 +1,8 @@
+@import "../imports/variables";
+
 /* Standard responsive margins */
 .margin-std {
-  margin: 24px;
+  margin: $spacing;
 }
 
 .margin-std-half {
@@ -10,13 +12,6 @@
 @media only screen and (max-width: 960px) {
   .margin-std {
     margin: 12px; 
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .margin-std,
-  .margin-std-half {
-    margin: 6px; 
   }
 }
 
@@ -64,13 +59,13 @@
 
 /* Margin in internal elements */
 .elements-margin-right > * {
-  margin-right: 24px; 
+  margin-right: $spacing; 
 }
 .elements-margin-right > *:last-child {
   margin-right: 0; 
 }
 .elements-margin-left > * {
-  margin-left: 24px; 
+  margin-left: $spacing; 
 }
 .elements-margin-left > *:last-child {
   margin-left: 0; 
