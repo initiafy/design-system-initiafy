@@ -17,19 +17,12 @@
 }
 
 .padding-std-half {
-  padding: 12px;
+  padding: $spacing-mobile;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: $media-tablet) {
   .padding-std {
-      padding: 12px; 
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .padding-std,
-  .padding-std-half {
-      padding: 6px; 
+      padding: $spacing-mobile; 
   }
 }
 

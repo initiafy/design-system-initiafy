@@ -1,7 +1,5 @@
 <button 
-  type="button"
-  class="button {{type}} {{color}}"
-  [ngClass]="{ 'button': icon && !text }">
+  mat-button>
   <i *ngIf="icon" class="material-icons">{{ icon }}</i>
   <span *ngIf="text">{{ text }}</span>  
 </button>

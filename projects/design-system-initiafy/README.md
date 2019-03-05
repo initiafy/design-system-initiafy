@@ -1,6 +1,6 @@
 ## Adding the library
 
-Run `npm install initiafy-design-system` to add the library to your project.
+Run `npm install design-system-initiafy` to add the library to your project.
 
 ## Including global css
 

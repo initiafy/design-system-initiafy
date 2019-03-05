@@ -6,19 +6,16 @@
     padding: $spacing;
  }
  
- @media only screen and (max-width: 960px) {
+ @media only screen and (max-width: $media-tablet) {
     .filter-sidenav-container {
-      padding: 12px;
+      padding: $spacing-mobile;
       .mat-form-field-infix {
          width: 206px;
       }
     }
  }
  
- @media only screen and (max-width: 700px) {
-    .filter-sidenav-container {
-        padding: 6px;
-    }
+ @media only screen and (max-width: $media-mobile) {
     .mat-form-field-infix {
        width: 206px;
     }

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { InitiafyDesignSystemModule } from 'initiafy-design-system';
+import { DesignSystemInitiafyModule } from 'design-system-initiafy';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './shared/header/header.component';
 import { ContentComponent } from './shared/content/content.component';
@@ -41,7 +41,7 @@ import { StructureComponent } from './structure/structure.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InitiafyDesignSystemModule,
+    DesignSystemInitiafyModule,
     BrowserAnimationsModule
   ],
   providers: [],

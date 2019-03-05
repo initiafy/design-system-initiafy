@@ -1,6 +1,6 @@
 {
-  "name": "initiafy-design-system",
-  "version": "0.0.6",
+  "name": "design-system-initiafy",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,8 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "gulp": "gulp",
-    "build-lib": "ng build initiafy-design-system",
-    "npm-pack": "cd dist/initiafy-design-system && npm pack",
+    "build-lib": "ng build design-system-initiafy",
+    "npm-pack": "cd dist/design-system-initiafy && npm pack",
     "package": "npm run build-lib && npm run npm-pack"
   },
   "private": true,
