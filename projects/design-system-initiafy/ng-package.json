@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/initiafy-design-system",
+  "dest": "../../dist/design-system-initiafy",
   "lib": {
     "entryFile": "src/public_api.ts"
   }

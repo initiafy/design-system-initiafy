@@ -9,7 +9,7 @@
   margin: 12px;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: $media-tablet) {
   .margin-std {
     margin: 12px; 
   }
@@ -71,7 +71,7 @@
   margin-left: 0; 
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: $media-tablet) {
   .elements-margin-right > * {
       margin-right: 12px; 
   }
@@ -80,7 +80,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: $media-mobile) {
   .elements-margin-right > * {
       margin-right: 6px; 
   }

@@ -21,6 +21,12 @@
   padding: 0 $spacing;
 }
 
+@media only screen and (max-width: $media-tablet) {
+  .initiafy-header {
+    padding: 0 $spacing-mobile;
+  }
+}
+
 .initiafy-header-items  {
   display: flex;
   flex-direction: row;

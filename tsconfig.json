@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "initiafy-design-system": [
-        "dist/initiafy-design-system"
+      "design-system-initiafy": [
+        "dist/design-system-initiafy"
       ],
-      "initiafy-design-system/*": [
-        "dist/initiafy-design-system/*"
+      "design-system-initiafy/*": [
+        "dist/design-system-initiafy/*"
       ]
     }
   }
