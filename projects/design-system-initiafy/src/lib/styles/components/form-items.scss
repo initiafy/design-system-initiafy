@@ -32,27 +32,17 @@ input:-webkit-autofill {
     @include button-disable(var(--Disable));
   }
 
+  &.single {
+    padding: 0 8px;
+    min-width: 40px;
+  }
+
   &:hover {
     @include shadow-btn();
   }
 
   &::-moz-focus-inner {
     border: 0;
-  }
-
-  &.single {
-    padding: 0 8px;
-  }
-
-  span {
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-  .icon {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 20px;
   }
 }
 

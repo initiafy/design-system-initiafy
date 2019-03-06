@@ -45,6 +45,9 @@ body {
 .disable-bgcolor {
   background-color: var(--Disable);
 }
+.disable-bordercolor {
+  border-color: var(--Disable);
+}
 
 .ripple-color {
   color: var(--Ripple);

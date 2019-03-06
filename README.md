@@ -31,9 +31,9 @@ The app will automatically reload if you change any of the source files.
 - Navigate to the root of the library;
 - Run `ng run build`;
 - Navigate to the root of the project;
-- Run `npm run package`;
-- Run `ng serve` to update the library files. 
+- Run `npm run package` to update the library files;
+- Run `ng serve` jto build the prokect. 
 
 ## Publishing library in npm
 
-- Run `npm pubish` to push files in the npm library
+- Run `npm publish dist` to publish new version of the library in the npm.
