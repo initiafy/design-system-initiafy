@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grid.component.scss']
 })
 export class GridComponent implements OnInit {
+  showCode: boolean;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleCode() {
+    this.showCode = !this.showCode;
   }
 
 }

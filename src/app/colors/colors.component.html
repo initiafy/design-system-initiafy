@@ -1,60 +1,118 @@
 <div class="white-bgcolor radius-std shadow-std padding-std">
-    <h1 class="default margin-top-0">Color Pallet</h1>
+    <div class="relative">
+        <h1 class="default margin-top-0">Color Pallet</h1>
+        <i class="material-icons pointer absolute top right" (click)="toggleCode()">code</i>
+    </div>
     <p>Standard colors used in the plataform.</p>
 
-    <div class="color-palette margin-top-32 flex row">
-        <div class="flex column align-items-center">
-            <span class="primary-bgcolor margin-bottom-8"></span>
-            <p class="margin-y-8 bold">Primary color</p>
-            <p class="margin-0 grey-color">RGB: #ac1641</p>
-            <p class="margin-0 grey-color">SCSS: --PMain</p>
+    <div class="color-palette margin-top-32">
+        <div class="items-block">
+            <span class="primary-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Primary color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #ac1641</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --PMain</p>
+            </div>
         </div>
-        <div class="flex column align-items-center">
-            <span class="secondary-bgcolor margin-bottom-8"></span>
-            <p class="margin-y-8 bold">Secondary color</p>
-            <p class="margin-0 grey-color">RGB: #2f9eb9</p>
-            <p class="margin-0 grey-color">SCSS: --SMain</p>
+        <div class="items-block">
+            <span class="primary-light-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Primary Light color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #ac1641</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --PMain</p>
+            </div>
         </div>
-        <div class="flex column align-items-center">
-            <span class="black-bgcolor margin-bottom-8"></span>
-            <p class="margin-y-8 bold">Black color</p>
-            <p class="margin-0 grey-color">RGB: #000 87%</p>
-            <p class="margin-0 grey-color">SCSS: --Black</p>
+        <div class="items-block">
+            <span class="secondary-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Secondary color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #2f9eb9</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --SMain</p>
+            </div>
         </div>
-        <div class="flex column align-items-center">
-            <span class="grey-bgcolor margin-bottom-8"></span>
-            #000 54% 
-            <b class="margin-top-8">Gray</b>
+        <div class="items-block">
+            <span class="secondary-light-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Secondary Light color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #2f9eb9</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --SLight</p>
+            </div>
         </div>
-        <div class="flex column align-items-center">
-            <span class="disable-bgcolor margin-bottom-8"></span>
-            #000 26% 
-            <b class="margin-top-8">Disable</b>
+    </div>
+    <div class="color-palette">
+        <div class="items-block">
+            <span class="black-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Black color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 87%</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Black</p>
+            </div>
         </div>
-        <div class="flex column align-items-center">
-            <span class="ripple-bgcolor margin-bottom-8"></span>
-            #000 12% 
-            <b class="margin-top-8">Ripple</b>
+        <div class="items-block">
+            <span class="grey-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Grey color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 54%</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Grey</p>
+            </div>
         </div>
-        <div class="flex column align-items-center">
-            <span class="hover-bgcolor margin-bottom-8"></span>
-            #000 5%
-            <b class="margin-top-8">Hover</b>
+        <div class="items-block">
+            <span class="disable-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Disable color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 38%</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Disable</p>
+            </div>
         </div>
-        <div class="flex column align-items-center">
-            <span class="rag-red-bgcolor margin-bottom-8"></span>
-            #f44336
-            <b class="margin-top-8">Red</b>
+        <div class="items-block">
+            <span class="ripple-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Ripple color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 12%</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Ripple</p>
+            </div>
         </div>
-        <div class="flex column align-items-center">
-            <span class="rag-amber-bgcolor margin-bottom-8"></span>
-            #ffc108
-            <b class="margin-top-8">Amber</b>
+        <div class="items-block">
+            <span class="hover-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Hover color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 5%</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Hover</p>
+            </div>
         </div>
-        <div class="flex column align-items-center">
-            <span class="rag-green-bgcolor margin-bottom-8"></span>
-            #348424
-            <b class="margin-top-8">Green</b>
+        <div class="items-block">
+            <span class="bg-std"></span>
+            <div class="content">
+                <p class="bold margin-top-0">Background default color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #f8f8f8</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --BackgroundDefault</p>
+            </div>
+        </div>
+    </div>
+    <div class="color-palette">
+        <div class="items-block">
+            <span class="rag-red-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">RAG Red color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #f44336</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --RagRed</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="rag-amber-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">RAG Amber color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #ffc108</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --RagAmber</p>
+            </div>
+        </div>
+        <div class="items-block">
+            <span class="rag-green-bgcolor"></span>
+            <div class="content">
+                <p class="bold margin-top-0">RAG Green color</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #348424</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --RagGreen</p>
+            </div>
         </div>
     </div>
 </div>

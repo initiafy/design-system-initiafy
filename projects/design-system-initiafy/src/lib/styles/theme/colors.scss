@@ -12,6 +12,16 @@ body {
   border: 1px solid var(--PMain);
 }
 
+.primary-light-color {
+  color: var(--PLight);
+}
+.primary-light-bgcolor {
+  background-color: var(--PLight);
+}
+.primary-light-border {
+  border: 1px solid var(--PLight);
+}
+
 .secondary-color {
   color: var(--SMain);
 }
@@ -20,6 +30,16 @@ body {
 }
 .secondary-border {
   border: 1px solid var(--SMain);
+}
+
+.secondary-light-color {
+  color: var(--SLight);
+}
+.secondary-light-bgcolor {
+  background-color: var(--SLight);
+}
+.secondary-light-border {
+  border: 1px solid var(--SLight);
 }
 
 .black-color {
@@ -145,4 +165,18 @@ body {
 
 .std-bordercolor {
   border-color: var(--BackgroundDefault);
+}
+
+.accentColor {
+  color: var(--SMain, #2f9eb9);
+}
+.accentColorBG {
+  background-color: var(--SMain, #2f9eb9);
+}
+
+.warnColor {
+  color: #f44336;
+}
+.warnColorBG {
+  background-color: #f44336;
 }

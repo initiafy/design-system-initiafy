@@ -10,6 +10,7 @@ input:-webkit-autofill {
   outline: none;
   border-radius: 100px;
   font-weight: 500;
+  position: relative;
   cursor: pointer;
 
   &.main.primary {
@@ -28,13 +29,36 @@ input:-webkit-autofill {
     @include button-stroke(var(--SMain));
   }
 
-  &.disable {
-    @include button-disable(var(--Disable));
+  &.single {
+    padding: 0 6px;
+    min-width: 40px;
   }
 
-  &.single {
-    padding: 0 8px;
-    min-width: 40px;
+  &.icon {
+    border-color: transparent;
+    background-color: transparent;
+    color: var(--Grey);
+    &:hover {
+      background-color: var(--Hover);
+      box-shadow: none;
+    }
+    &[disabled], 
+    &[disabled][disabled] {
+      background-color: transparent;
+      color: var(--Disable);
+      cursor: default;
+    }
+  }
+
+  &[disabled], 
+  &[disabled][disabled] {
+    border-color: transparent;
+    background-color: var(--Ripple);
+    color: var(--Disable);
+    cursor: default;
+    &:hover {
+      box-shadow: none;
+    }
   }
 
   &:hover {
@@ -44,6 +68,32 @@ input:-webkit-autofill {
   &::-moz-focus-inner {
     border: 0;
   }
+
+  .mat-button-wrapper {
+    display: block;
+    line-height: 24px;
+  }
+}
+
+.button.stroke.primary .mat-button-focus-overlay {
+  background-color: var(--PMain, #ac1641);
+}
+.button.stroke.secondary .mat-button-focus-overlay {
+  background-color: var(--SMain, #2f9eb9);
+}
+.button[disabled] .mat-button-focus-overlay, 
+.button[disabled][disabled] .mat-button-focus-overlay {
+  background-color: transparent;
+}
+.button.stroke.primary .mat-ripple-element {
+  background-color: rgba(172, 22, 65, 0.1);
+}
+.button.stroke.secondary .mat-ripple-element {
+  background-color: rgba(47, 158, 185, 0.1);
+}
+
+.mat-button-focus-overlay {
+  background: white;
 }
 
 .noselect {

@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./typography.component.scss']
 })
 export class TypographyComponent implements OnInit {
+  showCode: boolean;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  array(n: number): number[] {
+    return Array(n);
+  }
+
+  toggleCode() {
+    this.showCode = !this.showCode;
   }
 
 }

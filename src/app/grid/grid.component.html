@@ -1,63 +1,73 @@
-<div class="white-bgcolor radius-std shadow-std padding-std grid">
-    <h1 class="default margin-top-0">Grid</h1>
+<div class="white-bgcolor radius-std shadow-std padding-std grid relative">
+    <div class="relative">
+        <h1 class="default margin-top-0">Grid</h1>
+        <i class="material-icons pointer absolute top right" (click)="toggleCode()">code</i>
+    </div>
     <p class="margin-top-0 default">Responsive grid system with up to 4 columns using only CSS display grid.</p>
+    
     <div class="initiafy-grid two-columns">
         <div class="initiafy-grid-row">column 1</div>
         <div class="initiafy-grid-row">column 2</div>
     </div>
+    <div id="code" class="margin-bottom-32" *ngIf="showCode">
+        &lt;!--Two Column Grid-->                                       <br>
+        &lt;div class="initiafy-grid two-columns">                      <br>
+            &lt;div class="initiafy-grid-row">column 1&lt;/div>         <br>
+            &lt;div class="initiafy-grid-row">column 2&lt;/div>         <br>
+        &lt;/div>
+    </div>
+
     <div class="initiafy-grid three-columns">
         <div class="initiafy-grid-row">column 1</div>
         <div class="initiafy-grid-row">column 2</div>
         <div class="initiafy-grid-row">column 3</div>
     </div>
+    <div id="code" class="margin-bottom-32" *ngIf="showCode">
+        &lt;!--Three Column Grid-->                                     <br>
+        &lt;div class="initiafy-grid three-columns">                    <br>
+            &lt;div class="initiafy-grid-row">column 1&lt;/div>         <br>
+            &lt;div class="initiafy-grid-row">column 2&lt;/div>         <br>
+            &lt;div class="initiafy-grid-row">column 3&lt;/div>         <br>
+        &lt;/div>                                                       <br>
+    </div>
+
     <div class="initiafy-grid four-columns">
         <div class="initiafy-grid-row">column 1</div>
         <div class="initiafy-grid-row">column 2</div>
         <div class="initiafy-grid-row">column 3</div>
         <div class="initiafy-grid-row">column 4</div>
     </div>
+    <div id="code" class="margin-bottom-32" *ngIf="showCode">
+        &lt;!--Four Column Grid-->                                      <br>
+        &lt;div class="initiafy-grid four-columns">                     <br>
+            &lt;div class="initiafy-grid-row">column 1&lt;/div>         <br>
+            &lt;div class="initiafy-grid-row">column 2&lt;/div>         <br>
+            &lt;div class="initiafy-grid-row">column 3&lt;/div>         <br>
+            &lt;div class="initiafy-grid-row">column 4&lt;/div>         <br>
+        &lt;/div>                           <br>
+    </div>
+
     <div class="initiafy-grid one-three-columns">
         <div class="initiafy-grid-row">column 1</div>
         <div class="initiafy-grid-row">column 2</div>
     </div>
+    <div id="code" class="margin-bottom-32" *ngIf="showCode">
+        &lt;!--One-Three Column Grid-->                                 <br>
+        &lt;div class="initiafy-grid one-three-columns">                <br>
+            &lt;div class="initiafy-grid-row">column 1&lt;/div>         <br>
+            &lt;div class="initiafy-grid-row">column 2&lt;/div>         <br>
+        &lt;/div>                                                       <br>
+    </div>
+
     <div class="initiafy-grid three-one-columns">
         <div class="initiafy-grid-row">column 1</div>
         <div class="initiafy-grid-row">column 2</div>
     </div>
-    <pre>
-        <code id="code">
-            &lt;!--Two Column Grid-->
-            &lt;div class="initiafy-grid two-columns">
-                &lt;div class="initiafy-grid-row">column 1&lt;/div>
-                &lt;div class="initiafy-grid-row">column 2&lt;/div>
-            &lt;/div>
-            
-            &lt;!--Three Column Grid-->
-            &lt;div class="initiafy-grid three-columns">
-                &lt;div class="initiafy-grid-row">column 1&lt;/div>
-                &lt;div class="initiafy-grid-row">column 2&lt;/div>
-                &lt;div class="initiafy-grid-row">column 3&lt;/div>
-            &lt;/div>
-            
-            &lt;!--Four Column Grid-->
-            &lt;div class="initiafy-grid four-columns">
-                &lt;div class="initiafy-grid-row">column 1&lt;/div>
-                &lt;div class="initiafy-grid-row">column 2&lt;/div>
-                &lt;div class="initiafy-grid-row">column 3&lt;/div>
-                &lt;div class="initiafy-grid-row">column 4&lt;/div>
-            &lt;/div>
-            
-            &lt;!--One-Three Column Grid-->
-            &lt;div class="initiafy-grid one-three-columns">
-                &lt;div class="initiafy-grid-row">column 1&lt;/div>
-                &lt;div class="initiafy-grid-row">column 2&lt;/div>
-            &lt;/div>
-            
-            &lt;!--Three-One Column Grid-->
-            &lt;div class="initiafy-grid three-one-columns">
-                &lt;div class="initiafy-grid-row">column 1&lt;/div>
-                &lt;div class="initiafy-grid-row">column 2&lt;/div>
-            &lt;/div>
-        </code>
-    </pre>
+    <div id="code" class="margin-bottom-32" *ngIf="showCode"> 
+            &lt;!--Three-One Column Grid-->                                 <br>
+            &lt;div class="initiafy-grid three-one-columns">                <br>
+                &lt;div class="initiafy-grid-row">column 1&lt;/div>         <br>
+                &lt;div class="initiafy-grid-row">column 2&lt;/div>         <br>
+            &lt;/div>                                                       <br>
+    </div>
 </div>

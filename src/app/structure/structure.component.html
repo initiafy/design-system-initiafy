@@ -1,10 +1,33 @@
 <div class="white-bgcolor radius-std shadow-std padding-std buttons">
-  <h1 class="default margin-top-0">Structure</h1>
+  <div class="relative">
+      <h1 class="default margin-top-0">Structure</h1>
+      <i class="material-icons pointer absolute top right" (click)="toggleCode()">code</i>
+  </div>    
   <p>Main strucure of the page</p>
   
-  <h2>Header</h2>
-  <h2>Container</h2>
-  <h2>Sidenav</h2>
-  <h2>Content</h2>
-  <h2>Footer</h2>
+  <h2 class="margin-bottom-0">Header</h2>
+  <div id="code" class="margin-top-8" *ngIf="showCode">
+      &lt;initiafy-header logoUrl="/logo-url.svg"> &lt;/initiafy-header>
+  </div>
+
+  <h2 class="margin-bottom-0">Container</h2>
+  <div id="code" class="margin-top-8" *ngIf="showCode">
+      &lt;initiafy-container> &lt;/initiafy-container>
+  </div>
+
+  <h2 class="margin-bottom-0">Sidenav</h2>
+  <div id="code" class="margin-top-8" *ngIf="showCode">
+      &lt;initiafy-sidenav> &lt;/initiafy-sidenav>
+  </div>
+  
+  <h2 class="margin-bottom-0">Content</h2>
+  <div id="code" class="margin-top-8" *ngIf="showCode">
+      &lt;initiafy-content> &lt;/initiafy-content>
+  </div>
+  
+  <h2 class="margin-bottom-0">Footer</h2>
+  <div id="code" class="margin-top-8" *ngIf="showCode">
+      &lt;initiafy-footer> &lt;/initiafy-footer>
+  </div>
+  
 </div>
