@@ -1,8 +1,9 @@
 <button 
   mat-button
+  [matTooltip]="tooltip"
   [ngClass]="getButtonClasses()"
   [disabled]="disabled"
   >
-  <ng-template [ngIf]="icon"><i [class]="iconFont">{{ icon }}</i></ng-template>
+  <ng-template [ngIf]="icon"><initiafy-icon [icon]="icon" [iconFont]="iconFont"></initiafy-icon></ng-template>
   <ng-template [ngIf]="label"><span>{{ label }}</span></ng-template>
 </button>

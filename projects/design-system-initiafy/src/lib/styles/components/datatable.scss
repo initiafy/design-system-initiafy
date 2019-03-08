@@ -3,6 +3,7 @@
 * Copyright 2016
 * Licensed under MIT
 */
+@import "../imports/variables";
 
 .ngx-datatable {
 	display: block;
@@ -713,12 +714,14 @@
     transition-timing-function: linear;
 }
 .ngx-datatable.material .datatable-body-row .datatable-row-group .datatable-body-cell a {
+    color: $Black;
     color: var(--Black);
     cursor: pointer;
     text-decoration: none;
 }
 .ngx-datatable.material .datatable-body-row .datatable-row-group .datatable-body-cell a:hover {
-    color: var(--SMain);
+	color: $SMain;
+	color: var(--SMain);
 }
 .ngx-datatable.material .datatable-header .datatable-header-cell {
     font-size: 16px;

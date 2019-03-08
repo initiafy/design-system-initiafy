@@ -1,6 +1,7 @@
 @import "../imports/variables";
 
 .CodeMirror {
+    color: $Black;
     color: var(--Black);
 }
 
@@ -19,6 +20,7 @@
 
 .CodeMirror-gutters {
     border-right: 1px solid #ddd;
+    background-color: $BackgroundDefault;
     background-color: var(--BackgroundDefault);
     white-space: nowrap
 }
@@ -446,6 +448,7 @@ span.CodeMirror-selectedtext {
 .CodeMirror {
     height: auto;
     min-height: 300px;
+    border: 1px solid $Grey;
     border: 1px solid var(--Grey);
     padding: 10px;
     font: inherit;
@@ -479,8 +482,11 @@ span.CodeMirror-selectedtext {
     -o-user-select: none;
     user-select: none;
     padding: 0 10px;
+    border-top: 1px solid $Grey;
     border-top: 1px solid var(--Grey);
+    border-left: 1px solid $Grey;
     border-left: 1px solid var(--Grey);
+    border-right: 1px solid $Grey;
     border-right: 1px solid var(--Grey);
 }
 

@@ -12,6 +12,7 @@
         min-height: calc(100vh - 64px);
         display: flex;
         flex: 1;
+        background-color: $BackgroundDefault;
         background-color: var(--BackgroundDefault);
         .mat-accordion .mat-expansion-panel:last-of-type,
         .mat-accordion .mat-expansion-panel:first-of-type {

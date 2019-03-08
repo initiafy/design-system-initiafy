@@ -12,7 +12,8 @@
 
 /* Background */
 .bg-std {
-    background: var(--BackgroundDefault);
+    background-color: $BackgroundDefault;
+    background-color: var(--BackgroundDefault);
 }
 
 /* Box */
@@ -25,7 +26,9 @@
     margin: $spacing 0;
     border-radius: 4px;
     border: 1px dashed #efefef;
+    background-color: $BackgroundDefault;
     background-color: var(--BackgroundDefault);
+    color: $Grey;
     color: var(--Grey);
 }
 

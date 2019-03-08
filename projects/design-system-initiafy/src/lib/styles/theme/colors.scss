@@ -1,113 +1,148 @@
+@import "../imports/variables";
+
 body {
+  color: $Black;
   color: var(--Black);
 }
 
 .primaryColor, .primary-color {
+  color: $PMain;
   color: var(--PMain);
 }
 .primaryBackgroundColor, .primary-bgcolor {
+  background-color: $PMain;
   background-color: var(--PMain);
 }
 .primary-border {
+  border: 1px solid $PMain;
   border: 1px solid var(--PMain);
 }
 
 .primary-light-color {
+  color: $PLight;
   color: var(--PLight);
 }
 .primary-light-bgcolor {
+  background-color: $PLight;
   background-color: var(--PLight);
 }
 .primary-light-border {
+  border: 1px solid $PLight;
   border: 1px solid var(--PLight);
 }
 
 .secondary-color {
+  color: $SMain;
   color: var(--SMain);
 }
 .secondary-bgcolor {
+  background-color: $SMain;
   background-color: var(--SMain);
 }
 .secondary-border {
+  border: 1px solid $SMain;
   border: 1px solid var(--SMain);
 }
 
 .secondary-light-color {
+  color: $SLight;
   color: var(--SLight);
 }
 .secondary-light-bgcolor {
+  background-color: $SLight;
   background-color: var(--SLight);
 }
 .secondary-light-border {
+  border: 1px solid $SLight;
   border: 1px solid var(--SLight);
 }
 
 .black-color {
+  color: $Black;
   color: var(--Black);
 }
 .black-bgcolor {
+  background-color: $Black;
   background-color: var(--Black);
 }
 
 .grey-color {
+  color: $Grey;
   color: var(--Grey);
 }
 .grey-bgcolor {
+  background-color: $Grey;
   background-color: var(--Grey);
 }
 .grey-bordercolor {
+  border-color: $Grey;
   border-color: var(--Grey);
 }
 
 .disable-color {
+  color: $Disable;
   color: var(--Disable);
 }
 .disable-bgcolor {
+  background-color: $Disable;
   background-color: var(--Disable);
 }
 .disable-bordercolor {
+  border-color: $Disable;
   border-color: var(--Disable);
 }
 
 .ripple-color {
+  color: $Ripple;
   color: var(--Ripple);
 }
 .ripple-bgcolor {
+  background-color: $Ripple;
   background-color: var(--Ripple);
 }
 .ripple-bordercolor {
+  border-color: $Ripple;
   border-color: var(--Ripple);
 }
 
 .hover-color {
+  color: $Hover;
   color: var(--Hover);
 }
 .hover-bgcolor {
+  background-color: $Hover;
   background-color: var(--Hover);
 }
 
 .rag-red-color {
-  color: #f44336;
+  color: $RagRed;
+  color: var(--RagRed);
 }
 .rag-red-bgcolor {
-  background-color: #f44336;
+  background-color: $RagRed;
+  background-color: var(--RagRed);
 }
 
 .rag-amber-color {
-  color: #ffc108;
+  color: $RagAmber;
+  color: var(--RagAmber);
 }
 .rag-amber-bgcolor {
-  background-color: #ffc108;
+  background-color: $RagAmber;
+  background-color: var(--RagAmber);
 }
 
 .rag-green-color {
-  color: #348424;
+  color: $RagGreen;
+  color: var(--RagGreen);
 }
 .rag-green-bgcolor {
-  background-color: #348424;
+  background-color: $RagGreen;
+  background-color: var(--RagGreen);
 }
 
 .bgDropdownButtons {
+  background-color: $BackgroundDefault;
   background-color: var(--BackgroundDefault);
 }
 
@@ -131,6 +166,7 @@ body {
 .bgOverlayer {
     width: 100%;
     min-height: 100%;
+    background-color: $BackgroundDefault;
     background-color: var(--BackgroundDefault);
     box-sizing: border-box;
     display: flex;
@@ -160,18 +196,22 @@ body {
 }
 
 .bg-std, .bg-std-hover:hover {
-  background: var(--BackgroundDefault);
+  background-color: $BackgroundDefault;
+  background-color: var(--BackgroundDefault);
 }
 
 .std-bordercolor {
+  border-color: $BackgroundDefault;
   border-color: var(--BackgroundDefault);
 }
 
 .accentColor {
-  color: var(--SMain, #2f9eb9);
+  color: $SMain;
+  color: var(--SMain);
 }
 .accentColorBG {
-  background-color: var(--SMain, #2f9eb9);
+  background-color: $SMain;
+  background-color: var(--SMain);
 }
 
 .warnColor {

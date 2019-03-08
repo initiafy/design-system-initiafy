@@ -7,111 +7,124 @@
 
     <div class="color-palette margin-top-32">
         <div class="items-block">
-            <span class="primary-bgcolor"></span>
+            <span class="primary-bgcolor pointer" (click)="copyToClipboard('#AC1640')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Primary color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #ac1641</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --PMain</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #AC1640</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $PMain</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --PMain</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="primary-light-bgcolor"></span>
+            <span class="primary-light-bgcolor pointer" (click)="copyToClipboard('#EA435F')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Primary Light color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #ac1641</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --PMain</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #EA435F</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $PMain</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --PMain</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="secondary-bgcolor"></span>
+            <span class="secondary-bgcolor pointer" (click)="copyToClipboard('#2F9DB9')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Secondary color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #2f9eb9</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --SMain</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #2F9DB9</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $SMain</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --SMain</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="secondary-light-bgcolor"></span>
+            <span class="secondary-light-bgcolor pointer" (click)="copyToClipboard('#6DBBCE')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Secondary Light color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #2f9eb9</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --SLight</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #6DBBCE</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $SLight</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --SLight</p>
             </div>
         </div>
     </div>
     <div class="color-palette">
         <div class="items-block">
-            <span class="black-bgcolor"></span>
+            <span class="black-bgcolor pointer" (click)="copyToClipboard('#212121')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Black color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 87%</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Black</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #212121</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Black</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Black</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="grey-bgcolor"></span>
+            <span class="grey-bgcolor pointer" (click)="copyToClipboard('#757575')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Grey color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 54%</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Grey</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #757575</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Grey</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Grey</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="disable-bgcolor"></span>
+            <span class="disable-bgcolor pointer" (click)="copyToClipboard('#BDBDBD')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Disable color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 38%</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Disable</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #BDBDBD</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Disable</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Disable</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="ripple-bgcolor"></span>
+            <span class="ripple-bgcolor pointer" (click)="copyToClipboard('#E0E0E0')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Ripple color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 12%</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Ripple</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #E0E0E0</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Ripple</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Ripple</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="hover-bgcolor"></span>
+            <span class="hover-bgcolor pointer" (click)="copyToClipboard('#F2F2F2')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Hover color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #000 5%</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --Hover</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #F2F2F2</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $Hover</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --Hover</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="bg-std"></span>
+            <span class="bg-std pointer" (click)="copyToClipboard('#F8F8F8')"></span>
             <div class="content">
                 <p class="bold margin-top-0">Background default color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #f8f8f8</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --BackgroundDefault</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #F8F8F8</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $BackgroundDefault</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --BackgroundDefault</p>
             </div>
         </div>
     </div>
     <div class="color-palette">
         <div class="items-block">
-            <span class="rag-red-bgcolor"></span>
+            <span class="rag-red-bgcolor pointer" (click)="copyToClipboard('#F44336')"></span>
             <div class="content">
                 <p class="bold margin-top-0">RAG Red color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #f44336</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --RagRed</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #F44336</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $RagRed</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --RagRed</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="rag-amber-bgcolor"></span>
+            <span class="rag-amber-bgcolor pointer" (click)="copyToClipboard('#FFC108')"></span>
             <div class="content">
                 <p class="bold margin-top-0">RAG Amber color</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #ffc108</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --RagAmber</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">RGB: #FFC108</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $RagAmber</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --RagAmber</p>
             </div>
         </div>
         <div class="items-block">
-            <span class="rag-green-bgcolor"></span>
+            <span class="rag-green-bgcolor pointer" (click)="copyToClipboard('#348424')"></span>
             <div class="content">
                 <p class="bold margin-top-0">RAG Green color</p>
                 <p class="margin-0 grey-color" *ngIf="showCode">RGB: #348424</p>
-                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: --RagGreen</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">SCSS: $RagGreen</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">Var: --RagGreen</p>
             </div>
         </div>
     </div>

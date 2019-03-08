@@ -3,15 +3,15 @@
   "version": "0.0.1",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng serve",
+    "start": "npm run npm-pack && ng serve",
+    "build": "npm run build-lib && npm run build-css-lib && npm run npm-pack && ng serve",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "gulp": "gulp",
     "build-lib": "ng build design-system-initiafy",
-    "npm-pack": "cd dist/design-system-initiafy && npm pack",
-    "package": "npm run build-lib && npm run npm-pack"
+    "build-css-lib": "cd projects/design-system-initiafy && gulp",
+    "npm-pack": "cd dist/design-system-initiafy && npm pack"
   },
   "private": true,
   "dependencies": {
