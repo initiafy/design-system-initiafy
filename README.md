@@ -7,7 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - Navigate to the root of the library;
 - Run `npm install`;
-- Run `ng run build`.
+- Run `npm run build`.
 
 The library is ready to go.
 
