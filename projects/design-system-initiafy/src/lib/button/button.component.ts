@@ -22,9 +22,37 @@ export class ButtonComponent implements OnInit {
 
   getButtonClasses() {
     if (!!this.label) {
-      return 'button ' + this.design + ' ' + this.color;
+      return this.design + ' ' + this.color;
     }
-    return 'button single ' + this.design + ' ' + this.color;   
+    return 'single ' + this.design + ' ' + this.color;   
+  }
+
+  get designValue(): string {
+    return this.design;
+  }
+
+  get colorValue(): string {
+    return this.color;
+  }
+
+  get labelValue(): string {
+    return this.label;
+  }
+
+  get iconValue(): string {
+    return this.icon;
+  }
+
+  get iconFontValue(): string {
+    return this.iconFont;
+  }
+
+  get tooltipValue(): string {
+    return this.tooltip;
+  }
+
+  get disableValue(): boolean {
+    return this.disabled;
   }
 
 }
