@@ -1,7 +1,7 @@
 <div class="white-bgcolor radius-std shadow-std padding-std buttons">
     <div class="relative">
         <h1 class="default margin-top-0">Buttons</h1>
-        <i class="material-icons pointer absolute top right" (click)="toggleCode()">code</i>
+        <i class="material-icons pointer absolute top right" (click)="showCode = !showCode">code</i>
     </div>
     <p>Standard buttons: type: main/stroked/icon; colors: primary/secondary; with icon/label/tooltip; disabled/enabled.</p>
 
@@ -36,11 +36,12 @@
     <div id="code" class="margin-top-32" *ngIf="showCode">
         &lt;!-- Button code --> <br >
         &lt;initiafy-button  <br >
-        &nbsp; &nbsp; design="main"   <br >
-        &nbsp; &nbsp; color="primary"   <br >
-        &nbsp; &nbsp; label="Add Element"   <br >
-        &nbsp; &nbsp; icon="add" <br >
-        &nbsp; &nbsp; tooltip="Click to add element"  <br >
+        &nbsp; &nbsp; design="main|stroke|icon"   <br >
+        &nbsp; &nbsp; color="primary|secondary"   <br >
+        &nbsp; &nbsp; label="Add Element (optional)"   <br >
+        &nbsp; &nbsp; icon="add (optional)" iconFont="font-awesome-brand|font-awesome-solid (default: empty for material-icons)" <br >
+        &nbsp; &nbsp; tooltip="Click to add element (optional)"  <br >
+        &nbsp; &nbsp; disabled="true|false (option)"  <br >
         >&lt;/initiafy-button>
     </div>
     

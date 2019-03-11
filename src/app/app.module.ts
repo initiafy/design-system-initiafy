@@ -20,6 +20,8 @@ import { HelpersComponent } from './helpers/helpers.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StructureComponent } from './structure/structure.component';
 
+import { CommonService } from './common.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +46,9 @@ import { StructureComponent } from './structure/structure.component';
     DesignSystemInitiafyModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    CommonService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

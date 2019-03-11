@@ -17,8 +17,4 @@ export class TypographyComponent implements OnInit {
     return Array(n);
   }
 
-  toggleCode() {
-    this.showCode = !this.showCode;
-  }
-
 }

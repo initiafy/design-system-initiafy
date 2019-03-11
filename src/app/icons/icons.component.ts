@@ -13,8 +13,4 @@ export class IconsComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleCode() {
-    this.showCode = !this.showCode;
-  }
-
 }

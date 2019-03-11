@@ -13,8 +13,4 @@ export class ButtonsComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleCode() {
-    this.showCode = !this.showCode;
-  }
-
 }

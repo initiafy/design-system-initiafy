@@ -13,8 +13,4 @@ export class GridComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleCode() {
-    this.showCode = !this.showCode;
-  }
-
 }

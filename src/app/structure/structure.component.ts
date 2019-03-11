@@ -13,8 +13,4 @@ export class StructureComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleCode() {
-    this.showCode = !this.showCode;
-  }
-
 }
