@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./structure.component.scss']
 })
 export class StructureComponent implements OnInit {
+  showCode: boolean;
 
   constructor() { }
 

@@ -1,51 +1,48 @@
 <div class="white-bgcolor radius-std shadow-std padding-std buttons">
-    <h1 class="default margin-top-0">Buttons</h1>
-    <p>Standard buttons: type: main and stroked; colors: primary,secondary and disabled; with icon; with text.</p>
+    <div class="relative">
+        <h1 class="default margin-top-0">Buttons</h1>
+        <i class="material-icons pointer absolute top right" (click)="showCode = !showCode">code</i>
+    </div>
+    <p>Standard buttons: type: main/stroked/icon; colors: primary/secondary; with icon/label/tooltip; disabled/enabled.</p>
 
-    <div class="initiafy-grid three-columns">
-        <div class="initiafy-grid-row">
-            <h2>Primary buttons</h2>
-            <initiafy-button
-                color="primary"
-                text="Action"
-                icon="add"
-                type="main"
-                ></initiafy-button>
-            <button class="button main primary ripple"> Action </button>
-            <button class="button main primary ripple"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>
-            <button class="button stroke primary"> Action </button>
-        </div>
-        <div class="initiafy-grid-row">
-            <h2>Secondary buttons</h2>
-            <button class="button main secondary ripple"> Action </button>
-            <button class="button main secondary ripple"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>
-            <button class="button stroke secondary"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>        
-        </div>
-        <div class="initiafy-grid-row">
-            <h2>Disabled buttons</h2>
-            <button class="button disable"> Action </button>
-            <button class="button disable"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>
-        </div>
+    <h2>Main buttons</h2>
+    <div class="elements-margin-right">
+        <initiafy-button design="main" color="primary" label="Add Element" tooltip="Click to add element"></initiafy-button>
+        <initiafy-button design="main" color="primary" label="Add Element" icon="done"></initiafy-button>
+        <initiafy-button design="main" color="primary" icon="done"></initiafy-button>
+        <initiafy-button design="main" color="secondary" label="Add Element"></initiafy-button>
+        <initiafy-button design="main" color="secondary" label="Add Element" icon="done"></initiafy-button>
+        <initiafy-button design="main" color="secondary" icon="done"></initiafy-button>
+        <initiafy-button design="main" color="secondary" label="Add Element" icon="done" disabled="true"></initiafy-button>
+        <initiafy-button design="main" color="secondary" icon="done" disabled="true"></initiafy-button>
+    </div>
+    
+    <h2>Stroked buttons</h2>
+    <div class="elements-margin-right">
+        <initiafy-button design="stroke" color="primary" label="Add Element" icon="done"></initiafy-button>
+        <initiafy-button design="stroke" color="primary" icon="done"></initiafy-button>
+        <initiafy-button design="stroke" color="secondary" label="Add Element" icon="done"></initiafy-button>
+        <initiafy-button design="stroke" color="secondary" icon="done"></initiafy-button>
+        <initiafy-button design="stroke" color="secondary" label="Add Element" icon="done"  disabled="true"></initiafy-button>
+        <initiafy-button design="stroke" color="secondary" icon="done" disabled="true"></initiafy-button>
+    </div>
+    
+    <h2>Icon buttons</h2>
+    <div class="elements-margin-right">
+        <initiafy-button design="icon" icon="done"></initiafy-button>
+        <initiafy-button design="icon" icon="done" disabled="true"></initiafy-button>
     </div>
 
-    <div class="initiafy-grid three-columns">
-        <div class="initiafy-grid-row">
-            <h2>Primary buttons</h2>
-            <!--<lib-button></lib-button>-->
-            <button class="button main primary ripple"> Action </button>
-            <button class="button main primary ripple"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>
-            <button class="button stroke primary"> Action </button>
-        </div>
-        <div class="initiafy-grid-row">
-            <h2>Secondary buttons</h2>
-            <button class="button main secondary ripple"> Action </button>
-            <button class="button main secondary ripple"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>
-            <button class="button stroke secondary"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>        
-        </div>
-        <div class="initiafy-grid-row">
-            <h2>Disabled buttons</h2>
-            <button class="button disable"> Action </button>
-            <button class="button disable"> <i _ngcontent-c30="" class="icon mat-icon material-icons" role="img" aria-hidden="true">add</i> Action </button>
-        </div>
+    <div id="code" class="margin-top-32" *ngIf="showCode">
+        &lt;!-- Button code --> <br >
+        &lt;initiafy-button  <br >
+        &nbsp; &nbsp; design="main|stroke|icon"   <br >
+        &nbsp; &nbsp; color="primary|secondary"   <br >
+        &nbsp; &nbsp; label="Add Element (optional)"   <br >
+        &nbsp; &nbsp; icon="add (optional)" iconFont="font-awesome-brand|font-awesome-solid (default: empty for material-icons)" <br >
+        &nbsp; &nbsp; tooltip="Click to add element (optional)"  <br >
+        &nbsp; &nbsp; disabled="true|false (option)"  <br >
+        >&lt;/initiafy-button>
     </div>
+    
 </div>

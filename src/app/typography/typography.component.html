@@ -1,24 +1,55 @@
 <div class="white-bgcolor radius-std shadow-std padding-std typography">
-    <h1 class="default margin-top-0">Typography</h1>
-    <p>Family Lato imported via Google Fonts. Color #808080.</p>
+    <div class="relative">
+        <h1 class="default margin-top-0">Typography</h1>
+        <i class="material-icons pointer absolute top right" (click)="showCode = !showCode">code</i>
+    </div>    
+    <p>Default family: Lato; imported via Google Fonts.</p>
 
-    <div class="initiafy-grid two-columns margin-top-32">
-        <div class="initiafy-grid-row white-bgcolor bg-std radius-std shadow-std padding-std">
-            <h1 class="margin-top-0">[H1] The quick brown fox jumps over the lazy dog</h1>
-            <p>[p] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. </p>
-        </div>  
-        <div class="initiafy-grid-row white-bgcolor bg-std radius-std shadow-std padding-std">
-            <h2 class="margin-top-0">[H2] The quick brown fox jumps over the lazy dog</h2>
-            <p>[p] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. </p>
-        </div>
-        <div class="initiafy-grid-row white-bgcolor bg-std radius-std shadow-std padding-std">
-            <h3 class="margin-top-0">[H3] The quick brown fox jumps over the lazy dog</h3>
-            <p>[p] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. </p>
-        </div>
-        <div class="initiafy-grid-row white-bgcolor bg-std radius-std shadow-std padding-std">
-            <h4 class="margin-top-0">[H4] The quick brown fox jumps over the lazy dog</h4>
-            <p>[p] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. </p>
-        </div>
+    <h2>Headings</h2>
+    <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
+        <h1 class="margin-top-0">The quick brown fox jumps over the lazy dog</h1>
+        <h2 class="margin-top-0">The quick brown fox jumps over the lazy dog</h2>
+        <h3 class="margin-top-0">The quick brown fox jumps over the lazy dog</h3>
+        <h4 class="margin-top-0">The quick brown fox jumps over the lazy dog</h4>
+    </div>
+    <div id="code" class="margin-top-8" *ngIf="showCode">
+        &lt;initiafy-heading level="h1"> The quick brown fox jumps over the lazy dog &lt;/initiafy-heading> <br />
+        &lt;initiafy-heading level="h2"> The quick brown fox jumps over the lazy dog &lt;/initiafy-heading> <br />
+        &lt;initiafy-heading level="h3"> The quick brown fox jumps over the lazy dog &lt;/initiafy-heading> <br />
+        &lt;initiafy-heading level="h4"> The quick brown fox jumps over the lazy dog &lt;/initiafy-heading> <br />
+    </div>
+
+    <h2>Paragraphs</h2>
+    <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. </p>
+    </div>
+    <div id="code" class="margin-top-8" *ngIf="showCode">
+        &lt;initiafy-paragraph> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. &lt;/initiafy-paragraph> <br />
+    </div>
+
+    <h2>Style</h2>
+    <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
+        <p> Lorem ipsum dolor sit amet <span class="bold">bold text</span> onsectetur adipiscing elit.</p>
+        <p> Lorem ipsum dolor sit amet <span class="bolder">bolder text</span> onsectetur adipiscing elit.</p>
+        <p> Lorem ipsum dolor sit amet <span class="italic">italic text</span> onsectetur adipiscing elit.</p>
+        <p> Lorem ipsum dolor sit amet <span class="underline">underline text</span> onsectetur adipiscing elit.</p>
+        <p> Lorem ipsum dolor sit amet <span class="uppercase">uppercase text</span> onsectetur adipiscing elit.</p>
+        <p> Lorem ipsum dolor sit amet <span class="lowercase">lowercase text</span> onsectetur adipiscing elit.</p>
+    </div>
+    <div id="code" class="margin-top-8" *ngIf="showCode">
+        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text bold>bold text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
+        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text bolder>bolder text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
+        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text italic>"italic text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
+        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text underline>underline text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
+        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text uppercase>uppercase text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
+        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text lowercase>lowercase text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
+    </div>
+
+    <h2>Sizes</h2>
+    <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
+        <span *ngFor="let item of array(50); let i = index">
+            <span *ngIf="i > 2" class="text{{ (i + 1) * 2 }} margin-0">Text with font size {{ (i + 1) * 2 }}px | </span>
+        </span>
     </div>
 
 </div>

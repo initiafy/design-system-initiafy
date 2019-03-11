@@ -1,65 +1,178 @@
-<div class="white-bgcolor radius-std shadow-std padding-std icons">
-    <h1 class="default margin-top-0">Icons</h1>
+<div class="white-bgcolor radius-std shadow-std padding-std">
+    <div class="relative">
+        <h1 class="default margin-top-0">Icons</h1>
+        <i class="material-icons pointer absolute top right" (click)="showCode = !showCode">code</i>
+    </div>
     <p>Icons pre-selected for the platform.</p>
-    <i class="material-icons">
-    add
-    </i>
-    <i class="material-icons">
-    arrow_back
-    </i>
-    <i class="material-icons">
-    done
-    </i>
-    <i class="material-icons">
-    chevron_left
-    </i>
-    <i class="material-icons">
-    close
-    </i>
-    <i class="material-icons">
-    edit
-    </i>
-    <i class="material-icons">
-    delete_outline
-    </i>
-    <i class="material-icons">
-    input
-    </i>
-    <i class="material-icons">
-    help_outline
-    </i>
-    <i class="material-icons">
-    more_vert
-    </i>
-    <i class="material-icons">
-    list
-    </i>
-    <i class="material-icons">
-    search
-    </i>
-    <i class="material-icons">
-    business
-    </i>
-    <i class="material-icons">
-    access_time
-    </i>
-    <i class="material-icons">
-    cancel
-    </i>
-    <i class="material-icons">
-    vpn_key
-    </i>
-    <i class="material-icons">
-    cloud_download
-    </i>
-    <i class="material-icons">
-    person_add
-    </i>
-    <i class="material-icons">
-    person
-    </i>
-    <i class="material-icons">
-    notifications_none
-    </i>
+    <div class="color-palette icons margin-top-32">
+        <div class="items-block">
+            <initiafy-icon icon="add"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Add icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="add">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="remove"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Remove icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="remove">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="arrow_back"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Back icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="arrow_back">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="arrow_forward"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Forward icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="arrow_forward">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="chevron_left"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Left icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="chevron_left">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="chevron_right"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Right icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="chevron_right">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="done"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Done icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="done">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="close"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Close icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="close">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="edit"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Edit icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="edit">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="delete_outline"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Delete icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="delete_outline">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="input"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Input icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="input">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="help_outline"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Help icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="help_outline">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="more_vert"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Menu icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="more_vert">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="list"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">List icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="list">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="search"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Search icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="search">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="business"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Business icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="business">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="access_time"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Time icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="access_time">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="cancel"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Cancel icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="cancel">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="vpn_key"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Password icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="vpn_key">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="cloud_download"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Download icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="cloud_download">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="person_add"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Add user icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="person_add">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="person"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">User icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="person">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="notifications_none"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Notification icon</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="notifications_none">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+        <div class="items-block">
+            <initiafy-icon icon="address-card" iconFont="font-awesome-solid"></initiafy-icon>
+            <div class="content">
+                <p class="bold margin-top-0">Address card</p>
+                <p class="margin-0 grey-color" *ngIf="showCode">&lt;initiafy-icon icon="address-card" iconFont="font-awesome-solid">&lt;/initiafy-icon></p>
+            </div>
+        </div>
+    </div>
 
 </div>

@@ -28,7 +28,8 @@
 .bgOverlayer {
     width: 100%;
     min-height: 100%;
-    background-color: var(--BackgroundPage);
+    background-color: $BackgroundDefault;
+    background-color: var(--BackgroundDefault);
     box-sizing: border-box;
     display: flex;
     justify-content: center;

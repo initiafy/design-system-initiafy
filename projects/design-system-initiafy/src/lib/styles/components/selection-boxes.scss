@@ -10,10 +10,12 @@
         height: 210px;
         width: 210px;
         margin: $spacing;
-        color: rgba(0, 0, 0, 0.54);
+        color: $Grey;
+        color: var(--Grey);
         cursor: pointer;
 
         &:hover, &:active, &:focus {
+            background-color: $Hover;
             background-color: var(--Hover);
             @include shadow-btn();            
         }

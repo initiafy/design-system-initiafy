@@ -1,4 +1,5 @@
 @import "../imports/mixins";
+@import "../imports/variables";
 
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset !important;
@@ -10,26 +11,89 @@ input:-webkit-autofill {
   outline: none;
   border-radius: 100px;
   font-weight: 500;
+  position: relative;
   cursor: pointer;
 
   &.main.primary {
-    @include button-main(var(--PMain));
+    @include button-main(var(--PMain), $PMain);
+    .mat-ripple-element {
+      background: rgba(255,255,255,0.1);;
+    }
   }
 
   &.main.secondary {
-    @include button-main(var(--SMain));
+    @include button-main(var(--SMain), $SMain);
+    .mat-ripple-element {
+      background: rgba(255,255,255,0.1);;
+    }
   }
 
   &.stroke.primary {
-    @include button-stroke(var(--PMain));
+    @include button-stroke(var(--PMain), $PMain);
+    .mat-ripple-element {
+      background-color: $PMain;
+      background-color: var(--PMain);
+      opacity: .1
+    }
+    &:hover .mat-button-focus-overlay {
+      background-color: $PMain;
+      background-color: var(--PMain);
+      opacity: .04;
+    }
   }
 
   &.stroke.secondary {
-    @include button-stroke(var(--SMain));
+    @include button-stroke(var(--SMain), $SMain);
+    .mat-ripple-element {
+      background-color: $SMain;
+      background-color: var(--SMain);
+      opacity: .1;
+    }
+    &:hover .mat-button-focus-overlay {
+      background-color: $SMain;
+      background-color: var(--SMain);
+      opacity: .04;
+    }
   }
 
-  &.disable {
-    @include button-disable(var(--Disable));
+  &.single {
+    padding: 0 6px;
+    min-width: 40px;  
+  }
+
+  &.icon {
+    border-color: transparent;
+    background-color: transparent;
+    color: $Grey;
+    color: var(--Grey);
+    &:hover {
+      background-color: $Hover;
+      background-color: var(--Hover);
+      box-shadow: none;
+    }
+    &[disabled], 
+    &[disabled][disabled] {
+      background-color: transparent;
+      color: $Grey;
+      color: var(--Grey);
+      cursor: default;
+    }  
+    .mat-ripple-element {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &[disabled], 
+  &[disabled][disabled] {
+    border-color: transparent;
+    background-color: $Ripple;
+    background-color: var(--Ripple);
+    color: $Grey;
+    color: var(--Grey);
+    cursor: default;
+    &:hover {
+      box-shadow: none;
+    }
   }
 
   &:hover {
@@ -40,20 +104,22 @@ input:-webkit-autofill {
     border: 0;
   }
 
-  &.single {
-    padding: 0 8px;
+  .mat-button-wrapper {
+    display: flex;
+    justify-content: center;
   }
 
-  span {
+  i {
     display: inline-block;
     vertical-align: middle;
+    font-size: 24px;
+    margin-top: -2px;
   }
+}
 
-  .icon {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 20px;
-  }
+.button[disabled] .mat-button-focus-overlay, 
+.button[disabled][disabled] .mat-button-focus-overlay {
+  background-color: transparent;
 }
 
 .noselect {
@@ -80,5 +146,6 @@ input[type=number]::-webkit-inner-spin-button {
   width: 20px;
   height: 20px;
   border: none;
+  background-color: $BackgroundDefault;
   background: var(--BackgroundDefault);
 }

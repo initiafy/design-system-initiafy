@@ -11,21 +11,18 @@
 }
 
 /* Fill buttons */
-@mixin button-main($color) {
-    border: none;
+@mixin button-main($var, $color) {
+    border: 2px solid $color;
+    border: 2px solid $var;
     background-color: $color;
+    background-color: $var;
     color: #ffffff;
 }
 
-@mixin button-stroke($color) {
+@mixin button-stroke($var, $color) {
     border: 2px solid $color;
-    background: #ffffff;
+    border: 2px solid $var;
+    background-color: #ffffff;
     color: $color;
-}
-
-@mixin button-disable($color) {
-    border: 2px solid $color;
-    background: #ffffff;
-    color: $color;
-    cursor: default;
+    color: $var;
 }

@@ -5,14 +5,14 @@
   margin: $spacing;
 }
 
-.margin-std-half {
-  margin: 12px;
-}
-
 @media only screen and (max-width: $media-tablet) {
   .margin-std {
-    margin: 12px; 
+    margin: $spacing-mobile; 
   }
+}
+
+.margin-std-half {
+  margin: $spacing-mobile;
 }
 
 /* Margin options 0/4/8/12/16/20/24/28/32 */
@@ -73,18 +73,9 @@
 
 @media only screen and (max-width: $media-tablet) {
   .elements-margin-right > * {
-      margin-right: 12px; 
+      margin-right: $spacing-mobile; 
   }
   .elements-margin-left > * {
-      margin-left: 12px; 
-  }
-}
-
-@media only screen and (max-width: $media-mobile) {
-  .elements-margin-right > * {
-      margin-right: 6px; 
-  }
-  .elements-margin-left > * {
-      margin-left: 6px; 
+      margin-left: $spacing-mobile; 
   }
 }
