@@ -3,7 +3,6 @@
 .mat-badge-content {
   font-weight: 600;
   font-size: 12px;
-  font-family: Lato, sans-serif;
 }
 
 .mat-badge-small .mat-badge-content {
@@ -15,90 +14,81 @@
 }
 
 .mat-h1, .mat-headline, .mat-typography h1 {
-  font: 400 24px/32px Lato, sans-serif;
+  font: 400 24px/32px;
   margin: 0 0 16px;
 }
 
 .mat-h2, .mat-title, .mat-typography h2 {
-  font: 500 20px/32px Lato, sans-serif;
+  font: 500 20px/32px;
   margin: 0 0 16px;
 }
 
 .mat-h3, .mat-subheading-2, .mat-typography h3 {
-  font: 400 16px/28px Lato, sans-serif;
+  font: 400 16px/28px;
   margin: 0 0 16px;
 }
 
 .mat-h4, .mat-subheading-1, .mat-typography h4 {
-  font: 400 15px/24px Lato, sans-serif;
+  font: 400 15px/24px;
   margin: 0 0 16px;
 }
 
 .mat-h5, .mat-typography h5 {
-  font: 400 11.62px/20px Lato, sans-serif;
+  font: 400 11.62px/20px;
   margin: 0 0 12px;
 }
 
 .mat-h6, .mat-typography h6 {
-  font: 400 9.38px/20px Lato, sans-serif;
+  font: 400 9.38px/20px;
   margin: 0 0 12px;
 }
 
 .mat-body-strong, .mat-body-2 {
-  font: 500 14px/24px Lato, sans-serif;
+  font: 500 14px/24px;
 }
 
 .mat-body, .mat-body-1, .mat-typography {
-  font: 400 14px/20px Lato, sans-serif;
+  font: 400 14px/20px;
 }
 .mat-body p, .mat-body-1 p, .mat-typography p {
   margin: 0 0 12px;
 }
 
 .mat-small, .mat-caption {
-  font: 400 12px/20px Lato, sans-serif;
+  font: 400 12px/20px;
 }
 
 .mat-display-4, .mat-typography .mat-display-4 {
-  font: 300 112px/112px Lato, sans-serif;
+  font: 300 112px/112px;
   margin: 0 0 56px;
   letter-spacing: -0.05em;
 }
 
 .mat-display-3, .mat-typography .mat-display-3 {
-  font: 400 56px/56px Lato, sans-serif;
+  font: 400 56px/56px;
   margin: 0 0 64px;
   letter-spacing: -0.02em;
 }
 
 .mat-display-2, .mat-typography .mat-display-2 {
-  font: 400 45px/48px Lato, sans-serif;
+  font: 400 45px/48px;
   margin: 0 0 64px;
   letter-spacing: -0.005em;
 }
 
 .mat-display-1, .mat-typography .mat-display-1 {
-  font: 400 34px/40px Lato, sans-serif;
+  font: 400 34px/40px;
   margin: 0 0 64px;
 }
 
 .mat-bottom-sheet-container {
-  font: 400 14px/20px Lato, sans-serif;
+  font: 400 14px/20px;
 }
 
 .mat-button, .mat-raised-button, .mat-icon-button, .mat-stroked-button,
 .mat-flat-button, .mat-fab, .mat-mini-fab {
-  font-family: Lato, sans-serif;
   font-size: 14px;
   font-weight: 500;
-}
-
-.mat-button-toggle {
-  font-family: Lato, sans-serif;
-}
-
-.mat-card {
-  font-family: Lato, sans-serif;
 }
 
 .mat-card-title {
@@ -115,10 +105,6 @@
   font-size: 14px;
 }
 
-.mat-checkbox {
-  font-family: Lato, sans-serif;
-}
-
 .mat-checkbox-layout .mat-checkbox-label {
   line-height: 24px;
 }
@@ -132,10 +118,6 @@
   font-size: 18px;
 }
 
-.mat-table {
-  font-family: Lato, sans-serif;
-}
-
 .mat-header-cell {
   font-size: 12px;
   font-weight: 500;
@@ -143,10 +125,6 @@
 
 .mat-cell, .mat-footer-cell {
   font-size: 14px;
-}
-
-.mat-calendar {
-  font-family: Lato, sans-serif;
 }
 
 .mat-calendar-body {
@@ -165,24 +143,22 @@
 }
 
 .mat-dialog-title {
-  font: 500 20px/32px Lato, sans-serif;
+  font: 500 20px/32px;
 }
 
 .mat-expansion-panel-header {
-  font-family: Lato, sans-serif;
   font-size: 15px;
   font-weight: 400;
 }
 
 .mat-expansion-panel-content {
-  font: 400 14px/20px Lato, sans-serif;
+  font: 400 14px/20px;
 }
 
 .mat-form-field {
   font-size: inherit;
   font-weight: 400;
   line-height: 1.125;
-  font-family: Lato, sans-serif;
 }
 
 .mat-form-field-wrapper {
@@ -340,42 +316,24 @@ input.mat-input-element {
 }
 
 .mat-menu-item {
-  font-family: Lato, sans-serif;
   font-size: 14px;
   font-weight: 400;
 }
 
 .mat-paginator,
 .mat-paginator-page-size .mat-select-trigger {
-  font-family: Lato, sans-serif;
   font-size: 12px;
-}
-
-.mat-radio-button {
-  font-family: Lato, sans-serif;
-}
-
-.mat-select {
-  font-family: Lato, sans-serif;
 }
 
 .mat-select-trigger {
   height: 1.125em;
 }
 
-.mat-slide-toggle-content {
-  font-family: Lato, sans-serif;
-}
-
 .mat-slider-thumb-label-text {
-  font-family: Lato, sans-serif;
   font-size: 12px;
   font-weight: 500;
 }
 
-.mat-stepper-vertical, .mat-stepper-horizontal {
-  font-family: Lato, sans-serif;
-}
 
 .mat-step-label {
   font-size: 14px;
@@ -395,12 +353,7 @@ input.mat-input-element {
   font-weight: 500;
 }
 
-.mat-tab-group {
-  font-family: Lato, sans-serif;
-}
-
 .mat-tab-label, .mat-tab-link {
-  font-family: Lato, sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
@@ -412,12 +365,11 @@ input.mat-input-element {
 .mat-toolbar h4,
 .mat-toolbar h5,
 .mat-toolbar h6 {
-  font: 500 20px/32px Lato, sans-serif;
+  font: 500 20px/32px;
   margin: 0;
 }
 
 .mat-tooltip {
-  font-family: Lato, sans-serif;
   font-size: 10px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -427,14 +379,6 @@ input.mat-input-element {
   font-size: 14px;
   padding-top: 8px;
   padding-bottom: 8px;
-}
-
-.mat-list-item {
-  font-family: Lato, sans-serif;
-}
-
-.mat-list-option {
-  font-family: Lato, sans-serif;
 }
 
 .mat-list .mat-list-item, .mat-nav-list .mat-list-item, .mat-selection-list .mat-list-item {
@@ -464,7 +408,6 @@ input.mat-input-element {
   font-size: 14px;
 }
 .mat-list .mat-subheader, .mat-nav-list .mat-subheader, .mat-selection-list .mat-subheader {
-  font-family: Lato, sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
@@ -496,22 +439,19 @@ input.mat-input-element {
   font-size: 12px;
 }
 .mat-list[dense] .mat-subheader, .mat-nav-list[dense] .mat-subheader, .mat-selection-list[dense] .mat-subheader {
-  font-family: Lato, sans-serif;
   font-size: 12px;
   font-weight: 500;
 }
 
 .mat-option {
-  font-family: Lato, sans-serif;
   font-size: 16px;
 }
 
 .mat-optgroup-label {
-  font: 500 14px/24px Lato, sans-serif;
+  font: 500 14px/24px;
 }
 
 .mat-simple-snackbar {
-  font-family: Lato, sans-serif;
   font-size: 14px;
 }
 
@@ -520,10 +460,6 @@ input.mat-input-element {
   font-family: inherit;
   font-size: inherit;
   font-weight: 500;
-}
-
-.mat-tree {
-  font-family: Lato, sans-serif;
 }
 
 .mat-tree-node,
