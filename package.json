@@ -11,7 +11,8 @@
     "gulp": "gulp",
     "build-lib": "ng build design-system-initiafy",
     "build-css-lib": "cd projects/design-system-initiafy && gulp",
-    "npm-pack": "cd dist/design-system-initiafy && npm pack"
+    "npm-pack": "cd dist/design-system-initiafy && npm pack",
+    "docs": "typedoc --theme markdown --mode file --out src/assets/docs ./projects/design-system-initiafy/src/lib/button/button.component.ts"
   },
   "private": true,
   "dependencies": {
@@ -58,6 +59,8 @@
     "tsickle": ">=0.34.0",
     "tslib": "^1.9.0",
     "tslint": "~5.11.0",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.1.27",
     "typescript": "~3.2.2"
   }
 }

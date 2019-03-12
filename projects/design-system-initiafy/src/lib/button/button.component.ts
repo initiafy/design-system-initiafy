@@ -1,11 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-/**
- * A quite wonderful function.
- * @param {object} - privacy gown
- * @param {object} - security
- * @returns {survival}
- */
 @Component({
   selector: 'initiafy-button',
   templateUrl: './button.component.html',
