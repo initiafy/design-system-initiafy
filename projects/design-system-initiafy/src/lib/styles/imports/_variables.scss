@@ -8,7 +8,10 @@ $media-desktop: 1200px;
 $spacing: 24px;
 $spacing-mobile: 16px;
 
-/* Static Colors for IE 8 */
+/* Border radius */
+$border-std: 4px;
+
+/* Static Colors for IE */
 $PLight: hsl(350,79.9%,59%);
 $PMain: hsl(343,77.3%,38%);
 $SLight: hsl(192,49.7%,61.8%);
@@ -22,3 +25,7 @@ $BackgroundDefault: #f8f8f8;
 $RagRed: #f44336;
 $RagAmber: #ffc108;
 $RagGreen: #348424;
+$GoogleColor: #d34836;
+$FacebookColor: #3b5998;
+$LinkedinColor: #0077b5;
+$TwitterColor: #0084b4;

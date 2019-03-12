@@ -15,14 +15,56 @@
 .padding-std {
   padding: $spacing;
 }
-
+.padding-x-std {
+  padding-left: $spacing;
+  padding-right: $spacing;
+}
+.padding-y-std {
+  padding-bottom: $spacing;
+  padding-top: $spacing;
+}
+.padding-bottom-std {
+  padding-bottom: $spacing;
+}
+.padding-top-std {
+  padding-top: $spacing;
+}
+.padding-left-std {
+  padding-left: $spacing;
+}
+.padding-right-std {
+  padding-right: $spacing;
+}
 .padding-std-half {
   padding: $spacing-mobile;
 }
 
 @media only screen and (max-width: $media-tablet) {
   .padding-std {
-      padding: $spacing-mobile; 
+    padding: $spacing-mobile; 
+  }
+  .padding-x-std {
+    padding-left: $spacing-mobile;
+    padding-right: $spacing-mobile;
+  }
+  .padding-y-std {
+    padding-bottom: $spacing;
+    padding-top: $spacing;
+  }
+  .padding-bottom-std {
+    padding-bottom: $spacing-mobile;
+  }
+  .padding-top-std {
+    padding-top: $spacing-mobile;
+  }
+  .padding-left-std {
+    padding-left: $spacing-mobile;
+  }
+  .padding-right-std {
+    padding-right: $spacing-mobile;
+  }
+  .padding-std-half {
+    padding: $spacing-mobile;
   }
 }
 

@@ -17,7 +17,7 @@
 }
 
 /* Box */
-.box-dashed {
+.box-dashed, .initiafy-card-dashed{
     cursor: default;
     display: flex;
     justify-content: space-around;
@@ -32,8 +32,24 @@
     color: var(--Grey);
 }
 
+/* Card */
+.initiafy-card {
+    cursor: default;
+    padding: $spacing;
+    border-radius: $border-std;
+    background-color: #fff;
+    color: $Black;
+    color: var(--Black);
+    @include shadow-std();
+}
+
+@media only screen and (max-width: $media-mobile) {
+    .initiafy-card {
+        padding: $spacing-mobile;
+    }
+}
+
 /* Shadow */
 .shadow-std {
     @include shadow-std();
 }
-

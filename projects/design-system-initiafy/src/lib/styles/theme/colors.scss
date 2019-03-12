@@ -5,6 +5,10 @@ body {
   color: var(--Black);
 }
 
+a {
+  color: #1a73e8;
+}
+
 .primaryColor, .primary-color {
   color: $PMain;
   color: var(--PMain);
@@ -192,6 +196,7 @@ body {
 
 /* Standards */
 .bg-hover, .bg-hover-hover:hover {
+  background: $Hover;
   background: var(--Hover);
 }
 
@@ -215,8 +220,24 @@ body {
 }
 
 .warnColor {
-  color: #f44336;
+  color: $RagRed;
+  color: var(--RagRed);
 }
 .warnColorBG {
-  background-color: #f44336;
+  background-color: $RagRed;
+  background-color: var(--RagRed);
+}
+
+/* Social Media */
+.google-bgcolor {
+  background-color: $GoogleColor;
+}
+.facebook-bgcolor {
+  background-color: $FacebookColor;
+}
+.linkedin-bgcolor {
+  background-color: $LinkedinColor;
+}
+.twitter-bgcolor {
+  background-color: $TwitterColor;
 }
