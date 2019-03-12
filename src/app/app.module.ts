@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DesignSystemInitiafyModule } from 'design-system-initiafy';
@@ -21,6 +21,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { StructureComponent } from './structure/structure.component';
 
 import { CommonService } from './common.service';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,11 +45,25 @@ import { CommonService } from './common.service';
     BrowserModule,
     AppRoutingModule,
     DesignSystemInitiafyModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MarkdownModule.forRoot({
+      loader: HttpClient,
+      markedOptions: {
+        provide: MarkedOptions,
+        useValue: {
+          gfm: true,
+          tables: true,
+          breaks: false,
+          pedantic: false,
+          sanitize: false,
+          smartLists: true,
+          smartypants: false
+        }
+      }
+    })
   ],
-  providers: [
-    CommonService
-  ],
+  providers: [CommonService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
