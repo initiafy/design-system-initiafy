@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import {
   DocumentationService,
   Child
-} from 'src/app/core/documentation.service';
+} from 'src/app/core/documentation/documentation.service';
 
 @Component({
   selector: 'app-documentation',
@@ -38,6 +38,6 @@ export class DocumentationComponent implements OnInit {
     this.constructors = this.componentDocs.children.filter(
       x => x.kindString === 'Constructor'
     );
-    console.log(this.componentDocs);
+    console.log(this.componentDocs.children);
   }
 }

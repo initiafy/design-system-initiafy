@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "npm run npm-pack && ng serve",
-    "build": "npm run build-lib && npm run build-css-lib && npm run npm-pack && ng serve",
+    "build": "npm run docs && npm run build-lib && npm run build-css-lib && npm run npm-pack && ng serve",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

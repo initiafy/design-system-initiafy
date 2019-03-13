@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DocumentationService } from './core/documentation.service';
+import { DocumentationService } from './core/documentation/documentation.service';
 
 @Component({
   selector: 'app-root',

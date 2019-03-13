@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DocumentationService, Child } from '../core/documentation.service';
 
 @Component({
   selector: 'app-buttons',
