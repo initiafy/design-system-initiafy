@@ -70,7 +70,7 @@ export class DocumentationComponent implements OnInit {
       if (index > 0) {
         str = str + ' | ';
       }
-      str = str + '\'' + element.value + '\'';
+      str = str + '\"' + element.value + '\"';
     });
     return str;
   }
