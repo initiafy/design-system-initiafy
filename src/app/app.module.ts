@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
 import { DesignSystemInitiafyModule } from 'design-system-initiafy';
@@ -66,6 +67,7 @@ export function startupServiceFactory(
     BrowserAnimationsModule,
     HttpClientModule,
     MatExpansionModule,
+    MatTableModule,
     MarkdownModule.forRoot({
       loader: HttpClient,
       markedOptions: {

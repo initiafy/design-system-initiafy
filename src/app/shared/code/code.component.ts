@@ -7,16 +7,13 @@ import { MatAccordion, MatExpansionPanel } from '@angular/material/expansion';
   styleUrls: ['./code.component.scss']
 })
 export class CodeComponent implements OnInit {
-
-  @ViewChild('codeExpansionPanel') accordion: MatExpansionPanel;
+  @ViewChild('codeExpansionPanel') expansionPanel: MatExpansionPanel;
   @Input() title: string;
   showCode: boolean;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-    console.log(this.accordion);
-    this.accordion.open();
+    this.expansionPanel.open();
   }
-
 }

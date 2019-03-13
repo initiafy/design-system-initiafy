@@ -2,23 +2,37 @@
   {{ componentDocs.name }}
 </h1>
 <ng-content></ng-content>
-<h3>Implements</h3>
-<ul>
-  <li *ngFor="let impls of componentDocs.implementedTypes">{{ impls.name }}</li>
-</ul>
-<h3>Metadata</h3>
-<ul>
-  <li *ngFor="let decor of componentDocs.decorators">{{ decor.arguments.obj }}</li>
-</ul>
-<h3>Properties</h3>
-<ul>
-  <li *ngFor="let prop of properties">{{ prop.name }}</li>
-</ul>
+<div class="flex align-items-center">
+  <h3 class="margin-right-16">Selector:</h3>
+  <markdown>{{ selector }}</markdown>
+</div>
+<ng-container *ngIf="inputs.length > 0">
+  <h3>Inputs</h3>
+  <table mat-table [dataSource]="inputs">
+    <!-- Position Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef>Name</th>
+      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="type">
+      <th mat-header-cell *matHeaderCellDef>Type</th>
+      <td mat-cell *matCellDef="let element">{{ element.type.name }}</td>
+    </ng-container>
+    <ng-container matColumnDef="defaultValue">
+      <th mat-header-cell *matHeaderCellDef>Default Value</th>
+      <td mat-cell *matCellDef="let element">{{ element.defaultValue }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</ng-container>
+<ng-container *ngIf="outputs.length > 0">
+  <h3>Outputs</h3>
+  <ul>
+    <li *ngFor="let prop of outputs">{{ prop.name }}</li>
+  </ul>
+</ng-container>
 <h3>Methods</h3>
 <ul>
   <li *ngFor="let prop of methods">{{ prop.name }}</li>
-</ul>
-<h3>Properties</h3>
-<ul>
-  <li *ngFor="let prop of properties">{{ prop.name }}</li>
 </ul>
