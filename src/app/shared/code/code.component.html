@@ -1,0 +1,11 @@
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      <i class="material-icons">code</i>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <markdown
+    [src]="'/assets/examples/' + title + '.html'"
+    lineNumbers
+  ></markdown>
+</mat-expansion-panel>

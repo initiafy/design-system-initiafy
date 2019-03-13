@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, APP_INITIALIZER } from '@angular/core';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ import { CommonService } from './common.service';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { DocumentationComponent } from './shared/documentation/documentation.component';
 import { DocumentationService } from './core/documentation.service';
+import { CodeComponent } from './shared/code/code.component';
 
 export function startupServiceFactory(
   startupService: DocumentationService
@@ -48,7 +50,8 @@ export function startupServiceFactory(
     DashboardComponent,
     StructureComponent,
     ContentComponent,
-    DocumentationComponent
+    DocumentationComponent,
+    CodeComponent
   ],
   imports: [
     BrowserModule,
@@ -56,6 +59,7 @@ export function startupServiceFactory(
     DesignSystemInitiafyModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatExpansionModule,
     MarkdownModule.forRoot({
       loader: HttpClient,
       markedOptions: {

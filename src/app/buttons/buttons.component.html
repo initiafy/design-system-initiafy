@@ -1,16 +1,5 @@
 <div class="white-bgcolor radius-std shadow-std padding-std buttons">
-  <div class="relative">
-    <i class="material-icons pointer top right" (click)="showCode = !showCode"
-      >code</i
-    >
-  </div>
-
-  <markdown
-    *ngIf="showCode"
-    [src]="'/assets/examples/' + title + '.html'"
-    lineNumbers
-  ></markdown>
-
+  <app-code [title]="title"></app-code>
   <app-documentation [componentName]="componentName"></app-documentation>
 
   <h2>Main buttons</h2>
