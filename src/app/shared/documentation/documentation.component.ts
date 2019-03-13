@@ -14,6 +14,10 @@ export class DocumentationComponent implements OnInit {
 
   private componentDocs: Child;
 
+  public properties: Child[] = [];
+  public methods: Child[] = [];
+  public constructors: Child[] = [];
+
   constructor(private documentationService: DocumentationService) {}
 
   ngOnInit() {
@@ -25,5 +29,15 @@ export class DocumentationComponent implements OnInit {
         }" ❗❗❗`
       );
     }
+    this.properties = this.componentDocs.children.filter(
+      x => x.kindString === 'Property'
+    );
+    this.methods = this.componentDocs.children.filter(
+      x => x.kindString === 'Method'
+    );
+    this.constructors = this.componentDocs.children.filter(
+      x => x.kindString === 'Constructor'
+    );
+    console.log(this.componentDocs);
   }
 }

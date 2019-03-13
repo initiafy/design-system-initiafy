@@ -1,4 +1,24 @@
-<p>
-  documentation works!
-  {{componentName}}
-</p>
+<h1>
+  {{ componentDocs.name }}
+</h1>
+<ng-content></ng-content>
+<h3>Implements</h3>
+<ul>
+  <li *ngFor="let impls of componentDocs.implementedTypes">{{ impls.name }}</li>
+</ul>
+<h3>Metadata</h3>
+<ul>
+  <li *ngFor="let decor of componentDocs.decorators">{{ decor.arguments.obj }}</li>
+</ul>
+<h3>Properties</h3>
+<ul>
+  <li *ngFor="let prop of properties">{{ prop.name }}</li>
+</ul>
+<h3>Methods</h3>
+<ul>
+  <li *ngFor="let prop of methods">{{ prop.name }}</li>
+</ul>
+<h3>Properties</h3>
+<ul>
+  <li *ngFor="let prop of properties">{{ prop.name }}</li>
+</ul>
