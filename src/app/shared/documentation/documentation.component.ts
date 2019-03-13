@@ -1,7 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {
   DocumentationService,
-  Child
+  Child,
+  Type
 } from 'src/app/core/documentation/documentation.service';
 
 @Component({
@@ -48,18 +49,29 @@ export class DocumentationComponent implements OnInit {
     this.constructors = this.componentDocs.children.filter(
       x => x.kindString === 'Constructor'
     );
-    console.log(this.properties);
-    // this.selector = this.componentDocs.decorators[0].arguments.obj;
     const { obj } = this.componentDocs.decorators[0].arguments;
     const escaped = this.jsonEscape(obj);
     const parsed = JSON.parse(escaped);
     this.selector = parsed.selector;
   }
-  jsonEscape = str => {
+  jsonEscape = (str: string) => {
     return str
       .replace(/(\r\n|\n|\r)/gm, '')
       .replace(/'/g, '"')
       .replace(/:/g, '":')
       .replace(/  /g, ' "');
-  };
+  }
+  getTypeString = (type: Type) => {
+    if (type.name) {
+      return type.name;
+    }
+    let str = '';
+    type.types.forEach((element, index) => {
+      if (index > 0) {
+        str = str + ' | ';
+      }
+      str = str + '\'' + element.value + '\'';
+    });
+    return str;
+  }
 }

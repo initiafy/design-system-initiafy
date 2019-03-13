@@ -42,8 +42,12 @@ export interface Arguements {
   obj: string;
 }
 export interface Type {
-  type: string;
-  name: string;
+  type: 'intrinsic' | 'union' | string;
+  name?: string;
+  types?: {
+    type: string;
+    value: string;
+  }[];
 }
 
 export interface Source {
@@ -69,6 +73,7 @@ export class DocumentationService {
     return this._documentation;
   }
   public getDocs(componentName: string): Child {
+    console.log(this.startupData);
     return this.startupData.children.filter(x => x.name === componentName)[0];
   }
 }

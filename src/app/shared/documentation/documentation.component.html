@@ -16,7 +16,7 @@
     </ng-container>
     <ng-container matColumnDef="type">
       <th mat-header-cell *matHeaderCellDef>Type</th>
-      <td mat-cell *matCellDef="let element">{{ element.type.name }}</td>
+      <td mat-cell *matCellDef="let element">{{ getTypeString(element.type) }}</td>
     </ng-container>
     <ng-container matColumnDef="defaultValue">
       <th mat-header-cell *matHeaderCellDef>Default Value</th>
