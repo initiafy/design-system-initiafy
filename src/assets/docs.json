@@ -628,6 +628,62 @@
 					"name": "OnInit"
 				}
 			]
+		},
+		{
+			"id": 27,
+			"name": "InitiafyButtonModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\r\n  imports: [CommonModule, MatButtonModule, MatTooltipModule, InitiafyIconModule],\r\n  declarations: [ButtonComponent],\r\n  exports: [ButtonComponent]\r\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "button/buttons.module.ts",
+					"line": 14,
+					"character": 33
+				}
+			]
+		},
+		{
+			"id": 26,
+			"name": "InitiafyIconModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [IconComponent],\r\n  exports: [IconComponent]\r\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "icon/icon.module.ts",
+					"line": 13,
+					"character": 31
+				}
+			]
 		}
 	],
 	"groups": [
@@ -636,7 +692,9 @@
 			"kind": 128,
 			"children": [
 				1,
-				15
+				15,
+				27,
+				26
 			]
 		}
 	]
