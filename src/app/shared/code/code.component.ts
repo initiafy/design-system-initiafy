@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { MatAccordion, MatExpansionPanel } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-code',
@@ -7,12 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CodeComponent implements OnInit {
 
+  @ViewChild('codeExpansionPanel') accordion: MatExpansionPanel;
   @Input() title: string;
   showCode: boolean;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.accordion);
+    this.accordion.open();
   }
 
 }
