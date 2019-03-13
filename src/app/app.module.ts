@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +22,14 @@ import { StructureComponent } from './structure/structure.component';
 
 import { CommonService } from './common.service';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { DocumentationComponent } from './shared/documentation/documentation.component';
+import { DocumentationService } from './core/documentation.service';
+
+export function startupServiceFactory(
+  startupService: DocumentationService
+): Function {
+  return () => startupService.load();
+}
 
 @NgModule({
   declarations: [
@@ -39,7 +47,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
     FooterComponent,
     DashboardComponent,
     StructureComponent,
-    ContentComponent
+    ContentComponent,
+    DocumentationComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +72,16 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
       }
     })
   ],
-  providers: [CommonService],
+  providers: [
+    CommonService,
+    DocumentationService,
+    {
+      provide: APP_INITIALIZER,
+      useFactory: startupServiceFactory,
+      deps: [DocumentationService],
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
