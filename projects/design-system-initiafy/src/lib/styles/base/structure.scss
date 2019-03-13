@@ -18,19 +18,12 @@
     flex-basis:  100%
 }
 
-@media only screen and (max-width: $media-mobile) {
-    .initiafy-content {
-        padding: $spacing-mobile;
-    }
-}
-
 /* Overlayer */
 .bgOverlayer {
     width: 100%;
     min-height: 100%;
     background-color: $BackgroundDefault;
     background-color: var(--BackgroundDefault);
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;

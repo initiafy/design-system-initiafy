@@ -36,36 +36,6 @@
   margin-right: $spacing;
 }
 
-@media only screen and (max-width: $media-tablet) {
-  .margin-std {
-    margin: $spacing-mobile; 
-  }
-  .margin-x-std {
-    margin-left: $spacing-mobile;
-    margin-right: $spacing-mobile;
-  }
-  .margin-y-std {
-    margin-top: $spacing-mobile;
-    margin-bottom: $spacing-mobile;
-  }
-  .margin-bottom-std {
-    margin-bottom: $spacing-mobile;
-  }
-  .margin-top-std {
-    margin-top: $spacing-mobile;
-  }
-  .margin-left-std {
-    margin-left: $spacing-mobile;
-  }
-  .margin-right-std {
-    margin-right: $spacing-mobile;
-  }
-}
-
-.margin-std-half {
-  margin: $spacing-mobile;
-}
-
 /* Margin auto */
 .margin-left-auto {
   margin-left: auto;
@@ -109,13 +79,4 @@
 }
 .elements-margin-left > *:last-child {
   margin-left: 0; 
-}
-
-@media only screen and (max-width: $media-tablet) {
-  .elements-margin-right > * {
-      margin-right: $spacing-mobile; 
-  }
-  .elements-margin-left > * {
-      margin-left: $spacing-mobile; 
-  }
 }

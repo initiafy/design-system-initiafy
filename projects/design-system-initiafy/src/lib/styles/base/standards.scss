@@ -16,23 +16,7 @@
     background-color: var(--BackgroundDefault);
 }
 
-/* Box */
-.box-dashed, .initiafy-card-dashed{
-    cursor: default;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: $spacing;
-    margin: $spacing 0;
-    border-radius: 4px;
-    border: 1px dashed #efefef;
-    background-color: $BackgroundDefault;
-    background-color: var(--BackgroundDefault);
-    color: $Grey;
-    color: var(--Grey);
-}
-
-/* Card */
+/* Cards */
 .initiafy-card {
     cursor: default;
     padding: $spacing;
@@ -40,12 +24,27 @@
     background-color: #fff;
     color: $Black;
     color: var(--Black);
+    display: block;
     @include shadow-std();
+    &.small-padding {
+        padding: $spacing-half;
+    }
 }
 
-@media only screen and (max-width: $media-mobile) {
-    .initiafy-card {
-        padding: $spacing-mobile;
+.initiafy-card-dashed {
+    cursor: default;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: $spacing;
+    border-radius: 4px;
+    border: 1px dashed #efefef;
+    background-color: $BackgroundDefault;
+    background-color: var(--BackgroundDefault);
+    color: $Grey;
+    color: var(--Grey);
+    &.small-padding {
+        padding: $spacing-half;
     }
 }
 

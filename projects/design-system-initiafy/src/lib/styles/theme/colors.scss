@@ -6,7 +6,9 @@ body {
 }
 
 a {
-  color: #1a73e8;
+  color: $Black;
+  color: var(--Black);
+  text-decoration: underline;
 }
 
 .primaryColor, .primary-color {
@@ -159,23 +161,12 @@ a {
   color: #ffffff;
 }
 
-.bgWhite, .white-bgcolor {
+.white-bgcolor {
   background-color: #ffffff;
 }
 
 .white-border {
   border-color: #ffffff;
-}
-
-.bgOverlayer {
-    width: 100%;
-    min-height: 100%;
-    background-color: $BackgroundDefault;
-    background-color: var(--BackgroundDefault);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .lightIconWithHover {
@@ -226,6 +217,10 @@ a {
 .warnColorBG {
   background-color: $RagRed;
   background-color: var(--RagRed);
+}
+
+.feedback-color {
+  color: $FeedbackColor;
 }
 
 /* Social Media */

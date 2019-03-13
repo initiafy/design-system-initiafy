@@ -92,20 +92,6 @@
   font-weight: 500;
 }
 
-mat-card.mat-card {
-  background: white;
-  color: $Black;
-  color: var(--Black);
-  padding: $spacing;  
-  @include shadow-btn();
-}
- 
-@media only screen and (max-width: $media-tablet) {
-  mat-card.mat-card {
-    padding: $spacing-mobile;
-  }
-}
-
 .mat-card-title {
   font-size: 24px;
   font-weight: 500;
@@ -169,7 +155,7 @@ label.mat-checkbox-layout {
 .mat-expansion-panel-header {
   font-size: 15px;
   font-weight: 400;
-  padding: 0 12px;
+  padding: 0 $spacing !important;
 }
 
 .mat-expansion-panel-content {
@@ -1301,18 +1287,6 @@ textarea.cdk-textarea-autosize-measuring {
   border: solid 1px rgba(0, 0, 0, 0.12);
 }
 
-.mat-card {
-  background: white;
-  color: $Black;
-  color: var(--Black);
-}
-.mat-card:not([class*=mat-elevation-z]) {
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
-.mat-card.mat-card-flat:not([class*=mat-elevation-z]) {
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
-}
-
 .mat-card-subtitle {
   color: $Grey;
   color: var(--Grey);
@@ -1686,6 +1660,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 
 .mat-form-field-appearance-legacy .mat-form-field-label {
+  font-size: 1.1rem;
   color: $Grey;
   color: var(--Grey);
 }
@@ -2596,7 +2571,7 @@ mat-sidenav-content {
 
 /* Dialog */
 .mat-dialog-container {
-  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  @include shadow-std();
   background: white;
   color: $Black;
   color: var(--Black);

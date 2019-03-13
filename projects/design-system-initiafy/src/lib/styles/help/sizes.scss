@@ -1,24 +1,32 @@
 /* View size */
-.viewHeight, .view-height {
+.view-height {
   height: 100vh;
 }
 
-.viewWidth, .view-width {
+.view-width {
+  width: 100%;
   width: 100vw;
   max-width: 100%;
 }
 
 /* Full sizes */
-.fullWidth, .full-width {
+.full-width {
   min-width: 100%;
   max-width: 100%;
   width: 100%;
 }
 
-.fullHeight, .full-height {
+.full-height {
   min-height: 100%;
   max-height: 100%;
   height: 100%;
+}
+
+/* Width sizes */
+@for $i from 1 through 150 {
+  .width-#{$i * 5} { width: #{$i * 5}px; }
+  .min-width-#{$i * 5} { min-width: #{$i * 5}px; }
+  .max-width-#{$i * 5} { max-width: #{$i * 5}px; }
 }
 
 .width-100-pc {
@@ -29,11 +37,8 @@
   max-width: 100%;
 }
 
-/* Width sizes */
-@for $i from 1 through 150 {
-  .width-#{$i * 5} { width: #{$i * 5}px; }
-  .min-width-#{$i * 5} { min-width: #{$i * 5}px; }
-  .max-width-#{$i * 5} { max-width: #{$i * 5}px; }
+.max-width-1024 {
+  max-width: 1024px;
 }
 
 /* Height sizes */
@@ -51,55 +56,15 @@
   max-height: 100%;
 }
 
-.height20 {
-  height: 20px;
-  max-height: 20px;
-  min-height: 20px;
-}
-
-.height32 {
-  height: 2rem;
-  max-height: 2rem;
-  min-height: 2rem;
-}
-
-.height48 {
-  height: 48px;
-  max-height: 48px;
-  min-height: 48px;
-}
-
-.height80 {
-    height: 80px;
-    max-height: 80px;
-    min-height: 80px;
-}
-
-.height500 {
-  height: 500px;
-}
-
-.min-height-65 {
-  min-height: 65px;
-}
-
 /* Width sizes */
-.minWidth200 {
-  min-width: 11em;
-}
-
-.max-width80 {
-  max-width: 200px;
-}
-
-.maxWidthLarge {
+.max-width-large {
   max-width: 41rem;
 }
 
-.maxWidthMedium {
+.max-width-medium {
   max-width: 31rem;
 }
 
-.maxWidthSmall {
+.max-width-small {
   max-width: 21rem;
 }
