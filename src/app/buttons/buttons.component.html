@@ -1,12 +1,17 @@
 <div class="white-bgcolor radius-std shadow-std padding-std buttons">
   <div class="relative">
     <i
-      class="material-icons pointer absolute top right"
+      class="material-icons pointer top right"
       (click)="showCode = !showCode"
       >code</i
     >
   </div>
 
+  <markdown
+    *ngIf="showCode"
+    [src]="'/assets/examples/' + title + '.html'"
+    lineNumbers
+  ></markdown>
   <markdown
     [src]="'/assets/docs/classes/' + title + 'component.md'"
     lineNumbers
@@ -110,9 +115,4 @@
       disabled="true"
     ></initiafy-button>
   </div>
-  <markdown
-    *ngIf="showCode"
-    [src]="'/assets/examples/' + title + '.html'"
-    lineNumbers
-  ></markdown>
 </div>
