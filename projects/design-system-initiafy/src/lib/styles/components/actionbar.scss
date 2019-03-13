@@ -12,7 +12,10 @@
         align-items: center;
         justify-content: start;
         margin-right: auto;
-        flex-grow: 1;
         max-width: 200px;
     }
+}
+
+.action-button {
+    padding: 0;
 }

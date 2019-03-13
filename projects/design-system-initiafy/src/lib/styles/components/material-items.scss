@@ -1616,11 +1616,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: $RagRed;
 }
 
-.mat-focused .mat-form-field-required-marker {
-  color: $SMain;
-  color: var(--SMain);
-}
-
 .mat-form-field-ripple {
   background-color: $Black;
   background-color: var(--Black);
@@ -1846,6 +1841,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-menu-item[disabled], 
 .mat-menu-item[disabled]::after,
 .mat-menu-item[disabled] .mat-icon {
+  color: $Disable;
   color: var(--Disable);
 }
 
