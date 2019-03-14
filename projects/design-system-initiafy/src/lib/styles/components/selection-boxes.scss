@@ -1,12 +1,12 @@
 @import "../imports/mixins";
 @import "../imports/variables";
 
-.selectionBoxesHolder, .selection-boxes-holder {
+.selection-boxes-holder {
     align-items: center;
     margin: auto;
     position: relative;
 
-    .selectionBoxes, .selection-boxes {
+    .selection-boxes {
         height: 210px;
         width: 210px;
         margin: $spacing;
@@ -21,19 +21,7 @@
         }
     }
     
-    @media only screen and (max-width: $media-tablet) {
-        .selectionBoxes, .selection-boxes {
-            margin: 12px;
-        }
-    }
-    
-    @media only screen and (max-width: $media-mobile) {
-        .selectionBoxes, .selection-boxes {
-            margin: 6px;
-        }
-    }
-
-    .selectionBoxes div, .selection-boxes div {
+    .selection-boxes div {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,7 +41,7 @@
         justify-content: center;
     }
 }
-    
+
 @media only screen and (max-width: $media-mobile-small) {
     .selection-boxes-holder.flex.row  {
         flex-direction: column;

@@ -15,15 +15,25 @@
 .padding-std {
   padding: $spacing;
 }
-
-.padding-std-half {
-  padding: $spacing-mobile;
+.padding-x-std {
+  padding-left: $spacing;
+  padding-right: $spacing;
 }
-
-@media only screen and (max-width: $media-tablet) {
-  .padding-std {
-      padding: $spacing-mobile; 
-  }
+.padding-y-std {
+  padding-bottom: $spacing;
+  padding-top: $spacing;
+}
+.padding-bottom-std {
+  padding-bottom: $spacing;
+}
+.padding-top-std {
+  padding-top: $spacing;
+}
+.padding-left-std {
+  padding-left: $spacing;
+}
+.padding-right-std {
+  padding-right: $spacing;
 }
 
 /* Responsive Calculated */

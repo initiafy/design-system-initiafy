@@ -1,20 +1,5 @@
 @import "../imports/variables";
 
-/* Standard responsive margins */
-.margin-std {
-  margin: $spacing;
-}
-
-@media only screen and (max-width: $media-tablet) {
-  .margin-std {
-    margin: $spacing-mobile; 
-  }
-}
-
-.margin-std-half {
-  margin: $spacing-mobile;
-}
-
 /* Margin options 0/4/8/12/16/20/24/28/32 */
 @for $i from 8 through 0 {
   .margin-#{$i*4} { margin: #{$i*4}px; }
@@ -24,6 +9,31 @@
   .margin-bottom-#{$i*4} { margin-bottom: #{$i*4}px; }
   .margin-left-#{$i*4} { margin-left: #{$i*4}px; }
   .margin-right-#{$i*4} { margin-right: #{$i*4}px; }
+}
+
+/* Standard responsive margins */
+.margin-std {
+  margin: $spacing;
+}
+.margin-x-std {
+  margin-left: $spacing;
+  margin-right: $spacing;
+}
+.margin-y-std {
+  margin-top: $spacing;
+  margin-bottom: $spacing;
+}
+.margin-bottom-std {
+  margin-bottom: $spacing;
+}
+.margin-top-std {
+  margin-top: $spacing;
+}
+.margin-left-std {
+  margin-left: $spacing;
+}
+.margin-right-std {
+  margin-right: $spacing;
 }
 
 /* Margin auto */
@@ -69,13 +79,4 @@
 }
 .elements-margin-left > *:last-child {
   margin-left: 0; 
-}
-
-@media only screen and (max-width: $media-tablet) {
-  .elements-margin-right > * {
-      margin-right: $spacing-mobile; 
-  }
-  .elements-margin-left > * {
-      margin-left: $spacing-mobile; 
-  }
 }

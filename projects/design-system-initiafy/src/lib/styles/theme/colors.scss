@@ -5,6 +5,12 @@ body {
   color: var(--Black);
 }
 
+a {
+  color: $Black;
+  color: var(--Black);
+  text-decoration: underline;
+}
+
 .primaryColor, .primary-color {
   color: $PMain;
   color: var(--PMain);
@@ -155,23 +161,12 @@ body {
   color: #ffffff;
 }
 
-.bgWhite, .white-bgcolor {
+.white-bgcolor {
   background-color: #ffffff;
 }
 
 .white-border {
   border-color: #ffffff;
-}
-
-.bgOverlayer {
-    width: 100%;
-    min-height: 100%;
-    background-color: $BackgroundDefault;
-    background-color: var(--BackgroundDefault);
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .lightIconWithHover {
@@ -192,6 +187,7 @@ body {
 
 /* Standards */
 .bg-hover, .bg-hover-hover:hover {
+  background: $Hover;
   background: var(--Hover);
 }
 
@@ -215,8 +211,28 @@ body {
 }
 
 .warnColor {
-  color: #f44336;
+  color: $RagRed;
+  color: var(--RagRed);
 }
 .warnColorBG {
-  background-color: #f44336;
+  background-color: $RagRed;
+  background-color: var(--RagRed);
+}
+
+.feedback-color {
+  color: $FeedbackColor;
+}
+
+/* Social Media */
+.google-bgcolor {
+  background-color: $GoogleColor;
+}
+.facebook-bgcolor {
+  background-color: $FacebookColor;
+}
+.linkedin-bgcolor {
+  background-color: $LinkedinColor;
+}
+.twitter-bgcolor {
+  background-color: $TwitterColor;
 }
