@@ -8,7 +8,7 @@ import { EventEmitter } from 'events';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  @Input() design: 'main' | 'stroke' | 'icon' = 'main';
+  @Input() design: 'main' | 'stroke' | 'basic' = 'main';
   @Input() color: 'primary' | 'secondary';
   @Input() label: string;
   @Input() icon: string;
@@ -21,4 +21,15 @@ export class ButtonComponent implements OnInit {
 
   ngOnInit() {}
 
+}
+
+export interface ButtonType {
+  design?: 'main' | 'stroke' | 'basic';
+  color?: 'primary';
+  label?: string;
+  icon?: string;
+  iconFont?: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons';
+  tooltip?: string;
+  disabled?: boolean;
+  callback?: (event: Event) => void;
 }
