@@ -1,8 +1,10 @@
 <button 
   mat-button
   [matTooltip]="tooltip"
-  [ngClass]="getButtonClasses()"
   [disabled]="disabled"
+  [class.single]="!label"
+  [ngClass]="'button ' + design + ' ' + color"
+  (click)="callback.emit($event)"
   >
   <ng-template [ngIf]="icon"><initiafy-icon [icon]="icon" [iconFont]="iconFont"></initiafy-icon></ng-template>
   <ng-template [ngIf]="label"><span>{{ label }}</span></ng-template>
