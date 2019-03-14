@@ -1,5 +1,5 @@
 <div class="white-bgcolor radius-std shadow-std padding-std buttons">
-  <app-documentation [componentName]="componentName">
+  <app-documentation [componentName]="componentName" [module]="module">
     <h2>Main buttons</h2>
     <div class="elements-margin-right">
       <initiafy-button
@@ -97,10 +97,7 @@
         icon="done"
         disabled="true"
       ></initiafy-button>
-      <initiafy-button
-        design="basic"
-        label='hello world'
-      ></initiafy-button>
+      <initiafy-button design="basic" label="hello world"></initiafy-button>
     </div>
     <app-code [title]="title"></app-code>
   </app-documentation>

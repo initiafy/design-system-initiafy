@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class IconsComponent implements OnInit {
   public title = 'icon';
   public componentName = 'IconComponent';
-
+  public module = 'InitiafyIconModule';
   constructor() { }
 
   ngOnInit() {

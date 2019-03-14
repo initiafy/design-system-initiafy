@@ -14,6 +14,7 @@ export class DocumentationComponent implements OnInit {
   displayedInputsColumns: string[] = ['name', 'type', 'defaultValue'];
   displayedOutputsColumns: string[] = ['name', 'type'];
   @Input() componentName: string;
+  @Input() module: string;
 
   private componentDocs: Child;
 
