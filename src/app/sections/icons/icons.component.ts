@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./icons.component.scss']
 })
 export class IconsComponent implements OnInit {
-  showCode: boolean;
+  public title = 'icon';
+  public componentName = 'IconComponent';
 
   constructor() { }
 

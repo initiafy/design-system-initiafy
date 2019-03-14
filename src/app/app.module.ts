@@ -1,26 +1,44 @@
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, APP_INITIALIZER } from '@angular/core';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
+import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
+
+import { DesignSystemInitiafyModule, InitiafyButtonModule, InitiafyIconModule } from 'design-system-initiafy';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DesignSystemInitiafyModule } from 'design-system-initiafy';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './shared/header/header.component';
-import { ContentComponent } from './shared/content/content.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { GridComponent } from './grid/grid.component';
-import { ColorsComponent } from './colors/colors.component';
-import { TypographyComponent } from './typography/typography.component';
-import { ButtonsComponent } from './buttons/buttons.component';
-import { ActionsComponent } from './actions/actions.component';
-import { IconsComponent } from './icons/icons.component';
-import { AlertsComponent } from './alerts/alerts.component';
-import { MessagesComponent } from './messages/messages.component';
-import { HelpersComponent } from './helpers/helpers.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { StructureComponent } from './structure/structure.component';
-
 import { CommonService } from './common.service';
+
+import {
+  GridComponent,
+  ColorsComponent,
+  TypographyComponent,
+  ButtonsComponent,
+  ActionsComponent,
+  IconsComponent,
+  AlertsComponent,
+  MessagesComponent,
+  HelpersComponent,
+  DashboardComponent,
+  StructureComponent
+} from './sections';
+import { DocumentationService } from './core';
+import {
+  HeaderComponent,
+  FooterComponent,
+  ContentComponent,
+  DocumentationComponent,
+  CodeComponent
+} from './shared';
+
+export function startupServiceFactory(
+  startupService: DocumentationService
+): Function {
+  return () => startupService.load();
+}
 
 @NgModule({
   declarations: [
@@ -38,17 +56,45 @@ import { CommonService } from './common.service';
     FooterComponent,
     DashboardComponent,
     StructureComponent,
-    ContentComponent
+    ContentComponent,
+    DocumentationComponent,
+    CodeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DesignSystemInitiafyModule,
-    BrowserAnimationsModule
+    InitiafyButtonModule,
+    InitiafyIconModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatExpansionModule,
+    MatTableModule,
+    MarkdownModule.forRoot({
+      loader: HttpClient,
+      markedOptions: {
+        provide: MarkedOptions,
+        useValue: {
+          gfm: true,
+          tables: true,
+          breaks: false,
+          pedantic: false,
+          sanitize: false,
+          smartLists: true,
+          smartypants: false
+        }
+      }
+    })
   ],
   providers: [
-    CommonService
+    CommonService,
+    DocumentationService,
+    {
+      provide: APP_INITIALIZER,
+      useFactory: startupServiceFactory,
+      deps: [DocumentationService],
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
