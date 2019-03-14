@@ -665,14 +665,14 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule, MatButtonModule, MatTooltipModule, InitiafyIconModule],\r\n  declarations: [ButtonComponent],\r\n  exports: [ButtonComponent]\r\n}"
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatButtonModule,\r\n    MatTooltipModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [ButtonComponent],\r\n  exports: [ButtonComponent]\r\n}"
 					}
 				}
 			],
 			"sources": [
 				{
 					"fileName": "button/button.module.ts",
-					"line": 14,
+					"line": 19,
 					"character": 33
 				}
 			]
@@ -791,8 +791,17 @@
 						}
 					],
 					"type": {
-						"type": "stringLiteral",
-						"value": "primary"
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "primary"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "secondary"
+							}
+						]
 					}
 				},
 				{

@@ -2,11 +2,11 @@
   {{ componentDocs.name }}
 </h1>
 <div class="flex align-items-center" *ngIf="module">
-    <markdown ngPreserveWhitespaces>
-          ```typescript
-          import &#123; {{ module }} &#125; from 'design-system-initiafy'
-          ```
-    </markdown>
+  <markdown ngPreserveWhitespaces>
+    ```typescript 
+    import &#123; {{ module }} &#125; from 'design-system-initiafy'
+    ```
+  </markdown>
 </div>
 <div class="flex align-items-center">
   <h3 class="margin-right-16">Selector:</h3>
@@ -14,7 +14,7 @@
     ```html
     {{ selector }}
     ```
-</markdown>
+  </markdown>
 </div>
 <ng-content></ng-content>
 <ng-container *ngIf="inputs.length > 0">
@@ -61,3 +61,9 @@
 <ul>
   <li *ngFor="let prop of methods">{{ prop.name }}</li>
 </ul>
+<ng-container *ngIf="types.length > 0">
+  <h3>Types</h3>
+  <ul>
+    <li *ngFor="let type of types">{{ type }}</li>
+  </ul>
+</ng-container>

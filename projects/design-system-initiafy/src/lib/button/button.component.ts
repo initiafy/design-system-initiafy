@@ -25,7 +25,7 @@ export class ButtonComponent implements OnInit {
 
 export interface ButtonType {
   design?: 'main' | 'stroke' | 'basic';
-  color?: 'primary';
+  color?: 'primary' | 'secondary';
   label?: string;
   icon?: string;
   iconFont?: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons';
