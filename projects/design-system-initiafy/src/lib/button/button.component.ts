@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-
 @Component({
   selector: 'initiafy-button',
   templateUrl: './button.component.html',
@@ -25,6 +24,4 @@ export class ButtonComponent implements OnInit {
     }
     return 'single ' + this.design + ' ' + this.color;   
   }
-  get designValue(): string {
-    return this.design;
-  }
+}
