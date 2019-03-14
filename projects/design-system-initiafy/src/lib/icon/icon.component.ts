@@ -6,24 +6,22 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./icon.component.scss']
 })
 export class IconComponent implements OnInit {
-  
-  @Input() iconFont: string = '';
-  @Input() icon: string = '';
-  
-  constructor() { }
+  @Input() iconFont = '';
+  @Input() icon = '';
 
-  ngOnInit() {
-  }
+  constructor() {}
+
+  ngOnInit() {}
 
   getIconClasses() {
-    switch(this.iconFont) {
-      case 'font-awesome' :
+    switch (this.iconFont) {
+      case 'font-awesome':
         return 'fa fa-' + this.icon;
-      case 'font-awesome-brand' :
+      case 'font-awesome-brand':
         return 'fab fa-' + this.icon;
-      case 'font-awesome-solid' :
+      case 'font-awesome-solid':
         return 'fas fa-' + this.icon;
-      case 'glyphicon' :
+      case 'glyphicon':
         return 'glyphicon glyphicon-' + this.icon;
       default:
         return 'material-icons';
@@ -36,5 +34,4 @@ export class IconComponent implements OnInit {
     }
     return true;
   }
-
 }
