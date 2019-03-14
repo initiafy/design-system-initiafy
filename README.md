@@ -18,9 +18,11 @@ The app will automatically reload if you change any of the source files.
 
 ### Step 3 - Updating files in the library
 
-- Navigate to the root of the project;
+- Navigate to the root of this project;
+- update public api of the design system if neccessary.
 - Run `npm run build` to update the library and build the project;
 
 ### Step 4 - Publishing library in npm
 
+- change version if neccessary.
 - Run `npm publish dist` to publish new version of the library in the npm.
