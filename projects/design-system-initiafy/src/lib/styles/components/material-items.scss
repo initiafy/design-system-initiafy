@@ -473,6 +473,7 @@ input.mat-input-element {
 .mat-nested-tree-node {
   font-weight: 400;
   font-size: 14px;
+  padding: 0;
 }
 
 .mat-ripple {
@@ -2577,4 +2578,10 @@ mat-sidenav-content {
   .mat-dialog-actions {
     margin: 0;
   }
+}
+
+/* Icons */
+.mat-icon.icon-80 {
+  width: 80px;
+  height: 80px;
 }

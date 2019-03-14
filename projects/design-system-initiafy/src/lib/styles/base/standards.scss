@@ -12,16 +12,26 @@
 
 /* Cards */
 .initiafy-card {
+    display: block;
     cursor: default;
+    max-width: 100%;
     padding: $spacing;
     border-radius: $border-std;
     background-color: #fff;
     color: $Black;
     color: var(--Black);
-    display: block;
     @include shadow-std();
     &.small-padding {
         padding: $spacing-half;
+    }
+    &.small {
+        width: 380px;
+    }
+    &.medium {
+        width: 600px;
+    }
+    &.big {
+        width: 920px;
     }
 }
 
