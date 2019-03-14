@@ -3,9 +3,8 @@
 </h1>
 <div class="flex align-items-center" *ngIf="module">
   <markdown ngPreserveWhitespaces>
-    ```typescript 
-    import &#123; {{ module }} &#125; from 'design-system-initiafy'
-    ```
+    ```typescript import &#123; {{ module }} &#125; from
+    'design-system-initiafy' ```
   </markdown>
 </div>
 <div class="flex align-items-center">
@@ -61,9 +60,3 @@
 <ul>
   <li *ngFor="let prop of methods">{{ prop.name }}</li>
 </ul>
-<ng-container *ngIf="types.length > 0">
-  <h3>Types</h3>
-  <ul>
-    <li *ngFor="let type of types">{{ type }}</li>
-  </ul>
-</ng-container>

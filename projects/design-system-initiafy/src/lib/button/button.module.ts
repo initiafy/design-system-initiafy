@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { ButtonComponent, ButtonType } from './button.component';
+import { ButtonComponent } from './button.component';
 import { InitiafyIconModule } from '../icon/icon.module';
 
 @NgModule({
@@ -17,5 +17,3 @@ import { InitiafyIconModule } from '../icon/icon.module';
   exports: [ButtonComponent]
 })
 export class InitiafyButtonModule {}
-
-export { ButtonType };

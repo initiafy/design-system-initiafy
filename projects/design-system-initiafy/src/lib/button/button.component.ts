@@ -22,14 +22,3 @@ export class ButtonComponent implements OnInit {
   ngOnInit() {}
 
 }
-
-export interface ButtonType {
-  design?: 'main' | 'stroke' | 'basic';
-  color?: 'primary' | 'secondary';
-  label?: string;
-  icon?: string;
-  iconFont?: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons';
-  tooltip?: string;
-  disabled?: boolean;
-  callback?: (event: Event) => void;
-}
