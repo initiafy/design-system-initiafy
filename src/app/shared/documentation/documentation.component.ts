@@ -11,7 +11,8 @@ import {
   styleUrls: ['./documentation.component.scss']
 })
 export class DocumentationComponent implements OnInit {
-  displayedColumns: string[] = ['name', 'type', 'defaultValue'];
+  displayedInputsColumns: string[] = ['name', 'type', 'defaultValue'];
+  displayedOutputsColumns: string[] = ['name', 'type'];
   @Input() componentName: string;
 
   private componentDocs: Child;

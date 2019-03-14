@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { EventEmitter } from 'events';
 
 
 @Component({
@@ -8,21 +9,16 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   @Input() design: 'main' | 'stroke' | 'icon' = 'main';
-  @Input() color = '';
-  @Input() label = '';
-  @Input() icon = '';
-  @Input() iconFont = 'material-icons';
-  @Input() tooltip = '';
+  @Input() color: 'primary' | 'secondary';
+  @Input() label: string;
+  @Input() icon: string;
+  @Input() iconFont: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
+  @Input() tooltip: string;
   @Input() disabled = false;
+  @Output() callback = new EventEmitter();
 
   constructor() {}
 
   ngOnInit() {}
 
-  getButtonClasses() {
-    if (!!this.label) {
-      return 'button ' + this.design + ' ' + this.color;
-    }
-    return 'button single ' + this.design + ' ' + this.color;
-  }
 }
