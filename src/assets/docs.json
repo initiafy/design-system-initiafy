@@ -163,7 +163,7 @@
 							},
 							{
 								"type": "stringLiteral",
-								"value": "icon"
+								"value": "basic"
 							}
 						]
 					},
@@ -409,7 +409,7 @@
 			]
 		},
 		{
-			"id": 14,
+			"id": 26,
 			"name": "IconComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -430,7 +430,7 @@
 			],
 			"children": [
 				{
-					"id": 17,
+					"id": 29,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -439,7 +439,7 @@
 					},
 					"signatures": [
 						{
-							"id": 18,
+							"id": 30,
 							"name": "new IconComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -447,7 +447,7 @@
 							"type": {
 								"type": "reference",
 								"name": "IconComponent",
-								"id": 14
+								"id": 26
 							}
 						}
 					],
@@ -460,7 +460,7 @@
 					]
 				},
 				{
-					"id": 16,
+					"id": 28,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -491,7 +491,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 15,
+					"id": 27,
 					"name": "iconFont",
 					"kind": 1024,
 					"kindString": "Property",
@@ -522,7 +522,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 21,
+					"id": 33,
 					"name": "getIconClasses",
 					"kind": 2048,
 					"kindString": "Method",
@@ -531,7 +531,7 @@
 					},
 					"signatures": [
 						{
-							"id": 22,
+							"id": 34,
 							"name": "getIconClasses",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -551,7 +551,7 @@
 					]
 				},
 				{
-					"id": 19,
+					"id": 31,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -560,7 +560,7 @@
 					},
 					"signatures": [
 						{
-							"id": 20,
+							"id": 32,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -580,7 +580,7 @@
 					]
 				},
 				{
-					"id": 23,
+					"id": 35,
 					"name": "showText",
 					"kind": 2048,
 					"kindString": "Method",
@@ -589,7 +589,7 @@
 					},
 					"signatures": [
 						{
-							"id": 24,
+							"id": 36,
 							"name": "showText",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -614,24 +614,24 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						17
+						29
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						16,
-						15
+						28,
+						27
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						21,
-						19,
-						23
+						33,
+						31,
+						35
 					]
 				}
 			],
@@ -650,7 +650,7 @@
 			]
 		},
 		{
-			"id": 26,
+			"id": 38,
 			"name": "InitiafyButtonModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -665,20 +665,20 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule, MatButtonModule, MatTooltipModule, InitiafyIconModule],\r\n  declarations: [ButtonComponent],\r\n  exports: [ButtonComponent]\r\n}"
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatButtonModule,\r\n    MatTooltipModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [ButtonComponent],\r\n  exports: [ButtonComponent]\r\n}"
 					}
 				}
 			],
 			"sources": [
 				{
 					"fileName": "button/button.module.ts",
-					"line": 14,
+					"line": 19,
 					"character": 33
 				}
 			]
 		},
 		{
-			"id": 25,
+			"id": 37,
 			"name": "InitiafyIconModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -704,6 +704,282 @@
 					"character": 31
 				}
 			]
+		},
+		{
+			"id": 14,
+			"name": "ButtonType",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 22,
+					"name": "callback",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 34,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 23,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 24,
+									"name": "__call",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 25,
+											"name": "event",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "Event"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "button/button.component.ts",
+									"line": 34,
+									"character": 12
+								}
+							]
+						}
+					}
+				},
+				{
+					"id": 16,
+					"name": "color",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 28,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "primary"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "secondary"
+							}
+						]
+					}
+				},
+				{
+					"id": 15,
+					"name": "design",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 27,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "main"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "stroke"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "basic"
+							}
+						]
+					}
+				},
+				{
+					"id": 21,
+					"name": "disabled",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 33,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 18,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 30,
+							"character": 6
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 19,
+					"name": "iconFont",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 31,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-brand"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-solid"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-icons"
+							}
+						]
+					}
+				},
+				{
+					"id": 17,
+					"name": "label",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 29,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 20,
+					"name": "tooltip",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 32,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						22,
+						16,
+						15,
+						21,
+						18,
+						19,
+						17,
+						20
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "button/button.component.ts",
+					"line": 26,
+					"character": 27
+				}
+			]
 		}
 	],
 	"groups": [
@@ -712,9 +988,16 @@
 			"kind": 128,
 			"children": [
 				1,
-				14,
 				26,
-				25
+				38,
+				37
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				14
 			]
 		}
 	]

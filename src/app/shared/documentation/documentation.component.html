@@ -1,11 +1,22 @@
 <h1>
   {{ componentDocs.name }}
 </h1>
-<ng-content></ng-content>
+<div class="flex align-items-center" *ngIf="module">
+  <markdown ngPreserveWhitespaces>
+    ```typescript 
+    import &#123; {{ module }} &#125; from 'design-system-initiafy'
+    ```
+  </markdown>
+</div>
 <div class="flex align-items-center">
   <h3 class="margin-right-16">Selector:</h3>
-  <markdown>{{ selector }}</markdown>
+  <markdown ngPreserveWhitespaces>
+    ```html
+    {{ selector }}
+    ```
+  </markdown>
 </div>
+<ng-content></ng-content>
 <ng-container *ngIf="inputs.length > 0">
   <h3>Inputs</h3>
   <table mat-table [dataSource]="inputs">
@@ -16,14 +27,16 @@
     </ng-container>
     <ng-container matColumnDef="type">
       <th mat-header-cell *matHeaderCellDef>Type</th>
-      <td mat-cell *matCellDef="let element">{{ getTypeString(element.type) }}</td>
+      <td mat-cell *matCellDef="let element">
+        {{ getTypeString(element.type) }}
+      </td>
     </ng-container>
     <ng-container matColumnDef="defaultValue">
       <th mat-header-cell *matHeaderCellDef>Default Value</th>
       <td mat-cell *matCellDef="let element">{{ element.defaultValue }}</td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedInputsColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedInputsColumns;"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedInputsColumns"></tr>
   </table>
 </ng-container>
 <ng-container *ngIf="outputs.length > 0">
@@ -36,13 +49,21 @@
     </ng-container>
     <ng-container matColumnDef="type">
       <th mat-header-cell *matHeaderCellDef>Type</th>
-      <td mat-cell *matCellDef="let element">{{ getTypeString(element.type) }}</td>
+      <td mat-cell *matCellDef="let element">
+        {{ getTypeString(element.type) }}
+      </td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="displayedOutputsColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedOutputsColumns;"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedOutputsColumns"></tr>
   </table>
 </ng-container>
 <h3>Methods</h3>
 <ul>
   <li *ngFor="let prop of methods">{{ prop.name }}</li>
 </ul>
+<ng-container *ngIf="types.length > 0">
+  <h3>Types</h3>
+  <ul>
+    <li *ngFor="let type of types">{{ type }}</li>
+  </ul>
+</ng-container>

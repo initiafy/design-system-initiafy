@@ -14,6 +14,8 @@ export class DocumentationComponent implements OnInit {
   displayedInputsColumns: string[] = ['name', 'type', 'defaultValue'];
   displayedOutputsColumns: string[] = ['name', 'type'];
   @Input() componentName: string;
+  @Input() module: string;
+  @Input() types: string[] = [];
 
   private componentDocs: Child;
 
@@ -71,7 +73,7 @@ export class DocumentationComponent implements OnInit {
       if (index > 0) {
         str = str + ' | ';
       }
-      str = str + '\"' + element.value + '\"';
+      str = str + '"' + element.value + '"';
     });
     return str;
   }
