@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
+import { EventEmitter } from 'events';
+
 
 @Component({
   selector: 'initiafy-button',
@@ -6,22 +8,28 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent implements OnInit {
-  @Input() design: 'main' | 'stroke' | 'icon' = 'main';
-  @Input() color = '';
-  @Input() label = '';
-  @Input() icon = '';
-  @Input() iconFont = 'material-icons';
-  @Input() tooltip = '';
+  @Input() design: 'main' | 'stroke' | 'basic' = 'main';
+  @Input() color: 'primary' | 'secondary';
+  @Input() label: string;
+  @Input() icon: string;
+  @Input() iconFont: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
+  @Input() tooltip: string;
   @Input() disabled = false;
+  @Output() callback = new EventEmitter();
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {}
 
-  getButtonClasses() {
-    if (!!this.label) {
-      return this.design + ' ' + this.color;
-    }
-    return 'single ' + this.design + ' ' + this.color;   
-  }
+}
+
+export interface ButtonType {
+  design?: 'main' | 'stroke' | 'basic';
+  color?: 'primary' | 'secondary';
+  label?: string;
+  icon?: string;
+  iconFont?: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons';
+  tooltip?: string;
+  disabled?: boolean;
+  callback?: (event: Event) => void;
 }
