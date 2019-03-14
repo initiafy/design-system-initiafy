@@ -6,7 +6,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { DesignSystemInitiafyModule } from 'design-system-initiafy';
+import { DesignSystemInitiafyModule, InitiafyButtonModule, InitiafyIconModule } from 'design-system-initiafy';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -63,7 +63,8 @@ export function startupServiceFactory(
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DesignSystemInitiafyModule,
+    InitiafyButtonModule,
+    InitiafyIconModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatExpansionModule,

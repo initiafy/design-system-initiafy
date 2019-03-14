@@ -651,7 +651,7 @@
 			],
 			"sources": [
 				{
-					"fileName": "button/buttons.module.ts",
+					"fileName": "button/button.module.ts",
 					"line": 14,
 					"character": 33
 				}
@@ -680,7 +680,7 @@
 			"sources": [
 				{
 					"fileName": "icon/icon.module.ts",
-					"line": 13,
+					"line": 10,
 					"character": 31
 				}
 			]
