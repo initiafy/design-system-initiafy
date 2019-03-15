@@ -4,7 +4,7 @@
   [matTooltip]="tooltip"
   [disabled]="disabled"
   [class.single]="!label"
-  [ngClass]="'button ' + design + ' ' + color"
+  [ngClass]="design + ' ' + color"
   (click)="callback.emit($event)"
   >
   <ng-template [ngIf]="icon"><initiafy-icon [icon]="icon" [iconFont]="iconFont"></initiafy-icon></ng-template>

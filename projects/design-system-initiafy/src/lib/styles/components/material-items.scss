@@ -101,11 +101,6 @@
   font-size: 20px;
 }
 
-.mat-card-subtitle,
-.mat-card-content {
-  font-size: 14px;
-}
-
 mat-card-footer.mat-card-footer {
   margin: 0;
 }
@@ -243,9 +238,6 @@ label.mat-checkbox-layout {
   transform: translateY(-1.28125em) scale(0.75) perspective(100px) translateZ(0.00102px);
   -ms-transform: translateY(-1.28123em) scale(0.75);
   width: 133.3333533333%;
-}
-.mat-form-field-appearance-legacy .mat-form-field-label {
-  top: 1.28125em;
 }
 .mat-form-field-appearance-legacy .mat-form-field-underline {
   bottom: 1.25em;
@@ -1659,6 +1651,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   font-size: 1.1rem;
   color: $Grey;
   color: var(--Grey);
+  top: 1em;
 }
 .mat-form-field-appearance-legacy .mat-hint {
   color: $Grey;
