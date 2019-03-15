@@ -45,6 +45,10 @@
   .flex-grow-#{$i} { flex: #{$i}; }
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .flex-grow-99 {
   flex-grow: 99;
 }
