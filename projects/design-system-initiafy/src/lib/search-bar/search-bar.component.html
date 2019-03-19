@@ -1,3 +1,44 @@
-<p>
-  search-bar does work!
-</p>
+<!-- <form
+  [class.wrap]="wrappable"
+  class="root full-width flex row align-items-center"
+>
+  <mat-form-field [color]="color" class="flex-grow-99">
+    <input matInput placeholder="Favorite food" [formControl]="formControl" />
+     <mat-placeholder>
+      <initiafy-icon icon="search" matPrefix></initiafy-icon>
+      <div class="placeholderText">{{ placeholder }}</div>
+    </mat-placeholder>
+    <input
+      matInput
+      [(ngModel)]="searchTerm"
+      name="searchTerm"
+      type="text"
+      (blur)="onBlurMethod()"
+    />
+    <initiafy-button
+      icon="add"
+      [color]="color"
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="resetForm()"
+    >
+    </initiafy-button> 
+  </mat-form-field>
+</form> -->
+<mat-form-field class="example-form-field">
+  <input
+    matInput
+    type="text"
+    placeholder="Clearable input"
+    [(ngModel)]="value"
+  />
+  <initiafy-button
+    *ngIf="value"
+    matSuffix
+    icon="add"
+    aria-label="Clear"
+    (click)="value = ''"
+  >
+  </initiafy-button>
+</mat-form-field>

@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MatButtonModule } from '@angular/material/button';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { InitiafyIconModule } from '../icon/icon.module';
 import { SearchBarComponent } from './search-bar.component';
-
-
+import { MatFormFieldModule } from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
+import { InitiafyButtonModule } from '../button/button.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    MatButtonModule,
-    MatTooltipModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    InitiafyButtonModule,
     InitiafyIconModule
   ],
   declarations: [SearchBarComponent],

@@ -73,7 +73,6 @@ export class DocumentationService {
     return this._documentation;
   }
   public getDocs(componentName: string): Child {
-    console.log(this.startupData);
     return this.startupData.children.filter(x => x.name === componentName)[0];
   }
 }

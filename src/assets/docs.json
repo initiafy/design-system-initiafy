@@ -26,7 +26,7 @@
 			],
 			"children": [
 				{
-					"id": 10,
+					"id": 11,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -35,7 +35,7 @@
 					},
 					"signatures": [
 						{
-							"id": 11,
+							"id": 12,
 							"name": "new ButtonComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -50,13 +50,13 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 18,
+							"line": 19,
 							"character": 42
 						}
 					]
 				},
 				{
-					"id": 9,
+					"id": 10,
 					"name": "callback",
 					"kind": 1024,
 					"kindString": "Property",
@@ -76,7 +76,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 18,
+							"line": 19,
 							"character": 20
 						}
 					],
@@ -170,7 +170,7 @@
 					"defaultValue": "\"main\""
 				},
 				{
-					"id": 8,
+					"id": 9,
 					"name": "disabled",
 					"kind": 1024,
 					"kindString": "Property",
@@ -190,7 +190,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 17,
+							"line": 18,
 							"character": 19
 						}
 					],
@@ -201,7 +201,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 5,
+					"id": 6,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -221,7 +221,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 14,
+							"line": 15,
 							"character": 15
 						}
 					],
@@ -231,7 +231,7 @@
 					}
 				},
 				{
-					"id": 6,
+					"id": 7,
 					"name": "iconFont",
 					"kind": 1024,
 					"kindString": "Property",
@@ -251,7 +251,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 15,
+							"line": 16,
 							"character": 19
 						}
 					],
@@ -305,7 +305,7 @@
 					}
 				},
 				{
-					"id": 7,
+					"id": 8,
 					"name": "tooltip",
 					"kind": 1024,
 					"kindString": "Property",
@@ -325,7 +325,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 16,
+							"line": 17,
 							"character": 18
 						}
 					],
@@ -335,7 +335,51 @@
 					}
 				},
 				{
-					"id": 12,
+					"id": 5,
+					"name": "type",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "button/button.component.ts",
+							"line": 14,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "submit"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "reset"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "button"
+							}
+						]
+					},
+					"defaultValue": "\"submit\""
+				},
+				{
+					"id": 13,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -344,7 +388,7 @@
 					},
 					"signatures": [
 						{
-							"id": 13,
+							"id": 14,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -358,7 +402,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 22,
+							"line": 23,
 							"character": 10
 						}
 					]
@@ -369,28 +413,29 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						10
+						11
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						9,
+						10,
 						3,
 						2,
-						8,
-						5,
+						9,
 						6,
+						7,
 						4,
-						7
+						8,
+						5
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						12
+						13
 					]
 				}
 			],
@@ -409,7 +454,7 @@
 			]
 		},
 		{
-			"id": 14,
+			"id": 15,
 			"name": "IconComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -430,7 +475,7 @@
 			],
 			"children": [
 				{
-					"id": 17,
+					"id": 18,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -439,7 +484,7 @@
 					},
 					"signatures": [
 						{
-							"id": 18,
+							"id": 19,
 							"name": "new IconComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -447,7 +492,7 @@
 							"type": {
 								"type": "reference",
 								"name": "IconComponent",
-								"id": 14
+								"id": 15
 							}
 						}
 					],
@@ -460,7 +505,7 @@
 					]
 				},
 				{
-					"id": 16,
+					"id": 17,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -491,7 +536,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 15,
+					"id": 16,
 					"name": "iconFont",
 					"kind": 1024,
 					"kindString": "Property",
@@ -522,7 +567,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 21,
+					"id": 22,
 					"name": "getIconClasses",
 					"kind": 2048,
 					"kindString": "Method",
@@ -531,7 +576,7 @@
 					},
 					"signatures": [
 						{
-							"id": 22,
+							"id": 23,
 							"name": "getIconClasses",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -551,7 +596,7 @@
 					]
 				},
 				{
-					"id": 19,
+					"id": 20,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -560,7 +605,7 @@
 					},
 					"signatures": [
 						{
-							"id": 20,
+							"id": 21,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -580,7 +625,7 @@
 					]
 				},
 				{
-					"id": 23,
+					"id": 24,
 					"name": "showText",
 					"kind": 2048,
 					"kindString": "Method",
@@ -589,7 +634,7 @@
 					},
 					"signatures": [
 						{
-							"id": 24,
+							"id": 25,
 							"name": "showText",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -614,24 +659,24 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						17
+						18
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						16,
-						15
+						17,
+						16
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						21,
-						19,
-						23
+						22,
+						20,
+						24
 					]
 				}
 			],
@@ -650,7 +695,7 @@
 			]
 		},
 		{
-			"id": 26,
+			"id": 27,
 			"name": "InitiafyButtonModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -678,7 +723,7 @@
 			]
 		},
 		{
-			"id": 25,
+			"id": 26,
 			"name": "InitiafyIconModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -706,7 +751,7 @@
 			]
 		},
 		{
-			"id": 32,
+			"id": 62,
 			"name": "InitiafySearchBarModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -721,20 +766,20 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatButtonModule,\r\n    MatTooltipModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [SearchBarComponent],\r\n  exports: [SearchBarComponent]\r\n}"
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    FormsModule,\r\n    ReactiveFormsModule,\r\n    MatFormFieldModule,\r\n    MatInputModule,\r\n    InitiafyButtonModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [SearchBarComponent],\r\n  exports: [SearchBarComponent]\r\n}"
 					}
 				}
 			],
 			"sources": [
 				{
 					"fileName": "search-bar/search-bar.module.ts",
-					"line": 21,
+					"line": 24,
 					"character": 36
 				}
 			]
 		},
 		{
-			"id": 27,
+			"id": 31,
 			"name": "SearchBarComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -755,7 +800,7 @@
 			],
 			"children": [
 				{
-					"id": 28,
+					"id": 51,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -764,7 +809,7 @@
 					},
 					"signatures": [
 						{
-							"id": 29,
+							"id": 52,
 							"name": "new SearchBarComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -772,20 +817,539 @@
 							"type": {
 								"type": "reference",
 								"name": "SearchBarComponent",
-								"id": 27
+								"id": 31
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 8,
-							"character": 51
+							"line": 41,
+							"character": 3
 						}
 					]
 				},
 				{
-					"id": 30,
+					"id": 39,
+					"name": "buttontext",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 22,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 41,
+					"name": "closeSearch",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 25,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter()"
+				},
+				{
+					"id": 34,
+					"name": "collapsed",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 17,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 33,
+					"name": "collapsible",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 16,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 37,
+					"name": "color",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 20,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 43,
+					"name": "formControl",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 28,
+							"character": 13
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "FormControl"
+					},
+					"defaultValue": " new FormControl('')"
+				},
+				{
+					"id": 38,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 21,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 40,
+					"name": "openSearch",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 24,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter()"
+				},
+				{
+					"id": 32,
+					"name": "placeholder",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 15,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 42,
+					"name": "search",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 26,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter()"
+				},
+				{
+					"id": 36,
+					"name": "searchItem",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 19,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "SearchItem",
+						"id": 28
+					}
+				},
+				{
+					"id": 48,
+					"name": "searchParametersChange",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 37,
+							"character": 34
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter()"
+				},
+				{
+					"id": 45,
+					"name": "searchParametersValue",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 32,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "tuple"
+					}
+				},
+				{
+					"id": 44,
+					"name": "value",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 29,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"Clear me\""
+				},
+				{
+					"id": 35,
+					"name": "wrappable",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 18,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 46,
+					"name": "searchParameters",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"getSignature": [
+						{
+							"id": 47,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "tuple"
+							}
+						}
+					],
+					"setSignature": [
+						{
+							"id": 49,
+							"name": "__set",
+							"kind": 1048576,
+							"kindString": "Set signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 50,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "tuple"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 34,
+							"character": 22
+						},
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 38,
+							"character": 22
+						}
+					]
+				},
+				{
+					"id": 53,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -794,7 +1358,7 @@
 					},
 					"signatures": [
 						{
-							"id": 31,
+							"id": 54,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -808,8 +1372,108 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 12,
+							"line": 45,
 							"character": 10
+						}
+					]
+				},
+				{
+					"id": 55,
+					"name": "onBlurMethod",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 56,
+							"name": "onBlurMethod",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 47,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 57,
+					"name": "resetForm",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 58,
+							"name": "resetForm",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 51,
+							"character": 11
+						}
+					]
+				},
+				{
+					"id": 59,
+					"name": "triggerSearch",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 60,
+							"name": "triggerSearch",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 61,
+									"name": "e",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 55,
+							"character": 15
 						}
 					]
 				}
@@ -819,21 +1483,52 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						28
+						51
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						39,
+						41,
+						34,
+						33,
+						37,
+						43,
+						38,
+						40,
+						32,
+						42,
+						36,
+						48,
+						45,
+						44,
+						35
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						46
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						30
+						53,
+						55,
+						57,
+						59
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "search-bar/search-bar.component.ts",
-					"line": 8,
+					"line": 14,
 					"character": 31
 				}
 			],
@@ -841,6 +1536,74 @@
 				{
 					"type": "reference",
 					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 28,
+			"name": "SearchItem",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 30,
+					"name": "dataName",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 6,
+							"character": 10
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 29,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 5,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						30,
+						29
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "search-bar/search-bar.component.ts",
+					"line": 4,
+					"character": 27
 				}
 			]
 		}
@@ -851,11 +1614,18 @@
 			"kind": 128,
 			"children": [
 				1,
-				14,
+				15,
+				27,
 				26,
-				25,
-				32,
-				27
+				62,
+				31
+			]
+		},
+		{
+			"title": "Interfaces",
+			"kind": 256,
+			"children": [
+				28
 			]
 		}
 	]

@@ -36,21 +36,28 @@ export class DocumentationComponent implements OnInit {
         }" ❗❗❗`
       );
     }
-    this.properties = this.componentDocs.children.filter(
-      x => x.kindString === 'Property'
-    );
-    this.inputs = this.properties.filter(x => {
-      return x.decorators.some(e => e.name === 'Input');
+    this.properties = [];
+    this.methods = [];
+    this.constructors = [];
+    const { children } = this.componentDocs;
+    children.forEach(e => {
+      if (e.kindString === 'Property') {
+        this.properties.push(e);
+      } else if (e.kindString === 'Method') {
+        this.methods.push(e);
+      } else if (e.kindString === 'Constructor') {
+        this.constructors.push(e);
+      }
     });
-    this.outputs = this.properties.filter(x => {
-      return x.decorators.some(e => e.name === 'Output');
+    this.inputs = [];
+    this.outputs = [];
+    this.properties.forEach(e => {
+      if (e.decorators && e.decorators.some(z => z.name === 'Input')) {
+        this.inputs.push(e);
+      } else if (e.decorators && e.decorators.some(z => z.name === 'Output')) {
+        this.outputs.push(e);
+      }
     });
-    this.methods = this.componentDocs.children.filter(
-      x => x.kindString === 'Method'
-    );
-    this.constructors = this.componentDocs.children.filter(
-      x => x.kindString === 'Constructor'
-    );
     const { obj } = this.componentDocs.decorators[0].arguments;
     const escaped = this.jsonEscape(obj);
     const parsed = JSON.parse(escaped);

@@ -11,6 +11,7 @@ export class ButtonComponent implements OnInit {
   @Input() design: 'main' | 'stroke' | 'basic' = 'main';
   @Input() color: 'primary' | 'secondary';
   @Input() label: string;
+  @Input() type: 'submit' | 'reset' | 'button' = 'submit';
   @Input() icon: string;
   @Input() iconFont: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
   @Input() tooltip: string;
