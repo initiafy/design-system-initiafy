@@ -8,6 +8,7 @@ import { DocumentationService } from './core/documentation/documentation.service
 })
 export class AppComponent implements OnInit {
   title = 'InitiafyDesignSystem';
+  showNav = true;
   constructor(private startup: DocumentationService) {}
   ngOnInit() {
     // If there is no startup data received (maybe an error!)
@@ -15,5 +16,9 @@ export class AppComponent implements OnInit {
     if (!this.startup.startupData) {
       console.error('no startupdata');
     }
+  }
+
+  toggleNav() {
+    this.showNav = !this.showNav;
   }
 }
