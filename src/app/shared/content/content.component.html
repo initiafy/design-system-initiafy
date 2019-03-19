@@ -1,5 +1,5 @@
 <mat-drawer-container class="initiafy-wrapper" autosize>
-  <mat-drawer [opened]="showNav" #drawer class="initiafy-sidenav" mode="side">
+  <mat-drawer #drawer class="initiafy-sidenav" [mode]="smallScreen ? 'over' : 'side'">
     <nav>
       <ul>
         <li><a routerLinkActive="active" routerLink="/grid">Grid</a></li>
