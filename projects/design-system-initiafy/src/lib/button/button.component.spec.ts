@@ -23,8 +23,6 @@ describe('ButtonComponent', () => {
     
     fixture = TestBed.createComponent(ButtonComponent);
     component = fixture.componentInstance;
-    component.ngOnInit();
-
     fixture.detectChanges();
   });
 
@@ -143,6 +141,17 @@ describe('ButtonComponent', () => {
     it('should be enabled if disabled variable is empty', () => {
       debuggerElement = fixture.debugElement.query(By.css('button'));
       expect(debuggerElement.nativeElement.disabled).toBeFalsy();      
+    });
+
+  });
+
+  describe('When click the button', () => {
+
+    it('should raise onClick event', () => {  
+      let callbackCalled = spyOn(component, 'onClick').and.returnValue(true);
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      debuggerElement.triggerEventHandler('click', null);  
+      expect(callbackCalled).toHaveBeenCalled();    
     });
 
   });

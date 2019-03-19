@@ -21,8 +21,6 @@ describe('IconComponent', () => {
     
     fixture = TestBed.createComponent(IconComponent);
     component = fixture.componentInstance;
-    component.ngOnInit();
-
     fixture.detectChanges();
   });
 

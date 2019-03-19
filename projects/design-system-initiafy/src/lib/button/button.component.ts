@@ -1,5 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EventEmitter } from 'events';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'initiafy-button',
@@ -7,7 +6,7 @@ import { EventEmitter } from 'events';
   styleUrls: ['./button.component.scss']
 })
 
-export class ButtonComponent implements OnInit {
+export class ButtonComponent {
   @Input() design: 'main' | 'stroke' | 'basic' = 'main';
   @Input() color: 'primary' | 'secondary';
   @Input() label: string;
@@ -19,6 +18,8 @@ export class ButtonComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {}
+  onClick() {
+    this.callback.emit();
+  }
 
 }
