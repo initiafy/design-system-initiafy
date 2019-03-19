@@ -1,14 +1,14 @@
-@import "../imports/variables";
+@import '../imports/variables';
 
 * {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 html {
   font-size: 100%;
 }
 
-body {  
+body {
   font-size: 14px;
   font-size: 1rem;
   letter-spacing: 0.04rem;
@@ -24,24 +24,27 @@ h4 {
   cursor: default;
 }
 
-p, li {
+p,
+li {
   font-size: 14px;
 }
 
 /* Font-size options 8/12/.../100 */
 @for $i from 2 through 50 {
-  .text#{$i*2} { font-size: #{$i*2}px; }
+  .text#{$i*2} {
+    font-size: #{$i * 2}px;
+  }
 }
 
 /* Responsive */
 .responsiveText14 {
   /*Responsive text equation - Units represent 'MinFontSize', 'MaxFontSize', 'MinFontSize', 100vw, 'MinScreenSize', 'MaxScreenSize', 'MinScreenSize', respectively. Pay attentions to the units. */
-  font-size: calc( 12px + (14 - 12)*(100vw - 360px) / (1300 - 360) );
+  font-size: calc(12px + (14 - 12) * (100vw - 360px) / (1300 - 360));
 }
 
 .responsiveText16 {
   /*Responsive text equation - Units represent 'MinFontSize', 'MaxFontSize', 'MinFontSize', 100vw, 'MinScreenSize', 'MaxScreenSize', 'MinScreenSize', respectively. Pay attentions to the units. */
-  font-size: calc( 12px + (16 - 12)*(100vw - 360px) / (1300 - 360) );
+  font-size: calc(12px + (16 - 12) * (100vw - 360px) / (1300 - 360));
 }
 
 /* Styles */
@@ -91,4 +94,14 @@ p, li {
 /* Line height */
 .lineHeight1andHalf {
   line-height: 1.5;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
