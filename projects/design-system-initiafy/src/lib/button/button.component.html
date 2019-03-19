@@ -1,10 +1,11 @@
 <button 
   mat-button
   class="button"
-  [matTooltip]="tooltip"
-  [disabled]="disabled"
   [class.single]="!label"
   [ngClass]="design + ' ' + color"
+  [type]="type"
+  [matTooltip]="tooltip"
+  [disabled]="disabled"
   (click)="callback.emit($event)"
   >
   <ng-template [ngIf]="icon"><initiafy-icon [icon]="icon" [iconFont]="iconFont"></initiafy-icon></ng-template>
