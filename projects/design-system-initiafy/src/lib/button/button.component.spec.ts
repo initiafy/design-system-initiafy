@@ -45,10 +45,6 @@ describe('ButtonComponent', () => {
     it('should have default design class', () => {
       expect(debuggerElement.nativeElement.className).toContain('main');
     });
-  
-    it('should have default color class', () => {
-      expect(debuggerElement.nativeElement.className).toContain('primary');
-    });
 
   });
   

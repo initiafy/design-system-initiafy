@@ -4,7 +4,7 @@ import { IconComponent } from '../icon/icon.component';
 import { MatTooltipModule } from '@angular/material';
 import { DebugElement } from '@angular/core';
 
-fdescribe('IconComponent', () => {
+describe('IconComponent', () => {
   let component: IconComponent;
   let fixture: ComponentFixture<IconComponent>;
   let debuggerElement: DebugElement;

@@ -9,7 +9,7 @@ import { EventEmitter } from 'events';
 
 export class ButtonComponent implements OnInit {
   @Input() design: 'main' | 'stroke' | 'basic' = 'main';
-  @Input() color: 'primary' | 'secondary' = 'primary';
+  @Input() color: 'primary' | 'secondary';
   @Input() label: string;
   @Input() icon: string;
   @Input() iconFont: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
