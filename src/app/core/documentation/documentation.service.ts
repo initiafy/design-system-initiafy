@@ -22,6 +22,7 @@ export interface Flags {
 }
 
 export interface Child {
+  comment?: Comment;
   children: Child[];
   decorators: Decorator[];
   flags: Flags;
@@ -30,7 +31,33 @@ export interface Child {
   kind: number;
   kindString: string;
   name: string;
+  getSignature?: GetSet[];
+  setSignature?: GetSet[];
   sources: Source[];
+}
+
+export interface GetSet {
+  comment?: Comment;
+  flags: Flags;
+  id: number;
+  kind: number;
+  kindString: string;
+  name: '__set' | '__get';
+  parameters: Parameter[];
+  type: Type;
+}
+
+export interface Parameter {
+  flags: Flags;
+  id: number;
+  kind: number;
+  kindString: string;
+  name: string;
+  type: Type;
+}
+
+export interface Comment {
+  shortText: string;
 }
 
 export interface Decorator {
@@ -42,12 +69,11 @@ export interface Arguements {
   obj: string;
 }
 export interface Type {
-  type: 'intrinsic' | 'union' | string;
+  type: 'intrinsic' | 'union' | 'EventEmitter' | string;
   name?: string;
-  types?: {
-    type: string;
-    value: string;
-  }[];
+  types: Type[];
+  value: string;
+  typeArguments?: Type[];
 }
 
 export interface Source {
@@ -73,7 +99,6 @@ export class DocumentationService {
     return this._documentation;
   }
   public getDocs(componentName: string): Child {
-    console.log(this.startupData);
     return this.startupData.children.filter(x => x.name === componentName)[0];
   }
 }

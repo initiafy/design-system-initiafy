@@ -10,8 +10,9 @@ export class ButtonComponent {
   @Input() design: 'main' | 'stroke' | 'basic' = 'main';
   @Input() color: 'primary' | 'secondary';
   @Input() label: string;
+  @Input() type: 'submit' | 'reset' | 'button' = 'submit';
   @Input() icon: string;
-  @Input() iconFont: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
+  @Input() iconFont: | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
   @Input() tooltip: string;
   @Input() disabled = false;
   @Output() callback = new EventEmitter();
