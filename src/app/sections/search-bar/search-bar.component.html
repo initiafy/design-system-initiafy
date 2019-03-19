@@ -3,13 +3,14 @@
     <mat-checkbox class="example-margin" [(ngModel)]="collapsed"
       >Collapsed</mat-checkbox
     >
-    <initiafy-search-bar
-      class="margin-y-24"
-      color="primary"
-      [value]="'Search term'"
-      [(collapsed)]="collapsed"
-      (search)="search($event)"
-    ></initiafy-search-bar>
+    <div class="margin-y-24">
+      <initiafy-search-bar
+        color="primary"
+        [value]="'Search term'"
+        [(collapsed)]="collapsed"
+        (search)="search($event)"
+      ></initiafy-search-bar>
+    </div>
     <app-code [title]="code"></app-code>
   </app-documentation>
 </div>
