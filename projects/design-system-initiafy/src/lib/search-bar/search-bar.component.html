@@ -1,0 +1,49 @@
+<form (ngSubmit)="onSubmit()">
+  <div class="flex align-items-flex-end">
+    <ng-template
+      #notCollapsedTemplate
+      [ngIf]="!collapsed"
+      [ngIfElse]="collapsedTemplate"
+    >
+      <mat-form-field [color]="color" class="example-form-field">
+        <input
+          matInput
+          type="text"
+          [placeholder]="placeholder"
+          [(ngModel)]="value"
+          name="value"
+        />
+        <button
+          mat-button
+          *ngIf="value"
+          type='button'
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="value = ''"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <initiafy-button
+        class="margin-bottom-20 flex align-items-end"
+        [label]="buttontext"
+        [color]="color"
+        type='submit'
+        aria-label="Search"
+      >
+      </initiafy-button>
+    </ng-template>
+    <ng-template #collapsedTemplate>
+      <initiafy-button
+        class="margin-bottom-20 flex align-items-end"
+        type='button'
+        (callback)="unCollapse()"
+        [icon]="buttonicon"
+        [color]="color"
+        aria-label="Search"
+      >
+      </initiafy-button>
+    </ng-template>
+  </div>
+</form>

@@ -13,11 +13,13 @@ import {
   StructureComponent,
   TypographyComponent
 } from './sections';
+import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
   { path: 'actions', component: ActionsComponent },
   { path: 'alerts', component: AlertsComponent },
+  { path: 'search-bar', component: SearchBarComponent },
   { path: 'buttons', component: ButtonsComponent },
   { path: 'colors', component: ColorsComponent },
   { path: 'grid', component: GridComponent },
