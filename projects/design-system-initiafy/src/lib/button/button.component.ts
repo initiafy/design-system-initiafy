@@ -1,6 +1,4 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
-import { EventEmitter } from '@angular/core';
-
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'initiafy-button',
@@ -13,7 +11,10 @@ export class ButtonComponent implements OnInit {
   @Input() label: string;
   @Input() type: 'submit' | 'reset' | 'button' = 'submit';
   @Input() icon: string;
-  @Input() iconFont: 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
+  @Input() iconFont:
+    | 'font-awesome-brand'
+    | 'font-awesome-solid'
+    | 'material-icons' = 'material-icons';
   @Input() tooltip: string;
   @Input() disabled = false;
   @Output() callback = new EventEmitter();
@@ -21,5 +22,4 @@ export class ButtonComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
 }
