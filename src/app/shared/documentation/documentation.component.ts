@@ -21,6 +21,7 @@ export class DocumentationComponent implements OnInit {
   displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
   @Input() componentName: string;
   @Input() module: string;
+  @Input() codeTitle: string;
 
   private componentDocs: Child;
 
@@ -40,7 +41,7 @@ export class DocumentationComponent implements OnInit {
       console.error(
         `No doumentation found for the supplied Component Name of "${
           this.componentName
-        }" ❗❗❗`
+        }"`
       );
     }
     this.properties = [];

@@ -11,7 +11,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import {
   InitiafyButtonModule,
   InitiafyIconModule,
-  InitiafySearchBarModule
+  InitiafySearchBarModule,
+  InitiafyCardModule
 } from 'design-system-initiafy';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -77,6 +78,7 @@ export function startupServiceFactory(
     InitiafyButtonModule,
     InitiafyIconModule,
     InitiafySearchBarModule,
+    InitiafyCardModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatExpansionModule,

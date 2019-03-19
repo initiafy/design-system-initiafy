@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./icons.component.scss']
 })
 export class IconsComponent implements OnInit {
-  public title = 'icon.html';
   public componentName = 'IconComponent';
   public module = 'InitiafyIconModule';
+
   constructor() { }
 
   ngOnInit() {

@@ -418,6 +418,112 @@
 			]
 		},
 		{
+			"id": 24,
+			"name": "CardComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'initiafy-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 26,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 27,
+							"name": "new CardComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "CardComponent",
+								"id": 24
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "card/card.component.ts",
+							"line": 9,
+							"character": 25
+						}
+					]
+				},
+				{
+					"id": 25,
+					"name": "class",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "card/card.component.ts",
+							"line": 9,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						26
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						25
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "card/card.component.ts",
+					"line": 8,
+					"character": 26
+				}
+			]
+		},
+		{
 			"id": 13,
 			"name": "IconComponent",
 			"kind": 128,
@@ -651,6 +757,34 @@
 			]
 		},
 		{
+			"id": 28,
+			"name": "InitiafyCardModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [CardComponent],\n  exports: [CardComponent]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "card/card.module.ts",
+					"line": 10,
+					"character": 31
+				}
+			]
+		},
+		{
 			"id": 22,
 			"name": "InitiafyIconModule",
 			"kind": 128,
@@ -679,7 +813,7 @@
 			]
 		},
 		{
-			"id": 48,
+			"id": 53,
 			"name": "InitiafySearchBarModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -707,7 +841,7 @@
 			]
 		},
 		{
-			"id": 27,
+			"id": 32,
 			"name": "SearchBarComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -728,7 +862,7 @@
 			],
 			"children": [
 				{
-					"id": 40,
+					"id": 45,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -737,7 +871,7 @@
 					},
 					"signatures": [
 						{
-							"id": 41,
+							"id": 46,
 							"name": "new SearchBarComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -745,7 +879,7 @@
 							"type": {
 								"type": "reference",
 								"name": "SearchBarComponent",
-								"id": 27
+								"id": 32
 							}
 						}
 					],
@@ -758,7 +892,7 @@
 					]
 				},
 				{
-					"id": 32,
+					"id": 37,
 					"name": "buttonicon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -792,7 +926,7 @@
 					"defaultValue": "\"search\""
 				},
 				{
-					"id": 31,
+					"id": 36,
 					"name": "buttontext",
 					"kind": 1024,
 					"kindString": "Property",
@@ -826,7 +960,7 @@
 					"defaultValue": "\"Search\""
 				},
 				{
-					"id": 37,
+					"id": 42,
 					"name": "collapsedChange",
 					"kind": 1024,
 					"kindString": "Property",
@@ -866,7 +1000,7 @@
 					"defaultValue": " new EventEmitter()"
 				},
 				{
-					"id": 34,
+					"id": 39,
 					"name": "collapsedValue",
 					"kind": 1024,
 					"kindString": "Property",
@@ -887,7 +1021,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 29,
+					"id": 34,
 					"name": "color",
 					"kind": 1024,
 					"kindString": "Property",
@@ -930,7 +1064,7 @@
 					"defaultValue": "\"primary\""
 				},
 				{
-					"id": 28,
+					"id": 33,
 					"name": "placeholder",
 					"kind": 1024,
 					"kindString": "Property",
@@ -964,7 +1098,7 @@
 					"defaultValue": "\"Enter search term\""
 				},
 				{
-					"id": 33,
+					"id": 38,
 					"name": "search",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1004,7 +1138,7 @@
 					"defaultValue": " new EventEmitter<string>()"
 				},
 				{
-					"id": 30,
+					"id": 35,
 					"name": "value",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1038,7 +1172,7 @@
 					"defaultValue": "\"Search term\""
 				},
 				{
-					"id": 35,
+					"id": 40,
 					"name": "collapsed",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -1060,7 +1194,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 36,
+							"id": 41,
 							"name": "__get",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -1076,7 +1210,7 @@
 					],
 					"setSignature": [
 						{
-							"id": 38,
+							"id": 43,
 							"name": "__set",
 							"kind": 1048576,
 							"kindString": "Set signature",
@@ -1086,7 +1220,7 @@
 							},
 							"parameters": [
 								{
-									"id": 39,
+									"id": 44,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1117,7 +1251,7 @@
 					]
 				},
 				{
-					"id": 42,
+					"id": 47,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1126,7 +1260,7 @@
 					},
 					"signatures": [
 						{
-							"id": 43,
+							"id": 48,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1146,7 +1280,7 @@
 					]
 				},
 				{
-					"id": 44,
+					"id": 49,
 					"name": "onSubmit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1155,7 +1289,7 @@
 					},
 					"signatures": [
 						{
-							"id": 45,
+							"id": 50,
 							"name": "onSubmit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1175,7 +1309,7 @@
 					]
 				},
 				{
-					"id": 46,
+					"id": 51,
 					"name": "unCollapse",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1184,7 +1318,7 @@
 					},
 					"signatures": [
 						{
-							"id": 47,
+							"id": 52,
 							"name": "unCollapse",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1209,37 +1343,37 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						40
+						45
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						32,
-						31,
 						37,
+						36,
+						42,
+						39,
 						34,
-						29,
-						28,
 						33,
-						30
+						38,
+						35
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						35
+						40
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						42,
-						44,
-						46
+						47,
+						49,
+						51
 					]
 				}
 			],
@@ -1258,7 +1392,7 @@
 			]
 		},
 		{
-			"id": 24,
+			"id": 29,
 			"name": "SearchItem",
 			"kind": 256,
 			"kindString": "Interface",
@@ -1267,7 +1401,7 @@
 			},
 			"children": [
 				{
-					"id": 26,
+					"id": 31,
 					"name": "dataName",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1287,7 +1421,7 @@
 					}
 				},
 				{
-					"id": 25,
+					"id": 30,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1312,8 +1446,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						26,
-						25
+						31,
+						30
 					]
 				}
 			],
@@ -1332,18 +1466,20 @@
 			"kind": 128,
 			"children": [
 				1,
+				24,
 				13,
 				23,
+				28,
 				22,
-				48,
-				27
+				53,
+				32
 			]
 		},
 		{
 			"title": "Interfaces",
 			"kind": 256,
 			"children": [
-				24
+				29
 			]
 		}
 	]
