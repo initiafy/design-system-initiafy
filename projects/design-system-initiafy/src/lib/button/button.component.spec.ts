@@ -145,13 +145,13 @@ describe('ButtonComponent', () => {
 
   });
 
-  describe('When click the button', () => {
+  describe('When clicking on the button', () => {
 
-    it('should raise onClick event', () => {  
-      let callbackCalled = spyOn(component, 'onClick').and.returnValue(true);
+    it('should emit callback', () => {  
+      spyOn(component.callback, 'emit');
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      debuggerElement.triggerEventHandler('click', null);  
-      expect(callbackCalled).toHaveBeenCalled();    
+      debuggerElement.nativeElement.click();
+      expect(component.callback.emit).toHaveBeenCalled();
     });
 
   });

@@ -50,7 +50,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 18,
+							"line": 17,
 							"character": 42
 						}
 					]
@@ -76,13 +76,19 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 18,
+							"line": 17,
 							"character": 20
 						}
 					],
 					"type": {
 						"type": "reference",
-						"name": "EventEmitter"
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
 					},
 					"defaultValue": " new EventEmitter()"
 				},
@@ -107,7 +113,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 12,
+							"line": 11,
 							"character": 16
 						}
 					],
@@ -146,7 +152,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 11,
+							"line": 10,
 							"character": 17
 						}
 					],
@@ -190,7 +196,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 17,
+							"line": 16,
 							"character": 19
 						}
 					],
@@ -221,7 +227,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 14,
+							"line": 13,
 							"character": 15
 						}
 					],
@@ -251,7 +257,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 15,
+							"line": 14,
 							"character": 19
 						}
 					],
@@ -295,7 +301,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 13,
+							"line": 12,
 							"character": 16
 						}
 					],
@@ -325,7 +331,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 16,
+							"line": 15,
 							"character": 18
 						}
 					],
@@ -333,35 +339,6 @@
 						"type": "intrinsic",
 						"name": "string"
 					}
-				},
-				{
-					"id": 12,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 13,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "button/button.component.ts",
-							"line": 22,
-							"character": 10
-						}
-					]
 				}
 			],
 			"groups": [
@@ -385,31 +362,18 @@
 						4,
 						7
 					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						12
-					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "button/button.component.ts",
-					"line": 10,
+					"line": 9,
 					"character": 28
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
 				}
 			]
 		},
 		{
-			"id": 14,
+			"id": 12,
 			"name": "IconComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -430,7 +394,7 @@
 			],
 			"children": [
 				{
-					"id": 17,
+					"id": 15,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -439,7 +403,7 @@
 					},
 					"signatures": [
 						{
-							"id": 18,
+							"id": 16,
 							"name": "new IconComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -447,20 +411,20 @@
 							"type": {
 								"type": "reference",
 								"name": "IconComponent",
-								"id": 14
+								"id": 12
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 10,
+							"line": 11,
 							"character": 21
 						}
 					]
 				},
 				{
-					"id": 16,
+					"id": 14,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -480,7 +444,7 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 10,
+							"line": 11,
 							"character": 15
 						}
 					],
@@ -491,7 +455,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 15,
+					"id": 13,
 					"name": "iconFont",
 					"kind": 1024,
 					"kindString": "Property",
@@ -511,7 +475,7 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 9,
+							"line": 10,
 							"character": 19
 						}
 					],
@@ -522,7 +486,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 21,
+					"id": 17,
 					"name": "getIconClasses",
 					"kind": 2048,
 					"kindString": "Method",
@@ -531,7 +495,7 @@
 					},
 					"signatures": [
 						{
-							"id": 22,
+							"id": 18,
 							"name": "getIconClasses",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -545,42 +509,13 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 16,
+							"line": 15,
 							"character": 16
 						}
 					]
 				},
 				{
 					"id": 19,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 20,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 14,
-							"character": 10
-						}
-					]
-				},
-				{
-					"id": 23,
 					"name": "showText",
 					"kind": 2048,
 					"kindString": "Method",
@@ -589,7 +524,7 @@
 					},
 					"signatures": [
 						{
-							"id": 24,
+							"id": 20,
 							"name": "showText",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -603,7 +538,7 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 31,
+							"line": 30,
 							"character": 10
 						}
 					]
@@ -614,43 +549,36 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						17
+						15
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						16,
-						15
+						14,
+						13
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						21,
-						19,
-						23
+						17,
+						19
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "icon/icon.component.ts",
-					"line": 8,
+					"line": 9,
 					"character": 26
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
 				}
 			]
 		},
 		{
-			"id": 26,
+			"id": 22,
 			"name": "InitiafyButtonModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -678,7 +606,7 @@
 			]
 		},
 		{
-			"id": 25,
+			"id": 21,
 			"name": "InitiafyIconModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -712,9 +640,9 @@
 			"kind": 128,
 			"children": [
 				1,
-				14,
-				26,
-				25
+				12,
+				22,
+				21
 			]
 		}
 	]
