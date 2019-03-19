@@ -7,6 +7,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import {
   InitiafyButtonModule,
@@ -83,6 +84,7 @@ export function startupServiceFactory(
     MatTableModule,
     MatSlideToggleModule,
     MatCheckboxModule,
+    MatSidenavModule,
     MarkdownModule.forRoot({
       loader: HttpClient,
       markedOptions: {
