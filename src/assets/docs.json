@@ -704,6 +704,145 @@
 					"character": 31
 				}
 			]
+		},
+		{
+			"id": 32,
+			"name": "InitiafySearchBarModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatButtonModule,\r\n    MatTooltipModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [SearchBarComponent],\r\n  exports: [SearchBarComponent]\r\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "search-bar/search-bar.module.ts",
+					"line": 21,
+					"character": 36
+				}
+			]
+		},
+		{
+			"id": 27,
+			"name": "SearchBarComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'initiafy-search-bar',\n  templateUrl: './search-bar.component.html',\n  styleUrls: ['./search-bar.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 28,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 29,
+							"name": "new SearchBarComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "SearchBarComponent",
+								"id": 27
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 8,
+							"character": 51
+						}
+					]
+				},
+				{
+					"id": 30,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 31,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 12,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						28
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						30
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "search-bar/search-bar.component.ts",
+					"line": 8,
+					"character": 31
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
 		}
 	],
 	"groups": [
@@ -714,7 +853,9 @@
 				1,
 				14,
 				26,
-				25
+				25,
+				32,
+				27
 			]
 		}
 	]

@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'initiafy-search-bar',
+  selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
+  public componentName = 'SearchBarComponent';
+  public module = 'InitiafySearchBarModule';
 
   constructor() { }
 

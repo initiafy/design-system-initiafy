@@ -6,7 +6,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 
-import { DesignSystemInitiafyModule, InitiafyButtonModule, InitiafyIconModule } from 'design-system-initiafy';
+import { InitiafyButtonModule, InitiafyIconModule, InitiafySearchBarModule } from 'design-system-initiafy';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,6 +33,7 @@ import {
   DocumentationComponent,
   CodeComponent
 } from './shared';
+import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 
 export function startupServiceFactory(
   startupService: DocumentationService
@@ -58,13 +59,15 @@ export function startupServiceFactory(
     StructureComponent,
     ContentComponent,
     DocumentationComponent,
-    CodeComponent
+    CodeComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     InitiafyButtonModule,
     InitiafyIconModule,
+    InitiafySearchBarModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatExpansionModule,
