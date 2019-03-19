@@ -43,7 +43,6 @@ export class DocumentationComponent implements OnInit {
         }" ❗❗❗`
       );
     }
-    console.log(this.componentDocs);
     this.properties = [];
     this.methods = [];
     this.constructors = [];

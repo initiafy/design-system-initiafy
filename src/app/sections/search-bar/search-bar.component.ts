@@ -8,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class SearchBarComponent implements OnInit {
   public componentName = 'SearchBarComponent';
   public module = 'InitiafySearchBarModule';
+  public code = 'search-bar.html';
 
   collapsed = false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  search(event) {
+    alert(event);
   }
 
 }

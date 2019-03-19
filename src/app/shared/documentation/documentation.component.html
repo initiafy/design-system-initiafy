@@ -8,7 +8,7 @@
     ```
   </markdown>
 </div>
-<div class="flex align-items-center">
+<div class="flex align-items-center margin-bottom-16">
   <h3 class="margin-right-16">Selector:</h3>
   <markdown ngPreserveWhitespaces>
     ```html
@@ -18,7 +18,7 @@
 </div>
 <ng-content></ng-content>
 <ng-container *ngIf="inputs.length > 0">
-  <h3>Inputs</h3>
+  <h3 class="margin-top-16">Inputs</h3>
   <table mat-table [dataSource]="inputs">
     <!-- Position Column -->
     <ng-container matColumnDef="name">
@@ -46,7 +46,7 @@
   </table>
 </ng-container>
 <ng-container *ngIf="outputs.length > 0">
-  <h3>Outputs</h3>
+  <h3 class="margin-top-16">Outputs</h3>
   <table mat-table [dataSource]="outputs">
     <!-- Position Column -->
     <ng-container matColumnDef="name">
@@ -76,7 +76,7 @@
   </table>
 </ng-container>
 <ng-container *ngIf="twoWayBound.length > 0">
-  <h3>Two-Way bound properties</h3>
+  <h3 class="margin-top-16">Two-Way bound properties</h3>
   <table mat-table [dataSource]="twoWayBound">
     <!-- Position Column -->
     <ng-container matColumnDef="name">
@@ -99,7 +99,7 @@
     <tr mat-row *matRowDef="let row; columns: displayedTwoWayColumns"></tr>
   </table>
 </ng-container>
-<h3>Methods</h3>
+<h3 class="margin-top-16">Methods</h3>
 <ul>
   <li *ngFor="let prop of methods">{{ prop.name }}</li>
 </ul>

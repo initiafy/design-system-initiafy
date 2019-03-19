@@ -1,4 +1,4 @@
-<form>
+<form (ngSubmit)="onSubmit()">
   <div class="flex align-items-flex-end">
     <ng-template
       #notCollapsedTemplate
@@ -16,6 +16,7 @@
         <button
           mat-button
           *ngIf="value"
+          type='button'
           matSuffix
           mat-icon-button
           aria-label="Clear"
@@ -28,6 +29,7 @@
         class="margin-bottom-20 flex align-items-end"
         [label]="buttontext"
         [color]="color"
+        type='submit'
         aria-label="Search"
       >
       </initiafy-button>
