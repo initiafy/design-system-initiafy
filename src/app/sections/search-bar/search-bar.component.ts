@@ -9,6 +9,7 @@ export class SearchBarComponent implements OnInit {
   public componentName = 'SearchBarComponent';
   public module = 'InitiafySearchBarModule';
 
+  collapsed = false;
   constructor() { }
 
   ngOnInit() {

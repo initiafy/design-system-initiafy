@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { InitiafyIconModule } from '../icon/icon.module';
 import { SearchBarComponent } from './search-bar.component';
-import { MatFormFieldModule } from '@angular/material';
+import { MatFormFieldModule, MatButtonModule, MatIconModule } from '@angular/material';
 import { MatInputModule } from '@angular/material/input';
 import { InitiafyButtonModule } from '../button/button.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -15,6 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
+    MatButtonModule,
+    MatIconModule,
     InitiafyButtonModule,
     InitiafyIconModule
   ],

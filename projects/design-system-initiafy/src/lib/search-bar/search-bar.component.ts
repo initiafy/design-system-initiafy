@@ -12,32 +12,40 @@ export interface SearchItem {
   styleUrls: ['./search-bar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
-  @Input() placeholder = '';
-  @Input() collapsible: boolean;
-  @Input() collapsed: boolean;
-  @Input() wrappable: boolean;
-  @Input() searchItem: SearchItem;
-  @Input() color: string;
-  @Input() icon: string;
-  @Input() buttontext: string;
-
+  /** Placeholder text for the Input */
+  @Input() placeholder = 'Enter search term';
+  /** Color Scheme for the component */
+  @Input() color: 'primary' | 'secondary' = 'primary';
+  /** Text to display on expand button when component is collapsed */
+  @Input() buttontext = 'Search';
+  /** Icon to display on button when component is collapsed */
+  @Input() buttonicon = 'search';
+  /** Event triggered when the search is opened (collapsed = true => collapsed = false) */
   @Output() openSearch = new EventEmitter();
+  /** Event triggered when the search is closed (collapsed = false => collapsed = true) */
   @Output() closeSearch = new EventEmitter();
-  @Output() search = new EventEmitter();
+  /** Event triggered when the form is submitted */
+  @Output() search: EventEmitter<string> = new EventEmitter<string>();
 
-  formControl = new FormControl('');
-  value = 'Clear me';
-
-  // Two Way Binding Properties
-  searchParametersValue: [];
-  @Input()
-  get searchParameters() {
-    return this.searchParametersValue;
+  valueValue = 'Search term';
+  /** Initial Value for the Input */
+  @Input() get value() {
+    return this.valueValue;
   }
-  @Output() searchParametersChange = new EventEmitter();
-  set searchParameters(value) {
-    this.searchParametersValue = value;
-    this.searchParametersChange.emit(this.searchParametersValue);
+  @Output() valueChanged = new EventEmitter();
+  set value(value) {
+    this.valueValue = value;
+    this.valueChanged.emit(this.valueValue);
+  }
+  // Two Way Binding Properties
+  collapsedValue = false;
+  @Input() get collapsed() {
+    return this.collapsedValue;
+  }
+  @Output() collapsedChange = new EventEmitter();
+  set collapsed(value) {
+    this.collapsedValue = value;
+    this.collapsedChange.emit(this.collapsedValue);
   }
 
   constructor() {}
@@ -54,5 +62,9 @@ export class SearchBarComponent implements OnInit {
 
   triggerSearch(e) {
     return;
+  }
+
+  unCollapse() {
+    this.collapsed = false;
   }
 }

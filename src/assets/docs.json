@@ -82,7 +82,13 @@
 					],
 					"type": {
 						"type": "reference",
-						"name": "EventEmitter"
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
 					},
 					"defaultValue": " new EventEmitter()"
 				},
@@ -751,7 +757,7 @@
 			]
 		},
 		{
-			"id": 62,
+			"id": 64,
 			"name": "InitiafySearchBarModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -766,14 +772,14 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    FormsModule,\r\n    ReactiveFormsModule,\r\n    MatFormFieldModule,\r\n    MatInputModule,\r\n    InitiafyButtonModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [SearchBarComponent],\r\n  exports: [SearchBarComponent]\r\n}"
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    FormsModule,\r\n    ReactiveFormsModule,\r\n    MatFormFieldModule,\r\n    MatInputModule,\r\n    MatButtonModule,\r\n    MatIconModule,\r\n    InitiafyButtonModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [SearchBarComponent],\r\n  exports: [SearchBarComponent]\r\n}"
 					}
 				}
 			],
 			"sources": [
 				{
 					"fileName": "search-bar/search-bar.module.ts",
-					"line": 24,
+					"line": 26,
 					"character": 36
 				}
 			]
@@ -824,18 +830,21 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 41,
+							"line": 49,
 							"character": 3
 						}
 					]
 				},
 				{
-					"id": 39,
-					"name": "buttontext",
+					"id": 35,
+					"name": "buttonicon",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
 						"isExported": true
+					},
+					"comment": {
+						"shortText": "Icon to display on button when component is collapsed"
 					},
 					"decorators": [
 						{
@@ -857,11 +866,86 @@
 					"type": {
 						"type": "intrinsic",
 						"name": "string"
-					}
+					},
+					"defaultValue": "\"search\""
 				},
 				{
-					"id": 41,
+					"id": 34,
+					"name": "buttontext",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Text to display on expand button when component is collapsed"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 20,
+							"character": 21
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"Search\""
+				},
+				{
+					"id": 37,
 					"name": "closeSearch",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Event triggered when the search is closed (collapsed = false => collapsed = true)"
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 26,
+							"character": 23
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "Object"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter()"
+				},
+				{
+					"id": 48,
+					"name": "collapsedChange",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -880,8 +964,8 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 25,
-							"character": 23
+							"line": 45,
+							"character": 27
 						}
 					],
 					"type": {
@@ -897,73 +981,37 @@
 					"defaultValue": " new EventEmitter()"
 				},
 				{
-					"id": 34,
-					"name": "collapsed",
+					"id": 45,
+					"name": "collapsedValue",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
 						"isExported": true
 					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 17,
-							"character": 20
+							"line": 41,
+							"character": 16
 						}
 					],
 					"type": {
 						"type": "intrinsic",
 						"name": "boolean"
-					}
+					},
+					"defaultValue": "false"
 				},
 				{
 					"id": 33,
-					"name": "collapsible",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 16,
-							"character": 22
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 37,
 					"name": "color",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Color Scheme for the component"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -977,73 +1025,35 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 20,
+							"line": 18,
 							"character": 16
 						}
 					],
 					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 43,
-					"name": "formControl",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 28,
-							"character": 13
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "FormControl"
-					},
-					"defaultValue": " new FormControl('')"
-				},
-				{
-					"id": 38,
-					"name": "icon",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "primary"
 							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 21,
-							"character": 15
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
+							{
+								"type": "stringLiteral",
+								"value": "secondary"
+							}
+						]
+					},
+					"defaultValue": "\"primary\""
 				},
 				{
-					"id": 40,
+					"id": 36,
 					"name": "openSearch",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
 						"isExported": true
+					},
+					"comment": {
+						"shortText": "Event triggered when the search is opened (collapsed = true => collapsed = false)"
 					},
 					"decorators": [
 						{
@@ -1082,6 +1092,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Placeholder text for the Input"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -1095,7 +1108,7 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 15,
+							"line": 16,
 							"character": 22
 						}
 					],
@@ -1103,15 +1116,18 @@
 						"type": "intrinsic",
 						"name": "string"
 					},
-					"defaultValue": "\"\""
+					"defaultValue": "\"Enter search term\""
 				},
 				{
-					"id": 42,
+					"id": 38,
 					"name": "search",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
 						"isExported": true
+					},
+					"comment": {
+						"shortText": "Event triggered when the form is submitted"
 					},
 					"decorators": [
 						{
@@ -1126,7 +1142,7 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 26,
+							"line": 28,
 							"character": 18
 						}
 					],
@@ -1136,46 +1152,15 @@
 						"typeArguments": [
 							{
 								"type": "intrinsic",
-								"name": "Object"
+								"name": "string"
 							}
 						]
 					},
-					"defaultValue": " new EventEmitter()"
+					"defaultValue": " new EventEmitter<string>()"
 				},
 				{
-					"id": 36,
-					"name": "searchItem",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 19,
-							"character": 21
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "SearchItem",
-						"id": 28
-					}
-				},
-				{
-					"id": 48,
-					"name": "searchParametersChange",
+					"id": 42,
+					"name": "valueChanged",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -1194,8 +1179,8 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 37,
-							"character": 34
+							"line": 35,
+							"character": 24
 						}
 					],
 					"type": {
@@ -1211,8 +1196,8 @@
 					"defaultValue": " new EventEmitter()"
 				},
 				{
-					"id": 45,
-					"name": "searchParametersValue",
+					"id": 39,
+					"name": "valueValue",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -1221,68 +1206,19 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 32,
-							"character": 23
-						}
-					],
-					"type": {
-						"type": "tuple"
-					}
-				},
-				{
-					"id": 44,
-					"name": "value",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 29,
-							"character": 7
+							"line": 30,
+							"character": 12
 						}
 					],
 					"type": {
 						"type": "intrinsic",
 						"name": "string"
 					},
-					"defaultValue": "\"Clear me\""
-				},
-				{
-					"id": 35,
-					"name": "wrappable",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 18,
-							"character": 20
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
+					"defaultValue": "\"Search term\""
 				},
 				{
 					"id": 46,
-					"name": "searchParameters",
+					"name": "collapsed",
 					"kind": 262144,
 					"kindString": "Accessor",
 					"flags": {
@@ -1306,7 +1242,8 @@
 							"kindString": "Get signature",
 							"flags": {},
 							"type": {
-								"type": "tuple"
+								"type": "intrinsic",
+								"name": "boolean"
 							}
 						}
 					],
@@ -1325,7 +1262,8 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
-										"type": "tuple"
+										"type": "intrinsic",
+										"name": "boolean"
 									}
 								}
 							],
@@ -1338,13 +1276,92 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 34,
-							"character": 22
+							"line": 42,
+							"character": 24
 						},
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 38,
-							"character": 22
+							"line": 46,
+							"character": 15
+						}
+					]
+				},
+				{
+					"id": 40,
+					"name": "value",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Initial Value for the Input"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"getSignature": [
+						{
+							"id": 41,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Initial Value for the Input"
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"setSignature": [
+						{
+							"id": 43,
+							"name": "__set",
+							"kind": 1048576,
+							"kindString": "Set signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Initial Value for the Input"
+							},
+							"parameters": [
+								{
+									"id": 44,
+									"name": "value",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 32,
+							"character": 20
+						},
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 36,
+							"character": 11
 						}
 					]
 				},
@@ -1372,7 +1389,7 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 45,
+							"line": 53,
 							"character": 10
 						}
 					]
@@ -1401,7 +1418,7 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 47,
+							"line": 55,
 							"character": 14
 						}
 					]
@@ -1430,7 +1447,7 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 51,
+							"line": 59,
 							"character": 11
 						}
 					]
@@ -1472,8 +1489,37 @@
 					"sources": [
 						{
 							"fileName": "search-bar/search-bar.component.ts",
-							"line": 55,
+							"line": 63,
 							"character": 15
+						}
+					]
+				},
+				{
+					"id": 62,
+					"name": "unCollapse",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 63,
+							"name": "unCollapse",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "search-bar/search-bar.component.ts",
+							"line": 67,
+							"character": 12
 						}
 					]
 				}
@@ -1490,28 +1536,25 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						39,
-						41,
+						35,
 						34,
-						33,
 						37,
-						43,
-						38,
-						40,
-						32,
-						42,
-						36,
 						48,
 						45,
-						44,
-						35
+						33,
+						36,
+						32,
+						38,
+						42,
+						39
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						46
+						46,
+						40
 					]
 				},
 				{
@@ -1521,7 +1564,8 @@
 						53,
 						55,
 						57,
-						59
+						59,
+						62
 					]
 				}
 			],
@@ -1617,7 +1661,7 @@
 				15,
 				27,
 				26,
-				62,
+				64,
 				31
 			]
 		},

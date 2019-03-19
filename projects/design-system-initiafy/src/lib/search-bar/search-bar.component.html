@@ -1,44 +1,47 @@
-<!-- <form
-  [class.wrap]="wrappable"
-  class="root full-width flex row align-items-center"
->
-  <mat-form-field [color]="color" class="flex-grow-99">
-    <input matInput placeholder="Favorite food" [formControl]="formControl" />
-     <mat-placeholder>
-      <initiafy-icon icon="search" matPrefix></initiafy-icon>
-      <div class="placeholderText">{{ placeholder }}</div>
-    </mat-placeholder>
-    <input
-      matInput
-      [(ngModel)]="searchTerm"
-      name="searchTerm"
-      type="text"
-      (blur)="onBlurMethod()"
-    />
-    <initiafy-button
-      icon="add"
-      [color]="color"
-      matSuffix
-      mat-icon-button
-      aria-label="Clear"
-      (click)="resetForm()"
+<form>
+  <div class="flex align-items-flex-end">
+    <ng-template
+      #notCollapsedTemplate
+      [ngIf]="!collapsed"
+      [ngIfElse]="collapsedTemplate"
     >
-    </initiafy-button> 
-  </mat-form-field>
-</form> -->
-<mat-form-field class="example-form-field">
-  <input
-    matInput
-    type="text"
-    placeholder="Clearable input"
-    [(ngModel)]="value"
-  />
-  <initiafy-button
-    *ngIf="value"
-    matSuffix
-    icon="add"
-    aria-label="Clear"
-    (click)="value = ''"
-  >
-  </initiafy-button>
-</mat-form-field>
+      <mat-form-field [color]="color" class="example-form-field">
+        <input
+          matInput
+          type="text"
+          [placeholder]="placeholder"
+          [(ngModel)]="value"
+          name="value"
+        />
+        <button
+          mat-button
+          *ngIf="value"
+          matSuffix
+          mat-icon-button
+          aria-label="Clear"
+          (click)="value = ''"
+        >
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <initiafy-button
+        class="margin-bottom-20 flex align-items-end"
+        [label]="buttontext"
+        [color]="color"
+        aria-label="Search"
+      >
+      </initiafy-button>
+    </ng-template>
+    <ng-template #collapsedTemplate>
+      <initiafy-button
+        class="margin-bottom-20 flex align-items-end"
+        type='button'
+        (callback)="unCollapse()"
+        [icon]="buttonicon"
+        [color]="color"
+        aria-label="Search"
+      >
+      </initiafy-button>
+    </ng-template>
+  </div>
+</form>
