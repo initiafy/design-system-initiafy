@@ -1,21 +1,4 @@
-<h1>
-  {{ componentDocs.name }}
-</h1>
-<div class="flex align-items-center" *ngIf="module">
-  <markdown ngPreserveWhitespaces>
-    ```typescript 
-    import &#123; {{ module }} &#125; from 'design-system-initiafy' 
-    ```
-  </markdown>
-</div>
-<div class="flex align-items-center margin-bottom-16">
-  <h3 class="margin-right-16">Selector:</h3>
-  <markdown ngPreserveWhitespaces>
-    ```html
-    {{ selector }}
-    ```
-  </markdown>
-</div>
+<h1>{{ componentDocs.name }}</h1>
 <ng-content></ng-content>
 <ng-container *ngIf="inputs.length > 0">
   <h3 class="margin-top-16">Inputs</h3>
