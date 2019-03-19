@@ -1,5 +1,4 @@
-
-{ 
+{
 	"id": 0,
 	"name": "design-system-initiafy",
 	"kind": 0,
@@ -51,7 +50,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 20,
+							"line": 18,
 							"character": 42
 						}
 					]
@@ -77,7 +76,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 20,
+							"line": 18,
 							"character": 20
 						}
 					],
@@ -114,7 +113,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 10,
+							"line": 11,
 							"character": 16
 						}
 					],
@@ -153,7 +152,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 9,
+							"line": 10,
 							"character": 17
 						}
 					],
@@ -197,7 +196,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 19,
+							"line": 17,
 							"character": 19
 						}
 					],
@@ -228,7 +227,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 13,
+							"line": 14,
 							"character": 15
 						}
 					],
@@ -258,7 +257,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 14,
+							"line": 15,
 							"character": 19
 						}
 					],
@@ -302,7 +301,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 11,
+							"line": 12,
 							"character": 16
 						}
 					],
@@ -332,7 +331,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 18,
+							"line": 16,
 							"character": 18
 						}
 					],
@@ -362,7 +361,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 12,
+							"line": 13,
 							"character": 15
 						}
 					],
@@ -384,35 +383,6 @@
 						]
 					},
 					"defaultValue": "\"submit\""
-				},
-				{
-					"id": 13,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 14,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "button/button.component.ts",
-							"line": 24,
-							"character": 10
-						}
-					]
 				}
 			],
 			"groups": [
@@ -437,31 +407,18 @@
 						8,
 						5
 					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						13
-					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "button/button.component.ts",
-					"line": 8,
+					"line": 9,
 					"character": 28
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
 				}
 			]
 		},
 		{
-			"id": 15,
+			"id": 13,
 			"name": "IconComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -482,7 +439,7 @@
 			],
 			"children": [
 				{
-					"id": 18,
+					"id": 16,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -491,7 +448,7 @@
 					},
 					"signatures": [
 						{
-							"id": 19,
+							"id": 17,
 							"name": "new IconComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -499,20 +456,20 @@
 							"type": {
 								"type": "reference",
 								"name": "IconComponent",
-								"id": 15
+								"id": 13
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 10,
+							"line": 11,
 							"character": 21
 						}
 					]
 				},
 				{
-					"id": 17,
+					"id": 15,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -532,7 +489,7 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 10,
+							"line": 11,
 							"character": 15
 						}
 					],
@@ -543,7 +500,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 16,
+					"id": 14,
 					"name": "iconFont",
 					"kind": 1024,
 					"kindString": "Property",
@@ -563,7 +520,7 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 9,
+							"line": 10,
 							"character": 19
 						}
 					],
@@ -574,7 +531,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 22,
+					"id": 18,
 					"name": "getIconClasses",
 					"kind": 2048,
 					"kindString": "Method",
@@ -583,7 +540,7 @@
 					},
 					"signatures": [
 						{
-							"id": 23,
+							"id": 19,
 							"name": "getIconClasses",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -597,42 +554,13 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 16,
+							"line": 15,
 							"character": 16
 						}
 					]
 				},
 				{
 					"id": 20,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 21,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 14,
-							"character": 10
-						}
-					]
-				},
-				{
-					"id": 24,
 					"name": "showText",
 					"kind": 2048,
 					"kindString": "Method",
@@ -641,7 +569,7 @@
 					},
 					"signatures": [
 						{
-							"id": 25,
+							"id": 21,
 							"name": "showText",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -655,7 +583,7 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 31,
+							"line": 30,
 							"character": 10
 						}
 					]
@@ -666,43 +594,36 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						18
+						16
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						17,
-						16
+						15,
+						14
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						22,
-						20,
-						24
+						18,
+						20
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "icon/icon.component.ts",
-					"line": 8,
+					"line": 9,
 					"character": 26
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
 				}
 			]
 		},
 		{
-			"id": 27,
+			"id": 23,
 			"name": "InitiafyButtonModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -730,7 +651,7 @@
 			]
 		},
 		{
-			"id": 26,
+			"id": 22,
 			"name": "InitiafyIconModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -758,7 +679,7 @@
 			]
 		},
 		{
-			"id": 52,
+			"id": 48,
 			"name": "InitiafySearchBarModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -786,7 +707,7 @@
 			]
 		},
 		{
-			"id": 31,
+			"id": 27,
 			"name": "SearchBarComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -807,7 +728,7 @@
 			],
 			"children": [
 				{
-					"id": 44,
+					"id": 40,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -816,7 +737,7 @@
 					},
 					"signatures": [
 						{
-							"id": 45,
+							"id": 41,
 							"name": "new SearchBarComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -824,7 +745,7 @@
 							"type": {
 								"type": "reference",
 								"name": "SearchBarComponent",
-								"id": 31
+								"id": 27
 							}
 						}
 					],
@@ -837,7 +758,7 @@
 					]
 				},
 				{
-					"id": 36,
+					"id": 32,
 					"name": "buttonicon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -871,7 +792,7 @@
 					"defaultValue": "\"search\""
 				},
 				{
-					"id": 35,
+					"id": 31,
 					"name": "buttontext",
 					"kind": 1024,
 					"kindString": "Property",
@@ -905,7 +826,7 @@
 					"defaultValue": "\"Search\""
 				},
 				{
-					"id": 41,
+					"id": 37,
 					"name": "collapsedChange",
 					"kind": 1024,
 					"kindString": "Property",
@@ -945,7 +866,7 @@
 					"defaultValue": " new EventEmitter()"
 				},
 				{
-					"id": 38,
+					"id": 34,
 					"name": "collapsedValue",
 					"kind": 1024,
 					"kindString": "Property",
@@ -966,7 +887,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 33,
+					"id": 29,
 					"name": "color",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1009,7 +930,7 @@
 					"defaultValue": "\"primary\""
 				},
 				{
-					"id": 32,
+					"id": 28,
 					"name": "placeholder",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1043,7 +964,7 @@
 					"defaultValue": "\"Enter search term\""
 				},
 				{
-					"id": 37,
+					"id": 33,
 					"name": "search",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1083,7 +1004,7 @@
 					"defaultValue": " new EventEmitter<string>()"
 				},
 				{
-					"id": 34,
+					"id": 30,
 					"name": "value",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1117,7 +1038,7 @@
 					"defaultValue": "\"Search term\""
 				},
 				{
-					"id": 39,
+					"id": 35,
 					"name": "collapsed",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -1139,7 +1060,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 40,
+							"id": 36,
 							"name": "__get",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -1155,7 +1076,7 @@
 					],
 					"setSignature": [
 						{
-							"id": 42,
+							"id": 38,
 							"name": "__set",
 							"kind": 1048576,
 							"kindString": "Set signature",
@@ -1165,7 +1086,7 @@
 							},
 							"parameters": [
 								{
-									"id": 43,
+									"id": 39,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -1196,7 +1117,7 @@
 					]
 				},
 				{
-					"id": 46,
+					"id": 42,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1205,7 +1126,7 @@
 					},
 					"signatures": [
 						{
-							"id": 47,
+							"id": 43,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1225,7 +1146,7 @@
 					]
 				},
 				{
-					"id": 48,
+					"id": 44,
 					"name": "onSubmit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1234,7 +1155,7 @@
 					},
 					"signatures": [
 						{
-							"id": 49,
+							"id": 45,
 							"name": "onSubmit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1254,7 +1175,7 @@
 					]
 				},
 				{
-					"id": 50,
+					"id": 46,
 					"name": "unCollapse",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1263,7 +1184,7 @@
 					},
 					"signatures": [
 						{
-							"id": 51,
+							"id": 47,
 							"name": "unCollapse",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1288,37 +1209,37 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						44
+						40
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						36,
-						35,
-						41,
-						38,
-						33,
 						32,
+						31,
 						37,
-						34
+						34,
+						29,
+						28,
+						33,
+						30
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						39
+						35
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						46,
-						48,
-						50
+						42,
+						44,
+						46
 					]
 				}
 			],
@@ -1337,7 +1258,7 @@
 			]
 		},
 		{
-			"id": 28,
+			"id": 24,
 			"name": "SearchItem",
 			"kind": 256,
 			"kindString": "Interface",
@@ -1346,7 +1267,7 @@
 			},
 			"children": [
 				{
-					"id": 30,
+					"id": 26,
 					"name": "dataName",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1366,7 +1287,7 @@
 					}
 				},
 				{
-					"id": 29,
+					"id": 25,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -1391,8 +1312,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						30,
-						29
+						26,
+						25
 					]
 				}
 			],
@@ -1411,18 +1332,18 @@
 			"kind": 128,
 			"children": [
 				1,
-				15,
-				27,
-				26,
-				52,
-				31
+				13,
+				23,
+				22,
+				48,
+				27
 			]
 		},
 		{
 			"title": "Interfaces",
 			"kind": 256,
 			"children": [
-				28
+				24
 			]
 		}
 	]
