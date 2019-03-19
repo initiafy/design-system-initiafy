@@ -1,7 +1,11 @@
-<h1>{{ componentDocs.name }}</h1>
-<ng-content></ng-content>
+<div class="initiafy-card relative">
+  <i class="material-icons pointer absolute top-16 right-16" (click)="showCode = !showCode">code</i>
+  <h1>{{ componentDocs.name }}</h1>
+  <ng-content></ng-content>
+</div>
+
 <ng-container *ngIf="inputs.length > 0">
-  <h3 class="margin-top-16">Inputs</h3>
+  <h2>Inputs</h2>
   <table mat-table [dataSource]="inputs">
     <!-- Position Column -->
     <ng-container matColumnDef="name">
@@ -27,7 +31,9 @@
     <tr mat-header-row *matHeaderRowDef="displayedInputsColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedInputsColumns"></tr>
   </table>
+  <hr />
 </ng-container>
+
 <ng-container *ngIf="outputs.length > 0">
   <h3 class="margin-top-16">Outputs</h3>
   <table mat-table [dataSource]="outputs">
@@ -57,9 +63,11 @@
     <tr mat-header-row *matHeaderRowDef="displayedOutputsColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedOutputsColumns"></tr>
   </table>
+  <hr />
 </ng-container>
+
 <ng-container *ngIf="twoWayBound.length > 0">
-  <h3 class="margin-top-16">Two-Way bound properties</h3>
+  <h2>Two-Way bound properties</h2>
   <table mat-table [dataSource]="twoWayBound">
     <!-- Position Column -->
     <ng-container matColumnDef="name">
@@ -81,8 +89,10 @@
     <tr mat-header-row *matHeaderRowDef="displayedTwoWayColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedTwoWayColumns"></tr>
   </table>
+  <hr />
 </ng-container>
-<h3 class="margin-top-16">Methods</h3>
+
+<h2>Methods</h2>
 <ul>
   <li *ngFor="let prop of methods">{{ prop.name }}</li>
 </ul>

@@ -4,11 +4,13 @@ import {
   Child,
   Type
 } from 'src/app/core/documentation/documentation.service';
+import { CommonService } from 'src/app/common.service';
 
 @Component({
   selector: 'app-documentation',
   templateUrl: './documentation.component.html',
-  styleUrls: ['./documentation.component.scss']
+  styleUrls: ['./documentation.component.scss'],
+  providers: [CommonService]
 })
 export class DocumentationComponent implements OnInit {
   displayedInputsColumns: string[] = [
@@ -31,8 +33,16 @@ export class DocumentationComponent implements OnInit {
   public twoWayBound: Child[] = [];
   public methods: Child[] = [];
   public constructors: Child[] = [];
+  public showCode = false;
 
-  constructor(private documentationService: DocumentationService) {}
+  copyToClipboard(item: string): void {
+    this.common.copyToClipboard(item);
+  }
+
+  constructor(
+    private documentationService: DocumentationService,
+    private common: CommonService
+    ) {}
 
   ngOnInit() {
     this.componentDocs = this.documentationService.getDocs(this.componentName);
