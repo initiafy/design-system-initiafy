@@ -5,7 +5,11 @@
       [ngIf]="!collapsed"
       [ngIfElse]="collapsedTemplate"
     >
-      <mat-form-field [color]="color" class="example-form-field">
+      <mat-form-field
+        [color]="color"
+        floatLabel="always"
+        class="example-form-field"
+      >
         <input
           matInput
           type="text"
@@ -16,7 +20,7 @@
         <button
           mat-button
           *ngIf="value"
-          type='button'
+          type="button"
           matSuffix
           mat-icon-button
           aria-label="Clear"
@@ -29,7 +33,7 @@
         class="margin-bottom-20 flex align-items-end"
         [label]="buttontext"
         [color]="color"
-        type='submit'
+        type="submit"
         aria-label="Search"
       >
       </initiafy-button>
@@ -37,7 +41,7 @@
     <ng-template #collapsedTemplate>
       <initiafy-button
         class="margin-bottom-20 flex align-items-end"
-        type='button'
+        type="button"
         (callback)="unCollapse()"
         [icon]="buttonicon"
         [color]="color"

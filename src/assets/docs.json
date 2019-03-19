@@ -800,7 +800,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'initiafy-search-bar',\n  templateUrl: './search-bar.component.html',\n  styleUrls: ['./search-bar.component.scss']\n}"
+						"obj": "{\r\n  selector: 'initiafy-search-bar',\r\n  templateUrl: './search-bar.component.html',\r\n  styleUrls: ['./search-bar.component.scss']\r\n}"
 					}
 				}
 			],
