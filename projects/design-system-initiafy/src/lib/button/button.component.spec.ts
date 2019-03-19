@@ -145,6 +145,23 @@ describe('ButtonComponent', () => {
 
   });
 
+  describe('When testing type', () => {
+
+    it('should have default type if variable is empty', () => {
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.type).toBe('submit');
+    });
+
+    it('should show specific type if variable is passed', () => {
+      component.type = 'button';
+      fixture.detectChanges();
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.type).toBe('button');
+      
+    });
+
+  });
+
   describe('When clicking on the button', () => {
 
     it('should emit callback', () => {  

@@ -3,6 +3,7 @@
   class="button"
   [class.single]="!label"
   [ngClass]="design + ' ' + color"
+  [type]="type"
   [matTooltip]="tooltip"
   [disabled]="disabled"
   (click)="callback.emit($event)"

@@ -1,6 +1,7 @@
 @import "../imports/variables";
 
 .initiafy-grid {
+    display: -ms-grid;
     display: grid;
     grid-gap: 6px;
 
@@ -37,4 +38,14 @@
     .initiafy-grid.three-one-columns {
         grid-template-columns: 1fr;
     }
+}
+
+/* IE fix */
+@for $i from 1 through 4 {
+    .grid-column-#{$i} {
+        -ms-grid-column: #{$i};
+    }
+    .grid-row-#{$i} {
+        -ms-grid-row: #{$i};
+    }    
 }
