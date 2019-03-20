@@ -1,15 +1,15 @@
 <h1>
   {{ componentDocs.name }}
 </h1>
-<div class="flex align-items-center" *ngIf="module">
+<div class="flex align-items-center scroll-x hide-scroll" *ngIf="module">
   <markdown ngPreserveWhitespaces>
     ```typescript 
     import &#123; {{ module }} &#125; from 'design-system-initiafy' 
     ```
   </markdown>
 </div>
-<div class="flex align-items-center margin-bottom-16">
-  <h3 class="margin-right-16">Selector:</h3>
+<div class="flex align-items-center margin-bottom-16 scroll-x hide-scroll">
+  <h3 class="margin-right-16 margin-y-auto">Selector:</h3>
   <markdown ngPreserveWhitespaces>
     ```html
     {{ selector }}

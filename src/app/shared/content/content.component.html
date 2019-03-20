@@ -1,22 +1,33 @@
-<div class="initiafy-wrapper">
-  <div class="initiafy-sidenav">
+<mat-drawer-container class="initiafy-wrapper" autosize>
+  <mat-drawer #drawer class="initiafy-sidenav" [mode]="smallScreen ? 'over' : 'side'">
     <nav>
       <ul>
         <li><a routerLinkActive="active" routerLink="/grid">Grid</a></li>
-        <li><a routerLinkActive="active" routerLink="/typography">Typography</a></li>
+        <li>
+          <a routerLinkActive="active" routerLink="/typography">Typography</a>
+        </li>
         <li><a routerLinkActive="active" routerLink="/colors">Colors</a></li>
         <li><a routerLinkActive="active" routerLink="/icons">Icons</a></li>
         <li><a routerLinkActive="active" routerLink="/buttons">Buttons</a></li>
-        <li><a routerLinkActive="active" routerLink="/search-bar">Search Bar</a></li>
-        <li><a routerLinkActive="active" routerLink="/actions">Action buttons</a></li>
-        <li><a routerLinkActive="active" routerLink="/structure">Structure</a></li>
+        <li>
+          <a routerLinkActive="active" routerLink="/search-bar">Search Bar</a>
+        </li>
+        <li>
+          <a routerLinkActive="active" routerLink="/actions">Action buttons</a>
+        </li>
+        <li>
+          <a routerLinkActive="active" routerLink="/structure">Structure</a>
+        </li>
         <li><a routerLinkActive="active" routerLink="/alerts">Alerts</a></li>
-        <li><a routerLinkActive="active" routerLink="/messages">Messages</a></li>
+        <li>
+          <a routerLinkActive="active" routerLink="/messages">Messages</a>
+        </li>
         <li><a routerLinkActive="active" routerLink="/helpers">Helpers</a></li>
       </ul>
     </nav>
-  </div>
+  </mat-drawer>
+
   <div class="initiafy-content">
     <router-outlet></router-outlet>
   </div>
-</div>
+</mat-drawer-container>
