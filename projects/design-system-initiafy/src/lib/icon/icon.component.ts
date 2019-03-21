@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 
 export class IconComponent {
-  @Input() iconFont = '';
+  @Input() iconFont: 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
   @Input() icon = '';
 
   constructor() {}

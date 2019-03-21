@@ -1,9 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {
-  DocumentationService,
-  Child,
-  Type
-} from 'src/app/core/documentation/documentation.service';
+import { DocumentationService, Child, Type } from 'src/app/core/documentation/documentation.service';
 import { CommonService } from 'src/app/common.service';
 
 @Component({
@@ -23,6 +19,7 @@ export class DocumentationComponent implements OnInit {
   displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
   @Input() componentName: string;
   @Input() module: string;
+  @Input() codeTitle: string;
 
   private componentDocs: Child;
 
@@ -33,7 +30,6 @@ export class DocumentationComponent implements OnInit {
   public twoWayBound: Child[] = [];
   public methods: Child[] = [];
   public constructors: Child[] = [];
-  public showCode = false;
 
   copyToClipboard(item: string): void {
     this.common.copyToClipboard(item);
@@ -42,7 +38,7 @@ export class DocumentationComponent implements OnInit {
   constructor(
     private documentationService: DocumentationService,
     private common: CommonService
-    ) {}
+  ) {}
 
   ngOnInit() {
     this.componentDocs = this.documentationService.getDocs(this.componentName);
@@ -50,7 +46,7 @@ export class DocumentationComponent implements OnInit {
       console.error(
         `No doumentation found for the supplied Component Name of "${
           this.componentName
-        }" ❗❗❗`
+        }"`
       );
     }
     this.properties = [];

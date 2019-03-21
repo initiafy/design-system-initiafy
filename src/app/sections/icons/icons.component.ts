@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./icons.component.scss']
 })
 export class IconsComponent {
-  public title = 'icon.html';
   public componentName = 'IconComponent';
   public module = 'InitiafyIconModule';
+  public showCode: boolean = false;
 
   constructor() {}
 

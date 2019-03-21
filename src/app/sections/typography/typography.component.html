@@ -1,33 +1,42 @@
-<div class="white-bgcolor radius-std shadow-std padding-std typography">
-    <div class="relative">
-        <h1 class="default margin-top-0">Typography</h1>
-        <i class="material-icons pointer absolute top right" (click)="showCode = !showCode">code</i>
-    </div>    
+<initiafy-card class="relative">
+    <initiafy-icon icon="code" class="pointer absolute top-16 right-16" (click)="showCode = !showCode">code</initiafy-icon>
+    <h1 class="default margin-top-0">Typography</h1>
     <p>Default family: Lato; imported via Google Fonts.</p>
 
-    <h2>Headings</h2>
+    <h2 class="margin-top-32">Headings</h2>
+    <p>Default headings h1 to h4</p>
     <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
         <h1 class="margin-top-0">The quick brown fox jumps over the lazy dog</h1>
         <h2 class="margin-top-0">The quick brown fox jumps over the lazy dog</h2>
         <h3 class="margin-top-0">The quick brown fox jumps over the lazy dog</h3>
         <h4 class="margin-top-0">The quick brown fox jumps over the lazy dog</h4>
     </div>
-    <div id="code" class="margin-top-8" *ngIf="showCode">
-        &lt;initiafy-heading level="h1"> The quick brown fox jumps over the lazy dog &lt;/initiafy-heading> <br />
-        &lt;initiafy-heading level="h2"> The quick brown fox jumps over the lazy dog &lt;/initiafy-heading> <br />
-        &lt;initiafy-heading level="h3"> The quick brown fox jumps over the lazy dog &lt;/initiafy-heading> <br />
-        &lt;initiafy-heading level="h4"> The quick brown fox jumps over the lazy dog &lt;/initiafy-heading> <br />
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <h1>The quick brown fox jumps over the lazy dog</h1>
+            <h2>The quick brown fox jumps over the lazy dog</h2>
+            <h3>The quick brown fox jumps over the lazy dog</h3>
+            <h4>The quick brown fox jumps over the lazy dog</h4>
+            ```
+        </markdown>
     </div>
 
-    <h2>Paragraphs</h2>
+    <h2 class="margin-top-32">Paragraphs</h2>
+    <p>Default paragraph with p</p>
     <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. </p>
     </div>
-    <div id="code" class="margin-top-8" *ngIf="showCode">
-        &lt;initiafy-paragraph> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. &lt;/initiafy-paragraph> <br />
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+            ```
+        </markdown>
     </div>
 
-    <h2>Style</h2>
+    <h2 class="margin-top-32">Style</h2>
+    <p>Formating styles with bold, bolder, italic, underline, uppercase and lowercase</p>
     <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
         <p> Lorem ipsum dolor sit amet <span class="bold">bold text</span> onsectetur adipiscing elit.</p>
         <p> Lorem ipsum dolor sit amet <span class="bolder">bolder text</span> onsectetur adipiscing elit.</p>
@@ -36,20 +45,25 @@
         <p> Lorem ipsum dolor sit amet <span class="uppercase">uppercase text</span> onsectetur adipiscing elit.</p>
         <p> Lorem ipsum dolor sit amet <span class="lowercase">lowercase text</span> onsectetur adipiscing elit.</p>
     </div>
-    <div id="code" class="margin-top-8" *ngIf="showCode">
-        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text bold>bold text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
-        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text bolder>bolder text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
-        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text italic>"italic text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
-        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text underline>underline text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
-        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text uppercase>uppercase text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
-        &lt;initiafy-paragraph>  Lorem ipsum dolor sit amet &lt;initiafy-text lowercase>lowercase text&lt;/initiafy-text> onsectetur adipiscing elit. &lt;/initiafy-paragraph> <br />
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <span class="bold">bold text</span>
+            <span class="bolder">bolder text</span>
+            <span class="italic">italic text</span>
+            <span class="underline">underline text</span>
+            <span class="uppercase">uppercase text</span>
+            <span class="lowercase">lowercase text</span>
+               ```
+        </markdown>
     </div>
 
-    <h2>Sizes</h2>
+    <h2 class="margin-top-32">Sizes</h2>
+    <p>Font sizes from 8px to 100px, multiples of 2</p>
     <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
-        <span *ngFor="let item of array(50); let i = index">
-            <span *ngIf="i > 2" class="text{{ (i + 1) * 2 }} margin-0">Text with font size {{ (i + 1) * 2 }}px | </span>
-        </span>
+        <p *ngFor="let item of array(20); let i = index">
+            <span *ngIf="i > 3" class="text{{ (i + 1) * 2 }} margin-0">Text with font size {{ (i + 1) * 2 }}px </span>
+        </p>
     </div>
 
-</div>
+</initiafy-card>

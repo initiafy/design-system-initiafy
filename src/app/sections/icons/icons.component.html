@@ -1,7 +1,9 @@
-<app-documentation [componentName]="componentName" [module]="module">
+<app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'icon.html'">
+  <initiafy-icon icon="code" class="pointer absolute top-16 right-16" (click)="showCode = !showCode"></initiafy-icon>
+  <p>Icons pre-selected for the platform.</p>
   <div class="color-palette icons margin-top-32">
     <div class="items-block">
-      <initiafy-icon icon="add" (click)="copyToClipboard('')"></initiafy-icon>
+      <initiafy-icon icon="add"></initiafy-icon>
       <div class="content">
         <p class="bold margin-top-0">Add icon</p>
         <p class="margin-0 grey-color" *ngIf="showCode">
@@ -222,7 +224,3 @@
     </div>
   </div>
 </app-documentation>
-
-<div class="initiafy-card margin-top-std">
-  <app-code [title]="title"></app-code>
-</div>

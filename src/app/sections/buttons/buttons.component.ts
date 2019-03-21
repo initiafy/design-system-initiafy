@@ -1,14 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-buttons',
   templateUrl: './buttons.component.html',
   styleUrls: ['./buttons.component.scss']
 })
-export class ButtonsComponent implements OnInit {
-  public codeTitle = 'button.html';
+export class ButtonsComponent {
   public componentName = 'ButtonComponent';
   public module = 'InitiafyButtonModule';
+
   constructor() {}
-  ngOnInit() {}
+
 }
