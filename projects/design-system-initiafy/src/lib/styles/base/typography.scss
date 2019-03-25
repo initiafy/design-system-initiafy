@@ -84,11 +84,13 @@ p, li {
 .break-word {
   word-break: break-word;
 }
+
 .no-wrap {
   white-space: nowrap;
 }
 
-/* Line height */
-.lineHeight1andHalf {
-  line-height: 1.5;
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
