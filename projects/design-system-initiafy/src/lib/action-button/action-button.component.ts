@@ -11,7 +11,7 @@ export class ActionButtonComponent {
   @Input() icon: string;
   @Input() iconFont: 'glyphicon' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
   @Input() tooltip: string;
-  @Input() size: 'smaller' | 'regular' | 'bigger' = 'regular';
+  @Input() size: 'small' | 'medium' | 'big' = 'medium';
   @Input() disabled = false;
   @Output() callback = new EventEmitter();
   

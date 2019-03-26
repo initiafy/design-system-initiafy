@@ -2,9 +2,10 @@ var gulp = require('gulp')
 var sass = require('gulp-sass')
 var concat = require('gulp-concat')
 
-gulp.task('default', gulp.series((done) => {
+gulp.task('css', gulp.series((done) => {
     gulp.src([
         "src/lib/styles/imports/fonts.scss",
+        "src/lib/styles/imports/initiafy-font.scss",
         "src/lib/styles/imports/animations.scss",
         "src/lib/styles/imports/colors.scss",
         "src/lib/styles/theme/*.scss",
@@ -18,3 +19,11 @@ gulp.task('default', gulp.series((done) => {
     .pipe(gulp.dest('./dist/lib/styles/'));
     done();
 }));
+
+gulp.task('copy', gulp.series((done) => {
+    gulp.src("src/lib/styles/assets/fonts/*")
+    .pipe(gulp.dest('./dist/lib/styles/'));
+    done();
+}));
+
+gulp.task('default', gulp.series('css', 'copy'));
