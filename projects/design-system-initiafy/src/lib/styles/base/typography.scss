@@ -8,7 +8,7 @@ html {
   font-size: 100%;
 }
 
-body {
+body {  
   font-size: 14px;
   font-size: 1rem;
   letter-spacing: 0.04rem;
@@ -33,18 +33,18 @@ li {
 @for $i from 2 through 50 {
   .text#{$i*2} {
     font-size: #{$i * 2}px;
-  }
+}
 }
 
 /* Responsive */
 .responsiveText14 {
   /*Responsive text equation - Units represent 'MinFontSize', 'MaxFontSize', 'MinFontSize', 100vw, 'MinScreenSize', 'MaxScreenSize', 'MinScreenSize', respectively. Pay attentions to the units. */
-  font-size: calc(12px + (14 - 12) * (100vw - 360px) / (1300 - 360));
+  font-size: calc( 12px + (14 - 12)*(100vw - 360px) / (1300 - 360) );
 }
 
 .responsiveText16 {
   /*Responsive text equation - Units represent 'MinFontSize', 'MaxFontSize', 'MinFontSize', 100vw, 'MinScreenSize', 'MaxScreenSize', 'MinScreenSize', respectively. Pay attentions to the units. */
-  font-size: calc(12px + (16 - 12) * (100vw - 360px) / (1300 - 360));
+  font-size: calc( 12px + (16 - 12)*(100vw - 360px) / (1300 - 360) );
 }
 
 /* Styles */
@@ -87,13 +87,15 @@ li {
 .break-word {
   word-break: break-word;
 }
+
 .no-wrap {
   white-space: nowrap;
 }
 
-/* Line height */
-.lineHeight1andHalf {
-  line-height: 1.5;
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .noselect {

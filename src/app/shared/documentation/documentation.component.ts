@@ -1,14 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import {
-  DocumentationService,
-  Child,
-  Type
-} from 'src/app/core/documentation/documentation.service';
+import { DocumentationService, Child, Type } from 'src/app/core/documentation/documentation.service';
+import { CommonService } from 'src/app/common.service';
 
 @Component({
   selector: 'app-documentation',
   templateUrl: './documentation.component.html',
-  styleUrls: ['./documentation.component.scss']
+  styleUrls: ['./documentation.component.scss'],
+  providers: [CommonService]
 })
 export class DocumentationComponent implements OnInit {
   displayedInputsColumns: string[] = [
@@ -21,6 +19,7 @@ export class DocumentationComponent implements OnInit {
   displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
   @Input() componentName: string;
   @Input() module: string;
+  @Input() codeTitle: string;
 
   private componentDocs: Child;
 
@@ -32,7 +31,14 @@ export class DocumentationComponent implements OnInit {
   public methods: Child[] = [];
   public constructors: Child[] = [];
 
-  constructor(private documentationService: DocumentationService) {}
+  copyToClipboard(item: string): void {
+    this.common.copyToClipboard(item);
+  }
+
+  constructor(
+    private documentationService: DocumentationService,
+    private common: CommonService
+  ) {}
 
   ngOnInit() {
     this.componentDocs = this.documentationService.getDocs(this.componentName);
@@ -40,7 +46,7 @@ export class DocumentationComponent implements OnInit {
       console.error(
         `No doumentation found for the supplied Component Name of "${
           this.componentName
-        }" ❗❗❗`
+        }"`
       );
     }
     this.properties = [];

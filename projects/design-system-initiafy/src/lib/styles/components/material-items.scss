@@ -596,6 +596,7 @@ input.mat-input-element {
 
 textarea.cdk-textarea-autosize {
   resize: none;
+  min-height: 22px;
 }
 
 textarea.cdk-textarea-autosize-measuring {

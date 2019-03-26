@@ -1,30 +1,19 @@
-<div class="white-bgcolor radius-std shadow-std padding-std mselection">
-    <h1 class="default margin-top-0">Action Buttons</h1>
+<app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'action-button.html'">  
     <p>Standard button boxes with actions.</p>
-    <div class="selection-boxes-holder textCenter">
-        <button class="selection-boxes white-bgcolor shadow-std radius-std padding-std ripple">
-            <div class="selection-box-wrapper">
-                <i class="icon-plus mat-icon mat-default material-icons">alternate_email</i>
-                <h3 class="textCenter"> Selection Box Name </h3>
-            </div>
-        </button>
-        <button class="selection-boxes white-bgcolor shadow-std radius-std padding-std ripple">
-            <div class="selection-box-wrapper">
-                <i class="icon-plus mat-icon mat-default material-icons">people</i>
-                <h3> Selection Box Name </h3>
-            </div>
-        </button>
-        <button class="selection-boxes white-bgcolor shadow-std radius-std padding-std ripple">
-            <div class="selection-box-wrapper">
-                <i class="icon-plus mat-icon mat-default material-icons">alternate_email</i>
-                <h3 class="textCenter"> Selection Box Name </h3>
-            </div>
-        </button>
-        <button class="selection-boxes white-bgcolor shadow-std radius-std padding-std ripple">
-            <div class="selection-box-wrapper">
-                <i class="icon-plus mat-icon mat-default material-icons">people</i>
-                <h3> Selection Box Name </h3>
-            </div>
-        </button>
+    <div class="flex-justify-align-center">
+        <initiafy-action-button label="Selection Box Name" size="small" icon="alternate_email" class="margin-16"></initiafy-action-button>
+        <initiafy-action-button label="Selection Box Name" size="small" icon="person" class="margin-16"></initiafy-action-button>
+        <initiafy-action-button label="Selection Box Name" size="small" icon="cloud_download" class="margin-16"></initiafy-action-button>
     </div>
-</div>
+    <div class="flex-justify-align-center margin-top-32">
+        <initiafy-action-button label="Selection Box Name" icon="alternate_email" class="margin-16"></initiafy-action-button>
+        <initiafy-action-button label="Selection Box Name" icon="person" class="margin-16"></initiafy-action-button>
+        <initiafy-action-button label="Selection Box Name" icon="cloud_download" class="margin-16"></initiafy-action-button>
+    </div>
+    <div class="flex-justify-align-center margin-top-32">
+        <initiafy-action-button label="Selection Box Name" size="bigger" icon="alternate_email" class="margin-16"></initiafy-action-button>
+        <initiafy-action-button label="Selection Box Name" size="bigger" icon="person" class="margin-16"></initiafy-action-button>
+        <initiafy-action-button label="Selection Box Name" size="bigger" icon="cloud_download" class="margin-16"></initiafy-action-button>
+    </div>
+</app-documentation>
+

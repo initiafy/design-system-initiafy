@@ -1,16 +1,13 @@
-<div class="white-bgcolor radius-std shadow-std padding-std search-bar">
-  <app-documentation [componentName]="componentName" [module]="module">
-    <mat-checkbox class="example-margin" [(ngModel)]="collapsed"
-      >Collapsed</mat-checkbox
-    >
-    <div class="margin-y-24">
-      <initiafy-search-bar
-        color="primary"
-        [value]="'Search term'"
-        [(collapsed)]="collapsed"
-        (search)="search($event)"
-      ></initiafy-search-bar>
-    </div>
-    <app-code [title]="code"></app-code>
-  </app-documentation>
-</div>
+<app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'search-bar.html'">  
+  <div class="margin-y-24">
+    <initiafy-search-bar
+      design="primary"
+      [value]="'Search term'"
+      [(collapsed)]="collapsed"
+      (search)="search($event)"
+    ></initiafy-search-bar>
+  </div>
+  <mat-checkbox class="example-margin" [(ngModel)]="collapsed"
+    >Collapsed</mat-checkbox
+  >
+</app-documentation>

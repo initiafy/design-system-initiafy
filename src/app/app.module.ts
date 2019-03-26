@@ -13,7 +13,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import {
   InitiafyButtonModule,
   InitiafyIconModule,
-  InitiafySearchBarModule
+  InitiafySearchBarModule,
+  InitiafyCardModule,
+  InitiafyActionButtonModule
 } from 'design-system-initiafy';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -79,6 +81,8 @@ export function startupServiceFactory(
     InitiafyButtonModule,
     InitiafyIconModule,
     InitiafySearchBarModule,
+    InitiafyCardModule,
+    InitiafyActionButtonModule,
     BrowserAnimationsModule,
     HttpClientModule,
     MatExpansionModule,

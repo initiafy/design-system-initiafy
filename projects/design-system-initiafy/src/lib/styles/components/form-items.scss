@@ -144,7 +144,8 @@ input[type=password],
 input[type=search],
 input[type=tel],
 input[type=text],
-input.mat-input-element {
+input.mat-input-element,
+textarea {
   min-height: 18px;
 }
 
