@@ -1,11 +1,19 @@
 <div class="initiafy-header-wrapper">
   <div class="initiafy-header">
+    <div class="flex align-items-center">
+      <initiafy-icon
+        icon="dehaze"
+        class="pointer flex margin-right-16 noselect"
+        (click)="toggleNav.emit()"
+      ></initiafy-icon>
       <a routerLink="/">
-        <img 
-          src="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2017/12/initiafy-logo.svg" 
+        <img
+          src="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2017/12/initiafy-logo.svg"
           alt="Initiafy"
-          width="122px" />
+          width="122px"
+        />
       </a>
-      Design System
+    </div>
+    Design System
   </div>
 </div>

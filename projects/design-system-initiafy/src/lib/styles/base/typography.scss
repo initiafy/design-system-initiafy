@@ -1,7 +1,7 @@
-@import "../imports/variables";
+@import '../imports/variables';
 
 * {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 html {
@@ -24,13 +24,16 @@ h4 {
   cursor: default;
 }
 
-p, li {
+p,
+li {
   font-size: 14px;
 }
 
 /* Font-size options 8/12/.../100 */
 @for $i from 2 through 50 {
-  .text#{$i*2} { font-size: #{$i*2}px; }
+  .text#{$i*2} {
+    font-size: #{$i * 2}px;
+}
 }
 
 /* Responsive */
@@ -93,4 +96,14 @@ p, li {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
 }
