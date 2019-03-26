@@ -11,6 +11,24 @@
 }
 
 /* Cards */
+.initiafy-card-wrapper {
+    &.small {
+        flex: 1 0 300px;
+    }
+    &.standard {
+        flex: 1 0 380px;
+    }
+    &.medium {
+        flex: 1 0 600px;
+    }
+    &.big {
+        flex: 1 0 900px;
+    }
+    &.bigger {
+        flex: 1 0 1200px;
+    }
+}
+
 .initiafy-card {
     display: block;
     cursor: default;
@@ -23,15 +41,6 @@
     @include shadow-std();
     &.small-padding {
         padding: $spacing-half;
-    }
-    &.small {
-        width: 380px;
-    }
-    &.medium {
-        width: 600px;
-    }
-    &.big {
-        width: 920px;
     }
 }
 

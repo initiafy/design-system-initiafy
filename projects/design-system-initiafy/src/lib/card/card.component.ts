@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'initiafy-card',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent  {
+  @Input() size: 'small' | 'standard' | 'medium' | 'big' | 'bigger'= 'standard';
 
   constructor() { }
 
