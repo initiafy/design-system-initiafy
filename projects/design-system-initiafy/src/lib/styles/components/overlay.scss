@@ -82,7 +82,6 @@
 }
 
 /* Initiafy overlay */
-
 .initiafy-overlay-gradefaux-host {
   height: 100vh;
   width: 100vw;
@@ -93,8 +92,6 @@
 .initiafy-overlay-grade-root {
   width: 100%;
   min-height: 100%;
-	background-color: $BackgroundDefault;
-  background-color: var(--BackgroundDefault);
   display: flex;
   justify-content: center;
   align-items: stretch;
