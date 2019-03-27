@@ -261,7 +261,7 @@
 						"types": [
 							{
 								"type": "stringLiteral",
-								"value": "smaller"
+								"value": "small"
 							},
 							{
 								"type": "stringLiteral",

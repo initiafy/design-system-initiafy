@@ -14,6 +14,7 @@ export class ButtonComponent {
   @Input() iconFont: 'glyphicon' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
   @Input() tooltip: string;
   @Input() disabled = false;
+  @Input() buttonClasses = '';
   @Output() callback = new EventEmitter();
 
   constructor() {}
