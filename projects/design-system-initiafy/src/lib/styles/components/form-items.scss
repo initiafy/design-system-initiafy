@@ -11,6 +11,11 @@
   position: relative;
   cursor: pointer;
 
+  /* Main Button */
+  &.stroke {
+    padding: 0 14px;
+  }
+
   /* Main Primary Button */
   &.main.primary {
     @include button-main(var(--PMain), $PMain);
@@ -38,7 +43,7 @@
     &:hover .mat-button-focus-overlay {
       background-color: $PMain;
       background-color: var(--PMain);
-      opacity: .04;
+      opacity: .05;
     }
   }
 
@@ -59,15 +64,17 @@
 
   /* White Button (background white and shadow) */
   &.white {
-    border-color: transparent;
-    background-color: white;
-    color: $Grey;
-    color: var(--Grey);
-    padding: 0 18px;
+    @include button-basic('white');
     @include shadow-btn();
     &:hover {
       background-color: $Hover;
       background-color: var(--Hover);
+    }
+    &[disabled],
+    &[disabled][disabled],
+    &[disabled]:hover,
+    &[disabled][disabled]:hover {
+      @include shadow-btn();
     }
     .mat-ripple-element {
       background-color: rgba(0, 0, 0, 0.1);
@@ -76,11 +83,7 @@
 
   /* Basic Button (background transparent) */
   &.basic {
-    border-color: transparent;
-    background-color: transparent;
-    color: $Grey;
-    color: var(--Grey);
-    padding: 0 18px;
+    @include button-basic('transparent');
     &:hover {
       background-color: $Hover;
       background-color: var(--Hover);
@@ -112,8 +115,11 @@
     background-color: var(--Ripple);
     color: $Disable;
     color: var(--Disable);
+    box-shadow: none;
     cursor: default;
     &:hover {
+      background-color: $Ripple;
+      background-color: var(--Ripple);
       box-shadow: none;
     }
   }
