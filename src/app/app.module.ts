@@ -43,6 +43,7 @@ import {
 } from './shared';
 import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataTableComponent } from './shared/data-table/data-table.component';
 
 export function startupServiceFactory(
   startupService: DocumentationService
@@ -69,7 +70,8 @@ export function startupServiceFactory(
     ContentComponent,
     DocumentationComponent,
     CodeComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    DataTableComponent
   ],
   imports: [
     BrowserModule,
