@@ -1,0 +1,8 @@
+.rotate180 {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+.animated {
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
