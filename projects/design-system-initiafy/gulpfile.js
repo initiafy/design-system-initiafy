@@ -1,7 +1,6 @@
 var gulp = require('gulp')
 var sass = require('gulp-sass')
 var concat = require('gulp-concat')
-var autoprefixer = require('gulp-autoprefixer')
 
 /*
  * CSS gulp function
@@ -24,7 +23,6 @@ gulp.task('css', gulp.series((done) => {
         "src/lib/styles/help/*.scss"
     ])
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(autoprefixer())
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('./dist/lib/styles/'));
     done();
