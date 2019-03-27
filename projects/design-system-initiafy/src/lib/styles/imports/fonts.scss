@@ -7,8 +7,20 @@
 /* Material Icons */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-/* Font Awesome */
+/* Font Awesome Icons */
 @import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+/* Initiafy Icons */
+@font-face {
+    font-family: 'Initiafy Icons';
+    src:    url('initiafyfont.eot?qtn8b5');
+    src:    url('initiafyfont.eot?qtn8b5#iefix') format('embedded-opentype'),
+            url('initiafyfont.ttf?qtn8b5') format('truetype'),
+            url('initiafyfont.woff?qtn8b5') format('woff'),
+            url('initiafyfont.svg?qtn8b5#initiafyfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* Setting fonts */
 .lato {
