@@ -20,7 +20,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'initiafy-action-button',\n  templateUrl: './action-button.component.html',\n  styleUrls: ['./action-button.component.scss']\n}"
+						"obj": "{\r\n  selector: 'initiafy-action-button',\r\n  templateUrl: './action-button.component.html',\r\n  styleUrls: ['./action-button.component.scss']\r\n}"
 					}
 				}
 			],
@@ -261,7 +261,7 @@
 						"types": [
 							{
 								"type": "stringLiteral",
-								"value": "small"
+								"value": "smaller"
 							},
 							{
 								"type": "stringLiteral",
@@ -769,7 +769,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'initiafy-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n}"
+						"obj": "{\r\n  selector: 'initiafy-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.scss']\r\n}"
 					}
 				}
 			],
@@ -800,7 +800,7 @@
 						{
 							"fileName": "card/card.component.ts",
 							"line": 9,
-							"character": 70
+							"character": 80
 						}
 					]
 				},
@@ -847,6 +847,10 @@
 							{
 								"type": "stringLiteral",
 								"value": "big"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "bigger"
 							}
 						]
 					},
@@ -1119,7 +1123,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [\n    CommonModule,\n    MatTooltipModule,\n    InitiafyIconModule\n  ],\n  declarations: [ActionButtonComponent],\n  exports: [ActionButtonComponent]\n}"
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatTooltipModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [ActionButtonComponent],\r\n  exports: [ActionButtonComponent]\r\n}"
 					}
 				}
 			],
@@ -1175,7 +1179,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  imports: [CommonModule],\n  declarations: [CardComponent],\n  exports: [CardComponent]\n}"
+						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [CardComponent],\r\n  exports: [CardComponent]\r\n}"
 					}
 				}
 			],
