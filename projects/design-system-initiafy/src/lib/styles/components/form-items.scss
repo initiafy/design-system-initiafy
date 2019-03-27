@@ -61,6 +61,21 @@ input:-webkit-autofill {
     min-width: 40px;  
   }
 
+  &.white {
+    border-color: transparent;
+    background-color: white;
+    color: $Grey;
+    color: var(--Grey);
+    @include shadow-btn();
+    &:hover {
+      background-color: $Hover;
+      background-color: var(--Hover);
+    }
+    .mat-ripple-element {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
   &.basic {
     border-color: transparent;
     background-color: transparent;
