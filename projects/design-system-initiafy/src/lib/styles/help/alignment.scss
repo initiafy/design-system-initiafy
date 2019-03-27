@@ -1,3 +1,5 @@
+@import "../imports/variables";
+
 /* Text Align */
 .text-right {
   text-align: right;
@@ -76,4 +78,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: $spacing;
 }
