@@ -1,10 +1,7 @@
 @import "../imports/mixins";
 @import "../imports/variables";
 
-input:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px white inset !important;
-}
-
+/* Buttons */
 .button {
   padding: 0 16px;
   height: 40px;
@@ -14,6 +11,12 @@ input:-webkit-autofill {
   position: relative;
   cursor: pointer;
 
+  /* Main Button */
+  &.stroke {
+    padding: 0 14px;
+  }
+
+  /* Main Primary Button */
   &.main.primary {
     @include button-main(var(--PMain), $PMain);
     .mat-ripple-element {
@@ -21,6 +24,7 @@ input:-webkit-autofill {
     }
   }
 
+  /* Main Secondary Button */
   &.main.secondary {
     @include button-main(var(--SMain), $SMain);
     .mat-ripple-element {
@@ -28,6 +32,7 @@ input:-webkit-autofill {
     }
   }
 
+  /* Stroke Primary Button */
   &.stroke.primary {
     @include button-stroke(var(--PMain), $PMain);
     .mat-ripple-element {
@@ -38,10 +43,11 @@ input:-webkit-autofill {
     &:hover .mat-button-focus-overlay {
       background-color: $PMain;
       background-color: var(--PMain);
-      opacity: .04;
+      opacity: .05;
     }
   }
 
+  /* Stroke Secondary Button */
   &.stroke.secondary {
     @include button-stroke(var(--SMain), $SMain);
     .mat-ripple-element {
@@ -56,31 +62,28 @@ input:-webkit-autofill {
     }
   }
 
-  &.single {
-    padding: 0 6px;
-    min-width: 40px;  
-  }
-
+  /* White Button (background white and shadow) */
   &.white {
-    border-color: transparent;
-    background-color: white;
-    color: $Grey;
-    color: var(--Grey);
+    @include button-basic('white');
     @include shadow-btn();
     &:hover {
       background-color: $Hover;
       background-color: var(--Hover);
+    }
+    &[disabled],
+    &[disabled][disabled],
+    &[disabled]:hover,
+    &[disabled][disabled]:hover {
+      @include shadow-btn();
     }
     .mat-ripple-element {
       background-color: rgba(0, 0, 0, 0.1);
     }
   }
 
+  /* Basic Button (background transparent) */
   &.basic {
-    border-color: transparent;
-    background-color: transparent;
-    color: $Grey;
-    color: var(--Grey);
+    @include button-basic('transparent');
     &:hover {
       background-color: $Hover;
       background-color: var(--Hover);
@@ -98,6 +101,13 @@ input:-webkit-autofill {
     }
   }
 
+  /* Single buttons (icon only) */
+  &.single {
+    padding: 0 6px;
+    min-width: 40px;  
+  }
+
+  /* Disabled Button */
   &[disabled], 
   &[disabled][disabled] {
     border-color: transparent;
@@ -105,8 +115,11 @@ input:-webkit-autofill {
     background-color: var(--Ripple);
     color: $Disable;
     color: var(--Disable);
+    box-shadow: none;
     cursor: default;
     &:hover {
+      background-color: $Ripple;
+      background-color: var(--Ripple);
       box-shadow: none;
     }
   }
@@ -124,6 +137,7 @@ input:-webkit-autofill {
     justify-content: center;
   }
 
+  /* Icon inside button */
   i {
     display: inline-block;
     vertical-align: middle;
@@ -132,6 +146,7 @@ input:-webkit-autofill {
   }
 }
 
+/* Mat Border Radius */
 button[mat-button],
 button[mat-raised-button],
 button[mat-stroked-button],
@@ -139,6 +154,7 @@ button[mat-flat-button] {
   border-radius: 24px;
 }
 
+/* Mat Box Shadow Standard */
 button[mat-button]:hover,
 button[mat-raised-button]:hover,
 button[mat-stroked-button]:hover,
@@ -147,11 +163,13 @@ button[mat-mini-fab]:hover {
   @include shadow-btn();
 }
 
+/* Mat Overlay Transparent*/
 .button[disabled] .mat-button-focus-overlay, 
 .button[disabled][disabled] .mat-button-focus-overlay {
   background-color: transparent;
 }
 
+/* Inputs Min Height */
 input[type=date],
 input[type=email],
 input[type=number],
@@ -164,6 +182,7 @@ textarea {
   min-height: 18px;
 }
 
+/* Increase size of spinner arrows for input number */
 input[type=number]::-webkit-outer-spin-button, 
 input[type=number]::-webkit-inner-spin-button {
   opacity: 1;
@@ -172,4 +191,8 @@ input[type=number]::-webkit-inner-spin-button {
   border: none;
   background-color: $BackgroundDefault;
   background: var(--BackgroundDefault);
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important;
 }
