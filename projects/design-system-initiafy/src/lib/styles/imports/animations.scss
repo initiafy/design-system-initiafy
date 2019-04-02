@@ -41,3 +41,19 @@
         visibility: visible;
     }
 }
+
+/* Animate */
+.animated {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Rotate */
+.rotate180 {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+
+.rotate-x-180 {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+}
