@@ -419,8 +419,7 @@
 
 .ngx-datatable.material .datatable-header .datatable-header-cell {
 	padding: .9rem 1.2rem;
-	font-weight: 400;
-	color: rgba(0, 0, 0, 0.54);
+	color: $Grey;
 	vertical-align: bottom;
 	font-size: 12px;
 	font-weight: 500;
@@ -761,12 +760,4 @@ table[mat-table] {
 }
 .mat-paginator {
     background-color: transparent;
-}
-
-.datatable-header-cell {
-    padding: 0.9rem 1.2rem;
-    color: $Grey;
-    vertical-align: bottom;
-    font-size: 12px;
-    font-weight: 500;
 }
