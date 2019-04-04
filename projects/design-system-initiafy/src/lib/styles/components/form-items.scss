@@ -64,6 +64,7 @@
 
   /* White Button (background white and shadow) */
   &.white {
+    background-color: white;
     @include button-basic('white');
     @include shadow-btn();
     &:hover {
