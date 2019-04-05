@@ -20,7 +20,6 @@ import {
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CommonService } from './common.service';
 
 import {
   GridComponent,
@@ -116,7 +115,6 @@ export function startupServiceFactory(
     })
   ],
   providers: [
-    CommonService,
     DocumentationService,
     {
       provide: APP_INITIALIZER,

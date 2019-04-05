@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class CommonService {
+export class ClipboardService {
 
   constructor() { }
 
@@ -15,5 +15,4 @@ export class CommonService {
     });
     document.execCommand('copy');
   }
-
 }

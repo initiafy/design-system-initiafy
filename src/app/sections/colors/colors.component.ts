@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { CommonService } from 'src/app/common.service';
+import { ClipboardService } from 'src/app/core/clipboard/clipboard.service';
 
 @Component({
   selector: 'app-colors',
   templateUrl: './colors.component.html',
-  styleUrls: ['./colors.component.scss'],
-  providers: [CommonService]
+  styleUrls: ['./colors.component.scss']
 })
 export class ColorsComponent {
   public title = 'icon.html';
@@ -13,9 +12,9 @@ export class ColorsComponent {
   public module = 'InitiafyIconModule';
   public showCode = false;
 
-  constructor(private common: CommonService) {}
+  constructor(private clipboard: ClipboardService) {}
 
   copyToClipboard(item: string): void {
-    this.common.copyToClipboard(item);
+    this.clipboard.copyToClipboard(item);
   }
 }

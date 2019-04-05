@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import { CommonService } from 'src/app/common.service';
 import { MarkdownComponent } from 'ngx-markdown';
+import { ClipboardService } from 'src/app/core/clipboard/clipboard.service';
 
 @Component({
   selector: 'app-code',
@@ -11,11 +11,11 @@ export class CodeComponent implements OnInit {
   @Input() title: string;
   @ViewChild('markdown') markdown: MarkdownComponent;
 
-  constructor(private common: CommonService) {}
+  constructor(private clipboard: ClipboardService) {}
 
   ngOnInit() {}
 
   copyToClipboard(): void {
-    this.common.copyToClipboard(this.markdown.element.nativeElement.innerText);
+    this.clipboard.copyToClipboard(this.markdown.element.nativeElement.innerText);
   }
 }

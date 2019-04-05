@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IconsService } from '../../services/icons.service';
 import { Icons } from 'src/app/models/icons';
-import { CommonService } from 'src/app/common.service';
+import { ClipboardService } from 'src/app/core/clipboard/clipboard.service';
 
 @Component({
   selector: 'app-icons',
@@ -17,7 +17,7 @@ export class IconsComponent implements OnInit {
 
   constructor(
     private iconsService: IconsService,
-    private common: CommonService
+    private clipboard: ClipboardService
   ) {}
 
   ngOnInit() {
@@ -25,7 +25,7 @@ export class IconsComponent implements OnInit {
   }
 
   copyToClipboard(icon: string, iconFont: string): void {
-    this.common.copyToClipboard(
+    this.clipboard.copyToClipboard(
       `<initiafy-icon icon="${icon}"${iconFont &&
         ` iconFont="${iconFont}"`}></initiafy-icon>`
     );
