@@ -35,7 +35,9 @@
     position: absolute;
     width: 1px;
   }
-
+  .mat-header-row {
+    display: none;
+  }
   /*   */
   .mat-table .mat-row {
     border-bottom: 5px solid #ddd;
