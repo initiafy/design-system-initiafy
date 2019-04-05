@@ -3,8 +3,8 @@
 </h1>
 <div class="flex align-items-center scroll-x hide-scroll" *ngIf="module">
   <markdown ngPreserveWhitespaces>
-    ```typescript 
-    import &#123; {{ module }} &#125; from 'design-system-initiafy' 
+    ```typescript
+    import &#123; {{ module }} &#125; from 'design-system-initiafy'
     ```
   </markdown>
 </div>
@@ -17,8 +17,13 @@
   </markdown>
 </div>
 <ng-content></ng-content>
-<ng-container *ngIf="inputs.length > 0">
+<ng-container *ngIf="inputs.data.length > 0">
   <h3 class="margin-top-16">Inputs</h3>
+  <app-data-table
+    [displayedColumns]="displayedInputsColumns"
+    [columnDefinitions]="inputColumnDefinitions"
+    [dataSource]="inputs"
+  ></app-data-table>
   <table mat-table [dataSource]="inputs">
     <!-- Position Column -->
     <ng-container matColumnDef="name">

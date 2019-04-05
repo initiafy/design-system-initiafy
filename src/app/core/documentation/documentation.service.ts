@@ -24,6 +24,7 @@ export interface Flags {
 export interface Child {
   comment?: Comment;
   children: Child[];
+  type: Type;
   decorators: Decorator[];
   flags: Flags;
   groups: Group[];

@@ -44,6 +44,7 @@ import {
 import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataTableComponent } from './shared/data-table/data-table.component';
+import { MatPaginatorModule } from '@angular/material';
 
 export function startupServiceFactory(
   startupService: DocumentationService
@@ -83,11 +84,12 @@ export function startupServiceFactory(
     InitiafySearchBarModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatExpansionModule,
-    MatTableModule,
-    MatSlideToggleModule,
     MatCheckboxModule,
+    MatExpansionModule,
+    MatPaginatorModule,
     MatSidenavModule,
+    MatSlideToggleModule,
+    MatTableModule,
     LayoutModule,
     MarkdownModule.forRoot({
       loader: HttpClient,

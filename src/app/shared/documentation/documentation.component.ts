@@ -4,6 +4,8 @@ import {
   Child,
   Type
 } from 'src/app/core/documentation/documentation.service';
+import { DataColumnDefinition, DataColumnMode } from '../data-table/data-table.component';
+import { MatTableDataSource } from '@angular/material';
 
 @Component({
   selector: 'app-documentation',
@@ -17,7 +19,34 @@ export class DocumentationComponent implements OnInit {
     'defaultValue',
     'comment'
   ];
-  displayedOutputsColumns: string[] = ['name', 'type', 'typeArguments', 'comment'];
+  inputColumnDefinitions: DataColumnDefinition<Child>[] = [
+    {
+      columnName: 'name',
+      title: 'Name'
+    },
+    {
+      columnName: 'type',
+      title: 'Type',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => this.getTypeString(item.type)
+    },
+    {
+      columnName: 'defaultValue',
+      title: 'Default Value'
+    },
+    {
+      columnName: 'comment',
+      title: 'Description',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => item.comment ? item.comment.shortText : null
+    }
+  ];
+  displayedOutputsColumns: string[] = [
+    'name',
+    'type',
+    'typeArguments',
+    'comment'
+  ];
   displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
   @Input() componentName: string;
   @Input() module: string;
@@ -26,7 +55,9 @@ export class DocumentationComponent implements OnInit {
 
   public selector = '';
   public properties: Child[] = [];
-  public inputs: Child[] = [];
+  public inputs: MatTableDataSource<Child> = new MatTableDataSource();
+  // Assign the data to the data source for the table to render
+  // this.dataSource = new MatTableDataSource(this.data);
   public outputs: Child[] = [];
   public twoWayBound: Child[] = [];
   public methods: Child[] = [];
@@ -63,15 +94,16 @@ export class DocumentationComponent implements OnInit {
         this.twoWayBound.push(e);
       }
     });
-    this.inputs = [];
+    const inputData = [];
     this.outputs = [];
     this.properties.forEach(e => {
       if (e.decorators && e.decorators.some(z => z.name === 'Input')) {
-        this.inputs.push(e);
+        inputData.push(e);
       } else if (e.decorators && e.decorators.some(z => z.name === 'Output')) {
         this.outputs.push(e);
       }
     });
+    this.inputs.data = inputData;
     const { obj } = this.componentDocs.decorators[0].arguments;
     const escaped = this.jsonEscape(obj);
     const parsed = JSON.parse(escaped);
