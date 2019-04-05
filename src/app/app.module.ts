@@ -50,7 +50,8 @@ import { DataTableComponent as AppDataTableComponent } from './shared/data-table
 import {
   MatPaginatorModule,
   MatIconModule,
-  MatTooltipModule
+  MatTooltipModule,
+  MatMenuModule
 } from '@angular/material';
 import { ExpansionPanelComponent } from './shared/expansion-panel/expansion-panel.component';
 
@@ -99,6 +100,7 @@ export function startupServiceFactory(
     MatCheckboxModule,
     MatExpansionModule,
     MatIconModule,
+    MatMenuModule,
     MatPaginatorModule,
     MatSidenavModule,
     MatSlideToggleModule,

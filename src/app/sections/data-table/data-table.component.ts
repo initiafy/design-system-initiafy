@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
-import { DataColumnDefinition, DataColumnMode } from 'src/app/shared/data-table/data-table.component';
+import { DataColumnDefinition, DataColumnMode, DataTableMenuItem } from 'src/app/shared/data-table/data-table.component';
 import { SelectionModel } from '@angular/cdk/collections';
 
 interface MockData {
@@ -48,7 +48,7 @@ const MOCK_DATA: MockData[] = [
 })
 export class DataTableComponent implements OnInit {
 
-  public displayedColumns = ['checkbox', 'name', 'age', 'car'];
+  public displayedColumns = ['checkbox', 'name', 'age', 'car', 'menu'];
   public dataSource: MatTableDataSource<MockData> = new MatTableDataSource(MOCK_DATA);
   public columnDefinitions: DataColumnDefinition<MockData>[] = [
     {
@@ -65,6 +65,14 @@ export class DataTableComponent implements OnInit {
     }
   ];
   public selectionModel: SelectionModel<MockData> = new SelectionModel(true /*Multiple*/);
+  public menu: DataTableMenuItem<MockData>[] = [
+    {
+      icon: 'visibility',
+      label: 'View',
+      disabled: (row: MockData) => false,
+      action: (row: MockData) => alert(row.name)
+    }
+  ]
   constructor() { }
 
   ngOnInit() {

@@ -42,6 +42,8 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     this._selectionModelValue = val;
     this.selectionModelChange.emit(this._selectionModelValue);
   }
+  // Menu
+  @Input() menu: DataTableMenuItem<T>[];
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
@@ -67,6 +69,10 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
       `[selectionModel]="selectionModel"`'
       );
       this.selectionModel = new SelectionModel(true);
+    }
+    // Warn for proper usage of menus
+    if (this.displayedColumns.some(e => e === 'menu') && !this.menu) {
+      console.warn('You must provide a menu item array for the menu column');
     }
   }
   // The following Block is for Checkboxes Behavior
@@ -121,4 +127,11 @@ export enum DataColumnMode {
   transformer = 'transformer',
   // If this is a menu column
   menu = 'menu'
+}
+
+export interface DataTableMenuItem<T> {
+  icon: string;
+  label: string;
+  disabled: (row: T) => boolean;
+  action: (...args) => void;
 }

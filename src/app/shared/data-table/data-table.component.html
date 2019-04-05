@@ -1,10 +1,18 @@
 <mat-table [dataSource]="dataSource">
   <ng-container matColumnDef="checkbox">
     <mat-header-cell *matHeaderCellDef mat-sort-header>
-      <mat-checkbox [checked]="isAllSelected" [indeterminate]="areSomeSelected" (change)="masterCheckboxChange($event)"></mat-checkbox>
+      <mat-checkbox [checked]="isAllSelected" [indeterminate]="areSomeSelected" (change)="masterCheckboxChange($event)">
+      </mat-checkbox>
     </mat-header-cell>
     <mat-cell *matCellDef="let row">
       <mat-checkbox [checked]="isItemSelected(row)" (change)="checkboxChange($event, row)"></mat-checkbox>
+    </mat-cell>
+  </ng-container>
+  <ng-container matColumnDef="menu">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>
+    </mat-header-cell>
+    <mat-cell *matCellDef="let row">
+      <initiafy-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!menu"></initiafy-button>
     </mat-cell>
   </ng-container>
   <ng-container *ngFor="let column of columnDefinitions" [matColumnDef]="column.columnName">
@@ -34,3 +42,15 @@
 </mat-table>
 
 <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+
+
+<mat-menu #appMenu="matMenu">
+  <div *ngIf="menu">
+    <ng-container *ngFor="let item of menu">
+      <button mat-menu-item (click)="item.action(clickedItem)" [disabled]="item.disabled && item.disabled(clickedItem)">
+        <mat-icon>{{ item.icon }}</mat-icon>
+        {{ item.label }}
+      </button>
+    </ng-container>
+  </div>
+</mat-menu>

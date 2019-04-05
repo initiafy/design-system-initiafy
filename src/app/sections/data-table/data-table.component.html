@@ -1,5 +1,5 @@
 <app-data-table [displayedColumns]="displayedColumns" [dataSource]="dataSource" [columnDefinitions]="columnDefinitions"
-  [selectionModel]="selectionModel"></app-data-table>
+  [selectionModel]="selectionModel" [menu]="menu"></app-data-table>
 <ul>
   <li *ngFor="let item of selectionModel.selected">{{item.name}}</li>
 </ul>
