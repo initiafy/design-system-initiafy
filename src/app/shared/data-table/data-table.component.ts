@@ -14,6 +14,8 @@ export interface UserData {
   color: string;
 }
 
+// see here https://stackblitz.com/edit/angular-material-table-responsive?file=app%2Fapp.component.html
+
 @Component({
   selector: 'app-data-table',
   templateUrl: './data-table.component.html',
