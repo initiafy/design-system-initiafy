@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { IconsService } from '../../services/icons.service';
 import { Icons } from 'src/app/models/icons';
+import { CommonService } from 'src/app/common.service';
 
 @Component({
   selector: 'app-icons',
   templateUrl: './icons.component.html',
   styleUrls: ['./icons.component.scss'],
-  providers: [ IconsService ]
+  providers: [IconsService]
 })
 export class IconsComponent implements OnInit {
   public componentName = 'IconComponent';
@@ -14,11 +15,20 @@ export class IconsComponent implements OnInit {
   public showCode: boolean = false;
   public iconsList: Array<Array<Icons>> = [];
 
-  constructor(private iconsService: IconsService) {}
+  constructor(
+    private iconsService: IconsService,
+    private common: CommonService
+  ) {}
 
   ngOnInit() {
     this.getIcons();
-    console.log(this.iconsList);
+  }
+
+  copyToClipboard(icon: string, iconFont: string): void {
+    this.common.copyToClipboard(
+      `<initiafy-icon icon="${icon}"${iconFont &&
+        ` iconFont="${iconFont}"`}></initiafy-icon>`
+    );
   }
 
   getIcons() {
@@ -44,12 +54,15 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('person_add', ''));
     this.iconsList.push(this.iconsService.getIcons('person', ''));
     this.iconsList.push(this.iconsService.getIcons('notifications_none', ''));
-    this.iconsList.push(this.iconsService.getIcons('address-card', 'font-awesome-solid'));
+    this.iconsList.push(
+      this.iconsService.getIcons('address-card', 'font-awesome-solid')
+    );
     this.iconsList.push(this.iconsService.getIcons('behalf', 'initiafy'));
     this.iconsList.push(this.iconsService.getIcons('dotlogo', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('qualification', 'initiafy'));
+    this.iconsList.push(
+      this.iconsService.getIcons('qualification', 'initiafy')
+    );
     this.iconsList.push(this.iconsService.getIcons('number', 'initiafy'));
     this.iconsList.push(this.iconsService.getIcons('characterbox', 'initiafy'));
   }
-
 }

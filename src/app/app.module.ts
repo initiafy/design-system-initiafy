@@ -46,7 +46,7 @@ import {
 import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataTableComponent } from './shared/data-table/data-table.component';
-import { MatPaginatorModule } from '@angular/material';
+import { MatPaginatorModule, MatIconModule } from '@angular/material';
 import { ExpansionPanelComponent } from './shared/expansion-panel/expansion-panel.component';
 
 export function startupServiceFactory(
@@ -92,6 +92,7 @@ export function startupServiceFactory(
     HttpClientModule,
     MatCheckboxModule,
     MatExpansionModule,
+    MatIconModule,
     MatPaginatorModule,
     MatSidenavModule,
     MatSlideToggleModule,
