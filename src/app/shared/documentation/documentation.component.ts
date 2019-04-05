@@ -74,16 +74,32 @@ export class DocumentationComponent implements OnInit {
     }
   ];
   public displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
-  private componentDocs: Child;
+  public twoWayColumnDefinitions: DataColumnDefinition<Child>[] = [
+    {
+      columnName: 'name',
+      title: 'Name'
+    },
+    {
+      columnName: 'type',
+      title: 'Type',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => this.getTwoWayTypeString(item)
+    },
+    {
+      columnName: 'comment',
+      title: 'Description',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => item.comment ? item.comment.shortText : null
+    }
+  ];
   public selector = '';
   public properties: Child[] = [];
   public inputs: MatTableDataSource<Child> = new MatTableDataSource();
-  // Assign the data to the data source for the table to render
-  // this.dataSource = new MatTableDataSource(this.data);
   public outputs: Child[] = [];
   public twoWayBound: Child[] = [];
   public methods: Child[] = [];
   public constructors: Child[] = [];
+  private componentDocs: Child;
 
   constructor(private documentationService: DocumentationService) {}
 
@@ -151,9 +167,6 @@ export class DocumentationComponent implements OnInit {
     });
     return str;
   }
-  getTwoWayTypeString(obj: Child) {
-    return obj.getSignature[0].type.name;
-  }
   getArguementString(type: Type): string {
     let str = '';
     type.typeArguments.forEach((element, index) => {
@@ -163,5 +176,8 @@ export class DocumentationComponent implements OnInit {
       str = str + element.name;
     });
     return str;
+  }
+  getTwoWayTypeString(obj: Child) {
+    return obj.getSignature[0].type.name;
   }
 }
