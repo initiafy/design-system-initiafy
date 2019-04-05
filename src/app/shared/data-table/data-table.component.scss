@@ -7,6 +7,11 @@
   .mat-table caption {
     font-size: 1em;
   }
+  mat-cell:first-of-type,
+  mat-footer-cell:first-of-type,
+  mat-header-cell:first-of-type {
+    padding-left: 0px;
+  }
 
   /*  Enable this to hide header
     .mat-table .mat-header-cell {
