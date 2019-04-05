@@ -9,6 +9,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import {
   InitiafyButtonModule,
@@ -45,7 +46,11 @@ import {
 import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataTableComponent } from './shared/data-table/data-table.component';
-import { MatPaginatorModule, MatIconModule, MatTooltipModule } from '@angular/material';
+import {
+  MatPaginatorModule,
+  MatIconModule,
+  MatTooltipModule
+} from '@angular/material';
 import { ExpansionPanelComponent } from './shared/expansion-panel/expansion-panel.component';
 
 export function startupServiceFactory(
@@ -95,6 +100,7 @@ export function startupServiceFactory(
     MatPaginatorModule,
     MatSidenavModule,
     MatSlideToggleModule,
+    MatSnackBarModule,
     MatTableModule,
     MatTooltipModule,
     LayoutModule,

@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { MatSnackBar } from '@angular/material';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ClipboardService {
 
-  constructor() { }
+  constructor(private snackBar: MatSnackBar) { }
 
   copyToClipboard(item: string) {
     document.addEventListener('copy', (e: ClipboardEvent) => {
@@ -14,5 +15,8 @@ export class ClipboardService {
       document.removeEventListener('copy', null);
     });
     document.execCommand('copy');
+    this.snackBar.open('Copied To Clipboard', '', {
+      duration: 2000,
+    });
   }
 }
