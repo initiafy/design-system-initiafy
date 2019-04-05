@@ -447,7 +447,7 @@ span.CodeMirror-selectedtext {
 
 .CodeMirror {
     height: auto;
-    min-height: 300px;
+    min-height: 150px;
     border: 1px solid $Grey;
     border: 1px solid var(--Grey);
     padding: 10px;
@@ -456,7 +456,8 @@ span.CodeMirror-selectedtext {
 }
 
 .CodeMirror-scroll {
-    min-height: 300px
+    min-height: 150px;
+    max-height: 150px;
 }
 
 .CodeMirror-fullscreen {
@@ -771,4 +772,8 @@ span.CodeMirror-selectedtext {
 
 .CodeMirror .cm-spell-error:not(.cm-url):not(.cm-comment):not(.cm-tag):not(.cm-word) {
     background: rgba(255, 0, 0, .15)
+}
+
+.error .CodeMirror {
+    border-color: $RagRed;
 }

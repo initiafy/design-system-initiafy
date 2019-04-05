@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { ButtonComponent } from './button.component';
 import { InitiafyIconModule } from '../icon/icon.module';
+import { ButtonComponent } from './button.component';
 
 @NgModule({
   imports: [

@@ -4,17 +4,23 @@ import {
   Child,
   Type
 } from 'src/app/core/documentation/documentation.service';
-import { DataColumnDefinition, DataColumnMode } from '../data-table/data-table.component';
+import {
+  DataColumnDefinition,
+  DataColumnMode
+} from '../data-table/data-table.component';
 import { MatTableDataSource } from '@angular/material';
+import { CommonService } from 'src/app/common.service';
 
 @Component({
   selector: 'app-documentation',
   templateUrl: './documentation.component.html',
-  styleUrls: ['./documentation.component.scss']
+  styleUrls: ['./documentation.component.scss'],
+  providers: [CommonService]
 })
 export class DocumentationComponent implements OnInit {
   @Input() componentName: string;
   @Input() module: string;
+  @Input() codeTitle: string;
   public displayedInputsColumns: string[] = [
     'name',
     'type',
@@ -40,7 +46,8 @@ export class DocumentationComponent implements OnInit {
       columnName: 'comment',
       title: 'Description',
       mode: DataColumnMode.transformer,
-      transformer: (item: Child) => item.comment ? item.comment.shortText : null
+      transformer: (item: Child) =>
+        item.comment ? item.comment.shortText : null
     }
   ];
   public displayedOutputsColumns: string[] = [
@@ -70,7 +77,8 @@ export class DocumentationComponent implements OnInit {
       columnName: 'comment',
       title: 'Description',
       mode: DataColumnMode.transformer,
-      transformer: (item: Child) => item.comment ? item.comment.shortText : null
+      transformer: (item: Child) =>
+        item.comment ? item.comment.shortText : null
     }
   ];
   public displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
@@ -89,7 +97,8 @@ export class DocumentationComponent implements OnInit {
       columnName: 'comment',
       title: 'Description',
       mode: DataColumnMode.transformer,
-      transformer: (item: Child) => item.comment ? item.comment.shortText : null
+      transformer: (item: Child) =>
+        item.comment ? item.comment.shortText : null
     }
   ];
   public selector = '';
@@ -101,7 +110,14 @@ export class DocumentationComponent implements OnInit {
   public constructors: Child[] = [];
   private componentDocs: Child;
 
-  constructor(private documentationService: DocumentationService) {}
+  copyToClipboard(item: string): void {
+    this.common.copyToClipboard(item);
+  }
+
+  constructor(
+    private documentationService: DocumentationService,
+    private common: CommonService
+  ) {}
 
   ngOnInit() {
     this.componentDocs = this.documentationService.getDocs(this.componentName);
@@ -109,7 +125,7 @@ export class DocumentationComponent implements OnInit {
       console.error(
         `No doumentation found for the supplied Component Name of "${
           this.componentName
-        }" ❗❗❗`
+        }"`
       );
     }
     this.properties = [];

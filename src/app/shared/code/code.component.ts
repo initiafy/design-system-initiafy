@@ -1,5 +1,4 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
-import { MatAccordion, MatExpansionPanel } from '@angular/material/expansion';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-code',
@@ -7,13 +6,10 @@ import { MatAccordion, MatExpansionPanel } from '@angular/material/expansion';
   styleUrls: ['./code.component.scss']
 })
 export class CodeComponent implements OnInit {
-  // @ViewChild('codeExpansionPanel') expansionPanel: MatExpansionPanel;
   @Input() title: string;
-  showCode: boolean;
 
   constructor() {}
 
   ngOnInit() {
-    // this.expansionPanel.open();
   }
 }

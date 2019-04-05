@@ -1,6 +1,5 @@
 @import "../imports/variables";
 
-#initiafyMainHeader, 
 .initiafy-header-wrapper {
   height: $header-height;
 }
@@ -19,31 +18,13 @@
   background-color: white;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, .2);
   padding: 0 $spacing;
-}
-
-.initiafy-header-items  {
-  display: flex;
-  flex-direction: row;
-  flex: 0 1 150px;
-  justify-content: flex-end;
-  justify-content: space-between;
-  align-items: center;
-
-  .initiafy-header-item {
-    height: 20px;
-  }    
-}
-
-.initiafy-logo {
-  flex: 0 1 6em;
+  color: $Grey;
 }
 
 .initiafy-short-logo {
-  flex: 0 1 1em;
-  padding: 0.7em 0 0.8em 0;
-  box-sizing: border-box;
+  padding: 0.5em 0 0;
 }
 
 .initiafy-header-menu {
-  margin: 8px auto 0 16px;
+  margin: 8px auto 0 $spacing;
 }

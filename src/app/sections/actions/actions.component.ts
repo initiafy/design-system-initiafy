@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./actions.component.scss']
 })
 export class ActionsComponent implements OnInit {
+  public componentName = 'ActionButtonComponent';
+  public module = 'InitiafyActionButtonModule';
 
   constructor() { }
 

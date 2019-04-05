@@ -1,47 +1,61 @@
-<h1 class="scroll-x">
-  {{ componentDocs.name }}
-</h1>
-<div class="flex align-items-center scroll-x hide-scroll" *ngIf="module">
-  <markdown ngPreserveWhitespaces>
-    ```typescript
-    import &#123; {{ module }} &#125; from 'design-system-initiafy'
-    ```
-  </markdown>
-</div>
-<div class="flex align-items-center margin-bottom-16 scroll-x hide-scroll">
-  <h3 class="margin-right-16 margin-y-auto">Selector:</h3>
-  <markdown ngPreserveWhitespaces>
-    ```html
-    {{ selector }}
-    ```
-  </markdown>
-</div>
-<ng-content></ng-content>
-<ng-container *ngIf="inputs.data.length > 0">
-  <h3 class="margin-top-16">Inputs</h3>
-  <app-data-table
-    [displayedColumns]="displayedInputsColumns"
-    [columnDefinitions]="inputColumnDefinitions"
-    [dataSource]="inputs"
-  ></app-data-table>
-</ng-container>
-<ng-container *ngIf="outputs.length > 0">
-  <h3 class="margin-top-16">Outputs</h3>
-  <app-data-table
-    [displayedColumns]="displayedOutputsColumns"
-    [columnDefinitions]="outputColumnDefinitions"
-    [dataSource]="outputs"
-  ></app-data-table>
-</ng-container>
-<ng-container *ngIf="twoWayBound.length > 0">
-  <h3 class="margin-top-16">Two-Way bound properties</h3>
-  <app-data-table
-    [displayedColumns]="displayedTwoWayColumns"
-    [columnDefinitions]="twoWayColumnDefinitions"
-    [dataSource]="twoWayBound"
-  ></app-data-table>
-</ng-container>
-<h3 class="margin-top-16">Methods</h3>
-<ul>
-  <li *ngFor="let prop of methods">{{ prop.name }}</li>
-</ul>
+<initiafy-card class="relative">
+  <h1>{{ componentDocs.name }}</h1>
+  <ng-content></ng-content>
+</initiafy-card>
+
+<initiafy-card class="margin-top-32">
+  <h2>Usage</h2>
+
+  <div *ngIf="module" class="margin-top-16">
+    <h3>Module:</h3>
+    <markdown ngPreserveWhitespaces>
+      ```typescript
+      import &#123; {{ module }} &#125; from 'design-system-initiafy'
+      ```
+    </markdown>
+  </div>
+
+  <div class="margin-top-16">
+    <h3>Selector:</h3>
+    <markdown ngPreserveWhitespaces>
+      ```html
+      {{ selector }}
+      ```
+    </markdown>
+  </div>
+
+  <div *ngIf="codeTitle" class="margin-top-16">
+    <app-code [title]="codeTitle"></app-code>
+  </div>
+
+  <ng-container *ngIf="inputs.data.length > 0">
+    <h3 class="margin-top-16">Inputs</h3>
+    <app-data-table
+      [displayedColumns]="displayedInputsColumns"
+      [columnDefinitions]="inputColumnDefinitions"
+      [dataSource]="inputs"
+    ></app-data-table>
+  </ng-container>
+  <ng-container *ngIf="outputs.length > 0">
+    <h3 class="margin-top-16">Outputs</h3>
+    <app-data-table
+      [displayedColumns]="displayedOutputsColumns"
+      [columnDefinitions]="outputColumnDefinitions"
+      [dataSource]="outputs"
+    ></app-data-table>
+  </ng-container>
+  <ng-container *ngIf="twoWayBound.length > 0">
+    <h3 class="margin-top-16">Two-Way bound properties</h3>
+    <app-data-table
+      [displayedColumns]="displayedTwoWayColumns"
+      [columnDefinitions]="twoWayColumnDefinitions"
+      [dataSource]="twoWayBound"
+    ></app-data-table>
+  </ng-container>
+  <ng-container *ngIf="methods.length > 0">
+    <h3 class="margin-top-32">Methods:</h3>
+    <ul>
+      <li *ngFor="let prop of methods">{{ prop.name }}</li>
+    </ul>
+  </ng-container>
+</initiafy-card>

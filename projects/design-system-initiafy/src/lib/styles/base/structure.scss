@@ -1,6 +1,10 @@
 @import "../imports/mixins";
 @import "../imports/variables";
 
+#initiafyHeader {
+    height: $header-height;
+}
+
 .initiafy-wrapper {
     display: flex;
     align-items: stretch;

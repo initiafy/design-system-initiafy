@@ -49,3 +49,11 @@
         -ms-grid-row: #{$i};
     }    
 }
+
+/* Auto column container */
+.auto-column-container-120 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-auto-rows: 120px;
+    grid-gap: 6px;
+}

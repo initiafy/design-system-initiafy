@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonService } from 'src/app/common.service';
 
 @Component({
@@ -7,12 +7,13 @@ import { CommonService } from 'src/app/common.service';
   styleUrls: ['./colors.component.scss'],
   providers: [CommonService]
 })
-export class ColorsComponent implements OnInit {
-  showCode = false;
+export class ColorsComponent {
+  public title = 'icon.html';
+  public componentName = 'IconComponent';
+  public module = 'InitiafyIconModule';
+  public showCode = false;
 
   constructor(private common: CommonService) {}
-
-  ngOnInit() {}
 
   copyToClipboard(item: string): void {
     this.common.copyToClipboard(item);

@@ -8,7 +8,7 @@ html {
   font-size: 100%;
 }
 
-body {
+body {  
   font-size: 14px;
   font-size: 1rem;
   letter-spacing: 0.04rem;
@@ -31,69 +31,60 @@ li {
 
 /* Font-size options 8/12/.../100 */
 @for $i from 2 through 50 {
-  .text#{$i*2} {
-    font-size: #{$i * 2}px;
+    .text#{$i*2} {
+      font-size: #{$i * 2}px;
   }
 }
 
-/* Responsive */
-.responsiveText14 {
-  /*Responsive text equation - Units represent 'MinFontSize', 'MaxFontSize', 'MinFontSize', 100vw, 'MinScreenSize', 'MaxScreenSize', 'MinScreenSize', respectively. Pay attentions to the units. */
-  font-size: calc(12px + (14 - 12) * (100vw - 360px) / (1300 - 360));
-}
-
-.responsiveText16 {
-  /*Responsive text equation - Units represent 'MinFontSize', 'MaxFontSize', 'MinFontSize', 100vw, 'MinScreenSize', 'MaxScreenSize', 'MinScreenSize', respectively. Pay attentions to the units. */
-  font-size: calc(12px + (16 - 12) * (100vw - 360px) / (1300 - 360));
-}
-
 /* Styles */
-.bold {
+.bold, .bold-hover:hover {
   font-weight: bold;
 }
 
-.bolder {
+.bolder, .bolder-hover:hover {
   font-weight: bolder;
 }
 
-.nobold {
+.nobold, .nobold-hover:hover {
   font-weight: normal;
 }
 
-.italic {
+.italic, .italic-hover:hover {
   font-style: italic;
 }
 
-.noitalic {
+.noitalic, .noitalic-hover:hover {
   font-style: normal;
 }
 
-.underline {
+.underline, .underline-hover:hover  {
   text-decoration: underline;
 }
 
-.nounderline {
+.nounderline, .nounderline-hover:hover {
   text-decoration: none;
 }
 
-.uppercase {
+.uppercase, .uppercase-hover:hover {
   text-transform: uppercase;
 }
 
-.lowercase {
+.lowercase, .lowercase-hover:hover {
   text-transform: lowercase;
 }
 
 .break-word {
   word-break: break-word;
 }
+
 .no-wrap {
   white-space: nowrap;
 }
 
-/* Line height */
-.lineHeight1andHalf {
-  line-height: 1.5;
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .noselect {
@@ -102,6 +93,5 @@ li {
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-  user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }

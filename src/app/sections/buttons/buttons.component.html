@@ -1,104 +1,11 @@
-<div class="white-bgcolor radius-std shadow-std padding-std buttons">
-  <app-documentation [componentName]="componentName" [module]="module">
-    <h2>Main buttons</h2>
-    <div class="elements-margin-right">
-      <initiafy-button
-        design="main"
-        color="primary"
-        label="Add Element"
-        tooltip="Click to add element"
-      ></initiafy-button>
-      <initiafy-button
-        design="main"
-        color="primary"
-        label="Add Element"
-        icon="done"
-      ></initiafy-button>
-      <initiafy-button
-        design="main"
-        color="primary"
-        icon="done"
-      ></initiafy-button>
-      <initiafy-button
-        design="main"
-        color="secondary"
-        label="Add Element"
-      ></initiafy-button>
-      <initiafy-button
-        design="main"
-        color="secondary"
-        label="Add Element"
-        icon="done"
-      ></initiafy-button>
-      <initiafy-button
-        design="main"
-        color="secondary"
-        icon="done"
-      ></initiafy-button>
-      <initiafy-button
-        design="main"
-        color="secondary"
-        label="Add Element"
-        icon="done"
-        disabled="true"
-      ></initiafy-button>
-      <initiafy-button
-        design="main"
-        color="secondary"
-        icon="done"
-        disabled="true"
-      ></initiafy-button>
-    </div>
+<app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'button.html'">
+  <p>Button options availiable in the library.</p>
 
-    <h2>Stroked buttons</h2>
-    <div class="elements-margin-right">
-      <initiafy-button
-        design="stroke"
-        color="primary"
-        label="Add Element"
-        icon="done"
-      ></initiafy-button>
-      <initiafy-button
-        design="stroke"
-        color="primary"
-        icon="done"
-      ></initiafy-button>
-      <initiafy-button
-        design="stroke"
-        color="secondary"
-        label="Add Element"
-        icon="done"
-      ></initiafy-button>
-      <initiafy-button
-        design="stroke"
-        color="secondary"
-        icon="done"
-      ></initiafy-button>
-      <initiafy-button
-        design="stroke"
-        color="secondary"
-        label="Add Element"
-        icon="done"
-        disabled="true"
-      ></initiafy-button>
-      <initiafy-button
-        design="stroke"
-        color="secondary"
-        icon="done"
-        disabled="true"
-      ></initiafy-button>
-    </div>
-
-    <h2>Basic buttons</h2>
-    <div class="elements-margin-right">
-      <initiafy-button design="basic" icon="done"></initiafy-button>
-      <initiafy-button
-        design="basic"
-        icon="done"
-        disabled="true"
-      ></initiafy-button>
-      <initiafy-button design="basic" label="hello world"></initiafy-button>
-    </div>
-    <app-code [title]="codeTitle"></app-code>
-  </app-documentation>
-</div>
+  <div *ngFor="let button of buttons"  class="flex row elements-margin-right margin-top-16">
+      <div *ngFor="let b of button">
+        <initiafy-button design="{{ b.design }}" color="{{ b.color }}" label="{{ b.label }}"
+          icon="{{ b.icon }}" iconFont="{{ b.iconFont }}" tooltip="{{ b.tooltip }}" disabled="{{ b.disabled }}"></initiafy-button>
+      </div>
+  </div>
+    
+</app-documentation>
