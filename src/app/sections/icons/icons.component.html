@@ -20,7 +20,7 @@
         <div class="content">
           <div class="flex justify-content-space-between">
             <p class="bold margin-top-0">{{ i.icon }}</p>
-            <mat-icon class="pointer" (click)="copyToClipboard(i.icon, i.iconFont)">file_copy</mat-icon>
+            <mat-icon class="pointer" (click)="copyToClipboard(i.icon, i.iconFont)" [matTooltip]="'Copy To Clipboard'">file_copy</mat-icon>
           </div>
           <p class="margin-0 grey-color" *ngIf="showCode">
             &lt;initiafy-icon icon="{{ i.icon }}"
