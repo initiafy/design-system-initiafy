@@ -9,13 +9,11 @@ import {
   DataColumnMode
 } from '../data-table/data-table.component';
 import { MatTableDataSource } from '@angular/material';
-import { CommonService } from 'src/app/common.service';
 
 @Component({
   selector: 'app-documentation',
   templateUrl: './documentation.component.html',
-  styleUrls: ['./documentation.component.scss'],
-  providers: [CommonService]
+  styleUrls: ['./documentation.component.scss']
 })
 export class DocumentationComponent implements OnInit {
   @Input() componentName: string;
@@ -110,13 +108,8 @@ export class DocumentationComponent implements OnInit {
   public constructors: Child[] = [];
   private componentDocs: Child;
 
-  copyToClipboard(item: string): void {
-    this.common.copyToClipboard(item);
-  }
-
   constructor(
-    private documentationService: DocumentationService,
-    private common: CommonService
+    private documentationService: DocumentationService
   ) {}
 
   ngOnInit() {

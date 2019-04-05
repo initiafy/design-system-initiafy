@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewChild } from '@angular/core';
+import { CommonService } from 'src/app/common.service';
+import { MarkdownComponent } from 'ngx-markdown';
 
 @Component({
   selector: 'app-code',
@@ -7,9 +9,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CodeComponent implements OnInit {
   @Input() title: string;
+  @ViewChild('markdown') markdown: MarkdownComponent;
 
-  constructor() {}
+  constructor(private common: CommonService) {}
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  copyToClipboard(): void {
+    this.common.copyToClipboard(this.markdown.element.nativeElement.innerText);
   }
 }
