@@ -9,17 +9,17 @@
       </mat-header-cell>
       <ng-container [ngSwitch]="column.mode">
         <ng-container *ngSwitchCase="'count'">
-          <mat-cell *matCellDef="let row">
+          <mat-cell *matCellDef="let row" [attr.data-label]="column.columnName">
             {{ row.cnt }}
           </mat-cell>
         </ng-container>
         <ng-container *ngSwitchCase="'transformer'">
-          <mat-cell *matCellDef="let row">
+          <mat-cell *matCellDef="let row" [attr.data-label]="column.columnName">
             {{ column.transformer(row) }}
           </mat-cell>
         </ng-container>
         <ng-container *ngSwitchDefault>
-          <mat-cell *matCellDef="let row">
+          <mat-cell *matCellDef="let row" [attr.data-label]="column.columnName">
             {{ row[column.columnName] }}
           </mat-cell>
         </ng-container>
