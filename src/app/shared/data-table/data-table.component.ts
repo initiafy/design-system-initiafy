@@ -3,9 +3,14 @@ import {
   OnInit,
   ViewChild,
   AfterViewInit,
-  Input
+  Input,
+  Output,
+  EventEmitter,
+  ViewChildren,
+  QueryList
 } from '@angular/core';
-import { MatTableDataSource, MatPaginator, MatSort } from '@angular/material';
+import { MatTableDataSource, MatPaginator, MatSort, MatCheckboxChange, MatCell, MatRow, MatCheckbox, PageEvent } from '@angular/material';
+import { SelectionModel } from '@angular/cdk/collections';
 
 export interface UserData {
   id: string;
@@ -22,18 +27,72 @@ export interface UserData {
   styleUrls: ['./data-table.component.scss']
 })
 export class DataTableComponent<T> implements OnInit, AfterViewInit {
+  // Basic Properties
   @Input() displayedColumns: string[];
   @Input() columnDefinitions: DataColumnDefinition<T>[];
   @Input() dataSource: MatTableDataSource<T>;
+  // SelectionModel for use with checkboxes
+  _selectionModelValue: SelectionModel<T>;
+  @Input()
+  get selectionModel(): SelectionModel<T> {
+    return this._selectionModelValue;
+  }
+  @Output() selectionModelChange = new EventEmitter();
+  set selectionModel(val: SelectionModel<T>) {
+    this._selectionModelValue = val;
+    this.selectionModelChange.emit(this._selectionModelValue);
+  }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-  constructor() {}
+  @ViewChildren(MatCheckbox) checkboxes: QueryList<MatCheckbox>;
+  private itemsShown: T[];
+  constructor() { }
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+    this.itemsShown = this.dataSource.data.slice(0, this.paginator.pageSize);
+    this.dataSource.paginator.page.subscribe((pageEvent: PageEvent) => {
+      const startIndex = pageEvent.pageIndex * pageEvent.pageSize;
+      const endIndex = startIndex + pageEvent.pageSize;
+      this.itemsShown = this.dataSource.filteredData.slice(startIndex, endIndex);
+    });
   }
-  ngOnInit() {}
+  ngOnInit() {
+    // Warn for proper usage of checkboxes and selection model
+    if (this.displayedColumns.some(e => e === 'checkbox') && !this.selectionModel) {
+      console.warn('provide a selection model in checkbox mode');
+    }
+  }
+  public checkboxChange(event: MatCheckboxChange, row: T): void {
+    const { source, checked } = event;
+    if (checked) {
+      this.selectionModel.select(row);
+    } else {
+      this.selectionModel.deselect(row);
+    }
+  }
+  public get isAllSelected(): boolean {
+    return this.selectionModel.selected.length === Math.min(this.dataSource.data.length, this.paginator.pageSize);
+  }
+  public get areSomeSelected(): boolean {
+    return this.selectionModel.selected.length > 0 && !this.isAllSelected;
+  }
+  public isItemSelected(row: T): boolean {
+    return this.selectionModel.isSelected(row);
+  }
+  public masterCheckboxChange(event: MatCheckboxChange): void {
+    const { source, checked } = event;
+    if (this.isAllSelected) {
+      this.selectionModel.clear();
+    } else {
+      this.itemsShown.forEach(e => {
+        if (!this.selectionModel.isSelected(e)) {
+          this.selectionModel.select(e);
+        }
+      });
+    }
+  }
 }
 
 export interface DataColumnDefinition<T> {
@@ -53,5 +112,7 @@ export enum DataColumnMode {
   // If Data is nested (use the getNestedValue method)
   nested = 'nested',
   // If DataName does not correspond to desired value use a custom transformer
-  transformer = 'transformer'
+  transformer = 'transformer',
+  // If this is a menu column
+  menu = 'menu'
 }

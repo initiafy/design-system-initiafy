@@ -1,8 +1,13 @@
 <mat-table [dataSource]="dataSource">
-  <ng-container
-    *ngFor="let column of columnDefinitions"
-    [matColumnDef]="column.columnName"
-  >
+  <ng-container matColumnDef="checkbox">
+    <mat-header-cell *matHeaderCellDef mat-sort-header>
+      <mat-checkbox [checked]="isAllSelected" [indeterminate]="areSomeSelected" (change)="masterCheckboxChange($event)"></mat-checkbox>
+    </mat-header-cell>
+    <mat-cell *matCellDef="let row">
+      <mat-checkbox [checked]="isItemSelected(row)" (change)="checkboxChange($event, row)"></mat-checkbox>
+    </mat-cell>
+  </ng-container>
+  <ng-container *ngFor="let column of columnDefinitions" [matColumnDef]="column.columnName">
     <mat-header-cell *matHeaderCellDef mat-sort-header>
       {{ column.title }}
     </mat-header-cell>
