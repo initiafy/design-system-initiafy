@@ -62,8 +62,10 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     // Warn for proper usage of checkboxes and selection model
     if (this.displayedColumns.some(e => e === 'checkbox') && !this.selectionModel) {
       console.warn('provide a selection model in checkbox mode');
+      this.selectionModel = new SelectionModel();
     }
   }
+  // The following Block is for Checkboxes Behavior
   public checkboxChange(event: MatCheckboxChange, row: T): void {
     const { source, checked } = event;
     if (checked) {
