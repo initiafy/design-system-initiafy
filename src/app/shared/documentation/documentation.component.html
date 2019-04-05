@@ -24,61 +24,14 @@
     [columnDefinitions]="inputColumnDefinitions"
     [dataSource]="inputs"
   ></app-data-table>
-  <table mat-table [dataSource]="inputs">
-    <!-- Position Column -->
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef>Name</th>
-      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
-    </ng-container>
-    <ng-container matColumnDef="type">
-      <th mat-header-cell *matHeaderCellDef>Type</th>
-      <td mat-cell *matCellDef="let element">
-        {{ getTypeString(element.type) }}
-      </td>
-    </ng-container>
-    <ng-container matColumnDef="defaultValue">
-      <th mat-header-cell *matHeaderCellDef>Default Value</th>
-      <td mat-cell *matCellDef="let element">{{ element.defaultValue }}</td>
-    </ng-container>
-    <ng-container matColumnDef="comment">
-      <th mat-header-cell *matHeaderCellDef>Description</th>
-      <td mat-cell *matCellDef="let element">
-        {{ element.comment?.shortText || null }}
-      </td>
-    </ng-container>
-    <tr mat-header-row *matHeaderRowDef="displayedInputsColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedInputsColumns"></tr>
-  </table>
 </ng-container>
 <ng-container *ngIf="outputs.length > 0">
   <h3 class="margin-top-16">Outputs</h3>
-  <table mat-table [dataSource]="outputs">
-    <!-- Position Column -->
-    <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef>Name</th>
-      <td mat-cell *matCellDef="let element">{{ element.name }}</td>
-    </ng-container>
-    <ng-container matColumnDef="type">
-      <th mat-header-cell *matHeaderCellDef>Type</th>
-      <td mat-cell *matCellDef="let element">
-        {{ getTypeString(element.type) }}
-      </td>
-    </ng-container>
-    <ng-container matColumnDef="typeArguments">
-      <th mat-header-cell *matHeaderCellDef>Arguements</th>
-      <td mat-cell *matCellDef="let element">
-        {{ getArguementString(element.type) }}
-      </td>
-    </ng-container>
-    <ng-container matColumnDef="comment">
-      <th mat-header-cell *matHeaderCellDef>Description</th>
-      <td mat-cell *matCellDef="let element">
-        {{ element.comment?.shortText || null }}
-      </td>
-    </ng-container>
-    <tr mat-header-row *matHeaderRowDef="displayedOutputsColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedOutputsColumns"></tr>
-  </table>
+  <app-data-table
+    [displayedColumns]="displayedOutputsColumns"
+    [columnDefinitions]="outputColumnDefinitions"
+    [dataSource]="outputs"
+  ></app-data-table>
 </ng-container>
 <ng-container *ngIf="twoWayBound.length > 0">
   <h3 class="margin-top-16">Two-Way bound properties</h3>

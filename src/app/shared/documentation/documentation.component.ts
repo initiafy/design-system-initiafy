@@ -13,13 +13,15 @@ import { MatTableDataSource } from '@angular/material';
   styleUrls: ['./documentation.component.scss']
 })
 export class DocumentationComponent implements OnInit {
-  displayedInputsColumns: string[] = [
+  @Input() componentName: string;
+  @Input() module: string;
+  public displayedInputsColumns: string[] = [
     'name',
     'type',
     'defaultValue',
     'comment'
   ];
-  inputColumnDefinitions: DataColumnDefinition<Child>[] = [
+  public inputColumnDefinitions: DataColumnDefinition<Child>[] = [
     {
       columnName: 'name',
       title: 'Name'
@@ -41,18 +43,38 @@ export class DocumentationComponent implements OnInit {
       transformer: (item: Child) => item.comment ? item.comment.shortText : null
     }
   ];
-  displayedOutputsColumns: string[] = [
+  public displayedOutputsColumns: string[] = [
     'name',
     'type',
     'typeArguments',
     'comment'
   ];
-  displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
-  @Input() componentName: string;
-  @Input() module: string;
-
+  public outputColumnDefinitions: DataColumnDefinition<Child>[] = [
+    {
+      columnName: 'name',
+      title: 'Name'
+    },
+    {
+      columnName: 'type',
+      title: 'Type',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => this.getTypeString(item.type)
+    },
+    {
+      columnName: 'typeArguments',
+      title: 'Type Arguements',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => this.getArguementString(item.type)
+    },
+    {
+      columnName: 'comment',
+      title: 'Description',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => item.comment ? item.comment.shortText : null
+    }
+  ];
+  public displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
   private componentDocs: Child;
-
   public selector = '';
   public properties: Child[] = [];
   public inputs: MatTableDataSource<Child> = new MatTableDataSource();
