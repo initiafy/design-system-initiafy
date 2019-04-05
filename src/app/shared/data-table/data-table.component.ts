@@ -61,8 +61,12 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
   ngOnInit() {
     // Warn for proper usage of checkboxes and selection model
     if (this.displayedColumns.some(e => e === 'checkbox') && !this.selectionModel) {
-      console.warn('provide a selection model in checkbox mode');
-      this.selectionModel = new SelectionModel();
+      console.warn('\
+      It is recommended to provide a selection model in checkbox mode\n\
+      for example: `this.selectionModel = new SelectionModel(true);`\n\
+      `[selectionModel]="selectionModel"`'
+      );
+      this.selectionModel = new SelectionModel(true);
     }
   }
   // The following Block is for Checkboxes Behavior
