@@ -105,6 +105,9 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
       });
     }
   }
+  public trackByColumnName(column: DataColumnDefinition<T>, index: number): string {
+    return column.columnName;
+  }
 }
 
 export interface DataColumnDefinition<T> {

@@ -15,7 +15,7 @@
       <initiafy-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!menu"></initiafy-button>
     </mat-cell>
   </ng-container>
-  <ng-container *ngFor="let column of columnDefinitions" [matColumnDef]="column.columnName">
+  <ng-container *ngFor="let column of columnDefinitions; trackBy: trackByColumnName" [matColumnDef]="column.columnName">
     <mat-header-cell *matHeaderCellDef mat-sort-header>
       {{ column.title }}
     </mat-header-cell>
