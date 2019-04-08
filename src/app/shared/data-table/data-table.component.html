@@ -1,17 +1,17 @@
 <mat-table [dataSource]="dataSource">
   <ng-container matColumnDef="checkbox">
-    <mat-header-cell *matHeaderCellDef mat-sort-header>
+    <mat-header-cell *matHeaderCellDef mat-sort-header [ngClass]="'customCheckboxColumnClass'">
       <mat-checkbox [checked]="isAllSelected" [indeterminate]="areSomeSelected" (change)="masterCheckboxChange($event)">
       </mat-checkbox>
     </mat-header-cell>
-    <mat-cell *matCellDef="let row">
+    <mat-cell *matCellDef="let row" [ngClass]="'customCheckboxColumnClass'">
       <mat-checkbox [checked]="isItemSelected(row)" (change)="checkboxChange($event, row)"></mat-checkbox>
     </mat-cell>
   </ng-container>
   <ng-container matColumnDef="menu">
-    <mat-header-cell *matHeaderCellDef mat-sort-header>
+    <mat-header-cell *matHeaderCellDef mat-sort-header [ngClass]="'customMenuColumnClass flex justify-content-center'">
     </mat-header-cell>
-    <mat-cell *matCellDef="let row">
+    <mat-cell *matCellDef="let row" [ngClass]="'customMenuColumnClass flex justify-content-center'">
       <initiafy-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!menu"></initiafy-button>
     </mat-cell>
   </ng-container>
