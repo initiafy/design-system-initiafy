@@ -45,7 +45,7 @@
       <ng-container *ngSwitchCase="'extra-checkbox'">
         <mat-cell *matCellDef="let row" class="block_small_screen customCheckboxColumnClass"
           [attr.data-label]="column.title" [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg">
-          <mat-checkbox [disabled]="column.disableFormField(row)" (change)="column.checkboxChange($event, row)"
+          <mat-checkbox [disabled]="column.disableFormField(row)" [checked]="column.checkboxChecked(row)" (change)="column.checkboxChange($event, row)"
             class="margin-x-auto"></mat-checkbox>
         </mat-cell>
       </ng-container>

@@ -90,6 +90,26 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     }))) {
       console.warn('If you are using form field elements then you should supply a disabling method, e.g. `disableFormField: () => false`');
     }
+    if (this.dataTableSettings.columnDefinitions.some(e => {
+      return e.mode === DataColumnMode.checkbox && !e.checkboxChecked;
+    })) {
+      console.warn('supply checkbox-value accessor input with checkbox column');
+    }
+    if (this.dataTableSettings.columnDefinitions.some(e => {
+      return e.mode === DataColumnMode.checkbox && !e.checkboxChange;
+    })) {
+      console.warn('supply checkbox changed function input with checkbox column');
+    }
+    if (this.dataTableSettings.columnDefinitions.some(e => {
+      return e.mode === DataColumnMode.input && !e.inputChange;
+    })) {
+      console.warn('supply input change function input with input column');
+    }
+    if (this.dataTableSettings.columnDefinitions.some(e => {
+      return e.mode === DataColumnMode.input && !e.inputValue;
+    })) {
+      console.warn('supply input value accessor input with input column');
+    }
   }
   // The following Block is for Checkboxes Behavior
   public checkboxChange(event: MatCheckboxChange, row: T): void {
@@ -138,12 +158,14 @@ export interface DataColumnDefinition<T> {
   transformer?: (row: T) => string;
   // Use to switch which template is rendered
   mode?: DataColumnMode;
+  // Use to disable formfields if present
+  disableFormField?: (row: T) => boolean;
   // Used if there is an additional checkbox column
   checkboxChange?: (event: MatCheckboxChange, row: T) => void;
-  // Use to disable formfields if present
-  disableFormField?: (item: T) => boolean;
+  checkboxChecked?: (row: T) => boolean;
   // Used if there is an input column
-  inputChange?: (event, row: T) => void;
+  inputChange?: (event: KeyboardEvent, row: T) => void;
+  inputValue?: (row: T) => string;
   // custom css classes
   customHeaderClassLg?: string;
   customCellClassLg?: string;

@@ -2,7 +2,7 @@
 <app-data-table [dataTableSettings]="basicExampleDataTableSettings" [(selectionModel)]="exampleSelectionModel">
 </app-data-table>
 <ul>
-  <li *ngFor="let item of exampleSelectionModel.selected">{{item.name}}</li>
+  <li *ngFor="let item of exampleSelectionModel.selected">{{item.name}} - {{item.mandatory}} - {{item.extraText}}</li>
 </ul>
 
 <h2>Advanced</h2>
