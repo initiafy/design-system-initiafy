@@ -71,7 +71,7 @@
   <mat-row *matRowDef="let row; columns: dataTableSettings.displayedColumns"
     [class.hover-bgcolor]="!dataTableSettings.hideSelectedRowHighlighting && selectionModel.isSelected(row)"
     [class.pointer]="!!dataTableSettings.clickableRows"
-    (click)="selectionModel.toggle(row)"></mat-row>
+    (click)="handleRowClick(row)"></mat-row>
 </mat-table>
 
 <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>

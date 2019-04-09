@@ -28,6 +28,7 @@ export interface DataTableSettings<T> {
   hideSelectedRowHighlighting?: boolean;
   // Use Clickable Rows
   clickableRows?: boolean;
+  handleRowClick?: (row: T) => void;
 }
 
 // see here https://stackblitz.com/edit/angular-material-table-responsive?file=app%2Fapp.component.html
@@ -140,6 +141,12 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
   }
   get smallcreen(): boolean {
     return window.innerWidth < 961;
+  }
+  public handleRowClick(row: T): void {
+    if (!this.dataTableSettings.clickableRows) {
+      return;
+    }
+    this.dataTableSettings.handleRowClick ? this.dataTableSettings.handleRowClick(row) : this.selectionModel.toggle(row);
   }
 }
 
