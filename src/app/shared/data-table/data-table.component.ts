@@ -24,6 +24,10 @@ export interface DataTableSettings<T> {
   columnDefinitions: DataColumnDefinition<T>[];
   dataSource: MatTableDataSource<T>;
   menu?: DataTableMenuItem<T>[];
+  // Hide the row highlighting
+  hideSelectedRowHighlighting?: boolean;
+  // Use Clickable Rows
+  clickableRows?: boolean;
 }
 
 // see here https://stackblitz.com/edit/angular-material-table-responsive?file=app%2Fapp.component.html
@@ -159,8 +163,6 @@ export interface DataColumnDefinition<T> {
   customCellClassLg?: string;
   customHeaderClassSm?: string;
   customCellClassSm?: string;
-  // Hide the row highlighting
-  hideRowHighlight?: boolean;
 }
 
 export enum DataColumnMode {

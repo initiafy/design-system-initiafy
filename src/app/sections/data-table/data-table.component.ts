@@ -90,7 +90,8 @@ export class DataTableComponent implements OnInit {
         }
       ],
       dataSource: this.exampleDataSource,
-      menu: this.menu
+      menu: this.menu,
+      clickableRows: true
     });
   }
   public get inputsExampleDataTableSettings(): DataTableSettings<MockData> {
@@ -130,7 +131,8 @@ export class DataTableComponent implements OnInit {
         }
       ],
       dataSource: this.exampleDataSource,
-      menu: this.menu
+      menu: this.menu,
+      hideSelectedRowHighlighting: true
     });
   }
   constructor() { }
