@@ -159,6 +159,8 @@ export interface DataColumnDefinition<T> {
   customCellClassLg?: string;
   customHeaderClassSm?: string;
   customCellClassSm?: string;
+  // Hide the row highlighting
+  hideRowHighlight?: boolean;
 }
 
 export enum DataColumnMode {
