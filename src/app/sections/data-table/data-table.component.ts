@@ -7,6 +7,9 @@ interface MockData {
   name: string;
   age: number;
   car: string;
+  diet: {
+    vegetarian: boolean;
+  };
   mandatory: boolean;
   extraText: string;
 }
@@ -15,6 +18,9 @@ const MOCK_DATA: MockData[] = [
     name: 'michael',
     age: 19,
     car: 'opal',
+    diet: {
+      vegetarian: true
+    },
     mandatory: true,
     extraText: ''
   },
@@ -22,6 +28,9 @@ const MOCK_DATA: MockData[] = [
     name: 'sarah',
     age: 27,
     car: 'audi',
+    diet: {
+      vegetarian: false
+    },
     mandatory: true,
     extraText: 'Woah, cool data-table!'
   },
@@ -29,6 +38,9 @@ const MOCK_DATA: MockData[] = [
     name: 'george',
     age: 21,
     car: 'volkswagon',
+    diet: {
+      vegetarian: false
+    },
     mandatory: false,
     extraText: ''
   },
@@ -36,6 +48,9 @@ const MOCK_DATA: MockData[] = [
     name: 'michelle',
     age: 18,
     car: 'range rover',
+    diet: {
+      vegetarian: true
+    },
     mandatory: false,
     extraText: 'Here is some additional text.'
   },
@@ -43,6 +58,9 @@ const MOCK_DATA: MockData[] = [
     name: 'philip',
     age: 25,
     car: 'mercedes',
+    diet: {
+      vegetarian: true
+    },
     mandatory: true,
     extraText: ''
   },
@@ -50,6 +68,9 @@ const MOCK_DATA: MockData[] = [
     name: 'ruth',
     age: 28,
     car: 'nissan',
+    diet: {
+      vegetarian: true
+    },
     mandatory: false,
     extraText: ''
   },
@@ -74,7 +95,7 @@ export class DataTableComponent implements OnInit {
   ];
   public get basicExampleDataTableSettings(): DataTableSettings<MockData> {
     return ({
-      displayedColumns: ['checkbox', 'name', 'age', 'car', 'menu'],
+      displayedColumns: ['checkbox', 'name', 'diet.vegetarian', 'age', 'car', 'menu'],
       columnDefinitions: [
         {
           title: 'Name',
@@ -87,6 +108,11 @@ export class DataTableComponent implements OnInit {
         {
           title: 'Car',
           columnName: 'car'
+        },
+        {
+          title: 'Veggie',
+          columnName: 'diet.vegetarian',
+          mode: DataColumnMode.nested
         }
       ],
       dataSource: this.exampleDataSource,

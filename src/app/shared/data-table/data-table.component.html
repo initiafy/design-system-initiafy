@@ -30,6 +30,12 @@
       {{ column.title }}
     </mat-header-cell>
     <ng-container [ngSwitch]="column.mode">
+      <ng-container *ngSwitchCase="'nested'">
+        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title"
+          [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg">
+          {{ getNestedValue(column, row) }}
+        </mat-cell>
+      </ng-container>
       <ng-container *ngSwitchCase="'count'">
         <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title"
           [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg">
