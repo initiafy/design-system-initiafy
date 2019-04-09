@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource, MatCheckboxChange } from '@angular/material';
 import { DataColumnMode, DataTableMenuItem, DataTableSettings } from 'src/app/shared/data-table/data-table.component';
 import { SelectionModel } from '@angular/cdk/collections';
+import { FormControl } from '@angular/forms';
 
 interface MockData {
   name: string;
@@ -82,6 +83,8 @@ const MOCK_DATA: MockData[] = [
   styleUrls: ['./data-table.component.scss']
 })
 export class DataTableComponent implements OnInit {
+  public basicColumnsOptions = ['checkbox', 'name', 'diet.vegetarian', 'age', 'car', 'menu'];
+  public basicColumns = new FormControl(['checkbox', 'name', 'diet.vegetarian', 'age', 'car', 'menu']);
 
   public exampleDataSource: MatTableDataSource<MockData> = new MatTableDataSource(MOCK_DATA);
   public exampleSelectionModel: SelectionModel<MockData> = new SelectionModel(true /*Multiple*/);
@@ -95,7 +98,7 @@ export class DataTableComponent implements OnInit {
   ];
   public get basicExampleDataTableSettings(): DataTableSettings<MockData> {
     return ({
-      displayedColumns: ['checkbox', 'name', 'diet.vegetarian', 'age', 'car', 'menu'],
+      displayedColumns: this.basicColumns.value,
       columnDefinitions: [
         {
           title: 'Name',

@@ -53,7 +53,8 @@ import {
   MatTooltipModule,
   MatMenuModule,
   MatFormFieldModule,
-  MatInputModule
+  MatInputModule,
+  MatSelectModule
 } from '@angular/material';
 import { ExpansionPanelComponent } from './shared/expansion-panel/expansion-panel.component';
 
@@ -105,6 +106,7 @@ export function startupServiceFactory(
     MatIconModule,
     MatInputModule,
     MatMenuModule,
+    MatSelectModule,
     MatPaginatorModule,
     MatSidenavModule,
     MatSlideToggleModule,
