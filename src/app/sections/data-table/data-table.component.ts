@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource, MatCheckboxChange } from '@angular/material';
-import { DataColumnDefinition, DataColumnMode, DataTableMenuItem, DataTableSettings } from 'src/app/shared/data-table/data-table.component';
+import { DataColumnMode, DataTableMenuItem, DataTableSettings } from 'src/app/shared/data-table/data-table.component';
 import { SelectionModel } from '@angular/cdk/collections';
 
 interface MockData {
@@ -23,7 +23,7 @@ const MOCK_DATA: MockData[] = [
     age: 27,
     car: 'audi',
     mandatory: true,
-    extraText: ''
+    extraText: 'Woah, cool data-table!'
   },
   {
     name: 'george',
@@ -37,7 +37,7 @@ const MOCK_DATA: MockData[] = [
     age: 18,
     car: 'range rover',
     mandatory: false,
-    extraText: ''
+    extraText: 'Here is some additional text.'
   },
   {
     name: 'philip',
@@ -101,18 +101,18 @@ export class DataTableComponent implements OnInit {
           title: 'Name',
           columnName: 'name',
           customHeaderClassLg: 'max-width-180',
-          customCellClassLg: 'max-width-180',
-          customHeaderClassSm: '',
-          customCellClassSm: '',
+          customCellClassLg: 'max-width-180'
         },
         {
           title: 'Mandatory',
           columnName: 'extra_checkbox',
           mode: DataColumnMode.checkbox,
           disableFormField: () => false,
-          checkboxChecked: (item: MockData) => item.mandatory,
-          checkboxChange: (event: MatCheckboxChange, item: MockData) => {
-            item.mandatory = event.checked;
+          checkboxSettings: {
+            checkboxChecked: (item: MockData) => item.mandatory,
+            checkboxChange: (event: MatCheckboxChange, item: MockData) => {
+              item.mandatory = event.checked;
+            }
           }
         },
         {
@@ -120,11 +120,13 @@ export class DataTableComponent implements OnInit {
           columnName: 'input',
           mode: DataColumnMode.input,
           disableFormField: () => false,
-          inputChange: (event: KeyboardEvent, row: MockData) => {
-            const target = <HTMLInputElement>event.target;
-            row.extraText = target.value;
-          },
-          inputValue: (row: MockData) => row.extraText
+          inputSettings: {
+            inputChange: (event: KeyboardEvent, row: MockData) => {
+              const target = <HTMLInputElement>event.target;
+              row.extraText = target.value;
+            },
+            inputValue: (row: MockData) => row.extraText
+          }
         }
       ],
       dataSource: this.exampleDataSource,

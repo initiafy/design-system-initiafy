@@ -45,8 +45,9 @@
       <ng-container *ngSwitchCase="'extra-checkbox'">
         <mat-cell *matCellDef="let row" class="block_small_screen customCheckboxColumnClass"
           [attr.data-label]="column.title" [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg">
-          <mat-checkbox [disabled]="column.disableFormField(row)" [checked]="column.checkboxChecked(row)" (change)="column.checkboxChange($event, row)"
-            class="margin-x-auto"></mat-checkbox>
+          <mat-checkbox [disabled]="column.disableFormField(row)"
+            [checked]="column.checkboxSettings.checkboxChecked(row)"
+            (change)="column.checkboxSettings.checkboxChange($event, row)" class="margin-x-auto"></mat-checkbox>
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchCase="'input'">
@@ -54,7 +55,7 @@
           [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg">
           <mat-form-field class="column-input-form-field" floatLabel="always">
             <input [disabled]="column.disableFormField(row)" [placeholder]="smallcreen ? column.title : ''" matInput
-              (keyup)="column.inputChange($event, row)" />
+              (keyup)="column.inputSettings.inputChange($event, row)" [value]="column.inputSettings.inputValue(row)" />
           </mat-form-field>
         </mat-cell>
       </ng-container>

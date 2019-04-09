@@ -76,7 +76,7 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
       console.warn('\
       It is recommended to provide a selection model in checkbox mode\n\
       for example: `this.selectionModel = new SelectionModel(true);`\n\
-      `[selectionModel]="selectionModel"`'
+      `[(selectionModel)]="selectionModel"`'
       );
       this.selectionModel = new SelectionModel(true);
     }
@@ -88,27 +88,17 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     if ((this.dataTableSettings.columnDefinitions.some(e => {
       return (e.mode === DataColumnMode.checkbox || e.mode === DataColumnMode.input) && !e.disableFormField;
     }))) {
-      console.warn('If you are using form field elements then you should supply a disabling method, e.g. `disableFormField: () => false`');
+      console.warn('Using form field elements, you should supply a disabling method, e.g. `disableFormField: (row) => false`');
     }
     if (this.dataTableSettings.columnDefinitions.some(e => {
-      return e.mode === DataColumnMode.checkbox && !e.checkboxChecked;
+      return e.mode === DataColumnMode.checkbox && !e.checkboxSettings;
     })) {
-      console.warn('supply checkbox-value accessor input with checkbox column');
+      console.warn('supply checkbox settings with checkbox column');
     }
     if (this.dataTableSettings.columnDefinitions.some(e => {
-      return e.mode === DataColumnMode.checkbox && !e.checkboxChange;
+      return e.mode === DataColumnMode.input && !e.inputSettings;
     })) {
-      console.warn('supply checkbox changed function input with checkbox column');
-    }
-    if (this.dataTableSettings.columnDefinitions.some(e => {
-      return e.mode === DataColumnMode.input && !e.inputChange;
-    })) {
-      console.warn('supply input change function input with input column');
-    }
-    if (this.dataTableSettings.columnDefinitions.some(e => {
-      return e.mode === DataColumnMode.input && !e.inputValue;
-    })) {
-      console.warn('supply input value accessor input with input column');
+      console.warn('supply input settings with input column');
     }
   }
   // The following Block is for Checkboxes Behavior
@@ -161,11 +151,9 @@ export interface DataColumnDefinition<T> {
   // Use to disable formfields if present
   disableFormField?: (row: T) => boolean;
   // Used if there is an additional checkbox column
-  checkboxChange?: (event: MatCheckboxChange, row: T) => void;
-  checkboxChecked?: (row: T) => boolean;
+  checkboxSettings?: DataColumnCheckboxSettings<T>;
   // Used if there is an input column
-  inputChange?: (event: KeyboardEvent, row: T) => void;
-  inputValue?: (row: T) => string;
+  inputSettings?: DataColumnInputSettings<T>;
   // custom css classes
   customHeaderClassLg?: string;
   customCellClassLg?: string;
@@ -186,6 +174,15 @@ export enum DataColumnMode {
   checkbox = 'extra-checkbox',
   // If this is a column with an input
   input = 'input'
+}
+
+export interface DataColumnCheckboxSettings<T> {
+  checkboxChange: (event: MatCheckboxChange, row: T) => void;
+  checkboxChecked: (row: T) => boolean;
+}
+export interface DataColumnInputSettings<T> {
+  inputChange: (event: KeyboardEvent, row: T) => void;
+  inputValue: (row: T) => string;
 }
 
 export interface DataTableMenuItem<T> {
