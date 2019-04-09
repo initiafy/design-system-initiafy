@@ -28,6 +28,13 @@ export interface DataTableSettings<T> {
 
 // see here https://stackblitz.com/edit/angular-material-table-responsive?file=app%2Fapp.component.html
 
+/**
+ * If you want to use a checkbox column on the left hand side and a selection model,
+ * then pass in the 'checkbox' string as the first element of the displayedColumns array:
+ * `displayedColumns = ['checkbox', ...rest]`
+ * You should also provide a selectionModel in this case
+ * ---------------------------------
+ */
 @Component({
   selector: 'app-data-table',
   templateUrl: './data-table.component.html',
@@ -77,6 +84,12 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     if (this.dataTableSettings.displayedColumns.some(e => e === 'menu') && !this.dataTableSettings.menu) {
       console.warn('You must provide a menu item array for the menu column');
     }
+    // Warn for proper use of form field elements
+    if ((this.dataTableSettings.columnDefinitions.some(e => {
+      return (e.mode === DataColumnMode.checkbox || e.mode === DataColumnMode.input) && !e.disableFormField;
+    }))) {
+      console.warn('If you are using form field elements then you should supply a disabling method, e.g. `disableFormField: () => false`');
+    }
   }
   // The following Block is for Checkboxes Behavior
   public checkboxChange(event: MatCheckboxChange, row: T): void {
@@ -111,6 +124,9 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
   public trackByColumnName(column: DataColumnDefinition<T>, index: number): string {
     return column.columnName;
   }
+  get smallcreen(): boolean {
+    return window.innerWidth < 961
+  }
 }
 
 export interface DataColumnDefinition<T> {
@@ -122,6 +138,12 @@ export interface DataColumnDefinition<T> {
   transformer?: (row: T) => string;
   // Use to switch which template is rendered
   mode?: DataColumnMode;
+  // Used if there is an additional checkbox column
+  checkboxChange?: (event: MatCheckboxChange, row: T) => void;
+  // Use to disable formfields if present
+  disableFormField?: (item: T) => boolean;
+  //
+  inputChange?: (event, row: T) => void;
 }
 
 export enum DataColumnMode {
@@ -132,7 +154,11 @@ export enum DataColumnMode {
   // If DataName does not correspond to desired value use a custom transformer
   transformer = 'transformer',
   // If this is a menu column
-  menu = 'menu'
+  menu = 'menu',
+  // If an additional checkboxes is required in the table
+  checkbox = 'extra-checkbox',
+  // If this is a column with an input
+  input = 'input'
 }
 
 export interface DataTableMenuItem<T> {

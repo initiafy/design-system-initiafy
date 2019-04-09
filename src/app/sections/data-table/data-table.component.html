@@ -1,5 +1,10 @@
-<app-data-table [dataTableSettings]="basicExampleDataTableSettings" [(selectionModel)]="basicExampleSelectionModel">
+<h2>Basic</h2>
+<app-data-table [dataTableSettings]="basicExampleDataTableSettings" [(selectionModel)]="exampleSelectionModel">
 </app-data-table>
 <ul>
-  <li *ngFor="let item of basicExampleSelectionModel.selected">{{item.name}}</li>
+  <li *ngFor="let item of exampleSelectionModel.selected">{{item.name}}</li>
 </ul>
+
+<h2>Advanced</h2>
+<app-data-table [dataTableSettings]="inputsExampleDataTableSettings" [(selectionModel)]="exampleSelectionModel">
+</app-data-table>

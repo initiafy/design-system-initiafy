@@ -8,7 +8,8 @@
       <mat-checkbox [checked]="isItemSelected(row)" class="the_checkboxes" (change)="checkboxChange($event, row)">
       </mat-checkbox>
       <initiafy-button class="show_in_small_screen align-right-small-screen" *ngIf="dataTableSettings.menu"
-        [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!dataTableSettings.menu"></initiafy-button>
+        [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!dataTableSettings.menu">
+      </initiafy-button>
     </mat-cell>
   </ng-container>
   <ng-container matColumnDef="menu">
@@ -23,7 +24,8 @@
   </ng-container>
   <ng-container *ngFor="let column of dataTableSettings.columnDefinitions; trackBy: trackByColumnName"
     [matColumnDef]="column.columnName">
-    <mat-header-cell *matHeaderCellDef mat-sort-header>
+    <mat-header-cell *matHeaderCellDef mat-sort-header
+      [class.customCheckboxColumnClass]="column.mode === 'extra-checkbox'">
       {{ column.title }}
     </mat-header-cell>
     <ng-container [ngSwitch]="column.mode">
@@ -35,6 +37,20 @@
       <ng-container *ngSwitchCase="'transformer'">
         <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title">
           {{ column.transformer(row) }}
+        </mat-cell>
+      </ng-container>
+      <ng-container *ngSwitchCase="'extra-checkbox'">
+        <mat-cell *matCellDef="let row" class="block_small_screen customCheckboxColumnClass"
+          [attr.data-label]="column.title">
+          <mat-checkbox [disabled]="column.disableFormField(row)" (change)="column.checkboxChange($event, row)"
+            class="margin-x-auto"></mat-checkbox>
+        </mat-cell>
+      </ng-container>
+      <ng-container *ngSwitchCase="'input'">
+        <mat-cell *matCellDef="let row" class="block_small_screen input-cell" [attr.data-label]="column.title">
+          <mat-form-field class="column-input-form-field" floatLabel="always">
+            <input [disabled]="column.disableFormField(row)" [placeholder]="smallcreen ? column.title : ''" matInput (keyup)="column.inputChange($event, row)" />
+          </mat-form-field>
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchDefault>

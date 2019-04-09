@@ -51,7 +51,9 @@ import {
   MatPaginatorModule,
   MatIconModule,
   MatTooltipModule,
-  MatMenuModule
+  MatMenuModule,
+  MatFormFieldModule,
+  MatInputModule
 } from '@angular/material';
 import { ExpansionPanelComponent } from './shared/expansion-panel/expansion-panel.component';
 
@@ -99,7 +101,9 @@ export function startupServiceFactory(
     HttpClientModule,
     MatCheckboxModule,
     MatExpansionModule,
+    MatFormFieldModule,
     MatIconModule,
+    MatInputModule,
     MatMenuModule,
     MatPaginatorModule,
     MatSidenavModule,

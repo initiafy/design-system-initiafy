@@ -7,37 +7,44 @@ interface MockData {
   name: string;
   age: number;
   car: string;
+  mandatory: boolean;
 }
 const MOCK_DATA: MockData[] = [
   {
     name: 'michael',
     age: 19,
-    car: 'opal'
+    car: 'opal',
+    mandatory: true
   },
   {
     name: 'sarah',
     age: 27,
-    car: 'audi'
+    car: 'audi',
+    mandatory: true
   },
   {
     name: 'george',
     age: 21,
-    car: 'volkswagon'
+    car: 'volkswagon',
+    mandatory: false
   },
   {
     name: 'michelle',
     age: 18,
-    car: 'range rover'
+    car: 'range rover',
+    mandatory: false
   },
   {
     name: 'philip',
     age: 25,
-    car: 'mercedes'
+    car: 'mercedes',
+    mandatory: true
   },
   {
     name: 'ruth',
     age: 28,
-    car: 'nissan'
+    car: 'nissan',
+    mandatory: false
   },
 ];
 
@@ -48,23 +55,8 @@ const MOCK_DATA: MockData[] = [
 })
 export class DataTableComponent implements OnInit {
 
-  public basicExampleDisplayedColumns = ['checkbox', 'name', 'age', 'car', 'menu'];
-  public basicExampleDataSource: MatTableDataSource<MockData> = new MatTableDataSource(MOCK_DATA);
-  public basicExampleColumnDefinitions: DataColumnDefinition<MockData>[] = [
-    {
-      title: 'Name',
-      columnName: 'name'
-    },
-    {
-      title: 'Age',
-      columnName: 'age'
-    },
-    {
-      title: 'Car',
-      columnName: 'car'
-    }
-  ];
-  public basicExampleSelectionModel: SelectionModel<MockData> = new SelectionModel(true /*Multiple*/);
+  public exampleDataSource: MatTableDataSource<MockData> = new MatTableDataSource(MOCK_DATA);
+  public exampleSelectionModel: SelectionModel<MockData> = new SelectionModel(true /*Multiple*/);
   public menu: DataTableMenuItem<MockData>[] = [
     {
       icon: 'visibility',
@@ -75,9 +67,48 @@ export class DataTableComponent implements OnInit {
   ];
   public get basicExampleDataTableSettings(): DataTableSettings<MockData> {
     return ({
-      displayedColumns: this.basicExampleDisplayedColumns,
-      columnDefinitions: this.basicExampleColumnDefinitions,
-      dataSource: this.basicExampleDataSource,
+      displayedColumns: ['checkbox', 'name', 'age', 'car', 'menu'],
+      columnDefinitions: [
+        {
+          title: 'Name',
+          columnName: 'name'
+        },
+        {
+          title: 'Age',
+          columnName: 'age'
+        },
+        {
+          title: 'Car',
+          columnName: 'car'
+        }
+      ],
+      dataSource: this.exampleDataSource,
+      menu: this.menu
+    });
+  }
+  public get inputsExampleDataTableSettings(): DataTableSettings<MockData> {
+    return ({
+      displayedColumns: ['checkbox', 'name', 'extra_checkbox', 'input'],
+      columnDefinitions: [
+        {
+          title: 'Name',
+          columnName: 'name'
+        },
+        {
+          title: 'Mandatory',
+          columnName: 'extra_checkbox',
+          mode: DataColumnMode.checkbox,
+          disableFormField: () => false
+        },
+        {
+          title: 'Extra Text',
+          columnName: 'input',
+          mode: DataColumnMode.input,
+          inputChange: () => null,
+          disableFormField: () => false
+        }
+      ],
+      dataSource: this.exampleDataSource,
       menu: this.menu
     });
   }
