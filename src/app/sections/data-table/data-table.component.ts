@@ -128,7 +128,8 @@ export class DataTableComponent implements OnInit {
           title: 'Name',
           columnName: 'name',
           customHeaderClassLg: 'max-width-180',
-          customCellClassLg: 'max-width-180'
+          customCellClassLg: 'max-width-180',
+          handleCellClick: (row: MockData) => this.exampleSelectionModel.toggle(row)
         },
         {
           title: 'Mandatory',

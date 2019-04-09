@@ -148,15 +148,20 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     }
     this.dataTableSettings.handleRowClick ? this.dataTableSettings.handleRowClick(row) : this.selectionModel.toggle(row);
   }
+  public handleCellClick(column: DataColumnDefinition<T>, row: T): void {
+    if (column.handleCellClick) {
+      column.handleCellClick(row);
+    }
+  }
   getNestedValue(column: DataColumnDefinition<T>, row: T) {
-      const properties = column.columnName.split('.');
-      let cellContent: any;
-      properties.forEach(element => {
-          //  Getting the value from the last evaluated parent OR the row itself
-          //  allowing nested properties to be correctly evaluated
-          cellContent = (cellContent || row)[element];
-      });
-      return cellContent;
+    const properties = column.columnName.split('.');
+    let cellContent: any;
+    properties.forEach(element => {
+      //  Getting the value from the last evaluated parent OR the row itself
+      //  allowing nested properties to be correctly evaluated
+      cellContent = (cellContent || row)[element];
+    });
+    return cellContent;
   }
 }
 
@@ -180,6 +185,8 @@ export interface DataColumnDefinition<T> {
   customCellClassLg?: string;
   customHeaderClassSm?: string;
   customCellClassSm?: string;
+  // If the cells in the column are individually clickable
+  handleCellClick?: (row: T) => void;
 }
 
 export enum DataColumnMode {
