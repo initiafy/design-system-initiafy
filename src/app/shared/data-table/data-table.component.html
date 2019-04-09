@@ -5,14 +5,19 @@
       </mat-checkbox>
     </mat-header-cell>
     <mat-cell *matCellDef="let row" [ngClass]="'customCheckboxColumnClass'">
-      <mat-checkbox [checked]="isItemSelected(row)" (change)="checkboxChange($event, row)"></mat-checkbox>
+      <mat-checkbox [checked]="isItemSelected(row)" class="the_checkboxes" (change)="checkboxChange($event, row)">
+      </mat-checkbox>
+      <initiafy-button class="show_in_small_screen align-right-small-screen" [matMenuTriggerFor]="appMenu"
+        (click)="clickedItem = row" icon="more_vert" [disabled]="!menu"></initiafy-button>
     </mat-cell>
   </ng-container>
   <ng-container matColumnDef="menu">
     <mat-header-cell *matHeaderCellDef mat-sort-header [ngClass]="'customMenuColumnClass flex justify-content-center'">
     </mat-header-cell>
-    <mat-cell *matCellDef="let row" [ngClass]="'customMenuColumnClass flex justify-content-center'">
-      <initiafy-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!menu"></initiafy-button>
+    <mat-cell class="hide_in_small_screen" *matCellDef="let row"
+      [ngClass]="'customMenuColumnClass flex justify-content-center'">
+      <initiafy-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!menu">
+      </initiafy-button>
     </mat-cell>
   </ng-container>
   <ng-container *ngFor="let column of columnDefinitions; trackBy: trackByColumnName" [matColumnDef]="column.columnName">
@@ -21,17 +26,17 @@
     </mat-header-cell>
     <ng-container [ngSwitch]="column.mode">
       <ng-container *ngSwitchCase="'count'">
-        <mat-cell *matCellDef="let row" [attr.data-label]="column.columnName">
+        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title">
           {{ row.cnt }}
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchCase="'transformer'">
-        <mat-cell *matCellDef="let row" [attr.data-label]="column.columnName">
+        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title">
           {{ column.transformer(row) }}
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchDefault>
-        <mat-cell *matCellDef="let row" [attr.data-label]="column.columnName">
+        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title">
           {{ row[column.columnName] }}
         </mat-cell>
       </ng-container>

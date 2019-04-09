@@ -1,7 +1,37 @@
+.customCheckboxColumnClass {
+  flex: 0 1 80px;
+}
+.customMenuColumnClass {
+  flex: 0 1 80px;
+}
+.show_in_small_screen {
+  display: none;
+}
+// @media screen and (min-width: 961px) {
+//   .mat-table .mat-cell {
+//     border-bottom: 1px solid #ddd;
+//     font-size: 1em;
+//     text-align: right;
+//     height: 30px;
+//     margin-bottom: 4%;
+//     padding-left: 8px;
+//     padding-right: 8px;
+//   }
+// }
 @media screen and (max-width: 960px) {
+  .block_small_screen {
+    display: block;
+  }
+  .the_checkboxes {
+    margin-bottom: 8px;
+    margin-left: 8px;
+  }
   .mat-table {
     border: 0;
     vertical-align: middle;
+  }
+  .align-right-small-screen {
+    margin-left: auto;
   }
 
   .mat-table caption {
@@ -49,12 +79,12 @@
     */
   .mat-table .mat-cell {
     border-bottom: 1px solid #ddd;
-    display: block;
     font-size: 1em;
     text-align: right;
-    font-weight: bold;
     height: 30px;
     margin-bottom: 4%;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .mat-table .mat-cell:before {
     /*
@@ -63,10 +93,11 @@
       */
     content: attr(data-label);
     float: left;
-    text-transform: uppercase;
+    color: rgba(0,0,0,0.54);
+    // text-transform: uppercase;
     font-weight: normal;
 
-    font-size: 0.85em;
+    font-size: 1rem;
   }
   .mat-table .mat-cell:last-child {
     border-bottom: 0;
@@ -74,11 +105,10 @@
   .mat-table .mat-cell:first-child {
     margin-top: 4%;
   }
-}
-
-.customCheckboxColumnClass {
-  flex: 0 1 80px;
-}
-.customMenuColumnClass {
-  flex: 0 1 80px;
+  .hide_in_small_screen {
+    display: none;
+  }
+  .show_in_small_screen {
+    display: block;
+  }
 }
