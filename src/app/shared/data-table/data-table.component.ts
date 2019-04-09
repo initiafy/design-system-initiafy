@@ -19,6 +19,13 @@ export interface UserData {
   color: string;
 }
 
+export interface DataTableSettings<T> {
+  displayedColumns: string[];
+  columnDefinitions: DataColumnDefinition<T>[];
+  dataSource: MatTableDataSource<T>;
+  menu?: DataTableMenuItem<T>[];
+}
+
 // see here https://stackblitz.com/edit/angular-material-table-responsive?file=app%2Fapp.component.html
 
 @Component({
@@ -28,9 +35,7 @@ export interface UserData {
 })
 export class DataTableComponent<T> implements OnInit, AfterViewInit {
   // Basic Properties
-  @Input() displayedColumns: string[];
-  @Input() columnDefinitions: DataColumnDefinition<T>[];
-  @Input() dataSource: MatTableDataSource<T>;
+  @Input() dataTableSettings: DataTableSettings<T>;
   // SelectionModel for use with checkboxes
   _selectionModelValue: SelectionModel<T>;
   @Input()
@@ -42,27 +47,25 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     this._selectionModelValue = val;
     this.selectionModelChange.emit(this._selectionModelValue);
   }
-  // Menu
-  @Input() menu: DataTableMenuItem<T>[];
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   @ViewChildren(MatCheckbox) checkboxes: QueryList<MatCheckbox>;
-  private itemsShown: T[];
+  private _itemsShown: T[];
   constructor() { }
   ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
-    this.itemsShown = this.dataSource.data.slice(0, this.paginator.pageSize);
-    this.dataSource.paginator.page.subscribe((pageEvent: PageEvent) => {
+    this.dataTableSettings.dataSource.paginator = this.paginator;
+    this.dataTableSettings.dataSource.sort = this.sort;
+    this._itemsShown = this.dataTableSettings.dataSource.data.slice(0, this.paginator.pageSize);
+    this.dataTableSettings.dataSource.paginator.page.subscribe((pageEvent: PageEvent) => {
       const startIndex = pageEvent.pageIndex * pageEvent.pageSize;
       const endIndex = startIndex + pageEvent.pageSize;
-      this.itemsShown = this.dataSource.filteredData.slice(startIndex, endIndex);
+      this._itemsShown = this.dataTableSettings.dataSource.filteredData.slice(startIndex, endIndex);
     });
   }
   ngOnInit() {
     // Warn for proper usage of checkboxes and selection model
-    if (this.displayedColumns.some(e => e === 'checkbox') && !this.selectionModel) {
+    if (this.dataTableSettings.displayedColumns.some(e => e === 'checkbox') && !this.selectionModel) {
       console.warn('\
       It is recommended to provide a selection model in checkbox mode\n\
       for example: `this.selectionModel = new SelectionModel(true);`\n\
@@ -71,7 +74,7 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
       this.selectionModel = new SelectionModel(true);
     }
     // Warn for proper usage of menus
-    if (this.displayedColumns.some(e => e === 'menu') && !this.menu) {
+    if (this.dataTableSettings.displayedColumns.some(e => e === 'menu') && !this.dataTableSettings.menu) {
       console.warn('You must provide a menu item array for the menu column');
     }
   }
@@ -85,7 +88,7 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     }
   }
   public get isAllSelected(): boolean {
-    return this.selectionModel.selected.length === Math.min(this.dataSource.data.length, this.paginator.pageSize);
+    return this.selectionModel.selected.length === Math.min(this.dataTableSettings.dataSource.data.length, this.paginator.pageSize);
   }
   public get areSomeSelected(): boolean {
     return this.selectionModel.selected.length > 0 && !this.isAllSelected;
@@ -98,7 +101,7 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     if (this.isAllSelected) {
       this.selectionModel.clear();
     } else {
-      this.itemsShown.forEach(e => {
+      this._itemsShown.forEach(e => {
         if (!this.selectionModel.isSelected(e)) {
           this.selectionModel.select(e);
         }

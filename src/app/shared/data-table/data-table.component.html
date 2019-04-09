@@ -1,4 +1,4 @@
-<mat-table [dataSource]="dataSource">
+<mat-table [dataSource]="dataTableSettings.dataSource">
   <ng-container matColumnDef="checkbox">
     <mat-header-cell *matHeaderCellDef mat-sort-header [ngClass]="'customCheckboxColumnClass'">
       <mat-checkbox [checked]="isAllSelected" [indeterminate]="areSomeSelected" (change)="masterCheckboxChange($event)">
@@ -7,8 +7,8 @@
     <mat-cell *matCellDef="let row" [ngClass]="'customCheckboxColumnClass'">
       <mat-checkbox [checked]="isItemSelected(row)" class="the_checkboxes" (change)="checkboxChange($event, row)">
       </mat-checkbox>
-      <initiafy-button class="show_in_small_screen align-right-small-screen" [matMenuTriggerFor]="appMenu"
-        (click)="clickedItem = row" icon="more_vert" [disabled]="!menu"></initiafy-button>
+      <initiafy-button class="show_in_small_screen align-right-small-screen" *ngIf="dataTableSettings.menu"
+        [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!dataTableSettings.menu"></initiafy-button>
     </mat-cell>
   </ng-container>
   <ng-container matColumnDef="menu">
@@ -16,11 +16,13 @@
     </mat-header-cell>
     <mat-cell class="hide_in_small_screen" *matCellDef="let row"
       [ngClass]="'customMenuColumnClass flex justify-content-center'">
-      <initiafy-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert" [disabled]="!menu">
+      <initiafy-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" icon="more_vert"
+        [disabled]="!dataTableSettings.menu">
       </initiafy-button>
     </mat-cell>
   </ng-container>
-  <ng-container *ngFor="let column of columnDefinitions; trackBy: trackByColumnName" [matColumnDef]="column.columnName">
+  <ng-container *ngFor="let column of dataTableSettings.columnDefinitions; trackBy: trackByColumnName"
+    [matColumnDef]="column.columnName">
     <mat-header-cell *matHeaderCellDef mat-sort-header>
       {{ column.title }}
     </mat-header-cell>
@@ -42,16 +44,16 @@
       </ng-container>
     </ng-container>
   </ng-container>
-  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-  <mat-row *matRowDef="let row; columns: displayedColumns"> </mat-row>
+  <mat-header-row *matHeaderRowDef="dataTableSettings.displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: dataTableSettings.displayedColumns"> </mat-row>
 </mat-table>
 
 <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
 
 
 <mat-menu #appMenu="matMenu">
-  <div *ngIf="menu">
-    <ng-container *ngFor="let item of menu">
+  <div *ngIf="dataTableSettings.menu">
+    <ng-container *ngFor="let item of dataTableSettings.menu">
       <button mat-menu-item (click)="item.action(clickedItem)" [disabled]="item.disabled && item.disabled(clickedItem)">
         <mat-icon>{{ item.icon }}</mat-icon>
         {{ item.label }}

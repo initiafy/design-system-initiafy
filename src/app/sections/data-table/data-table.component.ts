@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource } from '@angular/material';
-import { DataColumnDefinition, DataColumnMode, DataTableMenuItem } from 'src/app/shared/data-table/data-table.component';
+import { DataColumnDefinition, DataColumnMode, DataTableMenuItem, DataTableSettings } from 'src/app/shared/data-table/data-table.component';
 import { SelectionModel } from '@angular/cdk/collections';
 
 interface MockData {
@@ -48,9 +48,9 @@ const MOCK_DATA: MockData[] = [
 })
 export class DataTableComponent implements OnInit {
 
-  public displayedColumns = ['checkbox', 'name', 'age', 'car', 'menu'];
-  public dataSource: MatTableDataSource<MockData> = new MatTableDataSource(MOCK_DATA);
-  public columnDefinitions: DataColumnDefinition<MockData>[] = [
+  public basicExampleDisplayedColumns = ['checkbox', 'name', 'age', 'car', 'menu'];
+  public basicExampleDataSource: MatTableDataSource<MockData> = new MatTableDataSource(MOCK_DATA);
+  public basicExampleColumnDefinitions: DataColumnDefinition<MockData>[] = [
     {
       title: 'Name',
       columnName: 'name'
@@ -64,7 +64,7 @@ export class DataTableComponent implements OnInit {
       columnName: 'car'
     }
   ];
-  public selectionModel: SelectionModel<MockData> = new SelectionModel(true /*Multiple*/);
+  public basicExampleSelectionModel: SelectionModel<MockData> = new SelectionModel(true /*Multiple*/);
   public menu: DataTableMenuItem<MockData>[] = [
     {
       icon: 'visibility',
@@ -72,7 +72,15 @@ export class DataTableComponent implements OnInit {
       disabled: (row: MockData) => false,
       action: (row: MockData) => alert(row.name)
     }
-  ]
+  ];
+  public get basicExampleDataTableSettings(): DataTableSettings<MockData> {
+    return ({
+      displayedColumns: this.basicExampleDisplayedColumns,
+      columnDefinitions: this.basicExampleColumnDefinitions,
+      dataSource: this.basicExampleDataSource,
+      menu: this.menu
+    });
+  }
   constructor() { }
 
   ngOnInit() {
