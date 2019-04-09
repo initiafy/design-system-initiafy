@@ -142,14 +142,19 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
   get smallcreen(): boolean {
     return window.innerWidth < 961;
   }
-  public handleRowClick(row: T): void {
+  public handleRowClick(event: Event, row: T): void {
+    const target = <HTMLInputElement>event.target;
+    const { classList } = target;
+    if (classList.contains('mat-checkbox-inner-container')) {
+      return;
+    }
     if (!this.dataTableSettings.clickableRows) {
       return;
     }
     this.dataTableSettings.handleRowClick ? this.dataTableSettings.handleRowClick(row) : this.selectionModel.toggle(row);
   }
   public handleCellClick(column: DataColumnDefinition<T>, row: T): void {
-    if (column.handleCellClick) {
+    if (column.handleCellClick && !(column.mode === DataColumnMode.checkbox)) {
       column.handleCellClick(row);
     }
   }

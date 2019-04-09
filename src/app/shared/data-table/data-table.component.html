@@ -57,7 +57,8 @@
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           <mat-checkbox [disabled]="column.disableFormField(row)"
             [checked]="column.checkboxSettings.checkboxChecked(row)"
-            (change)="column.checkboxSettings.checkboxChange($event, row)" class="margin-x-auto"></mat-checkbox>
+            (change)="column.checkboxSettings.checkboxChange($event, row)"
+            class="margin-x-auto"></mat-checkbox>
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchCase="'input'">
@@ -82,11 +83,10 @@
   <mat-header-row *matHeaderRowDef="dataTableSettings.displayedColumns"></mat-header-row>
   <mat-row *matRowDef="let row; columns: dataTableSettings.displayedColumns"
     [class.hover-bgcolor]="!dataTableSettings.hideSelectedRowHighlighting && selectionModel.isSelected(row)"
-    [class.pointer]="!!dataTableSettings.clickableRows" (click)="handleRowClick(row)"></mat-row>
+    [class.pointer]="!!dataTableSettings.clickableRows" (click)="handleRowClick($event, row)"></mat-row>
 </mat-table>
 
 <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
-
 
 <mat-menu #appMenu="matMenu">
   <div *ngIf="dataTableSettings.menu">
