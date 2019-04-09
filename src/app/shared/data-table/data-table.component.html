@@ -25,7 +25,7 @@
   <ng-container *ngFor="let column of dataTableSettings.columnDefinitions; trackBy: trackByColumnName"
     [matColumnDef]="column.columnName">
     <mat-header-cell *matHeaderCellDef mat-sort-header
-      [class.customCheckboxColumnClass]="column.mode === 'extra-checkbox'"
+      [class.customExtraCheckboxColumnClass]="column.mode === 'extra-checkbox'"
       [ngClass]="smallcreen ? column.customHeaderClassSm : column.customHeaderClassLg">
       {{ column.title }}
     </mat-header-cell>
@@ -43,7 +43,7 @@
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchCase="'extra-checkbox'">
-        <mat-cell *matCellDef="let row" class="block_small_screen customCheckboxColumnClass"
+        <mat-cell *matCellDef="let row" class="block_small_screen customExtraCheckboxColumnClass"
           [attr.data-label]="column.title" [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg">
           <mat-checkbox [disabled]="column.disableFormField(row)"
             [checked]="column.checkboxSettings.checkboxChecked(row)"
