@@ -92,7 +92,11 @@ export class DataTableComponent implements OnInit {
       columnDefinitions: [
         {
           title: 'Name',
-          columnName: 'name'
+          columnName: 'name',
+          customHeaderClassLg: 'max-width-180',
+          customCellClassLg: 'max-width-180',
+          customHeaderClassSm: '',
+          customCellClassSm: '',
         },
         {
           title: 'Mandatory',

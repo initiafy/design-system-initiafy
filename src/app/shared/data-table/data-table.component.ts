@@ -125,7 +125,7 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
     return column.columnName;
   }
   get smallcreen(): boolean {
-    return window.innerWidth < 961
+    return window.innerWidth < 961;
   }
 }
 
@@ -142,8 +142,13 @@ export interface DataColumnDefinition<T> {
   checkboxChange?: (event: MatCheckboxChange, row: T) => void;
   // Use to disable formfields if present
   disableFormField?: (item: T) => boolean;
-  //
+  // Used if there is an input column
   inputChange?: (event, row: T) => void;
+  // custom css classes
+  customHeaderClassLg?: string;
+  customCellClassLg?: string;
+  customHeaderClassSm?: string;
+  customCellClassSm?: string;
 }
 
 export enum DataColumnMode {
