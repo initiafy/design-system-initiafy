@@ -72,12 +72,6 @@
 .elements-margin-right > * {
   margin-right: $spacing; 
 }
-.elements-margin-right > *:last-child {
-  margin-right: 0; 
-}
 .elements-margin-left > * {
   margin-left: $spacing; 
-}
-.elements-margin-left > *:last-child {
-  margin-left: 0; 
 }
