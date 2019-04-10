@@ -1,43 +1,115 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DocumentationService, Child, Type } from 'src/app/core/documentation/documentation.service';
-import { CommonService } from 'src/app/common.service';
+import {
+  DocumentationService,
+  Child,
+  Type
+} from 'src/app/core/documentation/documentation.service';
+import {
+  DataColumnDefinition,
+  DataColumnMode
+} from '../data-table/data-table.component';
+import { MatTableDataSource } from '@angular/material';
 
 @Component({
   selector: 'app-documentation',
   templateUrl: './documentation.component.html',
-  styleUrls: ['./documentation.component.scss'],
-  providers: [CommonService]
+  styleUrls: ['./documentation.component.scss']
 })
 export class DocumentationComponent implements OnInit {
-  displayedInputsColumns: string[] = [
+  @Input() componentName: string;
+  @Input() module: string;
+  @Input() codeTitle: string;
+  public displayedInputsColumns: string[] = [
     'name',
     'type',
     'defaultValue',
     'comment'
   ];
-  displayedOutputsColumns: string[] = ['name', 'type', 'typeArguments', 'comment'];
-  displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
-  @Input() componentName: string;
-  @Input() module: string;
-  @Input() codeTitle: string;
-
-  private componentDocs: Child;
-
+  public inputColumnDefinitions: DataColumnDefinition<Child>[] = [
+    {
+      columnName: 'name',
+      title: 'Name'
+    },
+    {
+      columnName: 'type',
+      title: 'Type',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => this.getTypeString(item.type)
+    },
+    {
+      columnName: 'defaultValue',
+      title: 'Default Value'
+    },
+    {
+      columnName: 'comment',
+      title: 'Description',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) =>
+        item.comment ? item.comment.shortText : null
+    }
+  ];
+  public displayedOutputsColumns: string[] = [
+    'name',
+    'type',
+    'typeArguments',
+    'comment'
+  ];
+  public outputColumnDefinitions: DataColumnDefinition<Child>[] = [
+    {
+      columnName: 'name',
+      title: 'Name'
+    },
+    {
+      columnName: 'type',
+      title: 'Type',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => this.getTypeString(item.type)
+    },
+    {
+      columnName: 'typeArguments',
+      title: 'Type Arguements',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => this.getArguementString(item.type)
+    },
+    {
+      columnName: 'comment',
+      title: 'Description',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) =>
+        item.comment ? item.comment.shortText : null
+    }
+  ];
+  public displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
+  public twoWayColumnDefinitions: DataColumnDefinition<Child>[] = [
+    {
+      columnName: 'name',
+      title: 'Name'
+    },
+    {
+      columnName: 'type',
+      title: 'Type',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) => this.getTwoWayTypeString(item)
+    },
+    {
+      columnName: 'comment',
+      title: 'Description',
+      mode: DataColumnMode.transformer,
+      transformer: (item: Child) =>
+        item.comment ? item.comment.shortText : null
+    }
+  ];
   public selector = '';
   public properties: Child[] = [];
-  public inputs: Child[] = [];
+  public inputs: MatTableDataSource<Child> = new MatTableDataSource();
   public outputs: Child[] = [];
   public twoWayBound: Child[] = [];
   public methods: Child[] = [];
   public constructors: Child[] = [];
-
-  copyToClipboard(item: string): void {
-    this.common.copyToClipboard(item);
-  }
+  private componentDocs: Child;
 
   constructor(
-    private documentationService: DocumentationService,
-    private common: CommonService
+    private documentationService: DocumentationService
   ) {}
 
   ngOnInit() {
@@ -69,15 +141,16 @@ export class DocumentationComponent implements OnInit {
         this.twoWayBound.push(e);
       }
     });
-    this.inputs = [];
+    const inputData = [];
     this.outputs = [];
     this.properties.forEach(e => {
       if (e.decorators && e.decorators.some(z => z.name === 'Input')) {
-        this.inputs.push(e);
+        inputData.push(e);
       } else if (e.decorators && e.decorators.some(z => z.name === 'Output')) {
         this.outputs.push(e);
       }
     });
+    this.inputs.data = inputData;
     const { obj } = this.componentDocs.decorators[0].arguments;
     const escaped = this.jsonEscape(obj);
     const parsed = JSON.parse(escaped);
@@ -103,9 +176,6 @@ export class DocumentationComponent implements OnInit {
     });
     return str;
   }
-  getTwoWayTypeString(obj: Child) {
-    return obj.getSignature[0].type.name;
-  }
   getArguementString(type: Type): string {
     let str = '';
     type.typeArguments.forEach((element, index) => {
@@ -115,5 +185,8 @@ export class DocumentationComponent implements OnInit {
       str = str + element.name;
     });
     return str;
+  }
+  getTwoWayTypeString(obj: Child) {
+    return obj.getSignature[0].type.name;
   }
 }

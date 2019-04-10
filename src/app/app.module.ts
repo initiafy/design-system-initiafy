@@ -9,6 +9,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import {
   InitiafyButtonModule,
@@ -20,7 +21,6 @@ import {
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CommonService } from './common.service';
 
 import {
   GridComponent,
@@ -45,6 +45,13 @@ import {
 } from './shared';
 import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataTableComponent } from './shared/data-table/data-table.component';
+import {
+  MatPaginatorModule,
+  MatIconModule,
+  MatTooltipModule
+} from '@angular/material';
+import { ExpansionPanelComponent } from './shared/expansion-panel/expansion-panel.component';
 
 export function startupServiceFactory(
   startupService: DocumentationService
@@ -71,7 +78,9 @@ export function startupServiceFactory(
     ContentComponent,
     DocumentationComponent,
     CodeComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    DataTableComponent,
+    ExpansionPanelComponent
   ],
   imports: [
     BrowserModule,
@@ -85,11 +94,15 @@ export function startupServiceFactory(
     InitiafyActionButtonModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatExpansionModule,
-    MatTableModule,
-    MatSlideToggleModule,
     MatCheckboxModule,
+    MatExpansionModule,
+    MatIconModule,
+    MatPaginatorModule,
     MatSidenavModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatTableModule,
+    MatTooltipModule,
     LayoutModule,
     MarkdownModule.forRoot({
       loader: HttpClient,
@@ -108,7 +121,6 @@ export function startupServiceFactory(
     })
   ],
   providers: [
-    CommonService,
     DocumentationService,
     {
       provide: APP_INITIALIZER,
