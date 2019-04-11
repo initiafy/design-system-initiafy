@@ -1,5 +1,6 @@
-<mat-drawer-container class="initiafy-wrapper" autosize>
-  <mat-drawer #drawer class="initiafy-sidenav" [mode]="smallScreen ? 'over' : 'side'">
+<mat-sidenav-container class="initiafy-wrapper" autosize>
+  <mat-sidenav #drawer class="initiafy-sidenav" [mode]="smallScreen ? 'over' : 'side'" [fixedInViewport]="true"
+    [fixedTopGap]="64">
     <nav>
       <ul>
         <li><a routerLinkActive="active" routerLink="/grid">Grid</a></li>
@@ -22,13 +23,13 @@
         <li>
           <a routerLinkActive="active" routerLink="/messages">Messages</a>
         </li>
-        <li><a routerLinkActive="active" routerLink="/helpers">Helpers</a></li>
+        <li><a routerLinkActive="active" routerLink="/helpers">CSS</a></li>
         <li><a routerLinkActive="active" routerLink="/data-table">Data Table</a></li>
       </ul>
     </nav>
-  </mat-drawer>
+  </mat-sidenav>
 
   <div class="initiafy-content">
     <router-outlet></router-outlet>
   </div>
-</mat-drawer-container>
+</mat-sidenav-container>
