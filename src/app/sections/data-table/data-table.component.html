@@ -1,0 +1,20 @@
+<h2>Basic</h2>
+<mat-form-field>
+  <mat-label>Columns</mat-label>
+  <mat-select [formControl]="basicColumns" multiple>
+    <mat-option *ngFor="let column of basicColumnsOptions" [value]="column">{{column}}</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-card class="initiafy-card">
+  <app-data-table [dataTableSettings]="basicExampleDataTableSettings" [(selectionModel)]="exampleSelectionModel">
+  </app-data-table>
+</mat-card>
+<ul>
+  <li *ngFor="let item of exampleSelectionModel.selected">{{item.name}} - {{item.mandatory}} - {{item.extraText}}</li>
+</ul>
+
+<h2>Advanced</h2>
+<mat-card class="initiafy-card">
+  <app-data-table [dataTableSettings]="inputsExampleDataTableSettings" [(selectionModel)]="exampleSelectionModel">
+  </app-data-table>
+</mat-card>

@@ -9,3 +9,5 @@ export * from './icons/icons.component';
 export * from './messages/messages.component';
 export * from './structure/structure.component';
 export * from './typography/typography.component';
+export * from './data-table/data-table.component';
+export * from './search-bar/search-bar.component';

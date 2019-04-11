@@ -1,5 +1,5 @@
 <initiafy-card class="relative">
-  <h1>{{ componentDocs.name }}</h1>
+  <h1 class="scroll-x">{{ componentDocs.name }}</h1>
   <ng-content></ng-content>
 </initiafy-card>
 
@@ -31,26 +31,20 @@
   <ng-container *ngIf="inputs.data.length > 0">
     <h3 class="margin-top-16">Inputs</h3>
     <app-data-table
-      [displayedColumns]="displayedInputsColumns"
-      [columnDefinitions]="inputColumnDefinitions"
-      [dataSource]="inputs"
+      [dataTableSettings]="inputDataTableSettings"
     ></app-data-table>
   </ng-container>
   <ng-container *ngIf="outputs.length > 0">
     <h3 class="margin-top-16">Outputs</h3>
-    <app-data-table
-      [displayedColumns]="displayedOutputsColumns"
-      [columnDefinitions]="outputColumnDefinitions"
-      [dataSource]="outputs"
-    ></app-data-table>
+    <!-- <app-data-table
+      [dataTableSettings]="outputDataTableSettings"
+    ></app-data-table> -->
   </ng-container>
   <ng-container *ngIf="twoWayBound.length > 0">
     <h3 class="margin-top-16">Two-Way bound properties</h3>
-    <app-data-table
-      [displayedColumns]="displayedTwoWayColumns"
-      [columnDefinitions]="twoWayColumnDefinitions"
-      [dataSource]="twoWayBound"
-    ></app-data-table>
+    <!-- <app-data-table
+      [dataTableSettings]="twoWayDataTableSettings"
+    ></app-data-table> -->
   </ng-container>
   <ng-container *ngIf="methods.length > 0">
     <h3 class="margin-top-32">Methods:</h3>

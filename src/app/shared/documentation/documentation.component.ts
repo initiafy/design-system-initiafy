@@ -5,8 +5,8 @@ import {
   Type
 } from 'src/app/core/documentation/documentation.service';
 import {
-  DataColumnDefinition,
-  DataColumnMode
+  DataColumnMode,
+  DataTableSettings
 } from '../data-table/data-table.component';
 import { MatTableDataSource } from '@angular/material';
 
@@ -19,112 +19,126 @@ export class DocumentationComponent implements OnInit {
   @Input() componentName: string;
   @Input() module: string;
   @Input() codeTitle: string;
-  public displayedInputsColumns: string[] = [
-    'name',
-    'type',
-    'defaultValue',
-    'comment'
-  ];
-  public inputColumnDefinitions: DataColumnDefinition<Child>[] = [
-    {
-      columnName: 'name',
-      title: 'Name'
-    },
-    {
-      columnName: 'type',
-      title: 'Type',
-      mode: DataColumnMode.transformer,
-      transformer: (item: Child) => this.getTypeString(item.type)
-    },
-    {
-      columnName: 'defaultValue',
-      title: 'Default Value'
-    },
-    {
-      columnName: 'comment',
-      title: 'Description',
-      mode: DataColumnMode.transformer,
-      transformer: (item: Child) =>
-        item.comment ? item.comment.shortText : null
-    }
-  ];
-  public displayedOutputsColumns: string[] = [
-    'name',
-    'type',
-    'typeArguments',
-    'comment'
-  ];
-  public outputColumnDefinitions: DataColumnDefinition<Child>[] = [
-    {
-      columnName: 'name',
-      title: 'Name'
-    },
-    {
-      columnName: 'type',
-      title: 'Type',
-      mode: DataColumnMode.transformer,
-      transformer: (item: Child) => this.getTypeString(item.type)
-    },
-    {
-      columnName: 'typeArguments',
-      title: 'Type Arguements',
-      mode: DataColumnMode.transformer,
-      transformer: (item: Child) => this.getArguementString(item.type)
-    },
-    {
-      columnName: 'comment',
-      title: 'Description',
-      mode: DataColumnMode.transformer,
-      transformer: (item: Child) =>
-        item.comment ? item.comment.shortText : null
-    }
-  ];
-  public displayedTwoWayColumns: string[] = ['name', 'type', 'comment'];
-  public twoWayColumnDefinitions: DataColumnDefinition<Child>[] = [
-    {
-      columnName: 'name',
-      title: 'Name'
-    },
-    {
-      columnName: 'type',
-      title: 'Type',
-      mode: DataColumnMode.transformer,
-      transformer: (item: Child) => this.getTwoWayTypeString(item)
-    },
-    {
-      columnName: 'comment',
-      title: 'Description',
-      mode: DataColumnMode.transformer,
-      transformer: (item: Child) =>
-        item.comment ? item.comment.shortText : null
-    }
-  ];
+  public get inputDataTableSettings(): DataTableSettings<Child> {
+    return ({
+      displayedColumns: [
+        'name',
+        'type',
+        'defaultValue',
+        'comment'
+      ],
+      dataSource: this.inputs,
+      columnDefinitions: [
+        {
+          columnName: 'name',
+          title: 'Name'
+        },
+        {
+          columnName: 'type',
+          title: 'Type',
+          mode: DataColumnMode.transformer,
+          transformer: (item: Child) => this.getTypeString(item.type)
+        },
+        {
+          columnName: 'defaultValue',
+          title: 'Default Value'
+        },
+        {
+          columnName: 'comment',
+          title: 'Description',
+          mode: DataColumnMode.transformer,
+          transformer: (item: Child) =>
+            item.comment ? item.comment.shortText : null
+        }
+      ]
+    });
+  }
+  public get outputDataTableSettings(): DataTableSettings<Child> {
+    return ({
+      displayedColumns: [
+        'name',
+        'type',
+        'typeArguments',
+        'comment'
+      ],
+      dataSource: this.inputs,
+      columnDefinitions: [
+        {
+          columnName: 'name',
+          title: 'Name'
+        },
+        {
+          columnName: 'type',
+          title: 'Type',
+          mode: DataColumnMode.transformer,
+          transformer: (item: Child) => this.getTypeString(item.type)
+        },
+        {
+          columnName: 'typeArguments',
+          title: 'Type Arguements',
+          mode: DataColumnMode.transformer,
+          transformer: (item: Child) => this.getArguementString(item.type)
+        },
+        {
+          columnName: 'comment',
+          title: 'Description',
+          mode: DataColumnMode.transformer,
+          transformer: (item: Child) =>
+            item.comment ? item.comment.shortText : null
+        }]
+    });
+  }
+  public get twoWayDataTableSettings(): DataTableSettings<Child> {
+    return ({
+      displayedColumns: ['name', 'type', 'comment'
+      ],
+      dataSource: this.inputs,
+      columnDefinitions: [
+        {
+          columnName: 'name',
+          title: 'Name'
+        },
+        {
+          columnName: 'type',
+          title: 'Type',
+          mode: DataColumnMode.transformer,
+          transformer: (item: Child) => this.getTwoWayTypeString(item)
+        },
+        {
+          columnName: 'comment',
+          title: 'Description',
+          mode: DataColumnMode.transformer,
+          transformer: (item: Child) =>
+            item.comment ? item.comment.shortText : null
+        }]
+    });
+  }
   public selector = '';
   public properties: Child[] = [];
   public inputs: MatTableDataSource<Child> = new MatTableDataSource();
-  public outputs: Child[] = [];
-  public twoWayBound: Child[] = [];
+  public outputs: MatTableDataSource<Child> = new MatTableDataSource();
+  public twoWayBound: MatTableDataSource<Child> = new MatTableDataSource();
   public methods: Child[] = [];
   public constructors: Child[] = [];
   private componentDocs: Child;
 
   constructor(
     private documentationService: DocumentationService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.componentDocs = this.documentationService.getDocs(this.componentName);
     if (!this.componentDocs) {
       console.error(
         `No doumentation found for the supplied Component Name of "${
-          this.componentName
+        this.componentName
         }"`
       );
     }
     this.properties = [];
     this.methods = [];
     this.constructors = [];
-    this.twoWayBound = [];
+    const twoWayBoundData = [];
     const { children } = this.componentDocs;
     children.forEach(e => {
       if (e.kindString === 'Property') {
@@ -138,18 +152,20 @@ export class DocumentationComponent implements OnInit {
         e.getSignature &&
         e.setSignature
       ) {
-        this.twoWayBound.push(e);
+        twoWayBoundData.push(e);
       }
     });
+    this.twoWayBound.data = twoWayBoundData;
     const inputData = [];
-    this.outputs = [];
+    const outputData = [];
     this.properties.forEach(e => {
       if (e.decorators && e.decorators.some(z => z.name === 'Input')) {
         inputData.push(e);
       } else if (e.decorators && e.decorators.some(z => z.name === 'Output')) {
-        this.outputs.push(e);
+        outputData.push(e);
       }
     });
+    this.outputs.data = outputData;
     this.inputs.data = inputData;
     const { obj } = this.componentDocs.decorators[0].arguments;
     const escaped = this.jsonEscape(obj);

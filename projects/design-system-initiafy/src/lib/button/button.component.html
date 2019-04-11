@@ -8,6 +8,6 @@
   [disabled]="disabled"
   (click)="callback.emit($event)"
   >
-  <ng-template [ngIf]="icon"><initiafy-icon [icon]="icon" [iconFont]="iconFont"></initiafy-icon></ng-template>
-  <ng-template [ngIf]="label"><span>{{ label }}</span></ng-template>
+  <ng-template [ngIf]="icon"><initiafy-icon [icon]="icon" [iconFont]="iconFont" class="no-events"></initiafy-icon></ng-template>
+  <ng-template [ngIf]="label"><span class="no-events">{{ label }}</span></ng-template>
 </button>

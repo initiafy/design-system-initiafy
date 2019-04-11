@@ -11,9 +11,10 @@ import {
   IconsComponent,
   MessagesComponent,
   StructureComponent,
-  TypographyComponent
+  SearchBarComponent,
+  TypographyComponent,
+  DataTableComponent
 } from './sections';
-import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 
 const routes: Routes = [
   { path: '', component: DashboardComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'icons', component: IconsComponent },
   { path: 'messages', component: MessagesComponent },
   { path: 'structure', component: StructureComponent },
-  { path: 'typography', component: TypographyComponent }
+  { path: 'typography', component: TypographyComponent },
+  { path: 'data-table', component: DataTableComponent }
 ];
 
 @NgModule({

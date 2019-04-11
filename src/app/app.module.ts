@@ -33,7 +33,8 @@ import {
   MessagesComponent,
   HelpersComponent,
   DashboardComponent,
-  StructureComponent
+  StructureComponent,
+  DataTableComponent
 } from './sections';
 import { DocumentationService } from './core';
 import {
@@ -45,11 +46,16 @@ import {
 } from './shared';
 import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { DataTableComponent } from './shared/data-table/data-table.component';
+import { DataTableComponent as AppDataTableComponent } from './shared/data-table/data-table.component';
 import {
   MatPaginatorModule,
   MatIconModule,
-  MatTooltipModule
+  MatTooltipModule,
+  MatMenuModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSelectModule,
+  MatCardModule
 } from '@angular/material';
 import { ExpansionPanelComponent } from './shared/expansion-panel/expansion-panel.component';
 
@@ -80,6 +86,7 @@ export function startupServiceFactory(
     CodeComponent,
     SearchBarComponent,
     DataTableComponent,
+    AppDataTableComponent,
     ExpansionPanelComponent
   ],
   imports: [
@@ -94,9 +101,14 @@ export function startupServiceFactory(
     InitiafyActionButtonModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    MatCardModule,
     MatCheckboxModule,
     MatExpansionModule,
+    MatFormFieldModule,
     MatIconModule,
+    MatInputModule,
+    MatMenuModule,
+    MatSelectModule,
     MatPaginatorModule,
     MatSidenavModule,
     MatSlideToggleModule,
