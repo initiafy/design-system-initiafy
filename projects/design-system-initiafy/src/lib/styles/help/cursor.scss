@@ -7,9 +7,12 @@
 }
 
 .move {
-    cursor: move;
+  cursor: move;
 }
 
 .pointer {
   cursor: pointer;
+}
+.no-events {
+  pointer-events: none;
 }

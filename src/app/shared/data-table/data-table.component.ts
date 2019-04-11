@@ -145,7 +145,12 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
   public handleRowClick(event: Event, row: T): void {
     const target = <HTMLInputElement>event.target;
     const { classList } = target;
-    if (classList.contains('mat-checkbox-inner-container')) {
+    console.log(classList);
+    if (
+      classList.contains('mat-checkbox-inner-container')
+      || classList.contains('row-action-button')
+      || classList.contains('mat-button-wrapper')
+    ) {
       return;
     }
     if (!this.dataTableSettings.clickableRows) {
@@ -167,6 +172,9 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
       cellContent = (cellContent || row)[element];
     });
     return cellContent;
+  }
+  isRowSelected(row: T): boolean {
+    return this.selectionModel ? this.selectionModel.isSelected(row) : false;
   }
 }
 
