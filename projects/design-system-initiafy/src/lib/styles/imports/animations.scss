@@ -67,3 +67,11 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: $media-mobile) {
+  .show-on-hover {
+    .toggle-element {
+      opacity: 1;
+    }
+  }
+}
