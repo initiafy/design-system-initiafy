@@ -7,7 +7,7 @@ import {
   ButtonsComponent,
   ColorsComponent,
   GridComponent,
-  HelpersComponent,
+  CssComponent,
   IconsComponent,
   MessagesComponent,
   StructureComponent,
@@ -24,12 +24,13 @@ const routes: Routes = [
   { path: 'buttons', component: ButtonsComponent },
   { path: 'colors', component: ColorsComponent },
   { path: 'grid', component: GridComponent },
-  { path: 'helpers', component: HelpersComponent },
+  { path: 'css', component: CssComponent },
   { path: 'icons', component: IconsComponent },
   { path: 'messages', component: MessagesComponent },
   { path: 'structure', component: StructureComponent },
   { path: 'typography', component: TypographyComponent },
-  { path: 'data-table', component: DataTableComponent }
+  { path: 'data-table', component: DataTableComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

@@ -4,7 +4,7 @@ export * from './buttons/buttons.component';
 export * from './colors/colors.component';
 export * from './dashboard/dashboard.component';
 export * from './grid/grid.component';
-export * from './helpers/helpers.component';
+export * from './css/css.component';
 export * from './icons/icons.component';
 export * from './messages/messages.component';
 export * from './structure/structure.component';

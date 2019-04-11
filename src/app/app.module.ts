@@ -31,10 +31,10 @@ import {
   IconsComponent,
   AlertsComponent,
   MessagesComponent,
-  HelpersComponent,
   DashboardComponent,
   StructureComponent,
-  DataTableComponent
+  DataTableComponent,
+  CssComponent
 } from './sections';
 import { DocumentationService } from './core';
 import {
@@ -76,7 +76,7 @@ export function startupServiceFactory(
     IconsComponent,
     AlertsComponent,
     MessagesComponent,
-    HelpersComponent,
+    CssComponent,
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
