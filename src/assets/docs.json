@@ -382,7 +382,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 24,
+							"line": 34,
 							"character": 3
 						}
 					]
@@ -399,7 +399,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 20,
+							"line": 30,
 							"character": 18
 						}
 					],
@@ -416,6 +416,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Additional css classes to apply to the button"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -429,7 +432,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 15,
+							"line": 22,
 							"character": 24
 						}
 					],
@@ -447,6 +450,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Method called when button is clicked"
+					},
 					"decorators": [
 						{
 							"name": "Output",
@@ -460,7 +466,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 18,
+							"line": 28,
 							"character": 20
 						}
 					],
@@ -484,6 +490,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Color palette of the button"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -497,7 +506,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 10,
+							"line": 12,
 							"character": 16
 						}
 					],
@@ -523,6 +532,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Design of the button"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -536,7 +548,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 9,
+							"line": 10,
 							"character": 17
 						}
 					],
@@ -571,6 +583,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Disable state of the button"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -584,7 +599,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 17,
+							"line": 26,
 							"character": 19
 						}
 					],
@@ -602,6 +617,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Icon name of icon to appear"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -615,7 +633,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 13,
+							"line": 18,
 							"character": 15
 						}
 					],
@@ -632,6 +650,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Icon library to whivh the icon belongs"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -645,7 +666,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 14,
+							"line": 20,
 							"character": 19
 						}
 					],
@@ -684,6 +705,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Text label for the button"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -697,7 +721,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 11,
+							"line": 14,
 							"character": 16
 						}
 					],
@@ -714,6 +738,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Text for the button's tooltip"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -727,7 +754,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 16,
+							"line": 24,
 							"character": 18
 						}
 					],
@@ -744,6 +771,9 @@
 					"flags": {
 						"isExported": true
 					},
+					"comment": {
+						"shortText": "Type attribute of the button"
+					},
 					"decorators": [
 						{
 							"name": "Input",
@@ -757,7 +787,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 12,
+							"line": 16,
 							"character": 15
 						}
 					],
@@ -804,7 +834,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 22,
+							"line": 32,
 							"character": 13
 						}
 					]
@@ -833,7 +863,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 28,
+							"line": 38,
 							"character": 10
 						}
 					]
@@ -863,7 +893,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 32,
+							"line": 42,
 							"character": 23
 						}
 					]
