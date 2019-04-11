@@ -44,7 +44,7 @@
 
 /* Animate */
 .animated {
-  transition: transform 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 /* Rotate */
@@ -56,4 +56,22 @@
 .rotate-x-180 {
   transform: rotateX(180deg);
   -webkit-transform: rotateX(180deg);
+}
+
+/* Show element on hover */
+.show-on-hover {
+  .toggle-element {
+    opacity: 0;
+  }
+  &:hover .toggle-element {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: $media-mobile) {
+  .show-on-hover {
+    .toggle-element {
+      opacity: 1;
+    }
+  }
 }
