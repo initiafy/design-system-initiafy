@@ -19,6 +19,7 @@ export class DocumentationComponent implements OnInit {
   @Input() componentName: string;
   @Input() module: string;
   @Input() codeTitle: string;
+  @Input() hideSelector: boolean;
   public get inputDataTableSettings(): DataTableSettings<Child> {
     return ({
       displayedColumns: [

@@ -25,11 +25,12 @@
         </li>
         <li><a routerLinkActive="active" routerLink="/css">CSS</a></li>
         <li><a routerLinkActive="active" routerLink="/data-table">Data Table</a></li>
+        <li><a routerLinkActive="active" routerLink="/yes-or-no">Yes or No Alert</a></li>
       </ul>
     </nav>
   </mat-sidenav>
 
   <div class="initiafy-content">
-    <router-outlet></router-outlet>
+    <ng-content></ng-content>
   </div>
 </mat-sidenav-container>

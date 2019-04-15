@@ -1646,6 +1646,34 @@
 			]
 		},
 		{
+			"id": 107,
+			"name": "InitiafyYesOrNoModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\n  declarations: [\n    YesOrNoDialogComponent\n  ],\n  imports: [\n    CommonModule,\n    MatIconModule,\n    MatButtonModule,\n    MatDialogModule\n  ],\n  exports: [\n    YesOrNoDialogComponent\n  ],\n  providers: [\n    YesOrNoService\n  ],\n  entryComponents: [\n    YesOrNoDialogComponent\n  ]\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "yes-or-no/yes-or-no.module.ts",
+					"line": 27,
+					"character": 34
+				}
+			]
+		},
+		{
 			"id": 60,
 			"name": "SearchBarComponent",
 			"kind": 128,
@@ -2197,6 +2225,440 @@
 			]
 		},
 		{
+			"id": 88,
+			"name": "YesOrNoDialogComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'initiafy-yes-or-no',\n  templateUrl: './yes-or-no.component.html',\n  styleUrls: ['./yes-or-no.component.css']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 89,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 92,
+							"name": "new YesOrNoDialogComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 93,
+									"name": "dialogRef",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "MatDialogRef",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"name": "YesOrNoDialogComponent",
+												"id": 88
+											}
+										]
+									}
+								},
+								{
+									"id": 94,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"decorators": [
+										{
+											"name": "Inject",
+											"type": {
+												"type": "reference",
+												"name": "Inject"
+											},
+											"arguments": {
+												"token": "MAT_DIALOG_DATA"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "YesOrNoDialogData",
+										"id": 82
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "YesOrNoDialogComponent",
+								"id": 88
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 17,
+							"character": 55
+						}
+					]
+				},
+				{
+					"id": 91,
+					"name": "data",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExported": true,
+						"isConstructorProperty": true
+					},
+					"decorators": [
+						{
+							"name": "Inject",
+							"type": {
+								"type": "reference",
+								"name": "Inject"
+							},
+							"arguments": {
+								"token": "MAT_DIALOG_DATA"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 20,
+							"character": 42
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "YesOrNoDialogData",
+						"id": 82
+					}
+				},
+				{
+					"id": 90,
+					"name": "dialogRef",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExported": true,
+						"isConstructorProperty": true
+					},
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 19,
+							"character": 22
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "MatDialogRef",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "YesOrNoDialogComponent",
+								"id": 88
+							}
+						]
+					}
+				},
+				{
+					"id": 97,
+					"name": "closeDialog",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 98,
+							"name": "closeDialog",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 25,
+							"character": 20
+						}
+					]
+				},
+				{
+					"id": 95,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 96,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 23,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						89
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						91,
+						90
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						97,
+						95
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+					"line": 17,
+					"character": 35
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 99,
+			"name": "YesOrNoService",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Injectable",
+					"type": {
+						"type": "reference",
+						"name": "Injectable"
+					},
+					"arguments": {
+						"options": "{\n  providedIn: 'root'\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 100,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 102,
+							"name": "new YesOrNoService",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 103,
+									"name": "dialog",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "MatDialog"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "YesOrNoService",
+								"id": 99
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no.service.ts",
+							"line": 8,
+							"character": 29
+						}
+					]
+				},
+				{
+					"id": 101,
+					"name": "dialog",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExported": true,
+						"isConstructorProperty": true
+					},
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no.service.ts",
+							"line": 10,
+							"character": 27
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "MatDialog"
+					}
+				},
+				{
+					"id": 104,
+					"name": "show",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 105,
+							"name": "show",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"comment": {
+								"shortText": "Example usage\nreturns MatDialogRef generated by MatDialog.open();\ntherefore same api applies:\nDialogService.show(data: YesOrNoDialogData).afterClosed() returns an Observable of type boolean indeicating yes or no"
+							},
+							"parameters": [
+								{
+									"id": 106,
+									"name": "data",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "YesOrNoDialogData",
+										"id": 82
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "MatDialogRef",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "YesOrNoDialogComponent",
+										"id": 88
+									},
+									{
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no.service.ts",
+							"line": 17,
+							"character": 13
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						100
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						101
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						104
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "yes-or-no/yes-or-no.service.ts",
+					"line": 8,
+					"character": 27
+				}
+			]
+		},
+		{
 			"id": 57,
 			"name": "SearchItem",
 			"kind": 256,
@@ -2263,6 +2725,139 @@
 					"character": 27
 				}
 			]
+		},
+		{
+			"id": 82,
+			"name": "YesOrNoDialogData",
+			"kind": 256,
+			"kindString": "Interface",
+			"flags": {
+				"isExported": true
+			},
+			"children": [
+				{
+					"id": 84,
+					"name": "message",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 6,
+							"character": 9
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 86,
+					"name": "noButtonLabel",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 8,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 83,
+					"name": "title",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 5,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 87,
+					"name": "width",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 9,
+							"character": 7
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 85,
+					"name": "yesButtonLabel",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+							"line": 7,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						84,
+						86,
+						83,
+						87,
+						85
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
+					"line": 4,
+					"character": 34
+				}
+			]
 		}
 	],
 	"groups": [
@@ -2279,14 +2874,18 @@
 				56,
 				19,
 				81,
-				60
+				107,
+				60,
+				88,
+				99
 			]
 		},
 		{
 			"title": "Interfaces",
 			"kind": 256,
 			"children": [
-				57
+				57,
+				82
 			]
 		}
 	]

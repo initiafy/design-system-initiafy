@@ -8,7 +8,6 @@ import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { LayoutModule } from '@angular/cdk/layout';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import {
@@ -31,19 +30,16 @@ import {
   IconsComponent,
   AlertsComponent,
   MessagesComponent,
-  DashboardComponent,
   StructureComponent,
-  DataTableComponent,
-  CssComponent
+  CssComponent,
+  DataTableComponent
 } from './sections';
 import { DocumentationService } from './core';
 import {
   HeaderComponent,
   FooterComponent,
-  ContentComponent,
-  DocumentationComponent,
-  CodeComponent
-} from './shared';
+  ContentComponent
+} from './layout';
 import { SearchBarComponent } from './sections/search-bar/search-bar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataTableComponent as AppDataTableComponent } from './shared/data-table/data-table.component';
@@ -57,7 +53,7 @@ import {
   MatSelectModule,
   MatCardModule
 } from '@angular/material';
-import { ExpansionPanelComponent } from './shared/expansion-panel/expansion-panel.component';
+import { SharedModule } from './shared/shared.modules';
 
 export function startupServiceFactory(
   startupService: DocumentationService
@@ -71,6 +67,7 @@ export function startupServiceFactory(
     GridComponent,
     ColorsComponent,
     TypographyComponent,
+    DataTableComponent,
     ButtonsComponent,
     ActionsComponent,
     IconsComponent,
@@ -79,58 +76,16 @@ export function startupServiceFactory(
     CssComponent,
     HeaderComponent,
     FooterComponent,
-    DashboardComponent,
     StructureComponent,
     ContentComponent,
-    DocumentationComponent,
-    CodeComponent,
-    SearchBarComponent,
-    DataTableComponent,
-    AppDataTableComponent,
-    ExpansionPanelComponent
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    AppRoutingModule,
-    InitiafyButtonModule,
-    InitiafyIconModule,
-    InitiafySearchBarModule,
-    InitiafyCardModule,
-    InitiafyActionButtonModule,
+    SharedModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatCardModule,
-    MatCheckboxModule,
-    MatExpansionModule,
-    MatFormFieldModule,
-    MatIconModule,
-    MatInputModule,
-    MatMenuModule,
-    MatSelectModule,
-    MatPaginatorModule,
-    MatSidenavModule,
-    MatSlideToggleModule,
-    MatSnackBarModule,
-    MatTableModule,
-    MatTooltipModule,
-    LayoutModule,
-    MarkdownModule.forRoot({
-      loader: HttpClient,
-      markedOptions: {
-        provide: MarkedOptions,
-        useValue: {
-          gfm: true,
-          tables: true,
-          breaks: false,
-          pedantic: false,
-          sanitize: false,
-          smartLists: true,
-          smartypants: false
-        }
-      }
-    })
+    AppRoutingModule,
   ],
   providers: [
     DocumentationService,
@@ -143,4 +98,4 @@ export function startupServiceFactory(
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

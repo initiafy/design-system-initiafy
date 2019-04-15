@@ -11,3 +11,4 @@ export * from './structure/structure.component';
 export * from './typography/typography.component';
 export * from './data-table/data-table.component';
 export * from './search-bar/search-bar.component';
+export * from './yes-or-no/yes-or-no.module';

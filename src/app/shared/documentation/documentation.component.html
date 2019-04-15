@@ -1,7 +1,7 @@
 <initiafy-card class="relative">
   <div class="scollParent">
-  <h1 class="scroll-x scrollChild">{{ componentDocs.name }}</h1>
-</div>
+    <h1 class="scroll-x scrollChild">{{ componentDocs.name }}</h1>
+  </div>
   <ng-content></ng-content>
 </initiafy-card>
 
@@ -17,7 +17,7 @@
     </markdown>
   </div>
 
-  <div class="margin-top-16">
+  <div class="margin-top-16" *ngIf="!hideSelector">
     <h3>Selector:</h3>
     <markdown ngPreserveWhitespaces>
       ```html
@@ -29,12 +29,11 @@
   <div *ngIf="codeTitle" class="margin-top-16">
     <app-code [title]="codeTitle"></app-code>
   </div>
-
+</initiafy-card>
+<initiafy-card class="margin-top-32">
   <ng-container *ngIf="inputs.data.length > 0">
     <h3 class="margin-top-16">Inputs</h3>
-    <app-data-table
-      [dataTableSettings]="inputDataTableSettings"
-    ></app-data-table>
+    <app-data-table [dataTableSettings]="inputDataTableSettings"></app-data-table>
   </ng-container>
   <ng-container *ngIf="outputs.length > 0">
     <h3 class="margin-top-16">Outputs</h3>

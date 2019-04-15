@@ -1,23 +1,31 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {
-  DashboardComponent,
-  ActionsComponent,
-  AlertsComponent,
-  ButtonsComponent,
-  ColorsComponent,
-  GridComponent,
   CssComponent,
   IconsComponent,
   MessagesComponent,
   StructureComponent,
-  SearchBarComponent,
   TypographyComponent,
-  DataTableComponent
+  DataTableComponent,
+  ActionsComponent,
+  AlertsComponent,
+  SearchBarComponent,
+  ButtonsComponent,
+  ColorsComponent,
+  GridComponent
 } from './sections';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
+  {
+    path: '',
+    loadChildren: './sections/dashboard/dashboard.module#DashboardModule',
+    pathMatch: 'full',
+  },
+  {
+    path: 'yes-or-no',
+    loadChildren: './sections/yes-or-no/yes-or-no.module#YesOrNoModule',
+    pathMatch: 'full',
+  },
   { path: 'actions', component: ActionsComponent },
   { path: 'alerts', component: AlertsComponent },
   { path: 'search-bar', component: SearchBarComponent },
@@ -34,7 +42,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,
+    // { enableTracing: true, } // <-- debugging purposes only
+  )],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
