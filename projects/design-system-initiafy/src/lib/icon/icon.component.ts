@@ -8,8 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class IconComponent implements OnInit {
   @Input() icon = '';
-  @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
-  @Input() size: 'small' | 'medium' | 'big' = 'small';
+  @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
+  @Input() size: 'smaller' | 'small' | 'medium' | 'big' = 'small';
 
   private _getIconClasses: string;
   private _showText: boolean;
@@ -42,6 +42,8 @@ export class IconComponent implements OnInit {
         return 'glyphicon glyphicon-' + this.icon;
       case 'initiafy':
         return 'initiafy-icons ' + this.icon;
+      case 'material-outlined':
+        return 'material-icons-outlined ' + this.icon;
       default:
         return 'material-icons';
     }

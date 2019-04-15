@@ -17,7 +17,7 @@ export class ButtonComponent implements OnInit {
   /** Icon name of icon to appear */
   @Input() icon: string;
   /** Icon library to whivh the icon belongs */
-  @Input() iconFont: 'initiafy-icons' | 'glyphicon' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
+  @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
   /** Additional css classes to apply to the button */
   @Input() buttonClasses: string = '';
   /** Text for the button's tooltip */
