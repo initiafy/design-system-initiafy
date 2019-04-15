@@ -153,6 +153,7 @@ export class DocumentationComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log(this.documentationService.getDocs('YesOrNoDialogData'))
     this.componentDocs = this.documentationService.getDocs(this.componentName);
     if (!this.componentDocs) {
       console.error(
