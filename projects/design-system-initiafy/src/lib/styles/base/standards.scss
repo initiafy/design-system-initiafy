@@ -3,7 +3,7 @@
 
 /* Border-radius */
 .radius-std {
-    border-radius: 4px;
+    border-radius: $border-std;
 } 
  
 .radius-all {
@@ -32,12 +32,11 @@
 .initiafy-card {
     display: block;
     cursor: default;
+    position: relative;
     max-width: 100%;
     padding: $spacing;
     border-radius: $border-std;
     background-color: #fff;
-    color: $Black;
-    color: var(--Black);
     @include shadow-std();
     &.small-padding {
         padding: $spacing-half;

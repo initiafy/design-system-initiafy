@@ -183,7 +183,15 @@
 						"types": [
 							{
 								"type": "stringLiteral",
+								"value": "initiafy"
+							},
+							{
+								"type": "stringLiteral",
 								"value": "glyphicon"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome"
 							},
 							{
 								"type": "stringLiteral",
@@ -196,6 +204,10 @@
 							{
 								"type": "stringLiteral",
 								"value": "material-icons"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-outlined"
 							}
 						]
 					},
@@ -675,11 +687,15 @@
 						"types": [
 							{
 								"type": "stringLiteral",
-								"value": "initiafy-icons"
+								"value": "initiafy"
 							},
 							{
 								"type": "stringLiteral",
 								"value": "glyphicon"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome"
 							},
 							{
 								"type": "stringLiteral",
@@ -692,6 +708,10 @@
 							{
 								"type": "stringLiteral",
 								"value": "material-icons"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-outlined"
 							}
 						]
 					},
@@ -1001,13 +1021,13 @@
 						{
 							"fileName": "card/card.component.ts",
 							"line": 9,
-							"character": 80
+							"character": 29
 						}
 					]
 				},
 				{
 					"id": 53,
-					"name": "size",
+					"name": "classes",
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {
@@ -1027,35 +1047,13 @@
 						{
 							"fileName": "card/card.component.ts",
 							"line": 9,
-							"character": 15
+							"character": 18
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "stringLiteral",
-								"value": "small"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "standard"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "medium"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "big"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "bigger"
-							}
-						]
-					},
-					"defaultValue": "\"standard\""
+						"type": "stringLiteral",
+						"value": "string"
+					}
 				}
 			],
 			"groups": [
@@ -1257,6 +1255,10 @@
 							{
 								"type": "stringLiteral",
 								"value": "material-icons"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-outlined"
 							}
 						]
 					},
@@ -1290,6 +1292,10 @@
 					"type": {
 						"type": "union",
 						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "smaller"
+							},
 							{
 								"type": "stringLiteral",
 								"value": "small"
@@ -1448,7 +1454,7 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 50,
+							"line": 52,
 							"character": 18
 						}
 					]

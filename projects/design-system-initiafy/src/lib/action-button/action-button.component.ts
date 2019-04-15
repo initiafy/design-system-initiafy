@@ -9,7 +9,7 @@ export class ActionButtonComponent {
 
   @Input() label: string;
   @Input() icon: string;
-  @Input() iconFont: 'glyphicon' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' = 'material-icons';
+  @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
   @Input() tooltip: string;
   @Input() size: 'small' | 'medium' | 'big' = 'medium';
   @Input() disabled = false;

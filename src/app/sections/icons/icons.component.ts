@@ -54,15 +54,13 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('person_add', ''));
     this.iconsList.push(this.iconsService.getIcons('person', ''));
     this.iconsList.push(this.iconsService.getIcons('notifications_none', ''));
-    this.iconsList.push(
-      this.iconsService.getIcons('address-card', 'font-awesome-solid')
-    );
+    this.iconsList.push(this.iconsService.getIcons('address-card', 'font-awesome-solid'));
     this.iconsList.push(this.iconsService.getIcons('behalf', 'initiafy'));
     this.iconsList.push(this.iconsService.getIcons('dotlogo', 'initiafy'));
-    this.iconsList.push(
-      this.iconsService.getIcons('qualification', 'initiafy')
-    );
+    this.iconsList.push(this.iconsService.getIcons('qualification', 'initiafy'));
     this.iconsList.push(this.iconsService.getIcons('number', 'initiafy'));
     this.iconsList.push(this.iconsService.getIcons('characterbox', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('announcement', ''));
+    this.iconsList.push(this.iconsService.getIcons('announcement', 'material-outlined'));
   }
 }

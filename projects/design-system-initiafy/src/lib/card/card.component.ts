@@ -5,8 +5,8 @@ import { Component, Input } from '@angular/core';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent  {
-  @Input() size: 'small' | 'standard' | 'medium' | 'big' | 'bigger'= 'standard';
+export class CardComponent {
+  @Input() classes: 'string';
 
   constructor() { }
 
