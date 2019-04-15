@@ -1,10 +1,10 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { YesOrNoDialogData, YesOrNoService } from 'design-system-initiafy';
 
 @Component({})
 export class ExampleComponent {
 
-    constructor(private yesOrNoService: YesOrNoService) {}
+    constructor(private yesOrNoService: YesOrNoService) { }
 
     public handleButtonClick() {
         const config: YesOrNoDialogData = {

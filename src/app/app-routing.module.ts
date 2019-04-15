@@ -26,6 +26,11 @@ const routes: Routes = [
     loadChildren: './sections/yes-or-no/yes-or-no.module#YesOrNoModule',
     pathMatch: 'full',
   },
+  {
+    path: 'snack-bar',
+    loadChildren: './sections/snack-bar/snack-bar.module#SnackBarModule',
+    pathMatch: 'full',
+  },
   { path: 'actions', component: ActionsComponent },
   { path: 'alerts', component: AlertsComponent },
   { path: 'search-bar', component: SearchBarComponent },

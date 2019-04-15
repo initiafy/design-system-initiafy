@@ -1,0 +1,12 @@
+<div class="full-width flex row align-items-center justify-content-space-between white-color mat-simple-snackbar">
+  <div class="flex align-items-center default">
+    <mat-icon *ngIf="data.icon" class="margin-right-8">{{
+            data.icon
+        }}</mat-icon>
+    {{ data.message }}
+  </div>
+  <button mat-button class="white-color underline margin-left-16" *ngIf="data.actionButtonLabel" (click)="action()">
+    {{ data.actionButtonLabel }}
+  </button>
+  <mat-icon class="margin-left-16 noselect pointer" *ngIf="data.closeButton" (click)="dismiss()">close</mat-icon>
+</div>

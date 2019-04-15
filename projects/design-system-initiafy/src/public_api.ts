@@ -6,3 +6,6 @@ export * from './lib/card/card.module';
 export * from './lib/action-button/action-button.module';
 export * from './lib/yes-or-no/yes-or-no.module';
 export * from './lib/yes-or-no/yes-or-no.service';
+export * from './lib/snack-bar/models';
+export * from './lib/snack-bar/snack-bar.module';
+export * from './lib/snack-bar/snack-bar.service';

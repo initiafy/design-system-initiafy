@@ -7,7 +7,7 @@ import { YesOrNoService, YesOrNoDialogData } from 'design-system-initiafy';
   styleUrls: ['./yes-or-no-documentation.component.scss']
 })
 export class YesOrNoDocumentationComponent implements OnInit {
-  public componentName = 'YesOrNoDialogComponent';
+  public componentName = 'YesOrNoService';
   public module = 'InitiafyYesOrNoModule';
 
   constructor(private yesOrNoService: YesOrNoService) { }
