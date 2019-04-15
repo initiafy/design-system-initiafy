@@ -3,11 +3,32 @@ import { CommonModule } from '@angular/common';
 import { CodeComponent } from './code/code.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { DocumentationComponent } from './documentation/documentation.component';
-import { InitiafyButtonModule, InitiafyIconModule, InitiafyCardModule, InitiafySearchBarModule, InitiafyActionButtonModule } from 'design-system-initiafy';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+    InitiafyButtonModule,
+    InitiafyIconModule,
+    InitiafyCardModule,
+    InitiafySearchBarModule,
+    InitiafyActionButtonModule
+} from 'design-system-initiafy';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { HttpClient } from '@angular/common/http';
-import { MatTableModule, MatCardModule, MatCheckboxModule, MatExpansionModule, MatFormFieldModule, MatIconModule, MatInputModule, MatMenuModule, MatSelectModule, MatPaginatorModule, MatSidenavModule, MatSlideToggleModule, MatSnackBarModule, MatTooltipModule } from '@angular/material';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {
+    MatTableModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule,
+    MatMenuModule,
+    MatSelectModule,
+    MatPaginatorModule,
+    MatSidenavModule,
+    MatSlideToggleModule,
+    MatSnackBarModule,
+    MatTooltipModule
+} from '@angular/material';
 
 @NgModule({
     declarations: [CodeComponent, DataTableComponent, DocumentationComponent],

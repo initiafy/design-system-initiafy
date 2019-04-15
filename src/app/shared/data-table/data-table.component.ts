@@ -145,7 +145,6 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
   public handleRowClick(event: Event, row: T): void {
     const target = <HTMLInputElement>event.target;
     const { classList } = target;
-    console.log(classList);
     if (
       classList.contains('mat-checkbox-inner-container')
       || classList.contains('row-action-button')
@@ -200,6 +199,8 @@ export interface DataColumnDefinition<T> {
   customCellClassSm?: string;
   // If the cells in the column are individually clickable
   handleCellClick?: (row: T) => void;
+  // use with mode 'list'
+  listAccessor?: (row: T) => string[];
 }
 
 export enum DataColumnMode {
@@ -214,7 +215,9 @@ export enum DataColumnMode {
   // If an additional checkboxes is required in the table
   checkbox = 'extra-checkbox',
   // If this is a column with an input
-  input = 'input'
+  input = 'input',
+  // Used for rendering a list in the cell
+  list = 'list'
 }
 
 export interface DataColumnCheckboxSettings<T> {

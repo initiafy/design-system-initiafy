@@ -111,7 +111,32 @@ export class DocumentationComponent implements OnInit {
           mode: DataColumnMode.transformer,
           transformer: (item: Child) =>
             item.comment ? item.comment.shortText : null
-        }]
+        }
+      ]
+    });
+  }
+  public get methodDataTableSettings(): DataTableSettings<Child> {
+    return ({
+      displayedColumns: ['name', 'arguements', 'returns'],
+      dataSource: this.methods,
+      columnDefinitions: [
+        {
+          columnName: 'name',
+          title: 'Method'
+        },
+        {
+          columnName: 'arguements',
+          title: 'Args',
+          mode: DataColumnMode.list,
+          listAccessor: (item: Child) => this.getMethodArgs(item)
+        },
+        {
+          columnName: 'returns',
+          title: 'Returns',
+          mode: DataColumnMode.transformer,
+          transformer: (item: Child) => this.getReturnType(item)
+        }
+      ]
     });
   }
   public selector = '';
@@ -119,7 +144,7 @@ export class DocumentationComponent implements OnInit {
   public inputs: MatTableDataSource<Child> = new MatTableDataSource();
   public outputs: MatTableDataSource<Child> = new MatTableDataSource();
   public twoWayBound: MatTableDataSource<Child> = new MatTableDataSource();
-  public methods: Child[] = [];
+  public methods: MatTableDataSource<Child> = new MatTableDataSource();
   public constructors: Child[] = [];
   private componentDocs: Child;
 
@@ -137,7 +162,7 @@ export class DocumentationComponent implements OnInit {
       );
     }
     this.properties = [];
-    this.methods = [];
+    const methods = [];
     this.constructors = [];
     const twoWayBoundData = [];
     const { children } = this.componentDocs;
@@ -145,7 +170,7 @@ export class DocumentationComponent implements OnInit {
       if (e.kindString === 'Property') {
         this.properties.push(e);
       } else if (e.kindString === 'Method') {
-        this.methods.push(e);
+        methods.push(e);
       } else if (e.kindString === 'Constructor') {
         this.constructors.push(e);
       } else if (
@@ -156,6 +181,7 @@ export class DocumentationComponent implements OnInit {
         twoWayBoundData.push(e);
       }
     });
+    this.methods.data = methods;
     this.twoWayBound.data = twoWayBoundData;
     const inputData = [];
     const outputData = [];
@@ -169,9 +195,11 @@ export class DocumentationComponent implements OnInit {
     this.outputs.data = outputData;
     this.inputs.data = inputData;
     const { obj } = this.componentDocs.decorators[0].arguments;
-    const escaped = this.jsonEscape(obj);
-    const parsed = JSON.parse(escaped);
-    this.selector = parsed.selector;
+    if (obj) {
+      const escaped = this.jsonEscape(obj);
+      const parsed = JSON.parse(escaped);
+      this.selector = parsed.selector;
+    }
   }
   jsonEscape(str: string): string {
     return str
@@ -205,5 +233,18 @@ export class DocumentationComponent implements OnInit {
   }
   getTwoWayTypeString(obj: Child) {
     return obj.getSignature[0].type.name;
+  }
+  getMethodArgs(obj: Child): string[] {
+    const result = [];
+    const { parameters } = obj.signatures[0];
+    if (parameters) {
+      parameters.forEach(e => {
+        result.push(`${e.name}: ${e.type.elementType ? e.type.elementType.name : e.type.name}`);
+      });
+    }
+    return result;
+  }
+  getReturnType(obj: Child): string {
+    return obj.signatures[0].type.elementType ? obj.signatures[0].type.elementType.name : obj.signatures[0].type.name;
   }
 }
