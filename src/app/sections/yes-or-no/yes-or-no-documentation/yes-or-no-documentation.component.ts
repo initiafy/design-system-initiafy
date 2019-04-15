@@ -9,6 +9,7 @@ import { YesOrNoService, YesOrNoDialogData } from 'design-system-initiafy';
 export class YesOrNoDocumentationComponent implements OnInit {
   public componentName = 'YesOrNoService';
   public module = 'InitiafyYesOrNoModule';
+  public classes = ['YesOrNoDialogData'];
 
   constructor(private yesOrNoService: YesOrNoService) { }
 

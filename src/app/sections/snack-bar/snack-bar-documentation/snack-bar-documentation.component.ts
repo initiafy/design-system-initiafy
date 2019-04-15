@@ -9,6 +9,7 @@ import { SnackBarService } from 'design-system-initiafy';
 export class SnackBarDocumentationComponent implements OnInit {
   public componentName = 'SnackBarService';
   public module = 'InitiafySnackBarModule';
+  public classes = ['Error'];
 
   constructor(private snackBarService: SnackBarService) { }
 

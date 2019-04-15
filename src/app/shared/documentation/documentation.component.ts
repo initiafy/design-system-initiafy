@@ -19,6 +19,7 @@ export class DocumentationComponent implements OnInit {
   @Input() componentName: string;
   @Input() module: string;
   @Input() codeTitle: string;
+  @Input() classes: string[] = [];
   @Input() hideSelector: boolean;
   public get inputDataTableSettings(): DataTableSettings<Child> {
     return ({
@@ -140,6 +141,7 @@ export class DocumentationComponent implements OnInit {
     });
   }
   public selector = '';
+  public classesDocs = [];
   public properties: Child[] = [];
   public inputs: MatTableDataSource<Child> = new MatTableDataSource();
   public outputs: MatTableDataSource<Child> = new MatTableDataSource();
@@ -153,7 +155,6 @@ export class DocumentationComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    console.log(this.documentationService.getDocs('YesOrNoDialogData'))
     this.componentDocs = this.documentationService.getDocs(this.componentName);
     if (!this.componentDocs) {
       console.error(
@@ -201,6 +202,7 @@ export class DocumentationComponent implements OnInit {
       const parsed = JSON.parse(escaped);
       this.selector = parsed.selector;
     }
+    this.getClasses();
   }
   jsonEscape(str: string): string {
     return str
@@ -247,5 +249,21 @@ export class DocumentationComponent implements OnInit {
   }
   getReturnType(obj: Child): string {
     return obj.signatures[0].type.elementType ? obj.signatures[0].type.elementType.name : obj.signatures[0].type.name;
+  }
+  getClasses(): void {
+    this.classes.forEach(e => {
+      const documentation = this.documentationService.getDocs(e);
+      const { name } = documentation;
+      const props = documentation.children.map(f => {
+        return {
+          name: f.name,
+          type: f.type.elementType ? f.type.elementType.name : f.type.name
+        };
+      });
+      this.classesDocs.push({
+        name,
+        props
+      });
+    });
   }
 }

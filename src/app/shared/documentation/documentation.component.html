@@ -54,3 +54,16 @@
     <app-data-table [dataTableSettings]="methodDataTableSettings"></app-data-table>
   </initiafy-card>
 </ng-container>
+<ng-container *ngIf="classes.length > 0">
+  <initiafy-card class="margin-top-32">
+    <h3 class="margin-top-32">Classes:</h3>
+    <div *ngFor="let class of classesDocs">
+      {{class.name}}
+      <ul>
+        <li *ngFor="let prop of class.props">
+          {{prop.name}}: {{prop.type}}
+        </li>
+      </ul>
+    </div>
+  </initiafy-card>
+</ng-container>
