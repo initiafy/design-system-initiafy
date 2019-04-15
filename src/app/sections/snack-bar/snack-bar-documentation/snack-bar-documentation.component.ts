@@ -16,7 +16,7 @@ export class SnackBarDocumentationComponent implements OnInit {
   ngOnInit() { }
 
   public showHelp(): void {
-    this.snackBarService.help('message', 'help action', () => { alert('hello'); });
+    this.snackBarService.help('message', 'help action', () => { alert('help is on the way'); });
   }
 
   public showSuccess(): void {
