@@ -1,12 +1,12 @@
 <div class="full-width flex row align-items-center justify-content-space-between white-color mat-simple-snackbar">
   <div class="flex align-items-center default">
-    <mat-icon *ngIf="data.icon" class="margin-right-8">{{
-            data.icon
-        }}</mat-icon>
+    <initiafy-icon *ngIf="data.icon" class="margin-right-8" [icon]="data.icon"
+      [iconFont]="data.iconFont ?  data.iconFont : 'material-outlined'"></initiafy-icon>
     {{ data.message }}
   </div>
-  <button mat-button class="white-color underline margin-left-16" *ngIf="data.actionButtonLabel" (click)="action()">
-    {{ data.actionButtonLabel }}
-  </button>
-  <mat-icon class="margin-left-16 noselect pointer" *ngIf="data.closeButton" (click)="dismiss()">close</mat-icon>
+  <initiafy-button design="basic" [buttonClasses]="'white-color'" *ngIf="data.actionButtonLabel" [label]="data.actionButtonLabel" [tooltip]="data.actionButtonLabel"
+    [disabled]="false"></initiafy-button>
+  <initiafy-icon *ngIf="data.closeButton" class="margin-left-16 noselect pointer" (click)="dismiss()"
+    [icon]="'close'" [iconFont]="data.iconFont ?  data.iconFont : 'material-outlined'"></initiafy-icon>
+  <!-- <mat-icon class="margin-left-16 noselect pointer" *ngIf="data.closeButton" (click)="dismiss()">close</mat-icon> -->
 </div>
