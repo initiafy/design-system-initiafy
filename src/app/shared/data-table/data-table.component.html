@@ -17,8 +17,8 @@
     </mat-header-cell>
     <mat-cell class="hide_in_small_screen" *matCellDef="let row"
       [ngClass]="'customMenuColumnClass flex justify-content-center'">
-      <initiafy-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" [buttonClasses]="'row-action-button'" icon="more_vert"
-        [disabled]="!dataTableSettings.menu">
+      <initiafy-button [matMenuTriggerFor]="appMenu" (click)="clickedItem = row" [buttonClasses]="'row-action-button'"
+        icon="more_vert" [disabled]="!dataTableSettings.menu">
       </initiafy-button>
     </mat-cell>
   </ng-container>
@@ -57,8 +57,16 @@
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           <mat-checkbox [disabled]="column.disableFormField(row)"
             [checked]="column.checkboxSettings.checkboxChecked(row)"
-            (change)="column.checkboxSettings.checkboxChange($event, row)"
-            class="margin-x-auto"></mat-checkbox>
+            (change)="column.checkboxSettings.checkboxChange($event, row)" class="margin-x-auto"></mat-checkbox>
+        </mat-cell>
+      </ng-container>
+      <ng-container *ngSwitchCase="'list'">
+        <mat-cell *matCellDef="let row" class="block_small_screen"
+          [attr.data-label]="column.title" [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
+          [class.pointer]="column.handleCellClick">
+          <ul>
+            <li *ngFor="let item of column.listAccessor(row)">{{item}}</li>
+          </ul>
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchCase="'input'">

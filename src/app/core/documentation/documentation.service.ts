@@ -32,12 +32,13 @@ export interface Child {
   kind: number;
   kindString: string;
   name: string;
-  getSignature?: GetSet[];
-  setSignature?: GetSet[];
+  getSignature?: Signature[];
+  setSignature?: Signature[];
+  signatures: Signature[];
   sources: Source[];
 }
 
-export interface GetSet {
+export interface Signature {
   comment?: Comment;
   flags: Flags;
   id: number;
@@ -75,6 +76,10 @@ export interface Type {
   types: Type[];
   value: string;
   typeArguments?: Type[];
+  elementType: {
+    type: string;
+    name: string;
+  };
 }
 
 export interface Source {

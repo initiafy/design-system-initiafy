@@ -84,7 +84,7 @@
 
   /* Basic Button (background transparent) */
   &.basic {
-    @include button-basic('transparent');
+    // @include button-basic('transparent');
     &:hover {
       background-color: $Hover;
       background-color: var(--Hover);

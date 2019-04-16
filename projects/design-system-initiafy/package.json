@@ -1,6 +1,6 @@
 {
   "name": "design-system-initiafy",
-   "version": "0.0.34",
+  "version": "0.0.34",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "postbuild": "gulp"
@@ -13,6 +13,6 @@
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
-    "ng-packagr": "^4.7.1"
+    "ng-packagr": "^5.1.0"
   }
 }

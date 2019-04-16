@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { DocumentationService } from './core/documentation/documentation.service';
-import { ContentComponent } from './shared';
+import { ContentComponent } from './layout';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
