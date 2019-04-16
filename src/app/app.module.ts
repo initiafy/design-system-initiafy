@@ -11,8 +11,6 @@ import {
   ButtonsComponent,
   ActionsComponent,
   IconsComponent,
-  AlertsComponent,
-  MessagesComponent,
   StructureComponent,
   CssComponent,
   DataTableComponent
@@ -42,8 +40,6 @@ export function startupServiceFactory(
     ButtonsComponent,
     ActionsComponent,
     IconsComponent,
-    AlertsComponent,
-    MessagesComponent,
     CssComponent,
     HeaderComponent,
     FooterComponent,
