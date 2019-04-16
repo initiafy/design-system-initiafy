@@ -62,55 +62,10 @@ export class DataTableComponent implements OnInit {
       clickableRows: true
     });
   }
-  public get inputsExampleDataTableSettings(): DataTableSettings<MockData> {
-    return ({
-      displayedColumns: ['checkbox', 'name', 'extra_checkbox', 'input'],
-      columnDefinitions: [
-        {
-          title: 'Name',
-          columnName: 'name',
-          customHeaderClassLg: 'max-width-180',
-          customCellClassLg: 'max-width-180',
-          handleCellClick: (row: MockData) => this.exampleSelectionModel.toggle(row)
-        },
-        {
-          title: 'Mandatory',
-          columnName: 'extra_checkbox',
-          mode: DataColumnMode.checkbox,
-          disableFormField: () => false,
-          checkboxSettings: {
-            checkboxChecked: (item: MockData) => item.mandatory,
-            checkboxChange: (event: MatCheckboxChange, item: MockData) => {
-              item.mandatory = event.checked;
-            }
-          }
-        },
-        {
-          title: 'Extra Text',
-          columnName: 'input',
-          mode: DataColumnMode.input,
-          disableFormField: () => false,
-          inputSettings: {
-            inputChange: (event: KeyboardEvent, row: MockData) => {
-              const target = <HTMLInputElement>event.target;
-              row.extraText = target.value;
-            },
-            inputValue: (row: MockData) => row.extraText
-          }
-        }
-      ],
-      dataSource: this.exampleDataSource,
-      menu: this.menu,
-      hideSelectedRowHighlighting: true
-    });
-  }
   constructor() { }
   ngOnInit() {
   }
 }
-
-
-
 
 
 
