@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { YesOrNoDialogComponent, YesOrNoDialogData } from './yes-or-no/yes-or-no.component';
+import { YesOrNoDialogComponent } from './yes-or-no/yes-or-no.component';
 import { YesOrNoService } from './yes-or-no.service';
 import { MatDialogModule, MatButtonModule } from '@angular/material';
 import { InitiafyIconModule } from '../icon/icon.module';
@@ -26,5 +26,3 @@ import { InitiafyIconModule } from '../icon/icon.module';
   ]
 })
 export class InitiafyYesOrNoModule { }
-
-export { YesOrNoDialogData };

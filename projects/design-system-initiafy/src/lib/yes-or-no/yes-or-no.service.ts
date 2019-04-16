@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material';
-import { YesOrNoDialogData, YesOrNoDialogComponent } from './yes-or-no/yes-or-no.component';
+import { YesOrNoDialogComponent } from './yes-or-no/yes-or-no.component';
+import { YesOrNoDialogData } from './models/dialogData';
 
 @Injectable({
   providedIn: 'root'

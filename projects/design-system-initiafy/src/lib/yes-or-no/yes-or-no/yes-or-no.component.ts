@@ -1,13 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
-
-export interface YesOrNoDialogData {
-  title: string;
-  message: string;
-  yesButtonLabel: string;
-  noButtonLabel?: string;
-  width?: string;
-}
+import { YesOrNoDialogData } from '../models/dialogData';
 
 @Component({
   selector: 'initiafy-yes-or-no',
