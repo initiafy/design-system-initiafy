@@ -14,90 +14,15 @@ interface MockData {
   mandatory: boolean;
   extraText: string;
 }
-const MOCK_DATA: MockData[] = [
-  {
-    name: 'michael',
-    age: 19,
-    car: 'opal',
-    diet: {
-      vegetarian: true
-    },
-    mandatory: true,
-    extraText: ''
-  },
-  {
-    name: 'sarah',
-    age: 27,
-    car: 'audi',
-    diet: {
-      vegetarian: false
-    },
-    mandatory: true,
-    extraText: 'Woah, cool data-table!'
-  },
-  {
-    name: 'george',
-    age: 21,
-    car: 'volkswagon',
-    diet: {
-      vegetarian: false
-    },
-    mandatory: false,
-    extraText: ''
-  },
-  {
-    name: 'michelle',
-    age: 18,
-    car: 'range rover',
-    diet: {
-      vegetarian: true
-    },
-    mandatory: false,
-    extraText: 'Here is some additional text.'
-  },
-  {
-    name: 'philip',
-    age: 25,
-    car: 'mercedes',
-    diet: {
-      vegetarian: true
-    },
-    mandatory: true,
-    extraText: ''
-  },
-  {
-    name: 'ruth',
-    age: 28,
-    car: 'nissan',
-    diet: {
-      vegetarian: true
-    },
-    mandatory: false,
-    extraText: ''
-  },
-];
+const MOCK_DATA: MockData[] = [];
 
 @Component({
-  selector: 'app-section-data-table',
+  selector: 'app-data-table',
   templateUrl: './data-table.component.html',
   styleUrls: ['./data-table.component.scss']
 })
 export class DataTableComponent implements OnInit {
-  // Documentation Properties
-  public showBasicCode: boolean;
-  public showAdvancedCode: boolean;
-  public componentName = 'InitiafyDataTableComponent';
-  public module = 'InitiafyDataTableModule';
-  public classes = [
-    'DataColumnDefinition',
-    'DataColumnMode',
-    'DataTableSettings',
-    'DataColumnCheckboxSettings',
-    'DataColumnInputSettings',
-    'DataTableMenuItem'
-  ];
-
-  // Examples Properties
+    // Examples Properties
   public basicColumnsOptions = ['checkbox', 'name', 'diet.vegetarian', 'age', 'car', 'menu'];
   public basicColumns = new FormControl(['checkbox', 'name', 'diet.vegetarian', 'age', 'car', 'menu']);
   public exampleDataSource: MatTableDataSource<MockData> = new MatTableDataSource(MOCK_DATA);
@@ -180,8 +105,12 @@ export class DataTableComponent implements OnInit {
     });
   }
   constructor() { }
-
   ngOnInit() {
   }
-
 }
+
+
+
+
+
+

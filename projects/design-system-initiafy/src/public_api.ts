@@ -6,3 +6,4 @@ export * from './lib/card/card.module';
 export * from './lib/action-button/action-button.module';
 export * from './lib/yes-or-no';
 export * from './lib/snack-bar';
+export * from './lib/data-table';

@@ -7,7 +7,7 @@ import {
 import {
   DataColumnMode,
   DataTableSettings
-} from '../data-table/data-table.component';
+} from 'design-system-initiafy';
 import { MatTableDataSource } from '@angular/material';
 
 @Component({
@@ -257,7 +257,7 @@ export class DocumentationComponent implements OnInit {
       const props = documentation.children.map(f => {
         return {
           name: f.name,
-          type: f.type.elementType ? f.type.elementType.name : f.type.name
+          type: f.type ? f.type.elementType ? f.type.elementType.name : f.type.name : null
         };
       });
       this.classesDocs.push({

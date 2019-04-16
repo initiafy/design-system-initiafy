@@ -1,35 +1,9 @@
-import {
-  Component,
-  OnInit,
-  ViewChild,
-  AfterViewInit,
-  Input,
-  Output,
-  EventEmitter,
-  ViewChildren,
-  QueryList
-} from '@angular/core';
-import { MatTableDataSource, MatPaginator, MatSort, MatCheckboxChange, MatCell, MatRow, MatCheckbox, PageEvent } from '@angular/material';
+import { Component, OnInit, AfterViewInit, Input, EventEmitter, Output, ViewChild, ViewChildren, QueryList } from '@angular/core';
+import { DataTableSettings } from '../models/data-column-settings';
 import { SelectionModel } from '@angular/cdk/collections';
-
-export interface UserData {
-  id: string;
-  name: string;
-  progress: string;
-  color: string;
-}
-
-export interface DataTableSettings<T> {
-  displayedColumns: string[];
-  columnDefinitions: DataColumnDefinition<T>[];
-  dataSource: MatTableDataSource<T>;
-  menu?: DataTableMenuItem<T>[];
-  // Hide the row highlighting
-  hideSelectedRowHighlighting?: boolean;
-  // Use Clickable Rows
-  clickableRows?: boolean;
-  handleRowClick?: (row: T) => void;
-}
+import { MatPaginator, MatSort, MatCheckbox, PageEvent, MatCheckboxChange } from '@angular/material';
+import { DataColumnMode } from '../models/data-column-mode';
+import { DataColumnDefinition } from '../models/data-column-definition';
 
 // see here https://stackblitz.com/edit/angular-material-table-responsive?file=app%2Fapp.component.html
 
@@ -41,11 +15,12 @@ export interface DataTableSettings<T> {
  * ---------------------------------
  */
 @Component({
-  selector: 'app-data-table',
+  selector: 'initiafy-data-table',
   templateUrl: './data-table.component.html',
   styleUrls: ['./data-table.component.scss']
 })
-export class DataTableComponent<T> implements OnInit, AfterViewInit {
+export class InitiafyDataTableComponent<T> implements OnInit, AfterViewInit {
+  public clickedItem: T;
   // Basic Properties
   @Input() dataTableSettings: DataTableSettings<T>;
   // SelectionModel for use with checkboxes
@@ -175,63 +150,4 @@ export class DataTableComponent<T> implements OnInit, AfterViewInit {
   isRowSelected(row: T): boolean {
     return this.selectionModel ? this.selectionModel.isSelected(row) : false;
   }
-}
-
-export interface DataColumnDefinition<T> {
-  // Column Title
-  title: string;
-  // Corresponds to members of the displayedColumns array. Used to access values from row objects
-  columnName: string;
-  // If DataName does not correspond to desired value use a custom transformer
-  transformer?: (row: T) => string;
-  // Use to switch which template is rendered
-  mode?: DataColumnMode;
-  // Use to disable formfields if present
-  disableFormField?: (row: T) => boolean;
-  // Used if there is an additional checkbox column
-  checkboxSettings?: DataColumnCheckboxSettings<T>;
-  // Used if there is an input column
-  inputSettings?: DataColumnInputSettings<T>;
-  // custom css classes
-  customHeaderClassLg?: string;
-  customCellClassLg?: string;
-  customHeaderClassSm?: string;
-  customCellClassSm?: string;
-  // If the cells in the column are individually clickable
-  handleCellClick?: (row: T) => void;
-  // use with mode 'list'
-  listAccessor?: (row: T) => string[];
-}
-
-export enum DataColumnMode {
-  // If this column is a number index column
-  count = 'count',
-  // If Data is nested (use the getNestedValue method)
-  nested = 'nested',
-  // If DataName does not correspond to desired value use a custom transformer
-  transformer = 'transformer',
-  // If this is a menu column
-  menu = 'menu',
-  // If an additional checkboxes is required in the table
-  checkbox = 'extra-checkbox',
-  // If this is a column with an input
-  input = 'input',
-  // Used for rendering a list in the cell
-  list = 'list'
-}
-
-export interface DataColumnCheckboxSettings<T> {
-  checkboxChange: (event: MatCheckboxChange, row: T) => void;
-  checkboxChecked: (row: T) => boolean;
-}
-export interface DataColumnInputSettings<T> {
-  inputChange: (event: KeyboardEvent, row: T) => void;
-  inputValue: (row: T) => string;
-}
-
-export interface DataTableMenuItem<T> {
-  icon: string;
-  label: string;
-  disabled: (row: T) => boolean;
-  action: (...args) => void;
 }

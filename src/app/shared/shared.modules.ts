@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CodeComponent } from './code/code.component';
-import { DataTableComponent } from './data-table/data-table.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
@@ -9,7 +8,8 @@ import {
     InitiafyIconModule,
     InitiafyCardModule,
     InitiafySearchBarModule,
-    InitiafyActionButtonModule
+    InitiafyActionButtonModule,
+    InitiafyDataTableModule
 } from 'design-system-initiafy';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { HttpClient } from '@angular/common/http';
@@ -31,12 +31,13 @@ import {
 } from '@angular/material';
 
 @NgModule({
-    declarations: [CodeComponent, DataTableComponent, DocumentationComponent],
+    declarations: [CodeComponent, DocumentationComponent],
     imports: [
         CommonModule,
         InitiafyButtonModule,
         InitiafyIconModule,
         InitiafyCardModule,
+        InitiafyDataTableModule,
         MatCardModule,
         MatCheckboxModule,
         MatExpansionModule,
@@ -74,11 +75,12 @@ import {
         }),
     ],
     exports: [
-        CodeComponent, DataTableComponent, DocumentationComponent,
+        CodeComponent, DocumentationComponent,
         CommonModule,
         InitiafyButtonModule,
         InitiafyIconModule,
         InitiafyCardModule,
+        InitiafyDataTableModule,
         MatCardModule,
         MatCheckboxModule,
         MatExpansionModule,

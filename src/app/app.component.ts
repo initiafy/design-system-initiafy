@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
           } else {
               window.clearInterval(scrollToTop);
           }
-      }, 16); // how fast to scroll (this equals roughly 60 fps)
+      }, 4); // how fast to scroll (this equals roughly 60 fps)
   });
   }
 
