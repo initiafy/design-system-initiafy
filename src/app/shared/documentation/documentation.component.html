@@ -33,25 +33,25 @@
 <ng-container *ngIf="inputs.data.length > 0">
   <initiafy-card class="margin-top-32">
     <h3 class="margin-top-16">Inputs</h3>
-    <app-data-table [dataTableSettings]="inputDataTableSettings"></app-data-table>
+    <initiafy-data-table [dataTableSettings]="inputDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
-<ng-container *ngIf="outputs.length > 0">
+<ng-container *ngIf="outputs.data.length > 0">
   <initiafy-card class="margin-top-32">
     <h3 class="margin-top-16">Outputs</h3>
-    <app-data-table [dataTableSettings]="outputDataTableSettings"></app-data-table>
+    <initiafy-data-table [dataTableSettings]="outputDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
-<ng-container *ngIf="twoWayBound.length > 0">
+<ng-container *ngIf="twoWayBound.data.length > 0">
   <initiafy-card class="margin-top-32">
     <h3 class="margin-top-16">Two-Way bound properties</h3>
-    <app-data-table [dataTableSettings]="twoWayDataTableSettings"></app-data-table>
+    <initiafy-data-table [dataTableSettings]="twoWayDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
 <ng-container *ngIf="methods.data.length > 0">
   <initiafy-card class="margin-top-32">
     <h3 class="margin-top-32">Methods:</h3>
-    <app-data-table [dataTableSettings]="methodDataTableSettings"></app-data-table>
+    <initiafy-data-table [dataTableSettings]="methodDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
 <ng-container *ngIf="classes.length > 0">
@@ -61,7 +61,7 @@
       {{class.name}}
       <ul>
         <li *ngFor="let prop of class.props">
-          {{prop.name}}: {{prop.type}}
+          {{prop.name}}{{prop.type && ': ' + prop.type}}
         </li>
       </ul>
     </div>

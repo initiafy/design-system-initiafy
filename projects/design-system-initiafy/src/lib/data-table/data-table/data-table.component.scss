@@ -52,7 +52,7 @@
   }
 
   /*  Disable this to show the header
-    */
+      */
   .mat-table .mat-header-cell {
     border: 10px solid;
     clip: rect(0 0 0 0);
@@ -71,9 +71,9 @@
     display: block;
   }
   /*
-    .mat-table .mat-row:nth-child(even) {background: #CCC}
-    .mat-table .mat-row:nth-child(odd) {background: #FFF}
-    */
+      .mat-table .mat-row:nth-child(even) {background: #CCC}
+      .mat-table .mat-row:nth-child(odd) {background: #FFF}
+      */
   .mat-table .mat-cell {
     border-bottom: 1px solid #ddd;
     font-size: 1em;
@@ -85,12 +85,12 @@
   }
   .mat-table .mat-cell:not(.input-cell):before {
     /*
-      * aria-label has no advantage, it won't be read inside a table
-      content: attr(aria-label);
-      */
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
     content: attr(data-label);
     float: left;
-    color: rgba(0,0,0,0.54);
+    color: rgba(0, 0, 0, 0.54);
     // text-transform: uppercase;
     font-weight: normal;
 

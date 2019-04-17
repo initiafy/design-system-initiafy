@@ -7,6 +7,7 @@ import { InitiafyCardModule } from './lib/card/card.module';
 import { InitiafyActionButtonModule  } from './lib/action-button/action-button.module';
 import { InitiafyYesOrNoModule } from './lib/yes-or-no/yes-or-no.module';
 import { InitiafySnackBarModule } from './lib/snack-bar/snack-bar.module';
+import { InitiafyDataTableModule } from './lib/data-table/data-table.module';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { InitiafySnackBarModule } from './lib/snack-bar/snack-bar.module';
     InitiafyCardModule,
     InitiafyActionButtonModule,
     InitiafyYesOrNoModule,
-    InitiafySnackBarModule
+    InitiafySnackBarModule,
+    InitiafyDataTableModule
   ],
   exports: [
     InitiafyButtonModule,
@@ -26,7 +28,8 @@ import { InitiafySnackBarModule } from './lib/snack-bar/snack-bar.module';
     InitiafyCardModule,
     InitiafyActionButtonModule,
     InitiafyYesOrNoModule,
-    InitiafySnackBarModule
+    InitiafySnackBarModule,
+    InitiafyDataTableModule
   ]
 })
 export class DesignSystemInitiafyModule {}

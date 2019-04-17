@@ -24,6 +24,12 @@
       ],
       "design-system-initiafy/*": [
         "dist/design-system-initiafy/*"
+      ],
+      "InitiafyDesignSystem": [
+        "dist/InitiafyDesignSystem"
+      ],
+      "InitiafyDesignSystem/*": [
+        "dist/InitiafyDesignSystem/*"
       ]
     }
   }
