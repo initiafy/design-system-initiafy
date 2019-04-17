@@ -95,7 +95,7 @@ export class DocumentationService {
   load(): Promise<any> {
     this._documentation = null;
     return this.http
-      .get<Documentation>('/assets/docs.json')
+      .get<Documentation>('assets/docs.json')
       .pipe(map((res: Documentation) => res))
       .toPromise()
       .then((data: any) => (this._documentation = data))

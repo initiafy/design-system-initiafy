@@ -148,7 +148,7 @@ export class DocumentationComponent implements OnInit {
   public twoWayBound: MatTableDataSource<Child> = new MatTableDataSource();
   public methods: MatTableDataSource<Child> = new MatTableDataSource();
   public constructors: Child[] = [];
-  private componentDocs: Child;
+  public componentDocs: Child;
 
   constructor(
     private documentationService: DocumentationService
@@ -226,16 +226,18 @@ export class DocumentationComponent implements OnInit {
   }
   getArguementString(type: Type): string {
     let str = '';
-    type.typeArguments.forEach((element, index) => {
-      if (index > 0) {
-        str = str + ', ';
-      }
-      str = str + element.name;
-    });
+    if (type.typeArguments) {
+      type.typeArguments.forEach((element, index) => {
+        if (index > 0) {
+          str = str + ', ';
+        }
+        str = str + element.name;
+      });
+    }
     return str;
   }
   getTwoWayTypeString(obj: Child) {
-    return obj.getSignature[0].type.name;
+    return obj.getSignature ? obj.getSignature[0].type.name : null;
   }
   getMethodArgs(obj: Child): string[] {
     const result = [];
