@@ -26,3 +26,13 @@ The app will automatically reload if you change any of the source files.
 
 - change version if neccessary.
 - Run `npm publish dist` to publish new version of the library in the npm.
+
+### To publish to GH pages
+
+`npm run gh` will build the production folder
+
+`npm run gh-pub` will publish the site to the url
+
+### Imports and local GET requests
+
+for images that reference the assets folder, or http requests that target the assets folder, the urls begins with `'assets/...'` - just like that.
