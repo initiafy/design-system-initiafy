@@ -3,14 +3,6 @@ import { CommonModule } from '@angular/common';
 import { CodeComponent } from './code/code.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {
-    InitiafyButtonModule,
-    InitiafyIconModule,
-    InitiafyCardModule,
-    InitiafySearchBarModule,
-    InitiafyActionButtonModule,
-    InitiafyDataTableModule
-} from 'design-system-initiafy';
 import { MarkdownModule, MarkedOptions } from 'ngx-markdown';
 import { HttpClient } from '@angular/common/http';
 import {
@@ -29,6 +21,14 @@ import {
     MatSnackBarModule,
     MatTooltipModule
 } from '@angular/material';
+import {
+    InitiafyButtonModule,
+    InitiafyIconModule,
+    InitiafyCardModule,
+    InitiafyDataTableModule,
+    InitiafySearchBarModule,
+    InitiafyActionButtonModule
+} from 'projects/design-system-initiafy/src/public_api';
 
 @NgModule({
     declarations: [CodeComponent, DocumentationComponent],

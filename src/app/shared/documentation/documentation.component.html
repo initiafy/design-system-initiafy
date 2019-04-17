@@ -36,13 +36,13 @@
     <initiafy-data-table [dataTableSettings]="inputDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
-<ng-container *ngIf="outputs.length > 0">
+<ng-container *ngIf="outputs.data.length > 0">
   <initiafy-card class="margin-top-32">
     <h3 class="margin-top-16">Outputs</h3>
     <initiafy-data-table [dataTableSettings]="outputDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
-<ng-container *ngIf="twoWayBound.length > 0">
+<ng-container *ngIf="twoWayBound.data.length > 0">
   <initiafy-card class="margin-top-32">
     <h3 class="margin-top-16">Two-Way bound properties</h3>
     <initiafy-data-table [dataTableSettings]="twoWayDataTableSettings"></initiafy-data-table>

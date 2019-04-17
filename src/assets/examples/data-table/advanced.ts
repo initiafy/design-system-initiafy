@@ -16,11 +16,7 @@ interface MockData {
 }
 const MOCK_DATA: MockData[] = [];
 
-@Component({
-    selector: 'app-data-table',
-    templateUrl: './data-table.component.html',
-    styleUrls: ['./data-table.component.scss']
-})
+@Component({})
 export class DataTableComponent implements OnInit {
     // Examples Properties
     public basicColumnsOptions = ['checkbox', 'name', 'diet.vegetarian', 'age', 'car', 'menu'];

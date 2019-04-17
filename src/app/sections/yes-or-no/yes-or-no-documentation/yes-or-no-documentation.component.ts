@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { YesOrNoService, YesOrNoDialogData } from 'design-system-initiafy';
+import { YesOrNoService, YesOrNoDialogData } from 'projects/design-system-initiafy/src/public_api';
 
 @Component({
   selector: 'app-yes-or-no-documentation',
