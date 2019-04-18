@@ -2240,11 +2240,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: #757575;
 }
 
-.mat-tab-nav-bar,
-.mat-tab-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-}
-
 .mat-tab-group-inverted-header .mat-tab-nav-bar,
 .mat-tab-group-inverted-header .mat-tab-header {
   border-top: 1px solid rgba(0, 0, 0, 0.12);
@@ -2537,12 +2532,19 @@ mat-sidenav-content {
 }
 .mat-expansion-panel-header-title {
   align-items: center;
+  font-size: 14px;
+}
+.mat-list-base {
+  padding-top: 0;
 }
 .mat-list-item {
   padding-left: $spacing;
   padding-right: 0px;
   height: 36px !important;
   font-size: 1rem;
+}
+.mat-list-item-content {
+  font-size: 14px;
 }
 
 .mat-card.section-box {

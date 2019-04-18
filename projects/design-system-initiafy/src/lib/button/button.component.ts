@@ -19,9 +19,9 @@ export class ButtonComponent implements OnInit {
   /** Icon library to whivh the icon belongs */
   @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
   /** Additional css classes to apply to the button */
-  @Input() buttonClasses: string = '';
+  @Input() cssClass: string = '';
   /** Text for the button's tooltip */
-  @Input() tooltip: string;
+  @Input() tooltip: string = '';
   /** Disable state of the button */
   @Input() disabled = false;
   /** Method called when button is clicked */
@@ -44,8 +44,8 @@ export class ButtonComponent implements OnInit {
     if (this.design !== 'white' && this.color) {
       this._classes += ' ' + this.color;
     }
-    if (this.buttonClasses) {
-      this._classes += ' ' + this.buttonClasses;
+    if (this.cssClass) {
+      this._classes += ' ' + this.cssClass;
     }
   }
 }

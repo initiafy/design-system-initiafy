@@ -1,0 +1,12 @@
+<div class="initiafy-modal" [ngClass]="classes">
+  <div class="initiafy-modal-root">
+    <div class="initiafy-modal-close" (click)="close.emit()">
+      <initiafy-icon icon="close"></initiafy-icon>
+    </div>
+    <div class="initiafy-modal-content">
+      <div class="flex-justify-align-center full-height">
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+</div>

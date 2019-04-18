@@ -1,0 +1,19 @@
+@import "../imports/variables";
+@import "../imports/placeholder";
+
+.loading-card {
+  @extend %base-card;
+  width: 100%;
+  &.small {
+    max-width: $modal-small;
+  }
+  &.std {
+    max-width: $modal-std;
+  }
+  &.medium {
+    max-width: $modal-medium;
+  }
+  &.big {
+    max-width: $modal-big;
+  }
+}
