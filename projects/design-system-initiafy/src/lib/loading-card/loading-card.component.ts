@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LoadingCardComponent implements OnInit {
   @Input() cssClass: string = '';
-  @Input() size: 'small' | 'std' | 'medium' | 'big' = 'std';
+  @Input() size: 'small' | 'std' | 'medium' | 'big' | 'full' = 'std';
   @Input() isLoading: boolean = false;
 
   constructor() { }
