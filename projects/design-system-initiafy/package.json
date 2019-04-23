@@ -1,6 +1,6 @@
 {
   "name": "design-system-initiafy",
-  "version": "0.0.34",
+  "version": "0.0.36",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "postbuild": "gulp"

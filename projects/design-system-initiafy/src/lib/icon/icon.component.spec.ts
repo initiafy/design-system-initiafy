@@ -100,21 +100,21 @@ describe('IconComponent', () => {
   describe('Function getIconClasses', () => {
 
     it('should return default icon class when iconFont is empty', () => {
-      let iconClasses = component.iconClasses;
+      let iconClasses = component.classes;
       expect(iconClasses).toBe('material-icons');
     });
 
     it('should return font awesome icon class when iconFont is font-awesome', () => {
       component.iconFont = 'font-awesome';
       fixture.detectChanges();
-      let iconClasses = component.iconClasses;
+      let iconClasses = component.classes;
       expect(iconClasses).toContain('fa-');
     });
 
     it('should return glyphicon icon class when iconFont is glyphicon', () => {
       component.iconFont = 'glyphicon';
       fixture.detectChanges();
-      let iconClasses = component.iconClasses;
+      let iconClasses = component.classes;
       expect(iconClasses).toContain('glyphicon');
     });
 

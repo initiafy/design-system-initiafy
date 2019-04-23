@@ -1,0 +1,16 @@
+@import "../imports/variables";
+@import "../imports/placeholder";
+
+.initiafy-card {
+    @extend %base-card;
+}
+
+.initiafy-card.dashed {
+    @extend %base-card;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px dashed $Ripple;
+    background-color: $BackgroundDefault;
+    color: $Grey;
+}
