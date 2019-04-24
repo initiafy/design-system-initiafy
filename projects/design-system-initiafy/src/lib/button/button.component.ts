@@ -24,6 +24,8 @@ export class ButtonComponent implements OnInit {
   @Input() tooltip: string = '';
   /** Disable state of the button */
   @Input() disabled = false;
+  /** Hide label on mobile screens  */
+  @Input() hideLabelOnMobile: boolean = false;
   /** Method called when button is clicked */
   @Output() callback = new EventEmitter();
 
@@ -43,6 +45,9 @@ export class ButtonComponent implements OnInit {
     this._classes = this.design;
     if (this.design !== 'white' && this.color) {
       this._classes += ' ' + this.color;
+    }
+    if (this.hideLabelOnMobile) {
+      this._classes += ' hide-label-on-mobile';
     }
     if (this.cssClass) {
       this._classes += ' ' + this.cssClass;

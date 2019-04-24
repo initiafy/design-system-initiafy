@@ -29,6 +29,4 @@
 
 @mixin button-basic($color) {
     background-color: $color;
-    color: $Grey;
-    color: var(--Grey);
 }

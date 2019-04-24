@@ -1568,10 +1568,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
     background: white;
   }
 }
-.mat-expansion-panel-header-title {
-  color: $Black;
-  color: var(--Black);
-}
 
 .mat-expansion-panel-header-description,
 .mat-expansion-indicator::after {
@@ -2017,8 +2013,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 
 .mat-drawer {
   background-color: white;
-  color: $Black;
-  color: var(--Black);
 }
 .mat-drawer.mat-drawer-push {
   background-color: white;
@@ -2506,8 +2500,6 @@ table[mat-table] {
 
 .mat-drawer-container {
   flex: 1;
-  color: $Black;
-  color: var(--Black);
   min-height: calc(100vh - 64px);
 }
 .mat-drawer-content{
