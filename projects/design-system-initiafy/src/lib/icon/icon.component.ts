@@ -11,6 +11,7 @@ export class IconComponent implements OnInit {
   @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
   @Input() size: 'smaller' | 'small' | 'medium' | 'big' = 'small';
   @Input() cssClass: string = '';
+  @Input() tooltip: string = '';
 
   private _classes: string;
   private _showText: boolean;
