@@ -1,17 +1,11 @@
 @import "../imports/variables";
 
 /* Is NOT Overlay */
-.initiafy-modal-close {
-  display: none;
-}
-
-/* Is Overlay */
-.initiafy-modal.is-overlay {
+.initiafy-modal {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
   overflow: auto;
-  background: $BackgroundDefault;
   .initiafy-modal-root {
     width: 100%;
     min-height: 100%;
@@ -23,13 +17,21 @@
       padding: 30px;
     }
     @media only screen and (max-width: $media-mobile-small) {
-      padding: 30px 10px 10px;
+      padding: 20px;
     }
   }
   .initiafy-modal-content {
     width: 100%;
     max-width: 1200px;
   }
+  .initiafy-modal-close {
+    display: none;
+  }
+}
+
+/* Is Overlay */
+.initiafy-modal.is-overlay {
+  background: $BackgroundDefault;
   .initiafy-modal-close {
     display: block;
     top: 10px;
@@ -39,17 +41,17 @@
     padding: 10px;
     cursor: pointer;
     @media only screen and (max-width: $media-desktop) {
-      top: 0;
-      right: 0;
+      top: -8px;
+      right: -8px;
     }
   }
 }
 
 /* Overlayer */
 .bgOverlayer {
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

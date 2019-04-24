@@ -9,12 +9,12 @@
   background-clip: padding-box;
   margin: 0.5rem 0 1rem 0;
   overflow: hidden;
-  background-color: $PLight;
-  background-color: var(--PLight);
-}
-.progress-bar .indeterminate {
   background-color: $PMain;
   background-color: var(--PMain);
+}
+.progress-bar .indeterminate {
+  background-color: $PLight;
+  background-color: var(--PLight);
 }
 .progress-bar .indeterminate:before {
   content: "";
@@ -98,6 +98,6 @@
   }
 }
 
-.fix-progress-bar-space .mat-progress-bar {
+.fix-progress-bar-space {
   margin-top: -4px;
 }
