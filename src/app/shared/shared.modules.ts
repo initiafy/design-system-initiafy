@@ -22,22 +22,29 @@ import {
     MatTooltipModule
 } from '@angular/material';
 import {
+    InitiafyHeaderModule,
+    InitiafySidenavModule,
+    InitiafyContentModule,
+    InitiafyActionBarModule,
+    InitiafyActionButtonModule,
     InitiafyButtonModule,
-    InitiafyIconModule,
     InitiafyCardModule,
-    InitiafyDataTableModule,
+    InitiafyIconModule,
+    InitiafyLoadingCardModule,
+    InitiafyModalModule,
+    InitiafyProgressBarModule,
+    InitiafyResultModule,
     InitiafySearchBarModule,
-    InitiafyActionButtonModule
+    InitiafySpinnerModule
 } from 'projects/design-system-initiafy/src/public_api';
 
 @NgModule({
-    declarations: [CodeComponent, DocumentationComponent],
+    declarations: [
+        CodeComponent,
+        DocumentationComponent
+    ],
     imports: [
         CommonModule,
-        InitiafyButtonModule,
-        InitiafyIconModule,
-        InitiafyCardModule,
-        InitiafyDataTableModule,
         MatCardModule,
         MatCheckboxModule,
         MatExpansionModule,
@@ -54,10 +61,6 @@ import {
         MatTooltipModule,
         FormsModule,
         ReactiveFormsModule,
-        InitiafyIconModule,
-        InitiafySearchBarModule,
-        InitiafyCardModule,
-        InitiafyActionButtonModule,
         MarkdownModule.forRoot({
             loader: HttpClient,
             markedOptions: {
@@ -73,14 +76,25 @@ import {
                 }
             }
         }),
+        // Design System
+        InitiafyHeaderModule,
+        InitiafySidenavModule,
+        InitiafyContentModule,
+        InitiafyActionBarModule,
+        InitiafyActionButtonModule,
+        InitiafyButtonModule,
+        InitiafyCardModule,
+        InitiafyIconModule,
+        InitiafyLoadingCardModule,
+        InitiafyModalModule,
+        InitiafyProgressBarModule,
+        InitiafyResultModule,
+        InitiafySearchBarModule,
+        InitiafySpinnerModule
     ],
     exports: [
         CodeComponent, DocumentationComponent,
         CommonModule,
-        InitiafyButtonModule,
-        InitiafyIconModule,
-        InitiafyCardModule,
-        InitiafyDataTableModule,
         MatCardModule,
         MatCheckboxModule,
         MatExpansionModule,
@@ -97,11 +111,22 @@ import {
         MatTooltipModule,
         FormsModule,
         ReactiveFormsModule,
-        InitiafyIconModule,
-        InitiafySearchBarModule,
-        InitiafyCardModule,
+        MarkdownModule,
+        // Design System
+        InitiafyHeaderModule,
+        InitiafySidenavModule,
+        InitiafyContentModule,
+        InitiafyActionBarModule,
         InitiafyActionButtonModule,
-        MarkdownModule
+        InitiafyButtonModule,
+        InitiafyCardModule,
+        InitiafyIconModule,
+        InitiafyLoadingCardModule,
+        InitiafyModalModule,
+        InitiafyProgressBarModule,
+        InitiafyResultModule,
+        InitiafySearchBarModule,
+        InitiafySpinnerModule
     ]
 })
 export class SharedModule { }

@@ -5,7 +5,7 @@ export class Buttons {
     label?: string;
     icon?: string;
     iconFont?: string;
-    buttonClasses?: string;
+    classes?: string;
     tooltip?: string;
     disabled?: boolean;
     callback?: () => false;

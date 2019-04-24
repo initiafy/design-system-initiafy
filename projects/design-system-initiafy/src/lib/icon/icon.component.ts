@@ -10,12 +10,13 @@ export class IconComponent implements OnInit {
   @Input() icon = '';
   @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
   @Input() size: 'smaller' | 'small' | 'medium' | 'big' = 'small';
+  @Input() cssClass: string = '';
 
-  private _getIconClasses: string;
+  private _classes: string;
   private _showText: boolean;
 
-  get iconClasses() {
-    return this._getIconClasses;
+  get classes() {
+    return this._classes;
   }
 
   get text() {
@@ -26,7 +27,7 @@ export class IconComponent implements OnInit {
   }
 
   ngOnInit() {
-    this._getIconClasses = this.getIconClasses();
+    this._classes = this.getIconClasses() + ' ' + this.cssClass;
     this._showText = this.showText();
   }
 
