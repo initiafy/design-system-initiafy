@@ -1,4 +1,4 @@
-export interface SnackBarData {
+export class SnackBarModel {
     icon: string;
     iconFont?: string;
     message: string;

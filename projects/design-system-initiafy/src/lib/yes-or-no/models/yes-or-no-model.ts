@@ -1,4 +1,4 @@
-export interface YesOrNoDialogData {
+export class YesOrNoDialogModel {
     title: string;
     message: string;
     yesButtonLabel: string;

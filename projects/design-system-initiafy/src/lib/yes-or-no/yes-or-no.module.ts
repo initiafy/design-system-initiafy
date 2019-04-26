@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { YesOrNoDialogComponent } from './yes-or-no/yes-or-no.component';
-import { YesOrNoService } from './yes-or-no.service';
-import { MatDialogModule, MatButtonModule } from '@angular/material';
+import { YesOrNoDialogComponent } from './yes-or-no.component';
 import { InitiafyIconModule } from '../icon/icon.module';
 
 @NgModule({
@@ -11,17 +9,9 @@ import { InitiafyIconModule } from '../icon/icon.module';
   ],
   imports: [
     CommonModule,
-    InitiafyIconModule,
-    MatButtonModule,
-    MatDialogModule
+    InitiafyIconModule
   ],
   exports: [
-    YesOrNoDialogComponent
-  ],
-  providers: [
-    YesOrNoService
-  ],
-  entryComponents: [
     YesOrNoDialogComponent
   ]
 })

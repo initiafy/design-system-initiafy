@@ -4,6 +4,8 @@
 .loading-card {
   @extend %base-card;
   width: 100%;
+  padding: 0px;
+  position: relative;
   &.small {
     max-width: $modal-small;
   }

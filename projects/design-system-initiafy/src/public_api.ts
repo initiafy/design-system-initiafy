@@ -17,4 +17,4 @@ export * from './lib/result/result.module';
 export * from './lib/search-bar/search-bar.module';
 export * from './lib/snack-bar';
 export * from './lib/spinner/spinner.module';
-export * from './lib/yes-or-no';
+export * from './lib/yes-or-no/yes-or-no.module';

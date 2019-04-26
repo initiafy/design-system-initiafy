@@ -444,17 +444,6 @@ input.mat-input-element {
   font: 500 14px/24px;
 }
 
-.mat-simple-snackbar {
-  font-size: 14px;
-}
-
-.mat-simple-snackbar-action {
-  line-height: 1;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 500;
-}
-
 .mat-tree-node,
 .mat-nested-tree-node {
   font-weight: 400;
@@ -2401,17 +2390,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-nested-tree-node {
   color: $Black;
   color: var(--Black);
-}
-
-.mat-snack-bar-container {
-  color: rgba(255, 255, 255, 0.7);
-  background: #323232;
-  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
-}
-
-.mat-simple-snackbar-action {
-  color: $SMain;
-  color: var(--SMain);
 }
 
 .selected-tab {
