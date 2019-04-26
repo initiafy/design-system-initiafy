@@ -7,7 +7,7 @@ import {
 import {
   DataColumnMode,
   DataTableSettings
-} from 'design-system-initiafy';
+} from 'projects/design-system-initiafy/src/public_api';
 import { MatTableDataSource } from '@angular/material';
 
 @Component({
