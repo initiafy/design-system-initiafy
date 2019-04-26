@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SnackBarService } from 'design-system-initiafy';
+import { SnackBarService } from 'projects/design-system-initiafy/src/public_api';
 
 @Component({
   selector: 'app-snack-bar-documentation',
