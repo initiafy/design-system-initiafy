@@ -5,7 +5,7 @@
   <ng-content></ng-content>
 </initiafy-card>
 
-<initiafy-card class="margin-top-32">
+<initiafy-card cssClass="margin-top-32">
   <h2>Usage</h2>
 
   <div *ngIf="module" class="margin-top-16">
@@ -31,31 +31,31 @@
   </div>
 </initiafy-card>
 <ng-container *ngIf="inputs.data.length > 0">
-  <initiafy-card class="margin-top-32">
+  <initiafy-card cssClass="margin-top-32">
     <h3 class="margin-top-16">Inputs</h3>
     <initiafy-data-table [dataTableSettings]="inputDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
 <ng-container *ngIf="outputs.data.length > 0">
-  <initiafy-card class="margin-top-32">
+  <initiafy-card cssClass="margin-top-32">
     <h3 class="margin-top-16">Outputs</h3>
     <initiafy-data-table [dataTableSettings]="outputDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
 <ng-container *ngIf="twoWayBound.data.length > 0">
-  <initiafy-card class="margin-top-32">
+  <initiafy-card cssClass="margin-top-32">
     <h3 class="margin-top-16">Two-Way bound properties</h3>
     <initiafy-data-table [dataTableSettings]="twoWayDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
 <ng-container *ngIf="methods.data.length > 0">
-  <initiafy-card class="margin-top-32">
+  <initiafy-card cssClass="margin-top-32">
     <h3 class="margin-top-32">Methods:</h3>
     <initiafy-data-table [dataTableSettings]="methodDataTableSettings"></initiafy-data-table>
   </initiafy-card>
 </ng-container>
 <ng-container *ngIf="classes.length > 0">
-  <initiafy-card class="margin-top-32">
+  <initiafy-card cssClass="margin-top-32">
     <h3 class="margin-top-32">Classes:</h3>
     <div *ngFor="let class of classesDocs">
       {{class.name}}
