@@ -1,4 +1,4 @@
-export class YesOrNoDialogModel {
+export class YesOrNoModel {
     title: string;
     message: string;
     yesButtonLabel: string;

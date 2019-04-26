@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { YesOrNoDialogComponent } from './yes-or-no.component';
+import { YesOrNoComponent } from './yes-or-no.component';
 
-describe('YesOrNoDialogComponent', () => {
-  let component: YesOrNoDialogComponent;
-  let fixture: ComponentFixture<YesOrNoDialogComponent>;
+describe('YesOrNoComponent', () => {
+  let component: YesOrNoComponent;
+  let fixture: ComponentFixture<YesOrNoComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ YesOrNoDialogComponent ]
+      declarations: [ YesOrNoComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(YesOrNoDialogComponent);
+    fixture = TestBed.createComponent(YesOrNoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

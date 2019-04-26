@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { YesOrNoDialogModel } from 'projects/design-system-initiafy/src/lib/yes-or-no/models/yes-or-no-model';
+import { YesOrNoModel } from 'projects/design-system-initiafy/src/lib/yes-or-no/models/yes-or-no-model';
 
 @Component({
   selector: 'app-yes-or-no',
@@ -7,9 +7,9 @@ import { YesOrNoDialogModel } from 'projects/design-system-initiafy/src/lib/yes-
   styleUrls: ['./yes-or-no.component.scss']
 })
 export class YesOrNoComponent implements OnInit {
-  public componentName = 'Yes or No';
+  public componentName = 'YesOrNoComponent';
   public module = 'InitiafyYesOrNoModule';
-  public data: YesOrNoDialogModel;
+  public data: YesOrNoModel;
 
   constructor() {}
 
@@ -17,8 +17,8 @@ export class YesOrNoComponent implements OnInit {
     this.data = {
       title: '',
       message: 'Are you sure?',
-      yesButtonLabel: 'Cancel',
-      noButtonLabel: 'Confirm'
+      yesButtonLabel: 'Confirm',
+      noButtonLabel: 'Cancel'
     };
   }
 

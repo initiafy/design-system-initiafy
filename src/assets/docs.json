@@ -3739,14 +3739,14 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  declarations: [SnackBarComponent],\r\n  imports: [\r\n    CommonModule,\r\n    MatSnackBarModule,\r\n    InitiafyIconModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  exports: [SnackBarComponent]\r\n}"
+						"obj": "{\r\n  declarations: [SnackBarComponent],\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyIconModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  exports: [SnackBarComponent]\r\n}"
 					}
 				}
 			],
 			"sources": [
 				{
 					"fileName": "snack-bar/snack-bar.module.ts",
-					"line": 18,
+					"line": 16,
 					"character": 35
 				}
 			]
@@ -3795,14 +3795,14 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  declarations: [\r\n    YesOrNoDialogComponent\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyIconModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  exports: [\r\n    YesOrNoDialogComponent\r\n  ]\r\n}"
+						"obj": "{\r\n  declarations: [\r\n    YesOrNoComponent\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyIconModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  exports: [ YesOrNoComponent ]\r\n}"
 					}
 				}
 			],
 			"sources": [
 				{
 					"fileName": "yes-or-no/yes-or-no.module.ts",
-					"line": 20,
+					"line": 18,
 					"character": 34
 				}
 			]
@@ -5763,7 +5763,7 @@
 		},
 		{
 			"id": 316,
-			"name": "YesOrNoDialogComponent",
+			"name": "YesOrNoComponent",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -5793,13 +5793,13 @@
 					"signatures": [
 						{
 							"id": 320,
-							"name": "new YesOrNoDialogComponent",
+							"name": "new YesOrNoComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"name": "YesOrNoDialogComponent",
+								"name": "YesOrNoComponent",
 								"id": 316
 							}
 						}
@@ -5876,7 +5876,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"name": "YesOrNoDialogModel",
+						"name": "YesOrNoModel",
 						"id": 310
 					}
 				}
@@ -5902,13 +5902,13 @@
 				{
 					"fileName": "yes-or-no/yes-or-no.component.ts",
 					"line": 9,
-					"character": 35
+					"character": 29
 				}
 			]
 		},
 		{
 			"id": 310,
-			"name": "YesOrNoDialogModel",
+			"name": "YesOrNoModel",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -6035,7 +6035,7 @@
 				{
 					"fileName": "yes-or-no/models/yes-or-no-model.ts",
 					"line": 1,
-					"character": 31
+					"character": 25
 				}
 			]
 		},
