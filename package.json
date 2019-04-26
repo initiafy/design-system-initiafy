@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build": "npm run docs && npm run build-lib && npm run build-css-lib && npm run npm-pack && ng serve",
     "gh": "ng build --prod --base-href \"https://initiafy.github.io/design-system-initiafy/\"",
     "gh-pub": "npx ngh --dir=dist/InitiafyDesignSystem",
     "test": "ng test",
