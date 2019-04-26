@@ -34,6 +34,11 @@ const routes: Routes = [
     loadChildren: './sections/loading-card/loading-card.module#LoadingCardModule',
     pathMatch: 'full',
   },
+  {
+    path: 'initiafy-card',
+    loadChildren: './sections/initiafy-card/initiafy-card.module#InitiafyCardModule',
+    pathMatch: 'full',
+  },
   { path: 'actions', component: ActionsComponent },
   { path: 'search-bar', component: SearchBarComponent },
   { path: 'buttons', component: ButtonsComponent },
