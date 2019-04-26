@@ -94,7 +94,9 @@
             "styles": [
               "src/styles.scss",
               "projects/design-system-initiafy/dist/lib/styles/style.min.css",
-              "node_modules/prismjs/themes/prism-okaidia.css"
+              "node_modules/prismjs/themes/prism-okaidia.css",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
+              "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css"
             ],
             "scripts": [],
             "assets": ["src/favicon.ico", "src/assets"]
