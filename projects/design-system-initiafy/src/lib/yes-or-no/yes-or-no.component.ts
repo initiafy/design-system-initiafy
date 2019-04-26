@@ -7,7 +7,7 @@ import { YesOrNoDialogModel } from './models/yes-or-no-model';
   styleUrls: ['./yes-or-no.component.scss']
 })
 export class YesOrNoDialogComponent {
-  @Input() date: YesOrNoDialogModel;
+  @Input() data: YesOrNoDialogModel;
   @Output() close = new EventEmitter();
 
   constructor() {}

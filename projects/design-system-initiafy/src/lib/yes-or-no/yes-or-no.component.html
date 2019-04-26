@@ -13,10 +13,10 @@
 <div class="text-center" [innerHTML]="data.message"></div>
 
 <div class="button-wrapper">
-  <button mat-stroked-button color="primary" type="button" [mat-dialog-close]="false" *ngIf="data.noButtonLabel">
+  <button mat-stroked-button color="primary" type="button" *ngIf="data.noButtonLabel">
     {{ data.noButtonLabel }}
   </button>
-  <button mat-flat-button color="primary" type="button" [mat-dialog-close]="true" cdkFocusInitial>
+  <button mat-flat-button color="primary" type="button" cdkFocusInitial>
     {{ data.yesButtonLabel }}
   </button>
 </div>

@@ -6,6 +6,6 @@
   </div>
   <initiafy-button design="basic" [cssClass]="'white-color'" *ngIf="data.actionButtonLabel" [label]="data.actionButtonLabel" [tooltip]="data.actionButtonLabel"
     [disabled]="false"></initiafy-button>
-  <initiafy-icon *ngIf="data.closeButton" class="margin-left-16 pointer" (click)="dismiss()"
+  <initiafy-icon *ngIf="data.closeButton" class="margin-left-16 pointer" (click)="close.emit()"
     [icon]="'close'" [iconFont]="data.iconFont"></initiafy-icon>
 </div>

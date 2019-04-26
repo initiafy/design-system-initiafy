@@ -1,11 +1,24 @@
-@import "../imports/variables";
 @import "../imports/placeholder";
+@import "../imports/variables";
 
 .loading-card {
   @extend %base-card;
   width: 100%;
-  padding: 0px;
-  position: relative;
+  padding: 0;
+  .loading-card-content {
+    padding: $spacing;
+    width: 100%;
+  }
+  .loading-card-bar {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    .progress-bar {
+      border-radius: 0 0 $radius-std $radius-std;
+    }
+  }
   &.small {
     max-width: $modal-small;
   }

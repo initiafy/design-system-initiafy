@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SnackBarComponent } from './snack-bar/snack-bar.component';
-import { SnackBarService } from './snack-bar.service';
+import { SnackBarComponent } from './snack-bar.component';
 import { MatSnackBarModule } from '@angular/material';
 import { InitiafyIconModule } from '../icon/icon.module';
 import { InitiafyButtonModule } from '../button/button.module';
@@ -13,8 +12,6 @@ import { InitiafyButtonModule } from '../button/button.module';
     MatSnackBarModule,
     InitiafyIconModule,
     InitiafyButtonModule
-  ],
-  providers: [SnackBarService],
-  entryComponents: [SnackBarComponent]
+  ]
 })
 export class InitiafySnackBarModule { }
