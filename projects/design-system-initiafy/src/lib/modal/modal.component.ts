@@ -7,6 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
   @Input() overlay = false;
+  @Input() hideCloseButton = false;
   @Output() close = new EventEmitter();
 
   constructor() { }

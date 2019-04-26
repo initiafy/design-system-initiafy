@@ -147,12 +147,6 @@ label.mat-checkbox-layout {
   font-weight: 400;
 }
 
-.mat-expansion-panel-header {
-  font-size: 15px;
-  font-weight: 400;
-  padding: 0 $spacing !important;
-}
-
 .mat-expansion-panel-content {
   font: 400 14px/20px;
 }
@@ -1559,30 +1553,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-top-color: rgba(0, 0, 0, 0.12);
 }
 
-.mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]).cdk-keyboard-focused, .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]).cdk-program-focused, .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:not([aria-disabled=true]):hover {
-  background: rgba(0, 0, 0, 0.04);
-}
-
-@media (hover: none) {
-  .mat-expansion-panel:not(.mat-expanded):not([aria-disabled=true]) .mat-expansion-panel-header:hover {
-    background: white;
-  }
-}
-
-.mat-expansion-panel-header-description,
-.mat-expansion-indicator::after {
-  color: $Grey;
-  color: var(--Grey);
-}
-
-.mat-expansion-panel-header[aria-disabled=true] {
-  color: rgba(0, 0, 0, 0.26);
-}
-.mat-expansion-panel-header[aria-disabled=true] .mat-expansion-panel-header-title,
-.mat-expansion-panel-header[aria-disabled=true] .mat-expansion-panel-header-description {
-  color: inherit;
-}
-
 .mat-form-field-label {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -2521,10 +2491,6 @@ mat-expansion-panel-header {
 mat-sidenav-content {
   box-sizing: border-box;
   overflow: visible;
-}
-.mat-expansion-panel-header-title {
-  align-items: center;
-  font-size: 14px;
 }
 .mat-list-base {
   padding-top: 0;

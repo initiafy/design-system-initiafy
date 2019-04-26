@@ -68,8 +68,7 @@
     @include button-basic("white");
     @include shadow-btn();
     &:hover {
-      background-color: $Hover;
-      background-color: var(--Hover);
+      background-color: white;
     }
     &[disabled],
     &[disabled][disabled],
