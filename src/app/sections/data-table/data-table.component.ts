@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource, MatCheckboxChange } from '@angular/material';
-import { DataColumnMode, DataTableMenuItem, DataTableSettings } from 'design-system-initiafy';
+import { DataColumnMode, DataTableMenuItem, DataTableSettings } from 'projects/design-system-initiafy/src/public_api';
 import { SelectionModel } from '@angular/cdk/collections';
 import { FormControl } from '@angular/forms';
 

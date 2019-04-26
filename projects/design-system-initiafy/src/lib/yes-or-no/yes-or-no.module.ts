@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { YesOrNoDialogComponent } from './yes-or-no.component';
 import { InitiafyIconModule } from '../icon/icon.module';
+import { InitiafyButtonModule } from '../button/button.module';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { InitiafyIconModule } from '../icon/icon.module';
   ],
   imports: [
     CommonModule,
-    InitiafyIconModule
+    InitiafyIconModule,
+    InitiafyButtonModule
   ],
   exports: [
     YesOrNoDialogComponent

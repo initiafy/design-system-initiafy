@@ -3739,14 +3739,14 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  declarations: [SnackBarComponent],\r\n  imports: [\r\n    CommonModule,\r\n    MatSnackBarModule,\r\n    InitiafyIconModule,\r\n    InitiafyButtonModule\r\n  ]\r\n}"
+						"obj": "{\r\n  declarations: [SnackBarComponent],\r\n  imports: [\r\n    CommonModule,\r\n    MatSnackBarModule,\r\n    InitiafyIconModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  exports: [SnackBarComponent]\r\n}"
 					}
 				}
 			],
 			"sources": [
 				{
 					"fileName": "snack-bar/snack-bar.module.ts",
-					"line": 17,
+					"line": 18,
 					"character": 35
 				}
 			]
@@ -3795,14 +3795,14 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  declarations: [\r\n    YesOrNoDialogComponent\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyIconModule\r\n  ],\r\n  exports: [\r\n    YesOrNoDialogComponent\r\n  ]\r\n}"
+						"obj": "{\r\n  declarations: [\r\n    YesOrNoDialogComponent\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyIconModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  exports: [\r\n    YesOrNoDialogComponent\r\n  ]\r\n}"
 					}
 				}
 			],
 			"sources": [
 				{
 					"fileName": "yes-or-no/yes-or-no.module.ts",
-					"line": 18,
+					"line": 20,
 					"character": 34
 				}
 			]

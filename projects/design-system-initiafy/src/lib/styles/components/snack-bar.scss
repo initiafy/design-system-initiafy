@@ -8,5 +8,8 @@
   align-items: center;
   justify-content: space-between;
   background: $Black;
+  border-radius: $radius-std;
+  color: white;
+  padding: $spacing;
   @include shadow-std();
 }

@@ -1,9 +1,5 @@
 <div class="flex justify-content-end" (click)="close.emit()">
-  <initiafy-icon icon="close"></initiafy-icon>
-</div>
-
-<div class="flex justify-content-center" *ngIf="data.title">
-  <h1>{{ data.title }}</h1>
+  <initiafy-icon icon="close" cssClass="pointer"></initiafy-icon>
 </div>
 
 <div class="text-center margin-top-std">
@@ -13,10 +9,6 @@
 <div class="text-center" [innerHTML]="data.message"></div>
 
 <div class="button-wrapper">
-  <button mat-stroked-button color="primary" type="button" *ngIf="data.noButtonLabel">
-    {{ data.noButtonLabel }}
-  </button>
-  <button mat-flat-button color="primary" type="button" cdkFocusInitial>
-    {{ data.yesButtonLabel }}
-  </button>
+  <initiafy-button design="stroke" color="primary" type="button" *ngIf="data.noButtonLabel" [label]="data.noButtonLabel"></initiafy-button>
+  <initiafy-button design="main" color="primary" type="button" [label]="data.yesButtonLabel"></initiafy-button>
 </div>

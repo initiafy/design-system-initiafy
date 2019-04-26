@@ -13,7 +13,9 @@ import {
   IconsComponent,
   StructureComponent,
   CssComponent,
-  DataTableComponent
+  DataTableComponent,
+  SnackBarComponent,
+  YesOrNoComponent
 } from './sections';
 import { DocumentationService } from './core';
 import {
@@ -45,7 +47,9 @@ export function startupServiceFactory(
     FooterComponent,
     StructureComponent,
     ContentComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    SnackBarComponent,
+    YesOrNoComponent
   ],
   imports: [
     BrowserModule,

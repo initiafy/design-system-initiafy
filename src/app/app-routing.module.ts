@@ -10,23 +10,15 @@ import {
   SearchBarComponent,
   ButtonsComponent,
   ColorsComponent,
-  GridComponent
+  GridComponent,
+  YesOrNoComponent,
+  SnackBarComponent
 } from './sections';
 
 const routes: Routes = [
   {
     path: '',
     loadChildren: './sections/dashboard/dashboard.module#DashboardModule',
-    pathMatch: 'full',
-  },
-  {
-    path: 'yes-or-no',
-    loadChildren: './sections/yes-or-no/yes-or-no.module#YesOrNoModule',
-    pathMatch: 'full',
-  },
-  {
-    path: 'snack-bar',
-    loadChildren: './sections/snack-bar/snack-bar.module#SnackBarModule',
     pathMatch: 'full',
   },
   {
@@ -49,6 +41,8 @@ const routes: Routes = [
   { path: 'structure', component: StructureComponent },
   { path: 'typography', component: TypographyComponent },
   { path: 'data-table', component: DataTableComponent },
+  { path: 'snack-bar', component: SnackBarComponent },
+  { path: 'yes-or-no', component: YesOrNoComponent },
   { path: '**', redirectTo: '' }
 ];
 

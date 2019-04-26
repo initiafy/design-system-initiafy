@@ -12,6 +12,7 @@ import { InitiafyButtonModule } from '../button/button.module';
     MatSnackBarModule,
     InitiafyIconModule,
     InitiafyButtonModule
-  ]
+  ],
+  exports: [SnackBarComponent]
 })
 export class InitiafySnackBarModule { }
