@@ -1,4 +1,6 @@
-<div class="loading-card" [ngClass]="classes">
-  <ng-content></ng-content>
+<div class="loading-card padding-0" [ngClass]="classes">
+  <div class="padding-16">
+    <ng-content></ng-content>
+  </div>
+  <initiafy-progress-bar [isLoading]="isLoading" [cssClass]="'margin-0'"></initiafy-progress-bar>
 </div>
-<initiafy-progress-bar [isLoading]="isLoading"></initiafy-progress-bar>
