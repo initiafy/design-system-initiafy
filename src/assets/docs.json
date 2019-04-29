@@ -3752,7 +3752,7 @@
 			]
 		},
 		{
-			"id": 351,
+			"id": 344,
 			"name": "InitiafySpinnerModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3780,7 +3780,7 @@
 			]
 		},
 		{
-			"id": 377,
+			"id": 370,
 			"name": "InitiafyYesOrNoModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -5628,159 +5628,6 @@
 			]
 		},
 		{
-			"id": 339,
-			"name": "SnackBarModel",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 344,
-					"name": "actionButtonFunction",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-model.ts",
-							"line": 6,
-							"character": 24
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "Function"
-					}
-				},
-				{
-					"id": 343,
-					"name": "actionButtonLabel",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-model.ts",
-							"line": 5,
-							"character": 21
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 345,
-					"name": "closeButton",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-model.ts",
-							"line": 7,
-							"character": 15
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 340,
-					"name": "icon",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-model.ts",
-							"line": 2,
-							"character": 8
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 341,
-					"name": "iconFont",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-model.ts",
-							"line": 3,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 342,
-					"name": "message",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-model.ts",
-							"line": 4,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						344,
-						343,
-						345,
-						340,
-						341,
-						342
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "snack-bar/models/snack-bar-model.ts",
-					"line": 1,
-					"character": 26
-				}
-			]
-		},
-		{
 			"id": 314,
 			"name": "SnackBarService",
 			"kind": 128,
@@ -6182,7 +6029,7 @@
 			]
 		},
 		{
-			"id": 346,
+			"id": 339,
 			"name": "SpinnerComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -6203,7 +6050,7 @@
 			],
 			"children": [
 				{
-					"id": 347,
+					"id": 340,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -6212,7 +6059,7 @@
 					},
 					"signatures": [
 						{
-							"id": 348,
+							"id": 341,
 							"name": "new SpinnerComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -6220,7 +6067,7 @@
 							"type": {
 								"type": "reference",
 								"name": "SpinnerComponent",
-								"id": 346
+								"id": 339
 							}
 						}
 					],
@@ -6233,7 +6080,7 @@
 					]
 				},
 				{
-					"id": 349,
+					"id": 342,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6242,7 +6089,7 @@
 					},
 					"signatures": [
 						{
-							"id": 350,
+							"id": 343,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6267,14 +6114,14 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						347
+						340
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						349
+						342
 					]
 				}
 			],
@@ -6293,7 +6140,7 @@
 			]
 		},
 		{
-			"id": 358,
+			"id": 351,
 			"name": "YesOrNoDialogComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -6314,7 +6161,7 @@
 			],
 			"children": [
 				{
-					"id": 359,
+					"id": 352,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -6323,14 +6170,14 @@
 					},
 					"signatures": [
 						{
-							"id": 362,
+							"id": 355,
 							"name": "new YesOrNoDialogComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 363,
+									"id": 356,
 									"name": "dialogRef",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6342,13 +6189,13 @@
 											{
 												"type": "reference",
 												"name": "YesOrNoDialogComponent",
-												"id": 358
+												"id": 351
 											}
 										]
 									}
 								},
 								{
-									"id": 364,
+									"id": 357,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6368,14 +6215,14 @@
 									"type": {
 										"type": "reference",
 										"name": "YesOrNoDialogData",
-										"id": 352
+										"id": 345
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
 								"name": "YesOrNoDialogComponent",
-								"id": 358
+								"id": 351
 							}
 						}
 					],
@@ -6388,7 +6235,7 @@
 					]
 				},
 				{
-					"id": 361,
+					"id": 354,
 					"name": "data",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6419,11 +6266,11 @@
 					"type": {
 						"type": "reference",
 						"name": "YesOrNoDialogData",
-						"id": 352
+						"id": 345
 					}
 				},
 				{
-					"id": 360,
+					"id": 353,
 					"name": "dialogRef",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6446,13 +6293,13 @@
 							{
 								"type": "reference",
 								"name": "YesOrNoDialogComponent",
-								"id": 358
+								"id": 351
 							}
 						]
 					}
 				},
 				{
-					"id": 367,
+					"id": 360,
 					"name": "closeDialog",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6462,7 +6309,7 @@
 					},
 					"signatures": [
 						{
-							"id": 368,
+							"id": 361,
 							"name": "closeDialog",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6482,7 +6329,7 @@
 					]
 				},
 				{
-					"id": 365,
+					"id": 358,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6491,7 +6338,7 @@
 					},
 					"signatures": [
 						{
-							"id": 366,
+							"id": 359,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6516,23 +6363,23 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						359
+						352
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						361,
-						360
+						354,
+						353
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						367,
-						365
+						360,
+						358
 					]
 				}
 			],
@@ -6551,140 +6398,7 @@
 			]
 		},
 		{
-			"id": 378,
-			"name": "YesOrNoModel",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 380,
-					"name": "message",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/yes-or-no-model.ts",
-							"line": 3,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 382,
-					"name": "noButtonLabel",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/yes-or-no-model.ts",
-							"line": 5,
-							"character": 17
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 379,
-					"name": "title",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/yes-or-no-model.ts",
-							"line": 2,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 383,
-					"name": "width",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/yes-or-no-model.ts",
-							"line": 6,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 381,
-					"name": "yesButtonLabel",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/yes-or-no-model.ts",
-							"line": 4,
-							"character": 18
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						380,
-						382,
-						379,
-						383,
-						381
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "yes-or-no/models/yes-or-no-model.ts",
-					"line": 1,
-					"character": 25
-				}
-			]
-		},
-		{
-			"id": 369,
+			"id": 362,
 			"name": "YesOrNoService",
 			"kind": 128,
 			"kindString": "Class",
@@ -6705,7 +6419,7 @@
 			],
 			"children": [
 				{
-					"id": 370,
+					"id": 363,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -6714,14 +6428,14 @@
 					},
 					"signatures": [
 						{
-							"id": 372,
+							"id": 365,
 							"name": "new YesOrNoService",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 373,
+									"id": 366,
 									"name": "dialog",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6735,7 +6449,7 @@
 							"type": {
 								"type": "reference",
 								"name": "YesOrNoService",
-								"id": 369
+								"id": 362
 							}
 						}
 					],
@@ -6748,7 +6462,7 @@
 					]
 				},
 				{
-					"id": 371,
+					"id": 364,
 					"name": "dialog",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6770,7 +6484,7 @@
 					}
 				},
 				{
-					"id": 374,
+					"id": 367,
 					"name": "show",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6780,7 +6494,7 @@
 					},
 					"signatures": [
 						{
-							"id": 375,
+							"id": 368,
 							"name": "show",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6790,7 +6504,7 @@
 							},
 							"parameters": [
 								{
-									"id": 376,
+									"id": 369,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6798,7 +6512,7 @@
 									"type": {
 										"type": "reference",
 										"name": "YesOrNoDialogData",
-										"id": 352
+										"id": 345
 									}
 								}
 							],
@@ -6809,7 +6523,7 @@
 									{
 										"type": "reference",
 										"name": "YesOrNoDialogComponent",
-										"id": 358
+										"id": 351
 									},
 									{
 										"type": "intrinsic",
@@ -6833,21 +6547,21 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						370
+						363
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						371
+						364
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						374
+						367
 					]
 				}
 			],
@@ -8430,7 +8144,7 @@
 			]
 		},
 		{
-			"id": 352,
+			"id": 345,
 			"name": "YesOrNoDialogData",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8439,7 +8153,7 @@
 			},
 			"children": [
 				{
-					"id": 354,
+					"id": 347,
 					"name": "message",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8459,7 +8173,7 @@
 					}
 				},
 				{
-					"id": 356,
+					"id": 349,
 					"name": "noButtonLabel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8480,7 +8194,7 @@
 					}
 				},
 				{
-					"id": 353,
+					"id": 346,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8500,7 +8214,7 @@
 					}
 				},
 				{
-					"id": 357,
+					"id": 350,
 					"name": "width",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8521,7 +8235,7 @@
 					}
 				},
 				{
-					"id": 355,
+					"id": 348,
 					"name": "yesButtonLabel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8546,11 +8260,11 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						354,
-						356,
-						353,
-						357,
-						355
+						347,
+						349,
+						346,
+						350,
+						348
 					]
 				}
 			],
@@ -8598,8 +8312,8 @@
 				290,
 				91,
 				338,
-				351,
-				377,
+				344,
+				370,
 				229,
 				247,
 				239,
@@ -8607,12 +8321,10 @@
 				269,
 				86,
 				301,
-				339,
 				314,
-				346,
-				358,
-				378,
-				369
+				339,
+				351,
+				362
 			]
 		},
 		{
@@ -8627,7 +8339,7 @@
 				291,
 				266,
 				294,
-				352
+				345
 			]
 		}
 	]
