@@ -10,9 +10,7 @@ import {
   SearchBarComponent,
   ButtonsComponent,
   ColorsComponent,
-  GridComponent,
-  YesOrNoComponent,
-  SnackBarComponent
+  GridComponent
 } from './sections';
 
 const routes: Routes = [
@@ -31,6 +29,16 @@ const routes: Routes = [
     loadChildren: './sections/initiafy-card/initiafy-card.module#InitiafyCardModule',
     pathMatch: 'full',
   },
+  {
+    path: 'yes-or-no',
+    loadChildren: './sections/yes-or-no/yes-or-no.module#YesOrNoModule',
+    pathMatch: 'full',
+  },
+  {
+    path: 'snack-bar',
+    loadChildren: './sections/snack-bar/snack-bar.module#SnackBarModule',
+    pathMatch: 'full',
+  },
   { path: 'actions', component: ActionsComponent },
   { path: 'search-bar', component: SearchBarComponent },
   { path: 'buttons', component: ButtonsComponent },
@@ -41,8 +49,6 @@ const routes: Routes = [
   { path: 'structure', component: StructureComponent },
   { path: 'typography', component: TypographyComponent },
   { path: 'data-table', component: DataTableComponent },
-  { path: 'snack-bar', component: SnackBarComponent },
-  { path: 'yes-or-no', component: YesOrNoComponent },
   { path: '**', redirectTo: '' }
 ];
 
