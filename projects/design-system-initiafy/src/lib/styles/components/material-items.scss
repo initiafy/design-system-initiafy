@@ -1983,10 +1983,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 .mat-drawer-side {
   border-right: none;
 }
-.mat-drawer-side.mat-drawer-end {
-  border-left: solid 1px rgba(0, 0, 0, 0.12);
-  border-right: none;
-}
 
 [dir=rtl] .mat-drawer-side {
   border-left: solid 1px rgba(0, 0, 0, 0.12);
