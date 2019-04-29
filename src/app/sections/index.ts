@@ -9,5 +9,3 @@ export * from './icons/icons.component';
 export * from './structure/structure.component';
 export * from './typography/typography.component';
 export * from './search-bar/search-bar.component';
-export * from './snack-bar/snack-bar.component';
-export * from './yes-or-no/yes-or-no.component';
