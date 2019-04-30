@@ -14,17 +14,18 @@ gulp.task('css', gulp.series((done) => {
     gulp.src([
         "src/lib/styles/imports/fonts.scss",
         "src/lib/styles/imports/initiafy-font.scss",
+        "src/lib/styles/imports/material-outlined.scss",
         "src/lib/styles/imports/animations.scss",
         "src/lib/styles/imports/colors.scss",
-        "src/lib/styles/theme/*.scss",
         "src/lib/styles/sass/*.scss",
         "src/lib/styles/base/*.scss",
         "src/lib/styles/components/*.scss",
-        "src/lib/styles/help/*.scss"
+        "src/lib/styles/help/*.scss",
+        "src/lib/styles/theme/*.scss"
     ])
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(concat('style.min.css'))
-    .pipe(gulp.dest('./dist/lib/styles/'));
+    .pipe(gulp.dest('../../dist/design-system-initiafy/lib/styles/'));
     done();
 }));
 
@@ -35,12 +36,12 @@ gulp.task('css', gulp.series((done) => {
  */
 gulp.task('copy', gulp.series((done) => {
     gulp.src([
-        "src/lib/styles/imports/initiafyfont.eot",
-        "src/lib/styles/imports/initiafyfont.svg",
-        "src/lib/styles/imports/initiafyfont.ttf",
-        "src/lib/styles/imports/initiafyfont.woff"
+        "src/lib/styles/imports/*.eot",
+        "src/lib/styles/imports/*.svg",
+        "src/lib/styles/imports/*.ttf",
+        "src/lib/styles/imports/*.woff"
     ])
-    .pipe(gulp.dest('./dist/lib/styles/'));
+    .pipe(gulp.dest('../../dist/design-system-initiafy/lib/styles/'));
     done();
 }));
 

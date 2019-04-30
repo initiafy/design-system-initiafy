@@ -20,16 +20,6 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'yes-or-no',
-    loadChildren: './sections/yes-or-no/yes-or-no.module#YesOrNoModule',
-    pathMatch: 'full',
-  },
-  {
-    path: 'snack-bar',
-    loadChildren: './sections/snack-bar/snack-bar.module#SnackBarModule',
-    pathMatch: 'full',
-  },
-  {
     path: 'loading-card',
     loadChildren: './sections/loading-card/loading-card.module#LoadingCardModule',
     pathMatch: 'full',
@@ -37,6 +27,16 @@ const routes: Routes = [
   {
     path: 'initiafy-card',
     loadChildren: './sections/initiafy-card/initiafy-card.module#InitiafyCardModule',
+    pathMatch: 'full',
+  },
+  {
+    path: 'yes-or-no',
+    loadChildren: './sections/yes-or-no/yes-or-no.module#YesOrNoModule',
+    pathMatch: 'full',
+  },
+  {
+    path: 'snack-bar',
+    loadChildren: './sections/snack-bar/snack-bar.module#SnackBarModule',
     pathMatch: 'full',
   },
   { path: 'actions', component: ActionsComponent },

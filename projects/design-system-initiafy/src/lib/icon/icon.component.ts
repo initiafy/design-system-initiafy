@@ -8,56 +8,74 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class IconComponent implements OnInit {
   @Input() icon = '';
-  @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
+  @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome-brand'
+    | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
   @Input() size: 'smaller' | 'small' | 'medium' | 'big' = 'small';
-  @Input() cssClass: string = '';
-  @Input() tooltip: string = '';
-
-  private _classes: string;
-  private _showText: boolean;
-
-  get classes() {
-    return this._classes;
-  }
-
-  get text() {
-    return this._showText;
-  }
+  @Input() cssClass = '';
+  @Input() tooltip = '';
 
   constructor() {
   }
 
-  ngOnInit() {
-    this._classes = this.getIconClasses() + ' ' + this.cssClass;
-    this._showText = this.showText();
-  }
+  ngOnInit() { }
 
-  private getIconClasses() {
+  get iconClasses() {
+    let classes;
     switch (this.iconFont) {
-      case 'font-awesome':
-        return 'fa fa-' + this.icon;
-      case 'font-awesome-brand':
-        return 'fab fa-' + this.icon;
-      case 'font-awesome-solid':
-        return 'fas fa-' + this.icon;
-      case 'glyphicon':
-        return 'glyphicon glyphicon-' + this.icon;
-      case 'initiafy':
-        return 'initiafy-icons ' + this.icon;
-      case 'material-outlined':
-        return 'material-icons-outlined ' + this.icon;
-      default:
-        return 'material-icons';
+      case 'font-awesome-brand': {
+        classes = 'fab fa-' + this.icon;
+        break;
+      }
+      case 'font-awesome-solid': {
+        classes = 'fas fa-' + this.icon;
+        break;
+      }
+      case 'glyphicon': {
+        classes = 'glyphicon glyphicon-' + this.icon;
+        break;
+      }
+      case 'initiafy': {
+        classes = 'initiafy-icons ' + this.icon;
+        break;
+      }
+      case 'material-outlined': {
+        classes = 'material-icons-outlined ' + this.icon;
+        break;
+      }
+      default: {
+        classes = 'material-icons';
+      }
     }
+    return classes + ' ' + this.cssClass;
   }
 
-  private showText() {
-    if (
-        this.iconFont.includes('font-awesome') ||
-        this.iconFont.includes('initiafy')
-      ) {
-      return false;
+  get showText() {
+    let shouldShow: boolean;
+    switch (this.iconFont) {
+      case 'font-awesome-brand': {
+        shouldShow = false;
+        break;
+      }
+      case 'font-awesome-solid': {
+        shouldShow = false;
+        break;
+      }
+      case 'glyphicon': {
+        shouldShow = true;
+        break;
+      }
+      case 'initiafy': {
+        shouldShow = false;
+        break;
+      }
+      case 'material-outlined': {
+        shouldShow = false;
+        break;
+      }
+      default: {
+        shouldShow = true;
+      }
     }
-    return true;
+    return shouldShow;
   }
 }

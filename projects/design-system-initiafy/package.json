@@ -1,20 +1,14 @@
 {
   "name": "design-system-initiafy",
-  "version": "0.0.39",
+  "description": "design-system for initiafy",
+  "version": "0.0.42",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "postbuild": "gulp"
   },
-  "private": false,
   "peerDependencies": {
     "@angular/material": "^7.0.2",
     "@angular/common": "^7.2.0",
     "@angular/core": "^7.2.0"
-  },
-  "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-sass": "^4.0.2",
-    "ng-packagr": "^5.1.0"
   }
 }

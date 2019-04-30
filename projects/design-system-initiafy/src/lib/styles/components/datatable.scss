@@ -3,6 +3,7 @@
 * Copyright 2016
 * Licensed under MIT
 */
+
 @import "../imports/variables";
 
 .ngx-datatable {
@@ -279,107 +280,8 @@
 	cursor: not-allowed;
 }
 
-
-/*# sourceMappingURL=index.map*/
-
-
-
-.ngx-datatable.material {
-	background: #FFF;
-	box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-	/**
-	 * Shared Styles
-	 */
-	/**
-	 * Global Row Styles
-	 */
-	/**
-	 * Header Styles
-	 */
-	/**
-	 * Body Styles
-	 */
-	/**
-	 * Footer Styles
-	 */
-}
-
 .ngx-datatable.material.striped .datatable-row-odd {
 	background: #eee;
-}
-
-.ngx-datatable.material.single-selection .datatable-body-row.active,
-.ngx-datatable.material.single-selection .datatable-body-row.active .datatable-row-group,
-.ngx-datatable.material.multi-selection .datatable-body-row.active,
-.ngx-datatable.material.multi-selection .datatable-body-row.active .datatable-row-group,
-.ngx-datatable.material.multi-click-selection .datatable-body-row.active,
-.ngx-datatable.material.multi-click-selection .datatable-body-row.active .datatable-row-group {
-	background-color: #304FFE;
-	color: #FFF;
-}
-
-.ngx-datatable.material.single-selection .datatable-body-row.active:hover,
-.ngx-datatable.material.single-selection .datatable-body-row.active:hover .datatable-row-group,
-.ngx-datatable.material.multi-selection .datatable-body-row.active:hover,
-.ngx-datatable.material.multi-selection .datatable-body-row.active:hover .datatable-row-group,
-.ngx-datatable.material.multi-click-selection .datatable-body-row.active:hover,
-.ngx-datatable.material.multi-click-selection .datatable-body-row.active:hover .datatable-row-group {
-	background-color: #193AE4;
-	color: #FFF;
-}
-
-.ngx-datatable.material.single-selection .datatable-body-row.active:focus,
-.ngx-datatable.material.single-selection .datatable-body-row.active:focus .datatable-row-group,
-.ngx-datatable.material.multi-selection .datatable-body-row.active:focus,
-.ngx-datatable.material.multi-selection .datatable-body-row.active:focus .datatable-row-group,
-.ngx-datatable.material.multi-click-selection .datatable-body-row.active:focus,
-.ngx-datatable.material.multi-click-selection .datatable-body-row.active:focus .datatable-row-group {
-	background-color: #2041EF;
-	color: #FFF;
-}
-
-.ngx-datatable.material:not(.cell-selection) .datatable-body-row:hover,
-.ngx-datatable.material:not(.cell-selection) .datatable-body-row:hover .datatable-row-group {
-	background-color: #eee;
-	transition-property: background;
-	transition-duration: .3s;
-	transition-timing-function: linear;
-}
-
-.ngx-datatable.material:not(.cell-selection) .datatable-body-row:focus,
-.ngx-datatable.material:not(.cell-selection) .datatable-body-row:focus .datatable-row-group {
-	background-color: #ddd;
-}
-
-.ngx-datatable.material.cell-selection .datatable-body-cell:hover,
-.ngx-datatable.material.cell-selection .datatable-body-cell:hover .datatable-row-group {
-	background-color: #eee;
-	transition-property: background;
-	transition-duration: .3s;
-	transition-timing-function: linear;
-}
-
-.ngx-datatable.material.cell-selection .datatable-body-cell:focus,
-.ngx-datatable.material.cell-selection .datatable-body-cell:focus .datatable-row-group {
-	background-color: #ddd;
-}
-
-.ngx-datatable.material.cell-selection .datatable-body-cell.active,
-.ngx-datatable.material.cell-selection .datatable-body-cell.active .datatable-row-group {
-	background-color: #304FFE;
-	color: #FFF;
-}
-
-.ngx-datatable.material.cell-selection .datatable-body-cell.active:hover,
-.ngx-datatable.material.cell-selection .datatable-body-cell.active:hover .datatable-row-group {
-	background-color: #193AE4;
-	color: #FFF;
-}
-
-.ngx-datatable.material.cell-selection .datatable-body-cell.active:focus,
-.ngx-datatable.material.cell-selection .datatable-body-cell.active:focus .datatable-row-group {
-	background-color: #2041EF;
-	color: #FFF;
 }
 
 .ngx-datatable.material .empty-row {
@@ -414,7 +316,7 @@
 }
 
 .ngx-datatable.material .datatable-header {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+	border-bottom: 1px solid $Ripple;
 }
 
 .ngx-datatable.material .datatable-header .datatable-header-cell {
@@ -485,7 +387,7 @@
 	padding: .9rem 1.2rem;
 	vertical-align: top;
 	border-top: 0;
-	color: rgba(0, 0, 0, 0.87);
+	color: $Black;
 	transition: width 0.3s ease;
 	font-size: 14px;
 	font-weight: 400;
@@ -518,7 +420,7 @@
 	animation: query 0.8s infinite cubic-bezier(0.39, 0.575, 0.565, 1);
 	transition: -webkit-transform .2s linear;
 	transition: transform .2s linear;
-	background-color: #106cc8;
+	background-color: $Hover;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -528,10 +430,10 @@
 }
 
 .ngx-datatable.material .datatable-footer {
-	border-top: 1px solid rgba(0, 0, 0, 0.12);
+	border-top: 1px solid $Ripple;
 	font-size: 12px;
 	font-weight: 400;
-	color: rgba(0, 0, 0, 0.54);
+	color: $Grey;
 }
 
 .ngx-datatable.material .datatable-footer .page-count {
@@ -549,7 +451,7 @@
 }
 
 .ngx-datatable.material .datatable-footer .datatable-pager li.disabled a {
-	color: rgba(0, 0, 0, 0.26) !important;
+	color: $Disable !important;
 	background-color: transparent !important;
 }
 
@@ -567,7 +469,7 @@
 	margin: 6px 3px;
 	text-align: center;
 	vertical-align: top;
-	color: rgba(0, 0, 0, 0.54);
+	color: $Grey;
 	text-decoration: none;
 	vertical-align: bottom;
 }
@@ -711,13 +613,11 @@
 }
 .ngx-datatable.material .datatable-body-row .datatable-row-group .datatable-body-cell a {
     color: $Black;
-    color: var(--Black);
     cursor: pointer;
     text-decoration: none;
 }
 .ngx-datatable.material .datatable-body-row .datatable-row-group .datatable-body-cell a:hover {
 	color: $SMain;
-	color: var(--SMain);
 }
 .ngx-datatable.material .datatable-header .datatable-header-cell {
     font-size: 16px;
@@ -758,4 +658,31 @@ table[mat-table] {
 }
 .mat-paginator {
     background-color: transparent;
+}
+
+/* Header */
+.datatable-header-cell {
+    padding: 0.9rem 1.2rem;
+    font-weight: 400;
+    color: $Grey;
+    vertical-align: bottom;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.datatable-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.mandatory-mark {
+    font-size: 48px;
+    line-height: 48px;
+    height: 24px;
+    text-align: center;
 }

@@ -1,10 +1,12 @@
-/* Media Queries */
+/* Breakpoints sizes */
 $media-mobile-smaller: 400px;
 $media-mobile-small: 500px;
 $media-mobile: 700px;
+$media-tablet-min: 701px;
 $media-tablet: 960px;
-$media-laptop: 1200px;
+$media-desktop-min: 961px;
 $media-desktop: 1440px;
+$media-large-desktop: 1441px;
 
 /* Spacing */
 $spacing: 16px;
@@ -12,7 +14,7 @@ $spacing-half: 8px;
 $header-height: 64px;
 
 /* Border radius */
-$border-std: 4px;
+$radius-std: 4px;
 
 /* Static Colors for IE */
 $PLight: hsl(350,79.9%,59%);

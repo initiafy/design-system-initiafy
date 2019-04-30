@@ -2,36 +2,29 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
-### Step 1 - Build the library
+The following commands are run from the root, i.e. the same directory as this README.
 
-- Navigate to the root of the library;
-- Run `npm install`;
+### Run development server
 
-### Step 2 - Build development server
+- Run `npm run build`
 
-- Navigate to the root of the project;
-- Run `npm install`;
-- Run `npm run build`;
-- Navigate to `http://localhost:4200/`.
+### Build design-system-initiafy package
 
-The app will automatically reload if you change any of the source files.
+*Update public_api if neccessary*
 
-### Step 3 - Updating files in the library
+- Run `npm run build-lib`
 
-- Navigate to the root of this project;
-- update public api of the design system if neccessary.
-- Run `npm run build` to update the library and build the project;
+### Publishing design-system-initiafy package in npm
 
-### Step 4 - Publishing library in npm
+*Bump package version if not already done*
 
-- change version if neccessary.
-- Run `npm publish dist` to publish new version of the library in the npm.
+- Run `npm publish dist`
 
 ### To publish to GH pages
 
-`npm run gh` will build the production folder
+ - `npm run gh` will build the production folder
 
-`npm run gh-pub` will publish the site to the url
+ - `npm run gh-pub` will publish the site to the url
 
 ### Imports and local GET requests
 

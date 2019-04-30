@@ -1,5 +1,3 @@
-<ng-template [ngIf]="isLoading">
-    <div [ngClass]="'progress-bar ' + cssClass">
-        <div class="indeterminate"></div>
-    </div>
-</ng-template>
+<div class="progress-bar" *ngIf="isLoading">
+    <div class="indeterminate"></div>
+</div>
