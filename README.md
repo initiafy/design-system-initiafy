@@ -1,3 +1,5 @@
+[![Build Status](https://semaphoreci.com/api/v1/admin-initiafy-25/design-system-initiafy/branches/master/badge.svg)](https://semaphoreci.com/admin-initiafy-25/design-system-initiafy)
+
 # Initiafy Design System
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
