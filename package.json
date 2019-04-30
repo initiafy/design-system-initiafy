@@ -6,7 +6,7 @@
     "start": "npm run npm-pack && ng serve",
     "gh": "ng build --prod --base-href \"https://initiafy.github.io/design-system-initiafy/\"",
     "gh-pub": "npx ngh --dir=dist/InitiafyDesignSystem",
-    "build": "npm run docs && npm run build-lib && ng serve",
+    "build": "npm run build-lib && npm run docs && ng serve",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
