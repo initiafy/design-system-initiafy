@@ -2,6 +2,11 @@
   "name": "design-system-initiafy",
   "description": "design-system for initiafy",
   "version": "0.0.41",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/initiafy/design-system-initiafy.git"
+  },
+  "homepage": "https://github.com/initiafy/design-system-initiafy/tree/develop/projects/design-system-initiafy",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "postbuild": "gulp"
