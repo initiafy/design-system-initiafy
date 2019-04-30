@@ -8,7 +8,6 @@
 .initiafy-card.dashed {
     @extend %base-card;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     border: 1px dashed $Ripple;
     background-color: $BackgroundDefault;

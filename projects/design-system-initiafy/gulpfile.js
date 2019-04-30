@@ -17,11 +17,11 @@ gulp.task('css', gulp.series((done) => {
         "src/lib/styles/imports/material-outlined.scss",
         "src/lib/styles/imports/animations.scss",
         "src/lib/styles/imports/colors.scss",
-        "src/lib/styles/theme/*.scss",
         "src/lib/styles/sass/*.scss",
         "src/lib/styles/base/*.scss",
         "src/lib/styles/components/*.scss",
-        "src/lib/styles/help/*.scss"
+        "src/lib/styles/help/*.scss",
+        "src/lib/styles/theme/*.scss"
     ])
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(concat('style.min.css'))
