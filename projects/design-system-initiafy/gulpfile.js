@@ -25,7 +25,7 @@ gulp.task('css', gulp.series((done) => {
     ])
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(concat('style.min.css'))
-    .pipe(gulp.dest('./dist/lib/styles/'));
+    .pipe(gulp.dest('../../dist/design-system-initiafy/lib/styles/'));
     done();
 }));
 

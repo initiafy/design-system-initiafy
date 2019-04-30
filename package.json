@@ -11,7 +11,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "gulp": "gulp",
-    "build-lib": "cd projects/design-system-initiafy && npm install && npm run build",
+    "build-lib": "ng build design-system-initiafy && cd projects/design-system-initiafy && gulp",
     "publish-lib": "cd dist/design-system-initiafy && npm publish dist",
     "npm-pack": "cd dist/design-system-initiafy && npm pack",
     "docs": "typedoc --exclude *.scss --exclude *.html --exclude *.spec.ts --mode file --json src/assets/docs.json ./projects/design-system-initiafy/src/lib/"
