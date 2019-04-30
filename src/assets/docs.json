@@ -2004,10 +2004,6 @@
 							},
 							{
 								"type": "stringLiteral",
-								"value": "font-awesome"
-							},
-							{
-								"type": "stringLiteral",
 								"value": "font-awesome-brand"
 							},
 							{
@@ -2247,7 +2243,7 @@
 					"sources": [
 						{
 							"fileName": "icon/icon.component.ts",
-							"line": 54,
+							"line": 52,
 							"character": 18
 						}
 					]
