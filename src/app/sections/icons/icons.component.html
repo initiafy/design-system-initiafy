@@ -18,6 +18,7 @@
           size="{{ i.size }}"
           class="pointer"
           (click)="copyToClipboard(i.icon, i.iconFont)"
+          [matTooltip]="'Copy To Clipboard'"
         ></initiafy-icon>
         <div class="content">
           <div class="flex justify-content-space-between">
