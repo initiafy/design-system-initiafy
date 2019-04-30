@@ -6,7 +6,7 @@ export class IconsService {
             {
                 icon: icon,
                 iconFont: iconFont,
-                size: 'medium'
+                size: 'big'
             }
         ]
         return icons;

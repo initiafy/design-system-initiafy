@@ -12,7 +12,7 @@ describe('ButtonComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ 
+      declarations: [
         ButtonComponent,
         IconComponent
       ],
@@ -20,7 +20,7 @@ describe('ButtonComponent', () => {
         MatTooltipModule
       ]
     });
-    
+
     fixture = TestBed.createComponent(ButtonComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -36,43 +36,43 @@ describe('ButtonComponent', () => {
       debuggerElement = fixture.debugElement.query(By.css('button'));
     });
 
-    it('should have default button class', () => { 
+    it('should have default button class', () => {
       expect(debuggerElement.nativeElement.className).toContain('button');
     });
-    
+
     it('should have default design class', () => {
       expect(debuggerElement.nativeElement.className).toContain('main');
     });
 
   });
-  
+
   describe('When testing icon', () => {
-  
+
     it('should NOT show icon if its variable is empty', () => {
       debuggerElement = fixture.debugElement.query(By.css('initiafy-icon'));
       expect(debuggerElement).toBeFalsy();
     });
-  
+
     it('should show icon if its variable is passed', () => {
       component.icon = 'icon-name';
       fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('initiafy-icon'));
       expect(debuggerElement).toBeTruthy();
     });
-  
+
     it('should show specific iconFont if its variable is passed', () => {
       component.icon = 'icon-name';
       component.iconFont = 'font-awesome-brand';
-      fixture.detectChanges();    
+      fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('initiafy-icon'));
-      expect(debuggerElement.context.iconFont).toBe('font-awesome-brand');      
+      expect(debuggerElement.context.iconFont).toBe('font-awesome-brand');
     });
-  
+
     it('should show default iconFont if its variable is empty', () => {
       component.icon = 'icon-name';
-      fixture.detectChanges();    
+      fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('initiafy-icon'));
-      expect(debuggerElement.context.iconFont).toBe('material-icons');         
+      expect(debuggerElement.context.iconFont).toBe('material-icons');
     });
 
   });
@@ -93,14 +93,28 @@ describe('ButtonComponent', () => {
 
     it('should be a single button if label variable is empty', () => {
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.nativeElement.className).toContain('single');      
+      expect(debuggerElement.nativeElement.className).toContain('single');
+    });
+
+    it('should show class hide-label-on-mobile if its variable is true', () => {
+      component.hideLabelOnMobile = true;
+      fixture.detectChanges();
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).toContain('hide-label-on-mobile');
+    });
+
+    it('should NOT show class hide-label-on-mobile if its variable is false or empty', () => {
+      component.hideLabelOnMobile = false;
+      fixture.detectChanges();
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).not.toContain('hide-label-on-mobile');
     });
 
     it('should NOT be a single button if label variable is passed', () => {
       component.label = 'Button Label';
       fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.nativeElement.className).not.toContain('single');      
+      expect(debuggerElement.nativeElement.className).not.toContain('single');
     });
 
   });
@@ -109,14 +123,14 @@ describe('ButtonComponent', () => {
 
     it('should NOT show tooltip if its variable is empty', () => {
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.componentInstance.tooltip).toBeUndefined();      
+      expect(debuggerElement.componentInstance.tooltip).toBe('');
     });
-    
+
     it('should show tooltip if its variable is passed', () => {
       component.tooltip = 'Button Tooltip';
       fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.componentInstance.tooltip).toBe('Button Tooltip');      
+      expect(debuggerElement.componentInstance.tooltip).toBe('Button Tooltip');
     });
 
   });
@@ -135,12 +149,12 @@ describe('ButtonComponent', () => {
       fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('button'));
       expect(debuggerElement.nativeElement.disabled).toBeFalsy();
-      
+
     });
 
     it('should be enabled if disabled variable is empty', () => {
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.nativeElement.disabled).toBeFalsy();      
+      expect(debuggerElement.nativeElement.disabled).toBeFalsy();
     });
 
   });
@@ -157,14 +171,14 @@ describe('ButtonComponent', () => {
       fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('button'));
       expect(debuggerElement.nativeElement.type).toBe('button');
-      
+
     });
 
   });
 
   describe('When clicking on the button', () => {
 
-    it('should emit callback', () => {  
+    it('should emit callback', () => {
       spyOn(component.callback, 'emit');
       debuggerElement = fixture.debugElement.query(By.css('button'));
       debuggerElement.nativeElement.click();

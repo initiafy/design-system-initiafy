@@ -17,7 +17,8 @@ export class ButtonComponent implements OnInit {
   /** Icon name of icon to appear */
   @Input() icon: string;
   /** Icon library to whivh the icon belongs */
-  @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
+  @Input() iconFont: 'initiafy' | 'glyphicon' |
+    'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
   /** Additional css classes to apply to the button */
   @Input() cssClass: string = '';
   /** Text for the button's tooltip */
@@ -29,28 +30,21 @@ export class ButtonComponent implements OnInit {
   /** Method called when button is clicked */
   @Output() callback = new EventEmitter();
 
-  private _classes: string;
+  constructor() { }
+
+  ngOnInit() { }
 
   get classes() {
-    return this._classes;
-  }
-
-  constructor() {}
-
-  ngOnInit() {
-    this.returnClasses();
-  }
-
-  private returnClasses() {
-    this._classes = this.design;
+    let  classes = this.design;
     if (this.design !== 'white' && this.color) {
-      this._classes += ' ' + this.color;
+      classes += ' ' + this.color;
     }
     if (this.hideLabelOnMobile) {
-      this._classes += ' hide-label-on-mobile';
+      classes += ' hide-label-on-mobile';
     }
     if (this.cssClass) {
-      this._classes += ' ' + this.cssClass;
+      classes += ' ' + this.cssClass;
     }
+    return classes;
   }
 }
