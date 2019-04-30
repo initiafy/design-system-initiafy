@@ -41,7 +41,7 @@ gulp.task('copy', gulp.series((done) => {
         "src/lib/styles/imports/*.ttf",
         "src/lib/styles/imports/*.woff"
     ])
-    .pipe(gulp.dest('./dist/lib/styles/'));
+    .pipe(gulp.dest('../../dist/design-system-initiafy/lib/styles/'));
     done();
 }));
 
