@@ -2,6 +2,7 @@ i {
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
+  line-height: 24px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -18,14 +19,13 @@ i.smaller {
 }
 i.medium {
   font-size: 40px;
+  line-height: 40px;
 }
 i.big {
   font-size: 80px;
+  line-height: 80px;
 }
 i.biger {
   font-size: 140px;
-}
-
-.initiafy-icons {
-  font-family: "Initiafy Icons";
+  line-height: 140px;
 }

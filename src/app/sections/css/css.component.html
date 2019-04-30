@@ -2,19 +2,39 @@
     <h1 class="default margin-top-0">CSS</h1>
     <p>CSS classes to help write consistent and maintanable code, based on Google Style Guide patterns and SMACSS.</p>
     
-    <h3 class="margin-top-32">Flexbox</h3>    
+    <h3 class="margin-top-32">Flexbox structure</h3>    
     <markdown ngPreserveWhitespaces>
         ```html
         .flex                       [ set a div to display flex; use .flex-important if needed ]
         .regular-mobile             [ elements of a flex div change to inline elements in mobile ]
         .column                     [ add this class to set direction as column ]
+        .column-tablet              [ add this class to set direction as column in tablet resolution ]
+        .column-mobile              [ add this class to set direction as column in mobile resolution ]
+        .column-mobile-small        [ add this class to set direction as column in mobile small resolution ]
         .row                        [ add this class to set direction as row ]
-        .align-items-x              [ add this class to align items, where x = center|stretch|start|end ]
-        .justify-content-x          [ add this class to justify content, where x = space-around|space-between|center|start|end ]
-        .flex-justify-align-center  [ add display flex, justify content center and align items center ]
+        .row-tablet                 [ add this class to set direction as row in tablet resolution ]
+        .row-mobile                 [ add this class to set direction as row in mobile resolution ]
+        .row-mobile-small           [ add this class to set direction as row in mobile small resolution ]
+        .wrap                       [ add this class to set flex wrap ]
+        .wrap-tablet                [ add this class to set flex wrap in tablet resolution ]
+        .wrap-mobile                [ add this class to set flex wrap in mobile resolution ]
+        .wrap-mobile-small          [ add this class to set flex wrap in mobile small resolution ]
         .flex-grow                  [ add flex = 1 to a div ]
         .flex-grow-x                [ add flex property to a div, where x is a number from 1 to 10 ]
         .flex-x                     [ add flex property to a div, where x is a number from 1 to 10 ]
+        .flex-basis-50-pc           [ add flex basis 50% or 100% property to a div, where x is 50 or 100 ]
+        ```
+    </markdown>
+
+    <h3 class="margin-top-32">Alignment</h3>    
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .align-items-x              [ add this class to align items, where x = center|stretch|start|end ]
+        .justify-content-x          [ add this class to justify content, where x = space-around|space-between|center|start|end ]
+        .flex-justify-align-center  [ add display flex, justify content center and align items center ]
+        .align-items-middle         [ align an element in the middle of the page with view height and view width ]
+        .button-wrapper             [ align two buttons in opposit directions and standard margin top, to be used in the end of forms ]
+        .va-middle                  [ align items to middle using vertical-align ]
         ```
     </markdown>
     
@@ -105,6 +125,29 @@
         .[primary|secondary|black|grey|disable|ripple|hover|rag-red|rag-amber|rag-green|white]-color        [ set variables for colors to an element ]   
         .[primary|secondary|black|grey|disable|ripple|hover|rag-red|rag-amber|rag-green|white]-bgcolor      [ set variables for background color to an element ]   
         .[primary|secondary|black|grey|disable|ripple|hover|rag-red|rag-amber|rag-green|white]-border-color [ set variables for border color to an element ]  
+        ```
+    </markdown>
+
+    <h3 class="margin-top-32">Formating text classes</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        .bold                   [ set bold text to an element ]   
+        .bold-hover             [ set bold text to an element on hover ]  
+        .nobold                 [ remove bold text of an element ]   
+        .nobold-hover           [ remove bold text of an element on hover ]  
+        .italic                 [ set italic text to an element ]   
+        .italic-hover           [ set italic text to an element on hover ]   
+        .noitalic               [ remove italic text of an element ]   
+        .noitalic-hover         [ remove italic text of an element on hover ]   
+        .underline              [ set underline text to an element ]   
+        .underline-hover        [ set underline text to an element on hover ]   
+        .nounderline            [ remove underline text of an element ]   
+        .nounderline-hover      [ remove underline text of an element on hover ]   
+        .lowercase              [ set lowercase text to an element ]   
+        .uppercase              [ set uppercase text to an element ]   
+        .break-word             [ set break-word text to an element ]   
+        .no-wrap                [ set white space no-wrap text to an element ]   
+        .ellipsis               [ set ellipsis to an element ]   
         ```
     </markdown>
     

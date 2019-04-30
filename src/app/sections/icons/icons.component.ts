@@ -60,7 +60,7 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('qualification', 'initiafy'));
     this.iconsList.push(this.iconsService.getIcons('number', 'initiafy'));
     this.iconsList.push(this.iconsService.getIcons('characterbox', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('announcement', ''));
-    this.iconsList.push(this.iconsService.getIcons('announcement', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('home', 'material-outlined'));
+    this.iconsList.push(this.iconsService.getIcons('person', 'material-outlined'));
   }
 }
