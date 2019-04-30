@@ -18,12 +18,12 @@ export class ButtonsComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.buttons.push(this.buttonsService.getButtons('main', 'primary'));
-    this.buttons.push(this.buttonsService.getButtons('main', 'secondary'));
-    this.buttons.push(this.buttonsService.getButtons('stroke', 'primary'));
-    this.buttons.push(this.buttonsService.getButtons('stroke', 'secondary'));
-    this.buttons.push(this.buttonsService.getButtons('white', ''));
-    this.buttons.push(this.buttonsService.getButtons('basic', ''));
+    this.buttons.push(this.buttonsService.getButtons('main', 'primary', 'Main'));
+    this.buttons.push(this.buttonsService.getButtons('main', 'secondary', 'Main'));
+    this.buttons.push(this.buttonsService.getButtons('stroke', 'primary', 'Stroke'));
+    this.buttons.push(this.buttonsService.getButtons('stroke', 'secondary', 'Stroke'));
+    this.buttons.push(this.buttonsService.getButtons('white', '', 'White'));
+    this.buttons.push(this.buttonsService.getButtons('basic', '', 'Basic'));
   }
 
 }

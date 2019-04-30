@@ -1,26 +1,19 @@
 import { Buttons } from '../models/buttons';
 
 export class ButtonsService {
-    public getButtons(design, color): Array<Buttons> {
-        let buttons = [
+    public getButtons(design, color, label = ''): Array<Buttons> {
+        const buttons = [
             {
                 design: design,
                 color: color,
-                label: 'Button Label',
+                label: label,
                 type: 'button',
                 disabled: false
             },
             {
                 design: design,
                 color: color,
-                label: 'Button Label',
-                type: 'button',
-                icon: 'done',
-                disabled: false
-            },
-            {
-                design: design,
-                color: color,
+                label: label,
                 type: 'button',
                 icon: 'done',
                 disabled: false
@@ -28,12 +21,19 @@ export class ButtonsService {
             {
                 design: design,
                 color: color,
-                label: 'Disable button',
+                type: 'button',
+                icon: 'done',
+                disabled: false
+            },
+            {
+                design: design,
+                color: color,
+                label: label,
                 type: 'button',
                 icon: 'done',
                 disabled: true
             }
-        ]
+        ];
         return buttons;
     }
 }
