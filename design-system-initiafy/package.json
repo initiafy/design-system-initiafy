@@ -1,0 +1,23 @@
+{
+  "name": "design-system-initiafy",
+  "description": "design-system for initiafy",
+  "version": "0.0.42",
+  "peerDependencies": {
+    "@angular/material": "^7.0.2",
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "main": "bundles/design-system-initiafy.umd.js",
+  "module": "fesm5/design-system-initiafy.js",
+  "es2015": "fesm2015/design-system-initiafy.js",
+  "esm5": "esm5/design-system-initiafy.js",
+  "esm2015": "esm2015/design-system-initiafy.js",
+  "fesm5": "fesm5/design-system-initiafy.js",
+  "fesm2015": "fesm2015/design-system-initiafy.js",
+  "typings": "design-system-initiafy.d.ts",
+  "metadata": "design-system-initiafy.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}
