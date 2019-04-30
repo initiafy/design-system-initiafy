@@ -20,6 +20,14 @@ body {
   flex-direction: column;
 }
 
+/* Link */
+a {
+  color: $Black;
+  color: var(--Black);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 /* Scrollbar */
 * {
   scrollbar-width: thin;

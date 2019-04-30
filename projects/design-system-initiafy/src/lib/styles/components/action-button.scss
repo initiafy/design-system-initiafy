@@ -5,7 +5,7 @@
   color: $Grey;
   cursor: pointer;
   background: #fff;
-  border-radius: $border-std;
+  border-radius: $radius-std;
   @include shadow-std();
 
   &:hover,

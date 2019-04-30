@@ -1,9 +1,19 @@
+@import "../imports/variables";
+
 /* Position options 0/4/8/12/16/20/24/28/32 */
 @for $i from 0 through 8 {
-  .top-#{$i*4} { top: #{$i*4}px; }
-  .bottom-#{$i*4} { bottom: #{$i*4}px; }
-  .left-#{$i*4} { left: #{$i*4}px; }
-  .right-#{$i*4} { right: #{$i*4}px; }
+  .top-#{$i*4} {
+    top: #{$i * 4}px;
+  }
+  .bottom-#{$i*4} {
+    bottom: #{$i * 4}px;
+  }
+  .left-#{$i*4} {
+    left: #{$i * 4}px;
+  }
+  .right-#{$i*4} {
+    right: #{$i * 4}px;
+  }
 }
 
 /* Position types */
@@ -64,16 +74,24 @@
 .right {
   right: 0;
 }
+.right-std {
+  right: $spacing;
+}
 .left {
   left: 0;
+}
+.left-std {
+  left: $spacing;
 }
 .bottom {
   bottom: 0;
 }
-.bottom-1 {
-  bottom: 1px;
+.bottom-std {
+  bottom: $spacing;
 }
 .top {
   top: 0;
 }
-
+.top-std {
+  top: $spacing;
+}

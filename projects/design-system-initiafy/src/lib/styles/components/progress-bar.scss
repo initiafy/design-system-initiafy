@@ -2,13 +2,12 @@
 
 .progress-bar {
   position: relative;
-  height: 4px;
   display: block;
   width: 100%;
-  border-radius: 2px;
-  background-clip: padding-box;
-  margin: 0.5rem 0 1rem 0;
+  height: 4px;
+  margin: 0;
   overflow: hidden;
+  background-clip: padding-box;
   background-color: $PMain;
   background-color: var(--PMain);
 }
@@ -96,8 +95,4 @@
     left: 107%;
     right: -8%;
   }
-}
-
-.fix-progress-bar-space {
-  margin-top: -4px;
 }

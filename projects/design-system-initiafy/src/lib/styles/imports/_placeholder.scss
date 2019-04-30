@@ -7,7 +7,7 @@
     position: relative;
     max-width: 100%;
     padding: $spacing;
-    border-radius: $border-std;
+    border-radius: $radius-std;
     background-color: #fff;
     @include shadow-std();
     &.small-padding {

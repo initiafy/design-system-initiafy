@@ -3556,7 +3556,7 @@
 			]
 		},
 		{
-			"id": 247,
+			"id": 246,
 			"name": "InitiafyLoadingCardModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3612,7 +3612,7 @@
 			]
 		},
 		{
-			"id": 246,
+			"id": 245,
 			"name": "InitiafyProgressBarModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -4078,7 +4078,7 @@
 			]
 		},
 		{
-			"id": 248,
+			"id": 247,
 			"name": "ModalComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -4116,14 +4116,14 @@
 							"type": {
 								"type": "reference",
 								"name": "ModalComponent",
-								"id": 248
+								"id": 247
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "modal/modal.component.ts",
-							"line": 10,
+							"line": 11,
 							"character": 39
 						}
 					]
@@ -4149,7 +4149,7 @@
 					"sources": [
 						{
 							"fileName": "modal/modal.component.ts",
-							"line": 10,
+							"line": 11,
 							"character": 17
 						}
 					],
@@ -4167,6 +4167,37 @@
 				},
 				{
 					"id": 249,
+					"name": "hideCloseButton",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "modal/modal.component.ts",
+							"line": 10,
+							"character": 26
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 248,
 					"name": "overlay",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4220,7 +4251,7 @@
 					"sources": [
 						{
 							"fileName": "modal/modal.component.ts",
-							"line": 14,
+							"line": 15,
 							"character": 10
 						}
 					]
@@ -4239,7 +4270,8 @@
 					"kind": 1024,
 					"children": [
 						250,
-						249
+						249,
+						248
 					]
 				},
 				{
@@ -4286,7 +4318,7 @@
 			],
 			"children": [
 				{
-					"id": 242,
+					"id": 241,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -4295,7 +4327,7 @@
 					},
 					"signatures": [
 						{
-							"id": 243,
+							"id": 242,
 							"name": "new ProgressBarComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -4310,41 +4342,10 @@
 					"sources": [
 						{
 							"fileName": "progress-bar/progress-bar.component.ts",
-							"line": 10,
-							"character": 25
+							"line": 9,
+							"character": 26
 						}
 					]
-				},
-				{
-					"id": 241,
-					"name": "cssClass",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "progress-bar/progress-bar.component.ts",
-							"line": 10,
-							"character": 19
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"\""
 				},
 				{
 					"id": 240,
@@ -4378,7 +4379,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 244,
+					"id": 243,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -4387,7 +4388,7 @@
 					},
 					"signatures": [
 						{
-							"id": 245,
+							"id": 244,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -4401,7 +4402,7 @@
 					"sources": [
 						{
 							"fileName": "progress-bar/progress-bar.component.ts",
-							"line": 14,
+							"line": 13,
 							"character": 10
 						}
 					]
@@ -4412,14 +4413,13 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						242
+						241
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						241,
 						240
 					]
 				},
@@ -4427,7 +4427,7 @@
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						244
+						243
 					]
 				}
 			],
@@ -8305,9 +8305,9 @@
 				228,
 				85,
 				32,
-				247,
-				255,
 				246,
+				255,
+				245,
 				265,
 				290,
 				91,
@@ -8315,7 +8315,7 @@
 				344,
 				370,
 				229,
-				248,
+				247,
 				239,
 				256,
 				269,

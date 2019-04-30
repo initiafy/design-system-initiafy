@@ -52,11 +52,13 @@ export class IconComponent implements OnInit {
   }
 
   private showText() {
-    if (
+    if (this.iconFont) {
+      if (
         this.iconFont.includes('font-awesome') ||
         this.iconFont.includes('initiafy')
       ) {
-      return false;
+        return false;
+      }
     }
     return true;
   }

@@ -36,7 +36,9 @@ import {
     InitiafyProgressBarModule,
     InitiafyResultModule,
     InitiafySearchBarModule,
-    InitiafySpinnerModule
+    InitiafySpinnerModule,
+    InitiafySnackBarModule,
+    InitiafyYesOrNoModule
 } from 'projects/design-system-initiafy/src/public_api';
 
 @NgModule({
@@ -92,7 +94,9 @@ import {
         InitiafyProgressBarModule,
         InitiafyResultModule,
         InitiafySearchBarModule,
-        InitiafySpinnerModule
+        InitiafySpinnerModule,
+        InitiafySnackBarModule,
+        InitiafyYesOrNoModule
     ],
     exports: [
         CodeComponent, DocumentationComponent,
@@ -129,7 +133,11 @@ import {
         InitiafyProgressBarModule,
         InitiafyResultModule,
         InitiafySearchBarModule,
-        InitiafySpinnerModule
+        InitiafySpinnerModule,
+        InitiafySnackBarModule,
+        InitiafyYesOrNoModule,
+        InitiafySnackBarModule,
+        InitiafyYesOrNoModule
     ]
 })
 export class SharedModule { }
