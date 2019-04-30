@@ -172,7 +172,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-action-bar',\r\n  templateUrl: './action-bar.component.html',\r\n  styleUrls: ['./action-bar.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-action-bar',\n  templateUrl: './action-bar.component.html',\n  styleUrls: ['./action-bar.component.scss']\n}"
 					}
 				}
 			],
@@ -421,7 +421,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-action-button',\r\n  templateUrl: './action-button.component.html',\r\n  styleUrls: ['./action-button.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-action-button',\n  templateUrl: './action-button.component.html',\n  styleUrls: ['./action-button.component.scss']\n}"
 					}
 				}
 			],
@@ -832,7 +832,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss']\n}"
 					}
 				}
 			],
@@ -1454,7 +1454,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n}"
 					}
 				}
 			],
@@ -1561,7 +1561,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-content',\r\n  templateUrl: './content.component.html',\r\n  styleUrls: ['./content.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-content',\n  templateUrl: './content.component.html',\n  styleUrls: ['./content.component.scss']\n}"
 					}
 				}
 			],
@@ -1672,7 +1672,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-header',\r\n  templateUrl: './header.component.html',\r\n  styleUrls: ['./header.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.scss']\n}"
 					}
 				}
 			],
@@ -1783,7 +1783,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-icon',\r\n  templateUrl: './icon.component.html',\r\n  styleUrls: ['./icon.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss']\n}"
 					}
 				}
 			],
@@ -2168,7 +2168,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [ActionBarComponent],\r\n  exports: [ActionBarComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [ActionBarComponent],\n  exports: [ActionBarComponent]\n}"
 					}
 				}
 			],
@@ -2196,7 +2196,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatTooltipModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [ActionButtonComponent],\r\n  exports: [ActionButtonComponent]\r\n}"
+						"obj": "{\n  imports: [\n    CommonModule,\n    MatTooltipModule,\n    InitiafyIconModule\n  ],\n  declarations: [ActionButtonComponent],\n  exports: [ActionButtonComponent]\n}"
 					}
 				}
 			],
@@ -2224,7 +2224,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatButtonModule,\r\n    MatTooltipModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [ButtonComponent],\r\n  exports: [ButtonComponent]\r\n}"
+						"obj": "{\n  imports: [\n    CommonModule,\n    MatButtonModule,\n    MatTooltipModule,\n    InitiafyIconModule\n  ],\n  declarations: [ButtonComponent],\n  exports: [ButtonComponent]\n}"
 					}
 				}
 			],
@@ -2252,7 +2252,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [CardComponent],\r\n  exports: [CardComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [CardComponent],\n  exports: [CardComponent]\n}"
 					}
 				}
 			],
@@ -2280,7 +2280,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [ContentComponent],\r\n  exports: [ContentComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [ContentComponent],\n  exports: [ContentComponent]\n}"
 					}
 				}
 			],
@@ -2311,7 +2311,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-data-table',\r\n  templateUrl: './data-table.component.html',\r\n  styleUrls: ['./data-table.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-data-table',\n  templateUrl: './data-table.component.html',\n  styleUrls: ['./data-table.component.scss']\n}"
 					}
 				}
 			],
@@ -3333,7 +3333,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  declarations: [InitiafyDataTableComponent],\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyButtonModule,\r\n    MatIconModule,\r\n    MatCheckboxModule,\r\n    MatMenuModule,\r\n    MatFormFieldModule,\r\n    MatPaginatorModule,\r\n    MatTableModule,\r\n    MatInputModule\r\n  ],\r\n  exports: [InitiafyDataTableComponent]\r\n}"
+						"obj": "{\n  declarations: [InitiafyDataTableComponent],\n  imports: [\n    CommonModule,\n    InitiafyButtonModule,\n    MatIconModule,\n    MatCheckboxModule,\n    MatMenuModule,\n    MatFormFieldModule,\n    MatPaginatorModule,\n    MatTableModule,\n    MatInputModule\n  ],\n  exports: [InitiafyDataTableComponent]\n}"
 					}
 				}
 			],
@@ -3361,7 +3361,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [HeaderComponent],\r\n  exports: [HeaderComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [HeaderComponent],\n  exports: [HeaderComponent]\n}"
 					}
 				}
 			],
@@ -3389,7 +3389,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule, MatTooltipModule],\r\n  declarations: [IconComponent],\r\n  exports: [IconComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule, MatTooltipModule],\n  declarations: [IconComponent],\n  exports: [IconComponent]\n}"
 					}
 				}
 			],
@@ -3417,7 +3417,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule, InitiafyCardModule, InitiafyProgressBarModule],\r\n  declarations: [LoadingCardComponent],\r\n  exports: [LoadingCardComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule, InitiafyCardModule, InitiafyProgressBarModule],\n  declarations: [LoadingCardComponent],\n  exports: [LoadingCardComponent]\n}"
 					}
 				}
 			],
@@ -3445,7 +3445,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule, InitiafyIconModule],\r\n  declarations: [ModalComponent],\r\n  exports: [ModalComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule, InitiafyIconModule],\n  declarations: [ModalComponent],\n  exports: [ModalComponent]\n}"
 					}
 				}
 			],
@@ -3473,7 +3473,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [ProgressBarComponent],\r\n  exports: [ProgressBarComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [ProgressBarComponent],\n  exports: [ProgressBarComponent]\n}"
 					}
 				}
 			],
@@ -3501,7 +3501,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [ResultComponent],\r\n  exports: [ResultComponent]\r\n}"
+						"obj": "{\n  imports: [\n    CommonModule,\n    InitiafyIconModule\n  ],\n  declarations: [ResultComponent],\n  exports: [ResultComponent]\n}"
 					}
 				}
 			],
@@ -3529,7 +3529,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    FormsModule,\r\n    ReactiveFormsModule,\r\n    MatFormFieldModule,\r\n    MatInputModule,\r\n    MatButtonModule,\r\n    MatIconModule,\r\n    InitiafyButtonModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [SearchBarComponent],\r\n  exports: [SearchBarComponent]\r\n}"
+						"obj": "{\n  imports: [\n    CommonModule,\n    FormsModule,\n    ReactiveFormsModule,\n    MatFormFieldModule,\n    MatInputModule,\n    MatButtonModule,\n    MatIconModule,\n    InitiafyButtonModule,\n    InitiafyIconModule\n  ],\n  declarations: [SearchBarComponent],\n  exports: [SearchBarComponent]\n}"
 					}
 				}
 			],
@@ -3557,7 +3557,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [SidenavComponent],\r\n  exports: [SidenavComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [SidenavComponent],\n  exports: [SidenavComponent]\n}"
 					}
 				}
 			],
@@ -3585,7 +3585,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  declarations: [SnackBarComponent],\r\n  imports: [\r\n    CommonModule,\r\n    MatSnackBarModule,\r\n    InitiafyIconModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  providers: [SnackBarService],\r\n  entryComponents: [SnackBarComponent]\r\n}"
+						"obj": "{\n  declarations: [SnackBarComponent],\n  imports: [\n    CommonModule,\n    MatSnackBarModule,\n    InitiafyIconModule,\n    InitiafyButtonModule\n  ],\n  providers: [SnackBarService],\n  entryComponents: [SnackBarComponent]\n}"
 					}
 				}
 			],
@@ -3613,7 +3613,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [MatProgressSpinnerModule],\r\n  declarations: [SpinnerComponent],\r\n  exports: [SpinnerComponent]\r\n}"
+						"obj": "{\n  imports: [MatProgressSpinnerModule],\n  declarations: [SpinnerComponent],\n  exports: [SpinnerComponent]\n}"
 					}
 				}
 			],
@@ -3641,7 +3641,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  declarations: [\r\n    YesOrNoDialogComponent\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyIconModule,\r\n    MatButtonModule,\r\n    MatDialogModule\r\n  ],\r\n  exports: [\r\n    YesOrNoDialogComponent\r\n  ],\r\n  providers: [\r\n    YesOrNoService\r\n  ],\r\n  entryComponents: [\r\n    YesOrNoDialogComponent\r\n  ]\r\n}"
+						"obj": "{\n  declarations: [\n    YesOrNoDialogComponent\n  ],\n  imports: [\n    CommonModule,\n    InitiafyIconModule,\n    MatButtonModule,\n    MatDialogModule\n  ],\n  exports: [\n    YesOrNoDialogComponent\n  ],\n  providers: [\n    YesOrNoService\n  ],\n  entryComponents: [\n    YesOrNoDialogComponent\n  ]\n}"
 					}
 				}
 			],
@@ -3669,7 +3669,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-loading-card',\r\n  templateUrl: './loading-card.component.html',\r\n  styleUrls: ['./loading-card.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-loading-card',\n  templateUrl: './loading-card.component.html',\n  styleUrls: ['./loading-card.component.scss']\n}"
 					}
 				}
 			],
@@ -3939,7 +3939,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-modal',\r\n  templateUrl: './modal.component.html',\r\n  styleUrls: ['./modal.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-modal',\n  templateUrl: './modal.component.html',\n  styleUrls: ['./modal.component.scss']\n}"
 					}
 				}
 			],
@@ -4158,7 +4158,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-progress-bar',\r\n  templateUrl: './progress-bar.component.html',\r\n  styleUrls: ['./progress-bar.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-progress-bar',\n  templateUrl: './progress-bar.component.html',\n  styleUrls: ['./progress-bar.component.scss']\n}"
 					}
 				}
 			],
@@ -4307,7 +4307,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-result',\r\n  templateUrl: './result.component.html',\r\n  styleUrls: ['./result.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-result',\n  templateUrl: './result.component.html',\n  styleUrls: ['./result.component.scss']\n}"
 					}
 				}
 			],
@@ -4552,7 +4552,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-search-bar',\r\n  templateUrl: './search-bar.component.html',\r\n  styleUrls: ['./search-bar.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-search-bar',\n  templateUrl: './search-bar.component.html',\n  styleUrls: ['./search-bar.component.scss']\n}"
 					}
 				}
 			],
@@ -5103,7 +5103,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-sidenav',\r\n  templateUrl: './sidenav.component.html',\r\n  styleUrls: ['./sidenav.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-sidenav',\n  templateUrl: './sidenav.component.html',\n  styleUrls: ['./sidenav.component.scss']\n}"
 					}
 				}
 			],
@@ -5214,7 +5214,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-snack-bar',\r\n  templateUrl: './snack-bar.component.html',\r\n  styleUrls: ['./snack-bar.component.css']\r\n}"
+						"obj": "{\n  selector: 'initiafy-snack-bar',\n  templateUrl: './snack-bar.component.html',\n  styleUrls: ['./snack-bar.component.css']\n}"
 					}
 				}
 			],
@@ -5489,7 +5489,7 @@
 						"name": "Injectable"
 					},
 					"arguments": {
-						"options": "{\r\n  providedIn: 'root'\r\n}"
+						"options": "{\n  providedIn: 'root'\n}"
 					}
 				}
 			],
@@ -5890,7 +5890,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-spinner',\r\n  templateUrl: './spinner.component.html',\r\n  styleUrls: ['./spinner.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-spinner',\n  templateUrl: './spinner.component.html',\n  styleUrls: ['./spinner.component.scss']\n}"
 					}
 				}
 			],
@@ -6001,7 +6001,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-yes-or-no',\r\n  templateUrl: './yes-or-no.component.html',\r\n  styleUrls: ['./yes-or-no.component.css']\r\n}"
+						"obj": "{\n  selector: 'initiafy-yes-or-no',\n  templateUrl: './yes-or-no.component.html',\n  styleUrls: ['./yes-or-no.component.css']\n}"
 					}
 				}
 			],
@@ -6259,7 +6259,7 @@
 						"name": "Injectable"
 					},
 					"arguments": {
-						"options": "{\r\n  providedIn: 'root'\r\n}"
+						"options": "{\n  providedIn: 'root'\n}"
 					}
 				}
 			],
