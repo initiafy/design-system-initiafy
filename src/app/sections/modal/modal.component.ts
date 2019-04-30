@@ -23,7 +23,7 @@ export class ModalDocumentationComponent implements OnInit {
     const overlayRef = this._overlay.create();
     this.injectionData = {
       closeModal: () => overlayRef.detach()
-    }
+    };
     const userProfilePortal = new ComponentPortal(ExampleModalComponent, null, this.createInjector(this.injectionData));
     overlayRef.attach(userProfilePortal);
   }
