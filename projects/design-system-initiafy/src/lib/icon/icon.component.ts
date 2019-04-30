@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class IconComponent implements OnInit {
   @Input() icon = '';
-  @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
+  @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
   @Input() size: 'smaller' | 'small' | 'medium' | 'big' = 'small';
   @Input() cssClass: string = '';
   @Input() tooltip: string = '';
@@ -34,8 +34,6 @@ export class IconComponent implements OnInit {
 
   private getIconClasses() {
     switch (this.iconFont) {
-      case 'font-awesome':
-        return 'fa fa-' + this.icon;
       case 'font-awesome-brand':
         return 'fab fa-' + this.icon;
       case 'font-awesome-solid':
@@ -55,7 +53,8 @@ export class IconComponent implements OnInit {
     if (this.iconFont) {
       if (
         this.iconFont.includes('font-awesome') ||
-        this.iconFont.includes('initiafy')
+        this.iconFont.includes('initiafy') ||
+        this.iconFont.includes('outlined')
       ) {
         return false;
       }
