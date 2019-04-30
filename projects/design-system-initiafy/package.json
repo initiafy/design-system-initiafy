@@ -1,7 +1,7 @@
 {
   "name": "design-system-initiafy",
   "description": "design-system for initiafy",
-  "version": "0.0.41",
+  "version": "0.0.42",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "postbuild": "gulp"
