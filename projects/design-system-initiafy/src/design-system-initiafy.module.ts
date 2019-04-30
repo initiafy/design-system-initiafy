@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-/* 
+/*
  * Core Lib Modules
  * Alphabetical order please
  */
@@ -9,7 +9,7 @@ import { InitiafyHeaderModule } from './lib/core-components/header/header.module
 import { InitiafySidenavModule } from './lib/core-components/sidenav/sidenav.module';
 import { InitiafyContentModule } from './lib/core-components/content/content.module';
 
-/* 
+/*
  * Components Lib Modules
  * Alphabetical order please
  */
