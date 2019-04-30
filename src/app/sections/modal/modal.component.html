@@ -1,3 +1,11 @@
 <app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'modal/modal.html'">
-  <button (click)="handleButtonClick()">click me</button>
+  <initiafy-button
+  design="stroke"
+  color="primary"
+  label="Show Example Modal"
+  tooltip="Show example"
+  [disabled]="false"
+  (callback)="handleButtonClick()"
+></initiafy-button>
+
 </app-documentation>
