@@ -12,20 +12,21 @@ $media-large-desktop: 1441px;
 $spacing: 16px;
 $spacing-half: 8px;
 $header-height: 64px;
+$letter-spacing: 0.04rem;
 
 /* Border radius */
 $radius-std: 4px;
 
 /* Static Colors for IE */
-$PLight: hsl(350,79.9%,59%);
-$PMain: hsl(343,77.3%,38%);
-$SLight: hsl(192,49.7%,61.8%);
-$SMain: hsl(192,59.5%,45.5%);
-$Black: rgba(0,0,0,0.87);
-$Grey: rgba(0,0,0,0.54);
-$Disable: rgba(0,0,0,0.26);
-$Ripple: rgba(0,0,0,0.12);
-$Hover: rgba(0,0,0,0.05);
+$PLight: #DE1D54;
+$PMain: #AC1640;
+$SLight: #6DBBCE;
+$SMain: #2F9DB9;
+$Black: #212121;
+$Grey: #757575;
+$Disable: #BDBDBD;
+$Ripple: #E0E0E0;
+$Hover: #F2F2F2;
 $BackgroundDefault: #f8f8f8;
 $RagRed: #f44336;
 $RagAmber: #ffc108;
