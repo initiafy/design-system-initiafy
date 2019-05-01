@@ -1,4 +1,4 @@
-<div style="max-width: 217px;"><img style="vmax-width: 217px; margin: auto;" src="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2017/12/initiafy-logo.svg"></div>
+<p align="center" style="max-width: 217px;"><img src="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2017/12/initiafy-logo.svg"></p>
 
 [![Build Status](https://semaphoreci.com/api/v1/admin-initiafy-25/design-system-initiafy/branches/master/badge.svg)](https://semaphoreci.com/admin-initiafy-25/design-system-initiafy)
 
