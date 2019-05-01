@@ -3,4 +3,3 @@ export class Icons {
     iconFont?: string;
     size?: string;
 }
-  
