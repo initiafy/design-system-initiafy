@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './initiafy-card.component.html',
   styleUrls: ['./initiafy-card.component.scss']
 })
-export class InitiafyCardDocumentationComponent implements OnInit {
+export class CardDocumentationComponent implements OnInit {
   public componentName = 'CardComponent';
   public module = 'InitiafyCardModule';
 
