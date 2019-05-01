@@ -15,6 +15,9 @@
   background-color: $PLight;
   background-color: var(--PLight);
   height: 100%;
+  width: 0;
+  max-width: 100%;
+  min-width: 0;
 }
 .progress-bar .indeterminate {
   background-color: $PLight;
