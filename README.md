@@ -1,10 +1,11 @@
 <p align="center" style="max-width: 217px;"><img alt="initiafy-logo" width="210" src="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2017/12/initiafy-logo.svg"></p>
 
-<a href="https://semaphoreci.com/admin-initiafy-25/design-system-initiafy" align="center">
+<p align="center">
+<a href="https://semaphoreci.com/admin-initiafy-25/design-system-initiafy">
     <img alt="build-status" src="https://semaphoreci.com/api/v1/admin-initiafy-25/design-system-initiafy/branches/master/badge.svg">
 </a>
+</p>
 
-[![Build Status](https://semaphoreci.com/api/v1/admin-initiafy-25/design-system-initiafy/branches/master/badge.svg)](https://semaphoreci.com/admin-initiafy-25/design-system-initiafy)
 
 # Initiafy Design System
 
