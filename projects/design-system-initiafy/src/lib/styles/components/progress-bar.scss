@@ -11,6 +11,11 @@
   background-color: $PMain;
   background-color: var(--PMain);
 }
+.progress-bar .determinate {
+  background-color: $PLight;
+  background-color: var(--PLight);
+  height: 100%;
+}
 .progress-bar .indeterminate {
   background-color: $PLight;
   background-color: var(--PLight);
