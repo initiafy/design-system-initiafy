@@ -1,11 +1,14 @@
 <app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'button.html'">
   <p>Button options availiable in the library.</p>
-
-  <div *ngFor="let button of buttons"  class="flex row elements-margin-right margin-top-16">
-      <div *ngFor="let b of button">
-        <initiafy-button design="{{ b.design }}" color="{{ b.color }}" label="{{ b.label }}"
-          icon="{{ b.icon }}" iconFont="{{ b.iconFont }}" tooltip="{{ b.tooltip }}" disabled="{{ b.disabled }}"></initiafy-button>
+  <mat-slide-toggle (change)="handleSlideChange($event)" class="margin-y-16">Dark Mode</mat-slide-toggle>
+  <mat-divider></mat-divider>
+  <div [ngClass]="darkBackground ? 'black-bgcolor' : 'white-bgcolor'">
+      <div *ngFor="let button of buttons"  class="flex column elements-margin-right">
+          <div class="flex wrap">
+            <initiafy-button class="margin-y-8 margin-x-8" *ngFor="let b of button" design="{{ b.design }}" color="{{ b.color }}" label="{{ b.label }}"
+              icon="{{ b.icon }}" iconFont="{{ b.iconFont }}" tooltip="{{ b.tooltip }}" disabled="{{ b.disabled }}"></initiafy-button>
+          </div>
+          <mat-divider></mat-divider>
       </div>
   </div>
-    
 </app-documentation>
