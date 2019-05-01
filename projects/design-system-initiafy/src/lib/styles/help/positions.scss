@@ -29,9 +29,8 @@
   position: fixed;
 }
 
-.absolute-right {
-  position: absolute;
-  right: 0;
+.static {
+  position: static;
 }
 
 .absolute-top-right {
@@ -47,11 +46,19 @@
 }
 
 /* Z-index */
-.z1 {
-  z-index: 1;
+@for $i from 0 through 10 {
+  .z#{$i} {
+    z-index: #{$i};
+  }
+}
+.z99 {
+  z-index: 99;
 }
 .z999 {
   z-index: 999;
+}
+.z9999 {
+  z-index: 9999;
 }
 
 /* Float */
@@ -67,30 +74,30 @@
   float: auto;
 }
 
-/* Positions base */
+/* Positions */
 .bottom-auto {
   bottom: auto;
 }
 .right {
   right: 0;
 }
-.right-std {
-  right: $spacing;
-}
 .left {
   left: 0;
-}
-.left-std {
-  left: $spacing;
 }
 .bottom {
   bottom: 0;
 }
-.bottom-std {
-  bottom: $spacing;
-}
 .top {
   top: 0;
+}
+.right-std {
+  right: $spacing;
+}
+.left-std {
+  left: $spacing;
+}
+.bottom-std {
+  bottom: $spacing;
 }
 .top-std {
   top: $spacing;

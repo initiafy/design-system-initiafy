@@ -15,7 +15,6 @@ describe('CardComponent', () => {
     fixture = TestBed.createComponent(CardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-    de = fixture.debugElement.query(By.css('div'));
   });
 
   it('should create', () => {
@@ -23,7 +22,15 @@ describe('CardComponent', () => {
   });
 
   it('should have default class', () => {
+    de = fixture.debugElement.query(By.css('div'));
     expect(de.nativeElement.className).toContain('initiafy-card');
+  });
+
+  it('should show clases if variable is filled', () => {
+    component.cssClass = 'new-class';
+    fixture.detectChanges();
+    de = fixture.debugElement.query(By.css('.initiafy-card'));
+    expect(de.nativeElement.className).toContain('new-class');
   });
 
 });

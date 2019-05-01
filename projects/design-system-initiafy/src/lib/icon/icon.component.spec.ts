@@ -30,47 +30,37 @@ describe('IconComponent', () => {
 
   describe('Icon size', () => {
 
-    beforeEach(() => {
-      de = fixture.debugElement.query(By.css('i'));
-    });
-
     it('should show default icon size if its variable is empty', () => {
+      de = fixture.debugElement.query(By.css('i'));
       expect(de.nativeElement.className).toContain('small');
     });
 
-    it('should show specific icon size class if its variable is passed', () => { 
+    it('should show specific icon size class if its variable is passed', () => {
       component.size = 'big';
       fixture.detectChanges();
       de = fixture.debugElement.query(By.css('i'));
-      expect(de.nativeElement.className).toContain('big')
+      expect(de.nativeElement.className).toContain('big');
     });
 
   });
 
   describe('Icon font family', () => {
 
-    beforeEach(() => {
-      de = fixture.debugElement.query(By.css('i'));
-    });
-
     it('should show default iconFont if its variable is empty', () => {
+      de = fixture.debugElement.query(By.css('i'));
       expect(de.nativeElement.className).toContain('material-icons');
     });
 
-    it('should show specific iconFont if its variable is passed', () => { 
+    it('should show specific iconFont if its variable is passed', () => {
       component.iconFont = 'font-awesome-brand';
       fixture.detectChanges();
       de = fixture.debugElement.query(By.css('i'));
-      expect(de.context.iconFont).toBe('font-awesome-brand')
+      expect(de.context.iconFont).toBe('font-awesome-brand');
     });
 
   });
 
   describe('Icon text', () => {
-
-    beforeEach(() => {
-      de = fixture.debugElement.query(By.css('i'));
-    });
 
     it('should show icon text if iconFont is empty', () => {
       component.icon = 'icon-name';
@@ -79,7 +69,15 @@ describe('IconComponent', () => {
       expect(de.nativeElement.textContent).toBe('icon-name');
     });
 
-    it('should show icon text if iconFont is NOT font-awesome', () => {
+    it('should show icon text if iconFont is material-icons', () => {
+      component.iconFont = 'material-icons';
+      component.icon = 'icon-name';
+      fixture.detectChanges();
+      de = fixture.debugElement.query(By.css('i'));
+      expect(de.nativeElement.textContent).toBe('icon-name');
+    });
+
+    it('should show icon text if iconFont is glyphicon', () => {
       component.iconFont = 'glyphicon';
       component.icon = 'icon-name';
       fixture.detectChanges();
@@ -87,61 +85,98 @@ describe('IconComponent', () => {
       expect(de.nativeElement.textContent).toBe('icon-name');
     });
 
-    // it('should NOT show icon text if iconFont is font-awesome', () => {
-    //   component.icon = 'icon-name';
-    //   component.iconFont = 'font-awesome';
-    //   fixture.detectChanges();
-    //   de = fixture.debugElement.query(By.css('i'));
-    //   expect(de.nativeElement.textContent).toBe('');
-    // });
+    it('should NOT show icon text if iconFont is font-awesome', () => {
+      component.iconFont = 'font-awesome-brand';
+      component.icon = 'icon-name';
+      fixture.detectChanges();
+      de = fixture.debugElement.query(By.css('i'));
+      expect(de.nativeElement.textContent).toBe('');
+    });
+
+    it('should NOT show icon text if iconFont is initiafy', () => {
+      component.iconFont = 'initiafy';
+      component.icon = 'icon-name';
+      fixture.detectChanges();
+      de = fixture.debugElement.query(By.css('i'));
+      expect(de.nativeElement.textContent).toBe('');
+    });
+
+    it('should NOT show icon text if iconFont is material outlined', () => {
+      component.iconFont = 'material-outlined';
+      component.icon = 'icon-name';
+      fixture.detectChanges();
+      de = fixture.debugElement.query(By.css('i'));
+      expect(de.nativeElement.textContent).toBe('');
+    });
 
   });
 
   describe('Function getIconClasses', () => {
 
     it('should return default icon class when iconFont is empty', () => {
-      let iconClasses = component.classes;
-      expect(iconClasses).toBe('material-icons');
+      const iconClasses = component.iconClasses;
+      expect(iconClasses).toContain('material-icons');
     });
 
-    // it('should return font awesome icon class when iconFont is font-awesome', () => {
-    //   component.iconFont = 'font-awesome';
-    //   fixture.detectChanges();
-    //   let iconClasses = component.classes;
-    //   expect(iconClasses).toContain('fa-');
-    // });
+    it('should return font awesome icon class when iconFont is font-awesome brand', () => {
+      component.iconFont = 'font-awesome-brand';
+      fixture.detectChanges();
+      const iconClasses = component.iconClasses;
+      expect(iconClasses).toContain('fab');
+    });
+
+    it('should return font awesome icon class when iconFont is font-awesome solid', () => {
+      component.iconFont = 'font-awesome-solid';
+      fixture.detectChanges();
+      const iconClasses = component.iconClasses;
+      expect(iconClasses).toContain('fas');
+    });
 
     it('should return glyphicon icon class when iconFont is glyphicon', () => {
       component.iconFont = 'glyphicon';
       fixture.detectChanges();
-      let iconClasses = component.classes;
+      const iconClasses = component.iconClasses;
       expect(iconClasses).toContain('glyphicon');
+    });
+
+    it('should return initiafy icon class when iconFont is initiafy', () => {
+      component.iconFont = 'initiafy';
+      fixture.detectChanges();
+      const iconClasses = component.iconClasses;
+      expect(iconClasses).toContain('initiafy-icons');
     });
 
   });
 
   describe('Function showText', () => {
 
-    // it('should return false if iconFont is font-awesome', () => {
-    //   component.iconFont = 'font-awesome';
-    //   fixture.detectChanges();
-    //   let showText = component.text;
-    //   expect(showText).toBeFalsy();
-    // });
+    it('should return false if iconFont is initiafy', () => {
+      component.iconFont = 'initiafy';
+      fixture.detectChanges();
+      const showText = component.showText;
+      expect(showText).toBeFalsy();
+    });
+
+    it('should return false if iconFont is font-awesome', () => {
+      component.iconFont = 'font-awesome-brand';
+      fixture.detectChanges();
+      const showText = component.showText;
+      expect(showText).toBeFalsy();
+    });
 
     it('should return true if iconFont is any other font than font-awesome', () => {
       component.iconFont = 'glyphicon';
       fixture.detectChanges();
-      let showText = component.text;
+      const showText = component.showText;
       expect(showText).toBeTruthy();
     });
 
     it('should return true if iconFont is empty', () => {
-      let showText = component.text;
+      const showText = component.showText;
       expect(showText).toBeTruthy();
     });
 
   });
-  
+
 });
 
