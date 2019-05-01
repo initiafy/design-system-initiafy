@@ -39,6 +39,11 @@ const routes: Routes = [
     loadChildren: './sections/snack-bar/snack-bar.module#SnackBarModule',
     pathMatch: 'full',
   },
+  {
+    path: 'modal',
+    loadChildren: './sections/modal/modal.module#ModalModule',
+    pathMatch: 'full',
+  },
   { path: 'actions', component: ActionsComponent },
   { path: 'search-bar', component: SearchBarComponent },
   { path: 'buttons', component: ButtonsComponent },

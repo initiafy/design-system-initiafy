@@ -63,7 +63,7 @@ export class DocumentationComponent implements OnInit {
         'typeArguments',
         'comment'
       ],
-      dataSource: this.inputs,
+      dataSource: this.outputs,
       columnDefinitions: [
         {
           columnName: 'name',

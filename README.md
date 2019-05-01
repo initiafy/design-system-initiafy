@@ -20,7 +20,7 @@ The following commands are run from the root, i.e. the same directory as this RE
 
 *Bump package version if not already done*
 
-- Run `npm publish dist`
+- Run `npm run publish-lib`
 
 ### To publish to GH pages
 
