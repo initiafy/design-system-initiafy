@@ -9,6 +9,8 @@ export class LoadingCardComponent implements OnInit {
   @Input() cssClass = '';
   @Input() size: 'small' | 'std' | 'medium' | 'big' | 'full' = 'std';
   @Input() isLoading: boolean = false;
+  @Input() mode: 'indeterminate' | 'determinate' = 'indeterminate';
+  @Input() value: number = null;
 
   constructor() { }
 

@@ -10,6 +10,7 @@ export class LoadingCardDocumentationComponent implements OnInit {
   public componentName = 'LoadingCardComponent';
   public module = 'InitiafyLoadingCardModule';
   public simulatedLoading: boolean;
+  public simulatedDeterminateLoading: boolean;
 
   constructor() { }
 
@@ -18,6 +19,10 @@ export class LoadingCardDocumentationComponent implements OnInit {
 
   public slideChange(event: MatSlideToggleChange) {
     this.simulatedLoading = event.checked;
+  }
+
+  public slideDeterminateChange(event: MatSlideToggleChange) {
+    this.simulatedDeterminateLoading = event.checked;
   }
 
 }

@@ -13,7 +13,8 @@ import {
   IconsComponent,
   StructureComponent,
   CssComponent,
-  DataTableComponent
+  DataTableComponent,
+  CardDocumentationComponent
 } from './sections';
 import { DocumentationService } from './core';
 import {
@@ -45,7 +46,8 @@ export function startupServiceFactory(
     FooterComponent,
     StructureComponent,
     ContentComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    CardDocumentationComponent
   ],
   imports: [
     BrowserModule,

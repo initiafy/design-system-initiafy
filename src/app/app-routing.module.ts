@@ -10,7 +10,8 @@ import {
   SearchBarComponent,
   ButtonsComponent,
   ColorsComponent,
-  GridComponent
+  GridComponent,
+  CardDocumentationComponent
 } from './sections';
 
 const routes: Routes = [
@@ -22,11 +23,6 @@ const routes: Routes = [
   {
     path: 'loading-card',
     loadChildren: './sections/loading-card/loading-card.module#LoadingCardModule',
-    pathMatch: 'full',
-  },
-  {
-    path: 'initiafy-card',
-    loadChildren: './sections/initiafy-card/initiafy-card.module#InitiafyCardModule',
     pathMatch: 'full',
   },
   {
@@ -54,6 +50,7 @@ const routes: Routes = [
   { path: 'structure', component: StructureComponent },
   { path: 'typography', component: TypographyComponent },
   { path: 'data-table', component: DataTableComponent },
+  { path: 'card', component: CardDocumentationComponent },
   { path: '**', redirectTo: '' }
 ];
 
