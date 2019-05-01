@@ -22,7 +22,7 @@
 @mixin button-stroke($var, $color) {
     border: 2px solid $color;
     border: 2px solid $var;
-    background-color: #ffffff;
+    background-color: transparent;
     color: $color;
     color: $var;
 }

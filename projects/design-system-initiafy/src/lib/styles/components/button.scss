@@ -3,17 +3,18 @@
 
 /* Buttons */
 .button {
-  padding: 0 16px;
+  padding: 0 18px;
   height: 40px;
   outline: none;
   border-radius: 100px;
   font-weight: 500;
   position: relative;
   cursor: pointer;
+  letter-spacing: $letter-spacing;
 
   /* Main Button */
   &.stroke {
-    padding: 0 14px;
+    padding: 0 16px;
   }
 
   /* Main Primary Button */
