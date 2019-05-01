@@ -6,7 +6,10 @@
     <markdown ngPreserveWhitespaces>
         ```html
         .flex                       [ set a div to display flex; use .flex-important if needed ]
-        .regular-mobile             [ elements of a flex div change to inline elements in mobile ]
+        .flex-grow                  [ add flex = 1 to a div ]
+        .flex-grow-x                [ add flex property to a div, where x is a number from 1 to 10 ]
+        .flex-x                     [ add flex property to a div, where x is a number from 1 to 10 ]
+        .flex-basis-x-pc            [ add flex basis property to a div, where x is 50 or 100 (per cent) ]
         .column                     [ add this class to set direction as column ]
         .column-tablet              [ add this class to set direction as column in tablet resolution ]
         .column-mobile              [ add this class to set direction as column in mobile resolution ]
@@ -19,10 +22,6 @@
         .wrap-tablet                [ add this class to set flex wrap in tablet resolution ]
         .wrap-mobile                [ add this class to set flex wrap in mobile resolution ]
         .wrap-mobile-small          [ add this class to set flex wrap in mobile small resolution ]
-        .flex-grow                  [ add flex = 1 to a div ]
-        .flex-grow-x                [ add flex property to a div, where x is a number from 1 to 10 ]
-        .flex-x                     [ add flex property to a div, where x is a number from 1 to 10 ]
-        .flex-basis-50-pc           [ add flex basis 50% or 100% property to a div, where x is 50 or 100 ]
         ```
     </markdown>
 
@@ -48,6 +47,7 @@
         .margin-[top|bottom|left|right]-std     [ add standard margin to an element ]
         .padding-std                            [ add standard padding on top, bottom, left and right of an element ]
         .padding-[top|bottom|left|right]-std    [ add standard padding to an element ]
+        .[top|bottom|left|right]-std            [  set position to an element, where x = "auto" or a number from 0 to 32 multiples of 4 ]   
         ```
     </markdown>
     
@@ -64,22 +64,26 @@
     <h3 class="margin-top-32">Display</h3>
     <markdown ngPreserveWhitespaces>
         ```html
-        .hide, .hidden  [  add display none to an element ]                
+        .hide, .hidden  [ add display none to an element ]                
         .show           [ add display block to an element ]                
         .inline         [ add display inline to an element ]                
         .inline-block   [ add display inline-block to an element ]                
         .grid           [ add display grid to an element ]             
         .table          [ add display table to an element ]
+        .mobile-hide    [ add display none to an element on mobile resolution ]
+        .tablet-hide    [ add display none to an element on tablet resolution ]
+        .desktop-hide   [ add display none to an element on desktop resolution ]
         ```
     </markdown>
     
     <h3 class="margin-top-32">Margin</h3>
     <markdown ngPreserveWhitespaces>
         ```html
-        .margin-x                               [  add margin to an element, where x = "auto" or = a number from 0 to 32 multiples of 4]   
-        .margin-[top|bottom|left|right]-x       [  add margin to an element, where x = "auto" or = a number from 0 to 32 multiples of 4 ]   
-        .margin-y-x                             [  add margins top and bottom to an element, where x = "auto" or = a number from 0 to 32 multiples of 4]   
-        .margin-x-x                             [  add margins left and right to an element, where the second x = a number from 0 to 32 multiples of 4 ]       
+        .margin-x                               [  add margin to an element, where x = "auto" or = a number from 0 to 50 multiples of 2 ]   
+        .margin-[top|bottom|left|right]-x       [  add margin to an element, where x = "auto" or = a number from 0 to 50 multiples of 2 ]   
+        .margin-[top|right]-minus-x            [  add negative margin to an element, where x = a number from 0 to 50 multiples of 2 ]   
+        .margin-y-x                             [  add margins top and bottom to an element, where x = "auto" or = a number from 0 to 50 multiples of 2 ]   
+        .margin-x-x                             [  add margins left and right to an element, where the second x = a number from 0 to 50 multiples of 2 ]       
         .elements-margin-[right|left]           [ add a standard margin right or left to all elements inside a div ]
         ```
     </markdown>
@@ -97,12 +101,12 @@
     <h3 class="margin-top-32">Sizes</h3>
     <markdown ngPreserveWhitespaces>
         ```html
-        .width-x        [  add width to an element, where x = a number from 5 to 750 multiples of 5 ]   
-        .max-width-x    [  add max width to an element, where x = a number from 5 to 750 multiples of 5 ]   
-        .min-width-x    [  add min width to an element, where x = a number from 5 to 750 multiples of 5 ]   
-        .height-x       [  add height to an element, where x = a number from 5 to 750 multiples of 5 ]   
-        .max-height-x   [  add max height to an element, where x = a number from 5 to 750 multiples of 5 ]   
-        .min-height-x   [  add min height to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .width-[x|50-pc|100-pc]                 [  add width to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .max-width-[x|50-pc|90-pc|100-pc]       [  add max width to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .min-width-[x|50-pc|100-pc]             [  add min width to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .height-[x|100-pc]                      [  add height to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .max-height-[x|100-pc]                  [  add max height to an element, where x = a number from 5 to 750 multiples of 5 ]   
+        .min-height-x                           [  add min height to an element, where x = a number from 5 to 750 multiples of 5 ]   
         ```
     </markdown>
 
@@ -148,6 +152,20 @@
         .break-word             [ set break-word text to an element ]   
         .no-wrap                [ set white space no-wrap text to an element ]   
         .ellipsis               [ set ellipsis to an element ]   
+        ```
+    </markdown>
+
+    <h3 class="margin-top-32">Breakpoints for media queries</h3>
+    <markdown ngPreserveWhitespaces>
+        ```html
+        $media-mobile-smaller       [  400px  ]
+        $media-mobile-small         [  500px  ]
+        $media-mobile               [  700px  ]
+        $media-tablet-min           [  701px  ]
+        $media-tablet               [  960px  ]
+        $media-desktop-min          [  961px  ]
+        $media-desktop              [  1440px ]
+        $media-large-desktop        [  1441px ]
         ```
     </markdown>
     
