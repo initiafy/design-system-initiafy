@@ -1,13 +1,9 @@
 <p align="center" style="max-width: 217px;"><img alt="initiafy-logo" width="210" src="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2017/12/initiafy-logo.svg"></p>
 
-<p align="center">
-<a href="https://semaphoreci.com/admin-initiafy-25/design-system-initiafy">
-    <img alt="build-status" src="https://semaphoreci.com/api/v1/admin-initiafy-25/design-system-initiafy/branches/master/badge.svg">
-</a>
-</p>
-
 
 # Initiafy Design System
+
+[![Build Status](https://semaphoreci.com/api/v1/admin-initiafy-25/design-system-initiafy/branches/master/badge.svg)](https://semaphoreci.com/admin-initiafy-25/design-system-initiafy)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
