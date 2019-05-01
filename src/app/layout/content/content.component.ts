@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, ViewChild, OnDestroy } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatDrawer } from '@angular/material';
-import { first } from 'rxjs/operators';
 import { Subscription } from 'rxjs';
 
 @Component({
