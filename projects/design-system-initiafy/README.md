@@ -4,7 +4,7 @@ Run `npm install design-system-initiafy` to add the library to your project.
 
 ## Including global css
 
-Add the file `./node_modules/design-system-initiafy/lib/styles/style.min.css` to your angular.json file.
+Add the file `./node_modules/design-system-initiafy/lib/styles/style.min.css` to the styles array of your angular.json file.
 
 ## Peer dependencies
 
