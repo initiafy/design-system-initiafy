@@ -4384,7 +4384,6 @@
 					"sources": [
 						{
 							"fileName": "progress-bar/progress-bar.component.ts",
-							"line": 11,
 							"character": 32
 						}
 					]
@@ -4467,22 +4466,6 @@
 					"kindString": "Property",
 					"flags": {
 						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "progress-bar/progress-bar.component.ts",
-							"line": 11,
-							"character": 16
 						}
 					],
 					"type": {
@@ -4513,10 +4496,6 @@
 						}
 					],
 					"sources": [
-						{
-							"fileName": "progress-bar/progress-bar.component.ts",
-							"line": 19,
-							"character": 11
 						}
 					]
 				},
@@ -4543,8 +4522,6 @@
 					],
 					"sources": [
 						{
-							"fileName": "progress-bar/progress-bar.component.ts",
-							"line": 15,
 							"character": 10
 						}
 					]
