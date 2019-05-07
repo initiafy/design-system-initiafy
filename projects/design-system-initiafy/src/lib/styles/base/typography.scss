@@ -81,6 +81,10 @@ li {
   white-space: nowrap;
 }
 
+.break-newlines {
+  white-space: pre-line;
+}
+
 .ellipsis {
   white-space: nowrap;
   text-overflow: ellipsis;
