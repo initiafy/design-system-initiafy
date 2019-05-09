@@ -80,7 +80,7 @@
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchDefault>
-        <mat-cell *matCellDef="let row" class="block_small_screen"
+        <mat-cell *matCellDef="let row" class="block_small_screen" initiafyResizeable
           [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg" [attr.data-label]="column.title"
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           {{ row[column.columnName] }}

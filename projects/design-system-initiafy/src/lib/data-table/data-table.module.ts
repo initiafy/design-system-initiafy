@@ -11,9 +11,10 @@ import {
   MatInputModule
 } from '@angular/material';
 import { InitiafyButtonModule } from '../button/button.module';
+import { ResizeableDirective } from './data-table/resizeable.directive';
 
 @NgModule({
-  declarations: [InitiafyDataTableComponent],
+  declarations: [InitiafyDataTableComponent, ResizeableDirective],
   imports: [
     CommonModule,
     InitiafyButtonModule,
