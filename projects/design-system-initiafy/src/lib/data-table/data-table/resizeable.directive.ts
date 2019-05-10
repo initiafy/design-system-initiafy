@@ -6,7 +6,6 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 export class ResizeableDirective {
 
   constructor(private el: ElementRef) {
-    el.nativeElement.style.backgroundColor = 'red';
   }
 
   get styles(): CSSStyleDeclaration {
@@ -40,15 +39,40 @@ export class ResizeableDirective {
     return this.styles.getPropertyValue('flex');
   }
 
-  @HostListener('mouseenter') onMouseEnter() {
-    this.flexBasis  = '20%';
-    console.log({
-      width: this.width,
-      flexBasis: this.flexBasis,
-      flexGrow: this.flexGrow,
-      flexShrink: this.flexShrink,
-      flex: this.flex
-    });
+  @HostListener('mouseenter', ['$event']) onMouseEnter(event: MouseEvent) {
+    this.highlightBorder();
+  }
+
+  @HostListener('mousemove', ['$event']) onMouseMove(event: MouseEvent) {
+    const rect = this.el.nativeElement.getBoundingClientRect();
+    const x = event.clientX - rect.left; //x position within the element.
+    // const y = event.clientY - rect.top;  //y position within the element.
+    if (x < (parseInt(this.width.slice(0, -2), 10) / 2)) {
+      this.highlighLeftBorder();
+    } else {
+      this.highlightRightBorder();
+    }
+  }
+
+  @HostListener('mouseleave', ['$event']) onMouseLeave(event: MouseEvent) {
+    this.unHighlightBorder();
+  }
+
+  private highlightBorder(): void {
+    this.el.nativeElement.style.borderLeft = '1px solid black';
+    this.el.nativeElement.style.borderRight = '1px solid black';
+  }
+  private unHighlightBorder(): void {
+    this.el.nativeElement.style.borderLeft = 'none';
+    this.el.nativeElement.style.borderRight = 'none';
+  }
+  private highlighLeftBorder(): void {
+    this.el.nativeElement.style.borderLeft = '1px solid black';
+    this.el.nativeElement.style.borderRight = 'none';
+  }
+  private highlightRightBorder(): void {
+    this.el.nativeElement.style.borderRight = '1px solid black';
+    this.el.nativeElement.style.borderLeft = 'none';
   }
 
 }

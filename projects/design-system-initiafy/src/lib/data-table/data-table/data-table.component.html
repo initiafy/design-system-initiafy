@@ -24,7 +24,7 @@
   </ng-container>
   <ng-container *ngFor="let column of dataTableSettings.columnDefinitions; trackBy: trackByColumnName"
     [matColumnDef]="column.columnName">
-    <mat-header-cell *matHeaderCellDef mat-sort-header
+    <mat-header-cell *matHeaderCellDef mat-sort-header initiafyResizeable
       [class.customExtraCheckboxColumnClass]="column.mode === 'extra-checkbox'"
       [ngClass]="smallcreen ? column.customHeaderClassSm : column.customHeaderClassLg">
       {{ column.title }}
@@ -80,7 +80,7 @@
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchDefault>
-        <mat-cell *matCellDef="let row" class="block_small_screen" initiafyResizeable
+        <mat-cell *matCellDef="let row" class="block_small_screen" 
           [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg" [attr.data-label]="column.title"
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           {{ row[column.columnName] }}
