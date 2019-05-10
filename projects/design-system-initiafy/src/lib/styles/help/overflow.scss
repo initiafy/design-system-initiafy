@@ -14,7 +14,9 @@
 .hide-scroll::-webkit-scrollbar { 
     display: none;  // Safari and Chrome
 }
+
+/* Basic Internal scroll form modals */
 .internal-scroll-content {
-    max-height: 60vh;
-    overflow: auto;
+	max-height: 60vh;
+	overflow: auto;
 }
