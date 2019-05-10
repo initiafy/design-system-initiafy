@@ -36,6 +36,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
+    path: 'action-bar',
+    loadChildren: './sections/action-bar/action-bar.module#ActionBarModule',
+    pathMatch: 'full',
+  },
+  {
     path: 'modal',
     loadChildren: './sections/modal/modal.module#ModalModule',
     pathMatch: 'full',
