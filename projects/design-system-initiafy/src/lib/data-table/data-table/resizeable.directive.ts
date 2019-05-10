@@ -45,7 +45,7 @@ export class ResizeableDirective {
 
   @HostListener('mousemove', ['$event']) onMouseMove(event: MouseEvent) {
     const rect = this.el.nativeElement.getBoundingClientRect();
-    const x = event.clientX - rect.left; //x position within the element.
+    const x = event.clientX - rect.left; // x position within the element.
     // const y = event.clientY - rect.top;  //y position within the element.
     if (x < (parseInt(this.width.slice(0, -2), 10) / 2)) {
       this.highlighLeftBorder();

@@ -1,4 +1,4 @@
-<mat-table [dataSource]="dataTableSettings.dataSource">
+<mat-table [dataSource]="dataTableSettings.dataSource" class='justify-content-center'>
   <ng-container matColumnDef="checkbox">
     <mat-header-cell *matHeaderCellDef mat-sort-header [ngClass]="'customCheckboxColumnClass'">
       <mat-checkbox [checked]="isAllSelected" [indeterminate]="areSomeSelected" (change)="masterCheckboxChange($event)">
@@ -26,33 +26,34 @@
     [matColumnDef]="column.columnName">
     <mat-header-cell *matHeaderCellDef mat-sort-header initiafyResizeable
       [class.customExtraCheckboxColumnClass]="column.mode === 'extra-checkbox'"
+      class="noselect justify-content-center"
       [ngClass]="smallcreen ? column.customHeaderClassSm : column.customHeaderClassLg">
       {{ column.title }}
     </mat-header-cell>
     <ng-container [ngSwitch]="column.mode">
       <ng-container *ngSwitchCase="'nested'">
-        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title"
+        <mat-cell *matCellDef="let row" class="block_small_screen justify-content-center" [attr.data-label]="column.title"
           [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           {{ getNestedValue(column, row) }}
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchCase="'count'">
-        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title"
+        <mat-cell *matCellDef="let row" class="block_small_screen justify-content-center" [attr.data-label]="column.title"
           [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           {{ row.cnt }}
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchCase="'transformer'">
-        <mat-cell *matCellDef="let row" class="block_small_screen" [attr.data-label]="column.title"
+        <mat-cell *matCellDef="let row" class="block_small_screen justify-content-center" [attr.data-label]="column.title"
           [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           {{ column.transformer(row) }}
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchCase="'extra-checkbox'">
-        <mat-cell *matCellDef="let row" class="block_small_screen customExtraCheckboxColumnClass"
+        <mat-cell *matCellDef="let row" class="block_small_screen justify-content-center customExtraCheckboxColumnClass"
           [attr.data-label]="column.title" [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           <mat-checkbox [disabled]="column.disableFormField(row)"
@@ -70,7 +71,7 @@
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchCase="'input'">
-        <mat-cell *matCellDef="let row" [attr.data-label]="column.title" class="block_small_screen input-cell"
+        <mat-cell *matCellDef="let row" [attr.data-label]="column.title" class="block_small_screen justify-content-center input-cell"
           [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg"
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           <mat-form-field class="column-input-form-field" floatLabel="always">
@@ -80,7 +81,7 @@
         </mat-cell>
       </ng-container>
       <ng-container *ngSwitchDefault>
-        <mat-cell *matCellDef="let row" class="block_small_screen" 
+        <mat-cell *matCellDef="let row" class="block_small_screen justify-content-center" 
           [ngClass]="smallcreen ? column.customCellClassSm : column.customCellClassLg" [attr.data-label]="column.title"
           (click)="handleCellClick(column, row)" [class.pointer]="column.handleCellClick">
           {{ row[column.columnName] }}
