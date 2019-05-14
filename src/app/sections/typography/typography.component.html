@@ -11,7 +11,7 @@
         <h3 class="margin-top-0">The quick brown fox jumps over the lazy dog</h3>
         <h4 class="margin-top-0">The quick brown fox jumps over the lazy dog</h4>
     </div>
-    <div class="margin-bottom-32" *ngIf="showCode">
+    <div class="margin-bottom-32">
         <markdown ngPreserveWhitespaces>
             ```html
             <h1>The quick brown fox jumps over the lazy dog</h1>
@@ -27,7 +27,7 @@
     <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas viverra pellentesque turpis, eget ullamcorper lorem lacinia in. Aliquam id porttitor felis. Mauris vel faucibus arcu, ornare sollicitudin magna. Etiam luctus lorem quis dui viverra suscipit. In velit turpis, ullamcorper eget ex vel, ullamcorper volutpat elit. </p>
     </div>
-    <div class="margin-bottom-32" *ngIf="showCode">
+    <div class="margin-bottom-32">
         <markdown ngPreserveWhitespaces>
             ```html
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
@@ -46,7 +46,7 @@
         <p> Lorem ipsum dolor sit amet <span class="lowercase">lowercase text</span> onsectetur adipiscing elit.</p>
         <p> Lorem ipsum dolor sit amet <a href="/">this is a link</a> onsectetur adipiscing elit.</p>
     </div>
-    <div class="margin-bottom-32" *ngIf="showCode">
+    <div class="margin-bottom-32">
         <markdown ngPreserveWhitespaces>
             ```html
             <span class="bold">bold text</span>
@@ -62,9 +62,16 @@
     <h2 class="margin-top-32">Sizes</h2>
     <p>Font sizes from 8px to 100px, multiples of 2</p>
     <div class="white-bgcolor bg-std radius-std shadow-std padding-std">
-        <p *ngFor="let item of array(20); let i = index">
+        <p *ngFor="let item of array(10); let i = index">
             <span *ngIf="i > 3" class="text{{ (i + 1) * 2 }} margin-0">Text with font size {{ (i + 1) * 2 }}px </span>
         </p>
+    </div>
+    <div class="margin-bottom-32">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <span class="text20">Text with font size 20</span>
+               ```
+        </markdown>
     </div>
 
 </initiafy-card>
