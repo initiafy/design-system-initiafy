@@ -11,6 +11,7 @@ import { filter } from 'rxjs/operators';
 export class ModalComponent implements OnInit, OnDestroy {
   @Input() overlay = false;
   @Input() hideCloseButton = false;
+  @Input() size: 'regular' | 'full' = 'regular';
   @Output() close = new EventEmitter();
   private routerSubscription: Subscription;
 

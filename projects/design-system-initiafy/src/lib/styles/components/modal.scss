@@ -47,6 +47,22 @@
   }
 }
 
+/* Full size */
+.initiafy-modal.full {
+  .initiafy-modal-root {
+    padding: 0;
+    @media only screen and (max-width: $media-desktop) {
+      padding: 0;
+    }
+    @media only screen and (max-width: $media-mobile-small) {
+      padding: 0;
+    }
+  }
+  .initiafy-modal-content {
+    max-width: 100%;
+  }
+}
+
 /* Overlayer */
 .bgOverlayer {
   width: 100%;
