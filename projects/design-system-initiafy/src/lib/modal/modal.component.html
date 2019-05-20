@@ -1,4 +1,4 @@
-<div class="initiafy-modal" [class.is-overlay]="overlay">
+<div class="initiafy-modal" [class.is-overlay]="overlay" [ngClass]="size">
   <div class="initiafy-modal-root">
     <div class="initiafy-modal-close" (click)="close.emit()" *ngIf="!hideCloseButton">
       <initiafy-icon icon="close"></initiafy-icon>

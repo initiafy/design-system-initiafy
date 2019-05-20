@@ -7,6 +7,9 @@
 .overflow-hidden {
     overflow: hidden;
 }
+.overflow-auto {
+    overflow: auto;
+}
 .hide-scroll {
     -ms-overflow-style: none;  // IE 10+
     overflow: -moz-scrollbars-none;  // Firefox
