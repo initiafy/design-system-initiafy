@@ -81,6 +81,14 @@ li {
   white-space: nowrap;
 }
 
+.break-newlines {
+  white-space: pre-line;
+}
+
+.first-letter-capital::first-letter {
+  text-transform: uppercase;
+}
+
 .ellipsis {
   white-space: nowrap;
   text-overflow: ellipsis;

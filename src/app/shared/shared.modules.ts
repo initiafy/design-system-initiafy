@@ -19,7 +19,8 @@ import {
     MatSidenavModule,
     MatSlideToggleModule,
     MatSnackBarModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatDividerModule
 } from '@angular/material';
 import {
     InitiafyHeaderModule,
@@ -50,6 +51,7 @@ import {
         CommonModule,
         MatCardModule,
         MatCheckboxModule,
+        MatDividerModule,
         MatExpansionModule,
         MatFormFieldModule,
         MatIconModule,
@@ -103,6 +105,7 @@ import {
         CommonModule,
         MatCardModule,
         MatCheckboxModule,
+        MatDividerModule,
         MatExpansionModule,
         MatFormFieldModule,
         MatIconModule,
