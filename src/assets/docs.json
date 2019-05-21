@@ -4615,7 +4615,7 @@
 						"name": "Directive"
 					},
 					"arguments": {
-						"obj": "{\n  selector: '[initiafyResizeable]'\n}"
+						"obj": "{\r\n  selector: '[initiafyResizeable]'\r\n}"
 					}
 				}
 			],

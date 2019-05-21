@@ -1,9 +1,10 @@
 import { Component, OnInit, AfterViewInit, Input, EventEmitter, Output, ViewChild, ViewChildren, QueryList } from '@angular/core';
 import { DataTableSettings } from '../models/data-column-settings';
 import { SelectionModel } from '@angular/cdk/collections';
-import { MatPaginator, MatSort, MatCheckbox, PageEvent, MatCheckboxChange } from '@angular/material';
+import { MatPaginator, MatSort, MatCheckbox, PageEvent, MatCheckboxChange, MatCell } from '@angular/material';
 import { DataColumnMode } from '../models/data-column-mode';
 import { DataColumnDefinition } from '../models/data-column-definition';
+import { ResizeableDirective } from './resizeable.directive';
 
 // see here https://stackblitz.com/edit/angular-material-table-responsive?file=app%2Fapp.component.html
 
@@ -38,6 +39,8 @@ export class InitiafyDataTableComponent<T> implements OnInit, AfterViewInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   @ViewChildren(MatCheckbox) checkboxes: QueryList<MatCheckbox>;
+  // select viewchildren with resizable directive
+  @ViewChildren(ResizeableDirective) resizableEls: QueryList<MatCell>;
   private _itemsShown: T[];
   constructor() { }
   ngAfterViewInit() {
@@ -49,6 +52,7 @@ export class InitiafyDataTableComponent<T> implements OnInit, AfterViewInit {
       const endIndex = startIndex + pageEvent.pageSize;
       this._itemsShown = this.dataTableSettings.dataSource.filteredData.slice(startIndex, endIndex);
     });
+    console.log(this.resizableEls);
   }
   ngOnInit() {
     // Warn for proper usage of checkboxes and selection model
