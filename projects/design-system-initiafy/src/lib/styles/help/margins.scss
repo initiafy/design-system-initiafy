@@ -3,6 +3,8 @@
 /* Margin options 0/2/4/6/.../98/100 */
 @for $i from 25 through 0 {
   .margin-#{$i*2} { margin: #{$i*2}px; }
+}
+@for $i from 25 through 0 {
   .margin-x-#{$i*2} { margin-left: #{$i*2}px; margin-right: #{$i*2}px; }
   .margin-y-#{$i*2} { margin-top: #{$i*2}px; margin-bottom: #{$i*2}px; }
   .margin-top-#{$i*2} { margin-top: #{$i*2}px; }
