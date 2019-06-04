@@ -1306,7 +1306,7 @@
 							}
 						]
 					},
-					"defaultValue": "\"submit\""
+					"defaultValue": "\"button\""
 				},
 				{
 					"id": 57,
