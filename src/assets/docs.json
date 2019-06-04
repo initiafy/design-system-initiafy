@@ -5,7 +5,7 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 83,
+			"id": 84,
 			"name": "DataColumnMode",
 			"kind": 4,
 			"kindString": "Enumeration",
@@ -14,7 +14,7 @@
 			},
 			"children": [
 				{
-					"id": 88,
+					"id": 89,
 					"name": "checkbox",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -31,7 +31,7 @@
 					"defaultValue": "\"extra-checkbox\""
 				},
 				{
-					"id": 84,
+					"id": 85,
 					"name": "count",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -48,7 +48,7 @@
 					"defaultValue": "\"count\""
 				},
 				{
-					"id": 89,
+					"id": 90,
 					"name": "input",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -65,7 +65,7 @@
 					"defaultValue": "\"input\""
 				},
 				{
-					"id": 90,
+					"id": 91,
 					"name": "list",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -82,7 +82,7 @@
 					"defaultValue": "\"list\""
 				},
 				{
-					"id": 87,
+					"id": 88,
 					"name": "menu",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -99,7 +99,7 @@
 					"defaultValue": "\"menu\""
 				},
 				{
-					"id": 85,
+					"id": 86,
 					"name": "nested",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -116,7 +116,7 @@
 					"defaultValue": "\"nested\""
 				},
 				{
-					"id": 86,
+					"id": 87,
 					"name": "transformer",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -138,13 +138,13 @@
 					"title": "Enumeration members",
 					"kind": 16,
 					"children": [
-						88,
-						84,
 						89,
-						90,
-						87,
 						85,
-						86
+						90,
+						91,
+						88,
+						86,
+						87
 					]
 				}
 			],
@@ -1567,7 +1567,7 @@
 			],
 			"children": [
 				{
-					"id": 66,
+					"id": 67,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -1576,7 +1576,7 @@
 					},
 					"signatures": [
 						{
-							"id": 67,
+							"id": 68,
 							"name": "new ContentComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -1591,13 +1591,43 @@
 					"sources": [
 						{
 							"fileName": "core-components/content/content.component.ts",
-							"line": 8,
-							"character": 49
+							"line": 9,
+							"character": 28
 						}
 					]
 				},
 				{
-					"id": 68,
+					"id": 66,
+					"name": "cssClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/content/content.component.ts",
+							"line": 9,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 69,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1606,7 +1636,7 @@
 					},
 					"signatures": [
 						{
-							"id": 69,
+							"id": 70,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1620,7 +1650,7 @@
 					"sources": [
 						{
 							"fileName": "core-components/content/content.component.ts",
-							"line": 12,
+							"line": 13,
 							"character": 10
 						}
 					]
@@ -1631,6 +1661,13 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
+						67
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
 						66
 					]
 				},
@@ -1638,7 +1675,7 @@
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						68
+						69
 					]
 				}
 			],
@@ -1657,7 +1694,7 @@
 			]
 		},
 		{
-			"id": 71,
+			"id": 72,
 			"name": "HeaderComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -1678,7 +1715,7 @@
 			],
 			"children": [
 				{
-					"id": 72,
+					"id": 73,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -1687,7 +1724,7 @@
 					},
 					"signatures": [
 						{
-							"id": 73,
+							"id": 74,
 							"name": "new HeaderComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -1695,7 +1732,7 @@
 							"type": {
 								"type": "reference",
 								"name": "HeaderComponent",
-								"id": 71
+								"id": 72
 							}
 						}
 					],
@@ -1708,7 +1745,7 @@
 					]
 				},
 				{
-					"id": 74,
+					"id": 75,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -1717,7 +1754,7 @@
 					},
 					"signatures": [
 						{
-							"id": 75,
+							"id": 76,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -1742,14 +1779,14 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						72
+						73
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						74
+						75
 					]
 				}
 			],
@@ -2265,7 +2302,7 @@
 			]
 		},
 		{
-			"id": 70,
+			"id": 71,
 			"name": "InitiafyContentModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -2293,7 +2330,7 @@
 			]
 		},
 		{
-			"id": 164,
+			"id": 165,
 			"name": "InitiafyDataTableComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -2317,7 +2354,7 @@
 			],
 			"typeParameter": [
 				{
-					"id": 165,
+					"id": 166,
 					"name": "T",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -2326,7 +2363,7 @@
 			],
 			"children": [
 				{
-					"id": 178,
+					"id": 179,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -2335,7 +2372,7 @@
 					},
 					"signatures": [
 						{
-							"id": 179,
+							"id": 180,
 							"name": "new InitiafyDataTableComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -2343,7 +2380,7 @@
 							"type": {
 								"type": "reference",
 								"name": "InitiafyDataTableComponent",
-								"id": 164
+								"id": 165
 							}
 						}
 					],
@@ -2356,7 +2393,7 @@
 					]
 				},
 				{
-					"id": 177,
+					"id": 178,
 					"name": "_itemsShown",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2380,7 +2417,7 @@
 					}
 				},
 				{
-					"id": 168,
+					"id": 169,
 					"name": "_selectionModelValue",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2406,7 +2443,7 @@
 					}
 				},
 				{
-					"id": 176,
+					"id": 177,
 					"name": "checkboxes",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2444,7 +2481,7 @@
 					}
 				},
 				{
-					"id": 166,
+					"id": 167,
 					"name": "clickedItem",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2465,7 +2502,7 @@
 					}
 				},
 				{
-					"id": 167,
+					"id": 168,
 					"name": "dataTableSettings",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2492,7 +2529,7 @@
 					"type": {
 						"type": "reference",
 						"name": "DataTableSettings",
-						"id": 130,
+						"id": 131,
 						"typeArguments": [
 							{
 								"type": "typeParameter",
@@ -2502,7 +2539,7 @@
 					}
 				},
 				{
-					"id": 174,
+					"id": 175,
 					"name": "paginator",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2534,7 +2571,7 @@
 					}
 				},
 				{
-					"id": 171,
+					"id": 172,
 					"name": "selectionModelChange",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2571,7 +2608,7 @@
 					"defaultValue": " new EventEmitter()"
 				},
 				{
-					"id": 175,
+					"id": 176,
 					"name": "sort",
 					"kind": 1024,
 					"kindString": "Property",
@@ -2603,7 +2640,7 @@
 					}
 				},
 				{
-					"id": 190,
+					"id": 191,
 					"name": "areSomeSelected",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -2613,7 +2650,7 @@
 					},
 					"getSignature": [
 						{
-							"id": 191,
+							"id": 192,
 							"name": "__get",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -2633,7 +2670,7 @@
 					]
 				},
 				{
-					"id": 188,
+					"id": 189,
 					"name": "isAllSelected",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -2643,7 +2680,7 @@
 					},
 					"getSignature": [
 						{
-							"id": 189,
+							"id": 190,
 							"name": "__get",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -2663,7 +2700,7 @@
 					]
 				},
 				{
-					"id": 169,
+					"id": 170,
 					"name": "selectionModel",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -2682,7 +2719,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 170,
+							"id": 171,
 							"name": "__get",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -2701,14 +2738,14 @@
 					],
 					"setSignature": [
 						{
-							"id": 172,
+							"id": 173,
 							"name": "__set",
 							"kind": 1048576,
 							"kindString": "Set signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 173,
+									"id": 174,
 									"name": "val",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2745,7 +2782,7 @@
 					]
 				},
 				{
-					"id": 202,
+					"id": 203,
 					"name": "smallcreen",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -2754,7 +2791,7 @@
 					},
 					"getSignature": [
 						{
-							"id": 203,
+							"id": 204,
 							"name": "__get",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -2774,7 +2811,7 @@
 					]
 				},
 				{
-					"id": 184,
+					"id": 185,
 					"name": "checkboxChange",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2784,14 +2821,14 @@
 					},
 					"signatures": [
 						{
-							"id": 185,
+							"id": 186,
 							"name": "checkboxChange",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 186,
+									"id": 187,
 									"name": "event",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2802,7 +2839,7 @@
 									}
 								},
 								{
-									"id": 187,
+									"id": 188,
 									"name": "row",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2828,7 +2865,7 @@
 					]
 				},
 				{
-					"id": 212,
+					"id": 213,
 					"name": "getNestedValue",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2837,14 +2874,14 @@
 					},
 					"signatures": [
 						{
-							"id": 213,
+							"id": 214,
 							"name": "getNestedValue",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 214,
+									"id": 215,
 									"name": "column",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2852,7 +2889,7 @@
 									"type": {
 										"type": "reference",
 										"name": "DataColumnDefinition",
-										"id": 91,
+										"id": 92,
 										"typeArguments": [
 											{
 												"type": "typeParameter",
@@ -2862,7 +2899,7 @@
 									}
 								},
 								{
-									"id": 215,
+									"id": 216,
 									"name": "row",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2888,7 +2925,7 @@
 					]
 				},
 				{
-					"id": 208,
+					"id": 209,
 					"name": "handleCellClick",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2898,14 +2935,14 @@
 					},
 					"signatures": [
 						{
-							"id": 209,
+							"id": 210,
 							"name": "handleCellClick",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 210,
+									"id": 211,
 									"name": "column",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2913,7 +2950,7 @@
 									"type": {
 										"type": "reference",
 										"name": "DataColumnDefinition",
-										"id": 91,
+										"id": 92,
 										"typeArguments": [
 											{
 												"type": "typeParameter",
@@ -2923,7 +2960,7 @@
 									}
 								},
 								{
-									"id": 211,
+									"id": 212,
 									"name": "row",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2949,7 +2986,7 @@
 					]
 				},
 				{
-					"id": 204,
+					"id": 205,
 					"name": "handleRowClick",
 					"kind": 2048,
 					"kindString": "Method",
@@ -2959,14 +2996,14 @@
 					},
 					"signatures": [
 						{
-							"id": 205,
+							"id": 206,
 							"name": "handleRowClick",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 206,
+									"id": 207,
 									"name": "event",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -2977,7 +3014,7 @@
 									}
 								},
 								{
-									"id": 207,
+									"id": 208,
 									"name": "row",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3003,7 +3040,7 @@
 					]
 				},
 				{
-					"id": 192,
+					"id": 193,
 					"name": "isItemSelected",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3013,14 +3050,14 @@
 					},
 					"signatures": [
 						{
-							"id": 193,
+							"id": 194,
 							"name": "isItemSelected",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 194,
+									"id": 195,
 									"name": "row",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3046,7 +3083,7 @@
 					]
 				},
 				{
-					"id": 216,
+					"id": 217,
 					"name": "isRowSelected",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3055,14 +3092,14 @@
 					},
 					"signatures": [
 						{
-							"id": 217,
+							"id": 218,
 							"name": "isRowSelected",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 218,
+									"id": 219,
 									"name": "row",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3088,7 +3125,7 @@
 					]
 				},
 				{
-					"id": 195,
+					"id": 196,
 					"name": "masterCheckboxChange",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3098,14 +3135,14 @@
 					},
 					"signatures": [
 						{
-							"id": 196,
+							"id": 197,
 							"name": "masterCheckboxChange",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 197,
+									"id": 198,
 									"name": "event",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3131,7 +3168,7 @@
 					]
 				},
 				{
-					"id": 180,
+					"id": 181,
 					"name": "ngAfterViewInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3140,7 +3177,7 @@
 					},
 					"signatures": [
 						{
-							"id": 181,
+							"id": 182,
 							"name": "ngAfterViewInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3160,7 +3197,7 @@
 					]
 				},
 				{
-					"id": 182,
+					"id": 183,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3169,7 +3206,7 @@
 					},
 					"signatures": [
 						{
-							"id": 183,
+							"id": 184,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3189,7 +3226,7 @@
 					]
 				},
 				{
-					"id": 198,
+					"id": 199,
 					"name": "trackByColumnName",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3199,14 +3236,14 @@
 					},
 					"signatures": [
 						{
-							"id": 199,
+							"id": 200,
 							"name": "trackByColumnName",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 200,
+									"id": 201,
 									"name": "column",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3214,7 +3251,7 @@
 									"type": {
 										"type": "reference",
 										"name": "DataColumnDefinition",
-										"id": 91,
+										"id": 92,
 										"typeArguments": [
 											{
 												"type": "typeParameter",
@@ -3224,7 +3261,7 @@
 									}
 								},
 								{
-									"id": 201,
+									"id": 202,
 									"name": "index",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -3255,47 +3292,47 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						178
+						179
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
+						178,
+						169,
 						177,
-						168,
-						176,
-						166,
 						167,
-						174,
-						171,
-						175
+						168,
+						175,
+						172,
+						176
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						190,
-						188,
-						169,
-						202
+						191,
+						189,
+						170,
+						203
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						184,
-						212,
-						208,
-						204,
-						192,
-						216,
-						195,
-						180,
-						182,
-						198
+						185,
+						213,
+						209,
+						205,
+						193,
+						217,
+						196,
+						181,
+						183,
+						199
 					]
 				}
 			],
@@ -3318,7 +3355,7 @@
 			]
 		},
 		{
-			"id": 219,
+			"id": 220,
 			"name": "InitiafyDataTableModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3346,7 +3383,7 @@
 			]
 		},
 		{
-			"id": 76,
+			"id": 77,
 			"name": "InitiafyHeaderModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3402,7 +3439,7 @@
 			]
 		},
 		{
-			"id": 243,
+			"id": 244,
 			"name": "InitiafyLoadingCardModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3430,7 +3467,7 @@
 			]
 		},
 		{
-			"id": 260,
+			"id": 261,
 			"name": "InitiafyModalModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3458,7 +3495,7 @@
 			]
 		},
 		{
-			"id": 242,
+			"id": 243,
 			"name": "InitiafyProgressBarModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3486,7 +3523,7 @@
 			]
 		},
 		{
-			"id": 270,
+			"id": 271,
 			"name": "InitiafyResultModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3514,7 +3551,7 @@
 			]
 		},
 		{
-			"id": 295,
+			"id": 296,
 			"name": "InitiafySearchBarModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3542,7 +3579,7 @@
 			]
 		},
 		{
-			"id": 82,
+			"id": 83,
 			"name": "InitiafySidenavModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3570,7 +3607,7 @@
 			]
 		},
 		{
-			"id": 343,
+			"id": 344,
 			"name": "InitiafySnackBarModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3598,7 +3635,7 @@
 			]
 		},
 		{
-			"id": 349,
+			"id": 350,
 			"name": "InitiafySpinnerModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3626,7 +3663,7 @@
 			]
 		},
 		{
-			"id": 375,
+			"id": 376,
 			"name": "InitiafyYesOrNoModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3654,7 +3691,7 @@
 			]
 		},
 		{
-			"id": 220,
+			"id": 221,
 			"name": "LoadingCardComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -3675,7 +3712,7 @@
 			],
 			"children": [
 				{
-					"id": 226,
+					"id": 227,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -3684,7 +3721,7 @@
 					},
 					"signatures": [
 						{
-							"id": 227,
+							"id": 228,
 							"name": "new LoadingCardComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -3692,7 +3729,7 @@
 							"type": {
 								"type": "reference",
 								"name": "LoadingCardComponent",
-								"id": 220
+								"id": 221
 							}
 						}
 					],
@@ -3705,7 +3742,7 @@
 					]
 				},
 				{
-					"id": 221,
+					"id": 222,
 					"name": "cssClass",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3736,7 +3773,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 223,
+					"id": 224,
 					"name": "isLoading",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3767,7 +3804,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 224,
+					"id": 225,
 					"name": "mode",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3807,7 +3844,7 @@
 					"defaultValue": "\"indeterminate\""
 				},
 				{
-					"id": 222,
+					"id": 223,
 					"name": "size",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3859,7 +3896,7 @@
 					"defaultValue": "\"std\""
 				},
 				{
-					"id": 225,
+					"id": 226,
 					"name": "value",
 					"kind": 1024,
 					"kindString": "Property",
@@ -3890,7 +3927,7 @@
 					"defaultValue": " null"
 				},
 				{
-					"id": 230,
+					"id": 231,
 					"name": "classes",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -3899,7 +3936,7 @@
 					},
 					"getSignature": [
 						{
-							"id": 231,
+							"id": 232,
 							"name": "__get",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -3919,7 +3956,7 @@
 					]
 				},
 				{
-					"id": 228,
+					"id": 229,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -3928,7 +3965,7 @@
 					},
 					"signatures": [
 						{
-							"id": 229,
+							"id": 230,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -3953,32 +3990,32 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						226
+						227
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						221,
-						223,
-						224,
 						222,
-						225
+						224,
+						225,
+						223,
+						226
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						230
+						231
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						228
+						229
 					]
 				}
 			],
@@ -3997,7 +4034,7 @@
 			]
 		},
 		{
-			"id": 244,
+			"id": 245,
 			"name": "ModalComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -4018,7 +4055,7 @@
 			],
 			"children": [
 				{
-					"id": 250,
+					"id": 251,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -4027,14 +4064,14 @@
 					},
 					"signatures": [
 						{
-							"id": 252,
+							"id": 253,
 							"name": "new ModalComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 253,
+									"id": 254,
 									"name": "router",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -4048,7 +4085,7 @@
 							"type": {
 								"type": "reference",
 								"name": "ModalComponent",
-								"id": 244
+								"id": 245
 							}
 						}
 					],
@@ -4061,7 +4098,7 @@
 					]
 				},
 				{
-					"id": 248,
+					"id": 249,
 					"name": "close",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4098,7 +4135,7 @@
 					"defaultValue": " new EventEmitter()"
 				},
 				{
-					"id": 246,
+					"id": 247,
 					"name": "hideCloseButton",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4129,7 +4166,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 245,
+					"id": 246,
 					"name": "overlay",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4160,7 +4197,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 251,
+					"id": 252,
 					"name": "router",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4182,7 +4219,7 @@
 					}
 				},
 				{
-					"id": 249,
+					"id": 250,
 					"name": "routerSubscription",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4203,7 +4240,7 @@
 					}
 				},
 				{
-					"id": 247,
+					"id": 248,
 					"name": "size",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4243,7 +4280,7 @@
 					"defaultValue": "\"regular\""
 				},
 				{
-					"id": 256,
+					"id": 257,
 					"name": "ngOnDestroy",
 					"kind": 2048,
 					"kindString": "Method",
@@ -4252,7 +4289,7 @@
 					},
 					"signatures": [
 						{
-							"id": 257,
+							"id": 258,
 							"name": "ngOnDestroy",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -4272,7 +4309,7 @@
 					]
 				},
 				{
-					"id": 254,
+					"id": 255,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -4281,7 +4318,7 @@
 					},
 					"signatures": [
 						{
-							"id": 255,
+							"id": 256,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -4301,7 +4338,7 @@
 					]
 				},
 				{
-					"id": 258,
+					"id": 259,
 					"name": "subscribeRouterEvents",
 					"kind": 2048,
 					"kindString": "Method",
@@ -4311,7 +4348,7 @@
 					},
 					"signatures": [
 						{
-							"id": 259,
+							"id": 260,
 							"name": "subscribeRouterEvents",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -4336,28 +4373,28 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						250
+						251
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						248,
-						246,
-						245,
-						251,
 						249,
-						247
+						247,
+						246,
+						252,
+						250,
+						248
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						256,
-						254,
-						258
+						257,
+						255,
+						259
 					]
 				}
 			],
@@ -4380,7 +4417,7 @@
 			]
 		},
 		{
-			"id": 232,
+			"id": 233,
 			"name": "ProgressBarComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -4401,7 +4438,7 @@
 			],
 			"children": [
 				{
-					"id": 236,
+					"id": 237,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -4410,7 +4447,7 @@
 					},
 					"signatures": [
 						{
-							"id": 237,
+							"id": 238,
 							"name": "new ProgressBarComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -4418,7 +4455,7 @@
 							"type": {
 								"type": "reference",
 								"name": "ProgressBarComponent",
-								"id": 232
+								"id": 233
 							}
 						}
 					],
@@ -4431,7 +4468,7 @@
 					]
 				},
 				{
-					"id": 233,
+					"id": 234,
 					"name": "isLoading",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4462,7 +4499,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 234,
+					"id": 235,
 					"name": "mode",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4502,7 +4539,7 @@
 					"defaultValue": "\"indeterminate\""
 				},
 				{
-					"id": 235,
+					"id": 236,
 					"name": "value",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4536,7 +4573,7 @@
 					"defaultValue": " null"
 				},
 				{
-					"id": 240,
+					"id": 241,
 					"name": "width",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -4545,7 +4582,7 @@
 					},
 					"getSignature": [
 						{
-							"id": 241,
+							"id": 242,
 							"name": "__get",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -4565,7 +4602,7 @@
 					]
 				},
 				{
-					"id": 238,
+					"id": 239,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -4574,7 +4611,7 @@
 					},
 					"signatures": [
 						{
-							"id": 239,
+							"id": 240,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -4599,30 +4636,30 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						236
+						237
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						233,
 						234,
-						235
+						235,
+						236
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						240
+						241
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						238
+						239
 					]
 				}
 			],
@@ -4641,7 +4678,7 @@
 			]
 		},
 		{
-			"id": 261,
+			"id": 262,
 			"name": "ResultComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -4662,7 +4699,7 @@
 			],
 			"children": [
 				{
-					"id": 266,
+					"id": 267,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -4671,7 +4708,7 @@
 					},
 					"signatures": [
 						{
-							"id": 267,
+							"id": 268,
 							"name": "new ResultComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -4679,7 +4716,7 @@
 							"type": {
 								"type": "reference",
 								"name": "ResultComponent",
-								"id": 261
+								"id": 262
 							}
 						}
 					],
@@ -4692,7 +4729,7 @@
 					]
 				},
 				{
-					"id": 265,
+					"id": 266,
 					"name": "hasData",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4723,7 +4760,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 262,
+					"id": 263,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4754,7 +4791,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 263,
+					"id": 264,
 					"name": "iconFont",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4785,7 +4822,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 264,
+					"id": 265,
 					"name": "message",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4816,7 +4853,7 @@
 					"defaultValue": "\"\""
 				},
 				{
-					"id": 268,
+					"id": 269,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -4825,7 +4862,7 @@
 					},
 					"signatures": [
 						{
-							"id": 269,
+							"id": 270,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -4850,24 +4887,24 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						266
+						267
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						265,
-						262,
+						266,
 						263,
-						264
+						264,
+						265
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						268
+						269
 					]
 				}
 			],
@@ -4886,7 +4923,7 @@
 			]
 		},
 		{
-			"id": 274,
+			"id": 275,
 			"name": "SearchBarComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -4907,7 +4944,7 @@
 			],
 			"children": [
 				{
-					"id": 287,
+					"id": 288,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -4916,7 +4953,7 @@
 					},
 					"signatures": [
 						{
-							"id": 288,
+							"id": 289,
 							"name": "new SearchBarComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -4924,7 +4961,7 @@
 							"type": {
 								"type": "reference",
 								"name": "SearchBarComponent",
-								"id": 274
+								"id": 275
 							}
 						}
 					],
@@ -4937,7 +4974,7 @@
 					]
 				},
 				{
-					"id": 279,
+					"id": 280,
 					"name": "buttonicon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4971,7 +5008,7 @@
 					"defaultValue": "\"search\""
 				},
 				{
-					"id": 278,
+					"id": 279,
 					"name": "buttontext",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5005,7 +5042,7 @@
 					"defaultValue": "\"Search\""
 				},
 				{
-					"id": 284,
+					"id": 285,
 					"name": "collapsedChange",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5045,7 +5082,7 @@
 					"defaultValue": " new EventEmitter()"
 				},
 				{
-					"id": 281,
+					"id": 282,
 					"name": "collapsedValue",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5066,7 +5103,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 276,
+					"id": 277,
 					"name": "color",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5109,7 +5146,7 @@
 					"defaultValue": "\"primary\""
 				},
 				{
-					"id": 275,
+					"id": 276,
 					"name": "placeholder",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5143,7 +5180,7 @@
 					"defaultValue": "\"Enter search term\""
 				},
 				{
-					"id": 280,
+					"id": 281,
 					"name": "search",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5183,7 +5220,7 @@
 					"defaultValue": " new EventEmitter<string>()"
 				},
 				{
-					"id": 277,
+					"id": 278,
 					"name": "value",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5217,7 +5254,7 @@
 					"defaultValue": "\"Search term\""
 				},
 				{
-					"id": 282,
+					"id": 283,
 					"name": "collapsed",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -5239,7 +5276,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 283,
+							"id": 284,
 							"name": "__get",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -5255,7 +5292,7 @@
 					],
 					"setSignature": [
 						{
-							"id": 285,
+							"id": 286,
 							"name": "__set",
 							"kind": 1048576,
 							"kindString": "Set signature",
@@ -5265,7 +5302,7 @@
 							},
 							"parameters": [
 								{
-									"id": 286,
+									"id": 287,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5296,7 +5333,7 @@
 					]
 				},
 				{
-					"id": 289,
+					"id": 290,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5305,7 +5342,7 @@
 					},
 					"signatures": [
 						{
-							"id": 290,
+							"id": 291,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5325,7 +5362,7 @@
 					]
 				},
 				{
-					"id": 291,
+					"id": 292,
 					"name": "onSubmit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5334,7 +5371,7 @@
 					},
 					"signatures": [
 						{
-							"id": 292,
+							"id": 293,
 							"name": "onSubmit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5354,7 +5391,7 @@
 					]
 				},
 				{
-					"id": 293,
+					"id": 294,
 					"name": "unCollapse",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5363,7 +5400,7 @@
 					},
 					"signatures": [
 						{
-							"id": 294,
+							"id": 295,
 							"name": "unCollapse",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5388,37 +5425,37 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						287
+						288
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						279,
-						278,
-						284,
-						281,
-						276,
-						275,
 						280,
-						277
+						279,
+						285,
+						282,
+						277,
+						276,
+						281,
+						278
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						282
+						283
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						289,
-						291,
-						293
+						290,
+						292,
+						294
 					]
 				}
 			],
@@ -5437,7 +5474,7 @@
 			]
 		},
 		{
-			"id": 77,
+			"id": 78,
 			"name": "SidenavComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -5458,7 +5495,7 @@
 			],
 			"children": [
 				{
-					"id": 78,
+					"id": 79,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -5467,7 +5504,7 @@
 					},
 					"signatures": [
 						{
-							"id": 79,
+							"id": 80,
 							"name": "new SidenavComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -5475,7 +5512,7 @@
 							"type": {
 								"type": "reference",
 								"name": "SidenavComponent",
-								"id": 77
+								"id": 78
 							}
 						}
 					],
@@ -5488,7 +5525,7 @@
 					]
 				},
 				{
-					"id": 80,
+					"id": 81,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5497,7 +5534,7 @@
 					},
 					"signatures": [
 						{
-							"id": 81,
+							"id": 82,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5522,14 +5559,14 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						78
+						79
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						80
+						81
 					]
 				}
 			],
@@ -5548,7 +5585,7 @@
 			]
 		},
 		{
-			"id": 306,
+			"id": 307,
 			"name": "SnackBarComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -5569,7 +5606,7 @@
 			],
 			"children": [
 				{
-					"id": 307,
+					"id": 308,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -5578,14 +5615,14 @@
 					},
 					"signatures": [
 						{
-							"id": 310,
+							"id": 311,
 							"name": "new SnackBarComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 311,
+									"id": 312,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5605,11 +5642,11 @@
 									"type": {
 										"type": "reference",
 										"name": "SnackBarData",
-										"id": 299
+										"id": 300
 									}
 								},
 								{
-									"id": 312,
+									"id": 313,
 									"name": "snackBar",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5623,7 +5660,7 @@
 							"type": {
 								"type": "reference",
 								"name": "SnackBarComponent",
-								"id": 306
+								"id": 307
 							}
 						}
 					],
@@ -5636,7 +5673,7 @@
 					]
 				},
 				{
-					"id": 308,
+					"id": 309,
 					"name": "data",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5667,11 +5704,11 @@
 					"type": {
 						"type": "reference",
 						"name": "SnackBarData",
-						"id": 299
+						"id": 300
 					}
 				},
 				{
-					"id": 309,
+					"id": 310,
 					"name": "snackBar",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5693,7 +5730,7 @@
 					}
 				},
 				{
-					"id": 317,
+					"id": 318,
 					"name": "action",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5703,7 +5740,7 @@
 					},
 					"signatures": [
 						{
-							"id": 318,
+							"id": 319,
 							"name": "action",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5723,7 +5760,7 @@
 					]
 				},
 				{
-					"id": 315,
+					"id": 316,
 					"name": "dismiss",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5733,7 +5770,7 @@
 					},
 					"signatures": [
 						{
-							"id": 316,
+							"id": 317,
 							"name": "dismiss",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5753,7 +5790,7 @@
 					]
 				},
 				{
-					"id": 313,
+					"id": 314,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5762,7 +5799,7 @@
 					},
 					"signatures": [
 						{
-							"id": 314,
+							"id": 315,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5787,24 +5824,24 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						307
+						308
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						308,
-						309
+						309,
+						310
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						317,
-						315,
-						313
+						318,
+						316,
+						314
 					]
 				}
 			],
@@ -5823,7 +5860,7 @@
 			]
 		},
 		{
-			"id": 319,
+			"id": 320,
 			"name": "SnackBarService",
 			"kind": 128,
 			"kindString": "Class",
@@ -5844,7 +5881,7 @@
 			],
 			"children": [
 				{
-					"id": 321,
+					"id": 322,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -5853,14 +5890,14 @@
 					},
 					"signatures": [
 						{
-							"id": 324,
+							"id": 325,
 							"name": "new SnackBarService",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 325,
+									"id": 326,
 									"name": "router",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5871,7 +5908,7 @@
 									}
 								},
 								{
-									"id": 326,
+									"id": 327,
 									"name": "snackBar",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5885,7 +5922,7 @@
 							"type": {
 								"type": "reference",
 								"name": "SnackBarService",
-								"id": 319
+								"id": 320
 							}
 						}
 					],
@@ -5898,7 +5935,7 @@
 					]
 				},
 				{
-					"id": 320,
+					"id": 321,
 					"name": "isAPersistentMessage",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5920,7 +5957,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 322,
+					"id": 323,
 					"name": "router",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5942,7 +5979,7 @@
 					}
 				},
 				{
-					"id": 323,
+					"id": 324,
 					"name": "snackBar",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5964,7 +6001,7 @@
 					}
 				},
 				{
-					"id": 341,
+					"id": 342,
 					"name": "dismissPersistentMessages",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5973,7 +6010,7 @@
 					},
 					"signatures": [
 						{
-							"id": 342,
+							"id": 343,
 							"name": "dismissPersistentMessages",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5993,7 +6030,7 @@
 					]
 				},
 				{
-					"id": 338,
+					"id": 339,
 					"name": "error",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6002,14 +6039,14 @@
 					},
 					"signatures": [
 						{
-							"id": 339,
+							"id": 340,
 							"name": "error",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 340,
+									"id": 341,
 									"name": "message",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6035,7 +6072,7 @@
 					]
 				},
 				{
-					"id": 335,
+					"id": 336,
 					"name": "handleServerErrors",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6044,14 +6081,14 @@
 					},
 					"signatures": [
 						{
-							"id": 336,
+							"id": 337,
 							"name": "handleServerErrors",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 337,
+									"id": 338,
 									"name": "array",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6080,7 +6117,7 @@
 					]
 				},
 				{
-					"id": 327,
+					"id": 328,
 					"name": "help",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6089,14 +6126,14 @@
 					},
 					"signatures": [
 						{
-							"id": 328,
+							"id": 329,
 							"name": "help",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 329,
+									"id": 330,
 									"name": "message",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6107,7 +6144,7 @@
 									}
 								},
 								{
-									"id": 330,
+									"id": 331,
 									"name": "helpActionLabel",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6118,7 +6155,7 @@
 									}
 								},
 								{
-									"id": 331,
+									"id": 332,
 									"name": "helpFunction",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6144,7 +6181,7 @@
 					]
 				},
 				{
-					"id": 332,
+					"id": 333,
 					"name": "success",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6153,14 +6190,14 @@
 					},
 					"signatures": [
 						{
-							"id": 333,
+							"id": 334,
 							"name": "success",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 334,
+									"id": 335,
 									"name": "message",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6191,27 +6228,27 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						321
+						322
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						320,
-						322,
-						323
+						321,
+						323,
+						324
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						341,
-						338,
-						335,
-						327,
-						332
+						342,
+						339,
+						336,
+						328,
+						333
 					]
 				}
 			],
@@ -6224,7 +6261,7 @@
 			]
 		},
 		{
-			"id": 344,
+			"id": 345,
 			"name": "SpinnerComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -6245,7 +6282,7 @@
 			],
 			"children": [
 				{
-					"id": 345,
+					"id": 346,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -6254,7 +6291,7 @@
 					},
 					"signatures": [
 						{
-							"id": 346,
+							"id": 347,
 							"name": "new SpinnerComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -6262,7 +6299,7 @@
 							"type": {
 								"type": "reference",
 								"name": "SpinnerComponent",
-								"id": 344
+								"id": 345
 							}
 						}
 					],
@@ -6275,7 +6312,7 @@
 					]
 				},
 				{
-					"id": 347,
+					"id": 348,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6284,7 +6321,7 @@
 					},
 					"signatures": [
 						{
-							"id": 348,
+							"id": 349,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6309,14 +6346,14 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						345
+						346
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						347
+						348
 					]
 				}
 			],
@@ -6335,7 +6372,7 @@
 			]
 		},
 		{
-			"id": 356,
+			"id": 357,
 			"name": "YesOrNoDialogComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -6356,7 +6393,7 @@
 			],
 			"children": [
 				{
-					"id": 357,
+					"id": 358,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -6365,14 +6402,14 @@
 					},
 					"signatures": [
 						{
-							"id": 360,
+							"id": 361,
 							"name": "new YesOrNoDialogComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 361,
+									"id": 362,
 									"name": "dialogRef",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6384,13 +6421,13 @@
 											{
 												"type": "reference",
 												"name": "YesOrNoDialogComponent",
-												"id": 356
+												"id": 357
 											}
 										]
 									}
 								},
 								{
-									"id": 362,
+									"id": 363,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6410,14 +6447,14 @@
 									"type": {
 										"type": "reference",
 										"name": "YesOrNoDialogData",
-										"id": 350
+										"id": 351
 									}
 								}
 							],
 							"type": {
 								"type": "reference",
 								"name": "YesOrNoDialogComponent",
-								"id": 356
+								"id": 357
 							}
 						}
 					],
@@ -6430,7 +6467,7 @@
 					]
 				},
 				{
-					"id": 359,
+					"id": 360,
 					"name": "data",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6461,11 +6498,11 @@
 					"type": {
 						"type": "reference",
 						"name": "YesOrNoDialogData",
-						"id": 350
+						"id": 351
 					}
 				},
 				{
-					"id": 358,
+					"id": 359,
 					"name": "dialogRef",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6488,13 +6525,13 @@
 							{
 								"type": "reference",
 								"name": "YesOrNoDialogComponent",
-								"id": 356
+								"id": 357
 							}
 						]
 					}
 				},
 				{
-					"id": 365,
+					"id": 366,
 					"name": "closeDialog",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6504,7 +6541,7 @@
 					},
 					"signatures": [
 						{
-							"id": 366,
+							"id": 367,
 							"name": "closeDialog",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6524,7 +6561,7 @@
 					]
 				},
 				{
-					"id": 363,
+					"id": 364,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6533,7 +6570,7 @@
 					},
 					"signatures": [
 						{
-							"id": 364,
+							"id": 365,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6558,23 +6595,23 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						357
+						358
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						359,
-						358
+						360,
+						359
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						365,
-						363
+						366,
+						364
 					]
 				}
 			],
@@ -6593,7 +6630,7 @@
 			]
 		},
 		{
-			"id": 367,
+			"id": 368,
 			"name": "YesOrNoService",
 			"kind": 128,
 			"kindString": "Class",
@@ -6614,7 +6651,7 @@
 			],
 			"children": [
 				{
-					"id": 368,
+					"id": 369,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -6623,14 +6660,14 @@
 					},
 					"signatures": [
 						{
-							"id": 370,
+							"id": 371,
 							"name": "new YesOrNoService",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 371,
+									"id": 372,
 									"name": "dialog",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6644,7 +6681,7 @@
 							"type": {
 								"type": "reference",
 								"name": "YesOrNoService",
-								"id": 367
+								"id": 368
 							}
 						}
 					],
@@ -6657,7 +6694,7 @@
 					]
 				},
 				{
-					"id": 369,
+					"id": 370,
 					"name": "dialog",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6679,7 +6716,7 @@
 					}
 				},
 				{
-					"id": 372,
+					"id": 373,
 					"name": "show",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6689,7 +6726,7 @@
 					},
 					"signatures": [
 						{
-							"id": 373,
+							"id": 374,
 							"name": "show",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6699,7 +6736,7 @@
 							},
 							"parameters": [
 								{
-									"id": 374,
+									"id": 375,
 									"name": "data",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -6707,7 +6744,7 @@
 									"type": {
 										"type": "reference",
 										"name": "YesOrNoDialogData",
-										"id": 350
+										"id": 351
 									}
 								}
 							],
@@ -6718,7 +6755,7 @@
 									{
 										"type": "reference",
 										"name": "YesOrNoDialogComponent",
-										"id": 356
+										"id": 357
 									},
 									{
 										"type": "intrinsic",
@@ -6742,21 +6779,21 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						368
+						369
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						369
+						370
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						372
+						373
 					]
 				}
 			],
@@ -6769,7 +6806,7 @@
 			]
 		},
 		{
-			"id": 142,
+			"id": 143,
 			"name": "DataColumnCheckboxSettings",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6778,7 +6815,7 @@
 			},
 			"typeParameter": [
 				{
-					"id": 143,
+					"id": 144,
 					"name": "T",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -6787,7 +6824,7 @@
 			],
 			"children": [
 				{
-					"id": 144,
+					"id": 145,
 					"name": "checkboxChange",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6804,21 +6841,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 145,
+							"id": 146,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 146,
+									"id": 147,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 147,
+											"id": 148,
 											"name": "event",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -6829,7 +6866,7 @@
 											}
 										},
 										{
-											"id": 148,
+											"id": 149,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -6857,7 +6894,7 @@
 					}
 				},
 				{
-					"id": 149,
+					"id": 150,
 					"name": "checkboxChecked",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6874,21 +6911,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 150,
+							"id": 151,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 151,
+									"id": 152,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 152,
+											"id": 153,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -6921,8 +6958,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						144,
-						149
+						145,
+						150
 					]
 				}
 			],
@@ -6935,7 +6972,7 @@
 			]
 		},
 		{
-			"id": 91,
+			"id": 92,
 			"name": "DataColumnDefinition",
 			"kind": 256,
 			"kindString": "Interface",
@@ -6944,7 +6981,7 @@
 			},
 			"typeParameter": [
 				{
-					"id": 92,
+					"id": 93,
 					"name": "T",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -6953,7 +6990,7 @@
 			],
 			"children": [
 				{
-					"id": 104,
+					"id": 105,
 					"name": "checkboxSettings",
 					"kind": 1024,
 					"kindString": "Property",
@@ -6971,7 +7008,7 @@
 					"type": {
 						"type": "reference",
 						"name": "DataColumnCheckboxSettings",
-						"id": 142,
+						"id": 143,
 						"typeArguments": [
 							{
 								"type": "typeParameter",
@@ -6981,7 +7018,7 @@
 					}
 				},
 				{
-					"id": 94,
+					"id": 95,
 					"name": "columnName",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7001,7 +7038,7 @@
 					}
 				},
 				{
-					"id": 107,
+					"id": 108,
 					"name": "customCellClassLg",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7022,7 +7059,7 @@
 					}
 				},
 				{
-					"id": 109,
+					"id": 110,
 					"name": "customCellClassSm",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7043,7 +7080,7 @@
 					}
 				},
 				{
-					"id": 106,
+					"id": 107,
 					"name": "customHeaderClassLg",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7064,7 +7101,7 @@
 					}
 				},
 				{
-					"id": 108,
+					"id": 109,
 					"name": "customHeaderClassSm",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7085,7 +7122,7 @@
 					}
 				},
 				{
-					"id": 100,
+					"id": 101,
 					"name": "disableFormField",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7103,21 +7140,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 101,
+							"id": 102,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 102,
+									"id": 103,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 103,
+											"id": 104,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7145,7 +7182,7 @@
 					}
 				},
 				{
-					"id": 110,
+					"id": 111,
 					"name": "handleCellClick",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7163,21 +7200,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 111,
+							"id": 112,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 112,
+									"id": 113,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 113,
+											"id": 114,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7205,7 +7242,7 @@
 					}
 				},
 				{
-					"id": 105,
+					"id": 106,
 					"name": "inputSettings",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7223,7 +7260,7 @@
 					"type": {
 						"type": "reference",
 						"name": "DataColumnInputSettings",
-						"id": 153,
+						"id": 154,
 						"typeArguments": [
 							{
 								"type": "typeParameter",
@@ -7233,7 +7270,7 @@
 					}
 				},
 				{
-					"id": 114,
+					"id": 115,
 					"name": "listAccessor",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7251,21 +7288,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 115,
+							"id": 116,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 116,
+									"id": 117,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 117,
+											"id": 118,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7296,7 +7333,7 @@
 					}
 				},
 				{
-					"id": 99,
+					"id": 100,
 					"name": "mode",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7314,11 +7351,11 @@
 					"type": {
 						"type": "reference",
 						"name": "DataColumnMode",
-						"id": 83
+						"id": 84
 					}
 				},
 				{
-					"id": 93,
+					"id": 94,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7338,7 +7375,7 @@
 					}
 				},
 				{
-					"id": 95,
+					"id": 96,
 					"name": "transformer",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7356,21 +7393,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 96,
+							"id": 97,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 97,
+									"id": 98,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 98,
+											"id": 99,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7403,19 +7440,19 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						104,
-						94,
+						105,
+						95,
+						108,
+						110,
 						107,
 						109,
+						101,
+						111,
 						106,
-						108,
+						115,
 						100,
-						110,
-						105,
-						114,
-						99,
-						93,
-						95
+						94,
+						96
 					]
 				}
 			],
@@ -7428,7 +7465,7 @@
 			]
 		},
 		{
-			"id": 153,
+			"id": 154,
 			"name": "DataColumnInputSettings",
 			"kind": 256,
 			"kindString": "Interface",
@@ -7437,7 +7474,7 @@
 			},
 			"typeParameter": [
 				{
-					"id": 154,
+					"id": 155,
 					"name": "T",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -7446,7 +7483,7 @@
 			],
 			"children": [
 				{
-					"id": 155,
+					"id": 156,
 					"name": "inputChange",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7463,21 +7500,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 156,
+							"id": 157,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 157,
+									"id": 158,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 158,
+											"id": 159,
 											"name": "event",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7488,7 +7525,7 @@
 											}
 										},
 										{
-											"id": 159,
+											"id": 160,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7516,7 +7553,7 @@
 					}
 				},
 				{
-					"id": 160,
+					"id": 161,
 					"name": "inputValue",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7533,21 +7570,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 161,
+							"id": 162,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 162,
+									"id": 163,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 163,
+											"id": 164,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7580,8 +7617,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						155,
-						160
+						156,
+						161
 					]
 				}
 			],
@@ -7594,7 +7631,7 @@
 			]
 		},
 		{
-			"id": 118,
+			"id": 119,
 			"name": "DataTableMenuItem",
 			"kind": 256,
 			"kindString": "Interface",
@@ -7603,7 +7640,7 @@
 			},
 			"typeParameter": [
 				{
-					"id": 119,
+					"id": 120,
 					"name": "T",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -7612,7 +7649,7 @@
 			],
 			"children": [
 				{
-					"id": 126,
+					"id": 127,
 					"name": "action",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7629,21 +7666,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 127,
+							"id": 128,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 128,
+									"id": 129,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 129,
+											"id": 130,
 											"name": "args",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7676,7 +7713,7 @@
 					}
 				},
 				{
-					"id": 122,
+					"id": 123,
 					"name": "disabled",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7693,21 +7730,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 123,
+							"id": 124,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 124,
+									"id": 125,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 125,
+											"id": 126,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7735,7 +7772,7 @@
 					}
 				},
 				{
-					"id": 120,
+					"id": 121,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7755,7 +7792,7 @@
 					}
 				},
 				{
-					"id": 121,
+					"id": 122,
 					"name": "label",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7780,10 +7817,10 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						126,
-						122,
-						120,
-						121
+						127,
+						123,
+						121,
+						122
 					]
 				}
 			],
@@ -7796,7 +7833,7 @@
 			]
 		},
 		{
-			"id": 130,
+			"id": 131,
 			"name": "DataTableSettings",
 			"kind": 256,
 			"kindString": "Interface",
@@ -7805,7 +7842,7 @@
 			},
 			"typeParameter": [
 				{
-					"id": 131,
+					"id": 132,
 					"name": "T",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -7814,7 +7851,7 @@
 			],
 			"children": [
 				{
-					"id": 137,
+					"id": 138,
 					"name": "clickableRows",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7835,7 +7872,7 @@
 					}
 				},
 				{
-					"id": 133,
+					"id": 134,
 					"name": "columnDefinitions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7854,7 +7891,7 @@
 						"elementType": {
 							"type": "reference",
 							"name": "DataColumnDefinition",
-							"id": 91,
+							"id": 92,
 							"typeArguments": [
 								{
 									"type": "typeParameter",
@@ -7865,7 +7902,7 @@
 					}
 				},
 				{
-					"id": 134,
+					"id": 135,
 					"name": "dataSource",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7891,7 +7928,7 @@
 					}
 				},
 				{
-					"id": 132,
+					"id": 133,
 					"name": "displayedColumns",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7914,7 +7951,7 @@
 					}
 				},
 				{
-					"id": 138,
+					"id": 139,
 					"name": "handleRowClick",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7932,21 +7969,21 @@
 					"type": {
 						"type": "reflection",
 						"declaration": {
-							"id": 139,
+							"id": 140,
 							"name": "__type",
 							"kind": 65536,
 							"kindString": "Type literal",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 140,
+									"id": 141,
 									"name": "__call",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 141,
+											"id": 142,
 											"name": "row",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7974,7 +8011,7 @@
 					}
 				},
 				{
-					"id": 136,
+					"id": 137,
 					"name": "hideSelectedRowHighlighting",
 					"kind": 1024,
 					"kindString": "Property",
@@ -7995,7 +8032,7 @@
 					}
 				},
 				{
-					"id": 135,
+					"id": 136,
 					"name": "menu",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8015,7 +8052,7 @@
 						"elementType": {
 							"type": "reference",
 							"name": "DataTableMenuItem",
-							"id": 118,
+							"id": 119,
 							"typeArguments": [
 								{
 									"type": "typeParameter",
@@ -8031,13 +8068,13 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						137,
-						133,
-						134,
-						132,
 						138,
-						136,
-						135
+						134,
+						135,
+						133,
+						139,
+						137,
+						136
 					]
 				}
 			],
@@ -8050,7 +8087,7 @@
 			]
 		},
 		{
-			"id": 296,
+			"id": 297,
 			"name": "Error",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8059,7 +8096,7 @@
 			},
 			"children": [
 				{
-					"id": 297,
+					"id": 298,
 					"name": "component",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8079,7 +8116,7 @@
 					}
 				},
 				{
-					"id": 298,
+					"id": 299,
 					"name": "message",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8104,8 +8141,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						297,
-						298
+						298,
+						299
 					]
 				}
 			],
@@ -8118,7 +8155,7 @@
 			]
 		},
 		{
-			"id": 271,
+			"id": 272,
 			"name": "SearchItem",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8127,7 +8164,7 @@
 			},
 			"children": [
 				{
-					"id": 273,
+					"id": 274,
 					"name": "dataName",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8147,7 +8184,7 @@
 					}
 				},
 				{
-					"id": 272,
+					"id": 273,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8172,8 +8209,8 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						273,
-						272
+						274,
+						273
 					]
 				}
 			],
@@ -8186,7 +8223,7 @@
 			]
 		},
 		{
-			"id": 299,
+			"id": 300,
 			"name": "SnackBarData",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8195,7 +8232,7 @@
 			},
 			"children": [
 				{
-					"id": 304,
+					"id": 305,
 					"name": "actionButtonFunction",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8215,7 +8252,7 @@
 					}
 				},
 				{
-					"id": 303,
+					"id": 304,
 					"name": "actionButtonLabel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8235,7 +8272,7 @@
 					}
 				},
 				{
-					"id": 305,
+					"id": 306,
 					"name": "closeButton",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8255,7 +8292,7 @@
 					}
 				},
 				{
-					"id": 300,
+					"id": 301,
 					"name": "icon",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8275,7 +8312,7 @@
 					}
 				},
 				{
-					"id": 301,
+					"id": 302,
 					"name": "iconFont",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8296,7 +8333,7 @@
 					}
 				},
 				{
-					"id": 302,
+					"id": 303,
 					"name": "message",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8321,12 +8358,12 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						304,
-						303,
 						305,
-						300,
+						304,
+						306,
 						301,
-						302
+						302,
+						303
 					]
 				}
 			],
@@ -8339,7 +8376,7 @@
 			]
 		},
 		{
-			"id": 350,
+			"id": 351,
 			"name": "YesOrNoDialogData",
 			"kind": 256,
 			"kindString": "Interface",
@@ -8348,7 +8385,7 @@
 			},
 			"children": [
 				{
-					"id": 352,
+					"id": 353,
 					"name": "message",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8368,7 +8405,7 @@
 					}
 				},
 				{
-					"id": 354,
+					"id": 355,
 					"name": "noButtonLabel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8389,7 +8426,7 @@
 					}
 				},
 				{
-					"id": 351,
+					"id": 352,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8409,7 +8446,7 @@
 					}
 				},
 				{
-					"id": 355,
+					"id": 356,
 					"name": "width",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8430,7 +8467,7 @@
 					}
 				},
 				{
-					"id": 353,
+					"id": 354,
 					"name": "yesButtonLabel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -8455,11 +8492,11 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						352,
-						354,
-						351,
+						353,
 						355,
-						353
+						352,
+						356,
+						354
 					]
 				}
 			],
@@ -8477,7 +8514,7 @@
 			"title": "Enumerations",
 			"kind": 4,
 			"children": [
-				83
+				84
 			]
 		},
 		{
@@ -8489,52 +8526,52 @@
 				41,
 				60,
 				65,
-				71,
+				72,
 				25,
 				11,
 				40,
 				59,
 				64,
-				70,
-				164,
-				219,
-				76,
-				39,
-				243,
-				260,
-				242,
-				270,
-				295,
-				82,
-				343,
-				349,
-				375,
+				71,
+				165,
 				220,
-				244,
-				232,
-				261,
-				274,
 				77,
-				306,
-				319,
+				39,
+				244,
+				261,
+				243,
+				271,
+				296,
+				83,
 				344,
-				356,
-				367
+				350,
+				376,
+				221,
+				245,
+				233,
+				262,
+				275,
+				78,
+				307,
+				320,
+				345,
+				357,
+				368
 			]
 		},
 		{
 			"title": "Interfaces",
 			"kind": 256,
 			"children": [
-				142,
-				91,
-				153,
-				118,
-				130,
-				296,
-				271,
-				299,
-				350
+				143,
+				92,
+				154,
+				119,
+				131,
+				297,
+				272,
+				300,
+				351
 			]
 		}
 	]
