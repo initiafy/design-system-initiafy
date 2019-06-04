@@ -13,7 +13,7 @@ export class ButtonComponent implements OnInit {
   /** Text label for the button  */
   @Input() label: string;
   /** Type attribute of the button */
-  @Input() type: 'submit' | 'reset' | 'button' = 'submit';
+  @Input() type: 'submit' | 'reset' | 'button' = 'button';
   /** Icon name of icon to appear */
   @Input() icon: string;
   /** Icon library to whivh the icon belongs */
@@ -35,7 +35,7 @@ export class ButtonComponent implements OnInit {
   ngOnInit() { }
 
   get classes() {
-    let  classes = this.design;
+    let classes = this.design;
     if (this.design !== 'white' && this.color) {
       classes += ' ' + this.color;
     }

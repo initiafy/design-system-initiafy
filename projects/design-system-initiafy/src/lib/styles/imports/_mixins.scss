@@ -27,7 +27,7 @@
     color: $var;
 }
 
-@mixin button-basic($var, $color, $bg) {
+@mixin button-basic-color($var, $color, $bg) {
     color: $color;
     color: $var;
     background-color: $bg;

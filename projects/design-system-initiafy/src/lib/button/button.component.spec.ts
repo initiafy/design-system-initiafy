@@ -163,15 +163,43 @@ describe('ButtonComponent', () => {
 
     it('should have default type if variable is empty', () => {
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.nativeElement.type).toBe('submit');
+      expect(debuggerElement.nativeElement.type).toBe('button');
     });
 
     it('should show specific type if variable is passed', () => {
-      component.type = 'button';
+      component.type = 'submit';
       fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.nativeElement.type).toBe('button');
+      expect(debuggerElement.nativeElement.type).toBe('submit');
 
+    });
+
+  });
+
+  describe('When testing design', () => {
+
+    it('should show specific design if variable is passed', () => {
+      component.design = 'stroke';
+      fixture.detectChanges();
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).toContain('stroke');
+    });
+
+  });
+
+  describe('When testing color', () => {
+
+    it('should show color if variable is passed', () => {
+      component.color = 'primary';
+      fixture.detectChanges();
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).toContain('primary');
+    });
+
+    it('should NOT show color if variable is empty', () => {
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).not.toContain('primary');
+      expect(debuggerElement.nativeElement.className).not.toContain('secondary');
     });
 
   });
