@@ -59,7 +59,9 @@ button,
 input[type=button] {
   border: none;
   padding: 0;
+  letter-spacing: $letter-spacing;
 }
+
 input, 
 button,
 textarea,
