@@ -7,13 +7,13 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   /** Design of the button */
-  @Input() design: 'main' | 'stroke' | 'basic' | 'white' = 'main';
+  @Input() design: 'main' | 'stroke' | 'basic' | 'white' = 'basic';
   /** Color palette of the button */
   @Input() color: 'primary' | 'secondary';
   /** Text label for the button  */
   @Input() label: string;
   /** Type attribute of the button */
-  @Input() type: 'submit' | 'reset' | 'button' = 'button';
+  @Input() type: 'submit' | 'reset' | 'button' = 'submit';
   /** Icon name of icon to appear */
   @Input() icon: string;
   /** Icon library to whivh the icon belongs */

@@ -178,6 +178,11 @@ describe('ButtonComponent', () => {
 
   describe('When testing design', () => {
 
+    it('should show default design if variable is empty', () => {
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).toContain('basic');
+    });
+
     it('should show specific design if variable is passed', () => {
       component.design = 'stroke';
       fixture.detectChanges();

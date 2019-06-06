@@ -2393,6 +2393,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-left: 4px solid var(--PMain);
   background-color: $BackgroundDefault;
   background-color: var(--BackgroundDefault);
+  border-radius: 0;
 }
 
 .selected-text {

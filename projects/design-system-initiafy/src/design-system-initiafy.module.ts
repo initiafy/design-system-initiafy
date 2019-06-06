@@ -68,7 +68,6 @@ import { InitiafyYesOrNoModule } from './lib/yes-or-no/yes-or-no.module';
     InitiafySnackBarModule,
     InitiafySpinnerModule,
     InitiafyYesOrNoModule
-  ],
-  declarations: []
+  ]
 })
 export class DesignSystemInitiafyModule {}
