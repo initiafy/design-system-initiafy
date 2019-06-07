@@ -2456,8 +2456,8 @@ table[mat-table] {
 .mat-accordion .mat-expansion-panel,
 .mat-accordion .mat-expansion-panel:first-of-type,
 .mat-accordion .mat-expansion-panel:last-of-type {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
 }
 mat-card, mat-expansion-panel, mat-expansion-panel-header {
   margin: 0;
