@@ -41,7 +41,7 @@ describe('ButtonComponent', () => {
     });
 
     it('should have default design class', () => {
-      expect(debuggerElement.nativeElement.className).toContain('main');
+      expect(debuggerElement.nativeElement.className).toContain('basic');
     });
 
   });
@@ -163,14 +163,14 @@ describe('ButtonComponent', () => {
 
     it('should have default type if variable is empty', () => {
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.nativeElement.type).toBe('button');
+      expect(debuggerElement.nativeElement.type).toBe('submit');
     });
 
     it('should show specific type if variable is passed', () => {
-      component.type = 'submit';
+      component.type = 'reset';
       fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.nativeElement.type).toBe('submit');
+      expect(debuggerElement.nativeElement.type).toBe('reset');
 
     });
 
