@@ -167,10 +167,10 @@ describe('ButtonComponent', () => {
     });
 
     it('should show specific type if variable is passed', () => {
-      component.type = 'reset';
+      component.type = 'button';
       fixture.detectChanges();
       debuggerElement = fixture.debugElement.query(By.css('button'));
-      expect(debuggerElement.nativeElement.type).toBe('reset');
+      expect(debuggerElement.nativeElement.type).toBe('button');
 
     });
 
