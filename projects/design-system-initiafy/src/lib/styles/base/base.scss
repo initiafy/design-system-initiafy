@@ -26,6 +26,7 @@ a {
   color: var(--Black);
   text-decoration: underline;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /* Scrollbar */
@@ -59,7 +60,9 @@ button,
 input[type=button] {
   border: none;
   padding: 0;
+  letter-spacing: $letter-spacing;
 }
+
 input, 
 button,
 textarea,

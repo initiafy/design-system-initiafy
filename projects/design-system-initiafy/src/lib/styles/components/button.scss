@@ -66,7 +66,6 @@
   /* White Button (background white and shadow) */
   &.white {
     background-color: white;
-    @include button-basic("white");
     @include shadow-btn();
     &:hover {
       background-color: white;
@@ -84,7 +83,13 @@
 
   /* Basic Button (background transparent) */
   &.basic {
-    @include button-basic('transparent');
+    background-color: transparent;
+    &.primary {
+      @include button-basic-color(var(--PMain), $PMain, transparent);
+    }
+    &.secondary {
+      @include button-basic-color(var(--SMain), $SMain, transparent);
+    }
     &:hover {
       background-color: $Hover;
       background-color: var(--Hover);

@@ -17,12 +17,20 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
+    &.five-columns {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
     &.one-three-columns {
         grid-template-columns: 1fr 3fr;
     }
 
     &.three-one-columns {
         grid-template-columns: 3fr 1fr;
+    }
+
+    &.three-one-one-columns {
+        grid-template-columns: 3fr 1fr 1fr;
     }
     
     .initiafy-grid-row {
@@ -34,8 +42,10 @@
     .initiafy-grid.two-columns,
     .initiafy-grid.three-columns,
     .initiafy-grid.four-columns,
+    .initiafy-grid.five-columns,
     .initiafy-grid.one-three-columns,
-    .initiafy-grid.three-one-columns {
+    .initiafy-grid.three-one-columns,
+    .initiafy-grid.three-one-one-columns {
         grid-template-columns: 1fr;
     }
 }
