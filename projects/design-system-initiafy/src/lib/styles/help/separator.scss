@@ -1,0 +1,16 @@
+@import "../imports/variables";
+
+.separator {
+  border-top: 0;
+  border-color: $Ripple;
+  margin-left: -$spacing;
+  margin-right: -$spacing;
+  &.big {
+    margin-left: -$spacing-big;
+    margin-right: -$spacing-big;
+  }
+  &.basic {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

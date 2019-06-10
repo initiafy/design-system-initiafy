@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   /** Design of the button */
-  @Input() design: 'main' | 'stroke' | 'basic' | 'white' = 'main';
+  @Input() design: 'main' | 'stroke' | 'basic' | 'white' = 'basic';
   /** Color palette of the button */
   @Input() color: 'primary' | 'secondary';
   /** Text label for the button  */
@@ -35,7 +35,7 @@ export class ButtonComponent implements OnInit {
   ngOnInit() { }
 
   get classes() {
-    let  classes = this.design;
+    let classes = this.design;
     if (this.design !== 'white' && this.color) {
       classes += ' ' + this.color;
     }

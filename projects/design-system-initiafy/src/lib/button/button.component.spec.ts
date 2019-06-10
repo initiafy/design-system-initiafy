@@ -41,7 +41,7 @@ describe('ButtonComponent', () => {
     });
 
     it('should have default design class', () => {
-      expect(debuggerElement.nativeElement.className).toContain('main');
+      expect(debuggerElement.nativeElement.className).toContain('basic');
     });
 
   });
@@ -172,6 +172,39 @@ describe('ButtonComponent', () => {
       debuggerElement = fixture.debugElement.query(By.css('button'));
       expect(debuggerElement.nativeElement.type).toBe('button');
 
+    });
+
+  });
+
+  describe('When testing design', () => {
+
+    it('should show default design if variable is empty', () => {
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).toContain('basic');
+    });
+
+    it('should show specific design if variable is passed', () => {
+      component.design = 'stroke';
+      fixture.detectChanges();
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).toContain('stroke');
+    });
+
+  });
+
+  describe('When testing color', () => {
+
+    it('should show color if variable is passed', () => {
+      component.color = 'primary';
+      fixture.detectChanges();
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).toContain('primary');
+    });
+
+    it('should NOT show color if variable is empty', () => {
+      debuggerElement = fixture.debugElement.query(By.css('button'));
+      expect(debuggerElement.nativeElement.className).not.toContain('primary');
+      expect(debuggerElement.nativeElement.className).not.toContain('secondary');
     });
 
   });

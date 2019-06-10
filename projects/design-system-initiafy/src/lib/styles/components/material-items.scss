@@ -2393,6 +2393,7 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   border-left: 4px solid var(--PMain);
   background-color: $BackgroundDefault;
   background-color: var(--BackgroundDefault);
+  border-radius: 0;
 }
 
 .selected-text {
@@ -2452,9 +2453,11 @@ table[mat-table] {
 .mat-drawer-content.mat-sidenav-content {
   overflow: unset;
 }
-.mat-accordion .mat-expansion-panel {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+.mat-accordion .mat-expansion-panel,
+.mat-accordion .mat-expansion-panel:first-of-type,
+.mat-accordion .mat-expansion-panel:last-of-type {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
 }
 mat-card, mat-expansion-panel, mat-expansion-panel-header {
   margin: 0;

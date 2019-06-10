@@ -2,7 +2,7 @@
     <initiafy-icon icon="code" class="pointer absolute top-16 right-16" (click)="showCode = !showCode">code
     </initiafy-icon>
     <h1 class="default margin-top-0">Grid</h1>
-    <p class="margin-top-0 default">Responsive grid system with up to 4 columns using only CSS display grid.</p>
+    <p class="margin-top-0 default">Responsive grid system with up to 5 columns using only CSS display grid.</p>
 
     <div class="initiafy-grid two-columns">
         <div class="initiafy-grid-row">column 1</div>
@@ -55,6 +55,27 @@
         </markdown>
     </div>
 
+    <div class="initiafy-grid five-columns">
+        <div class="initiafy-grid-row">column 1</div>
+        <div class="initiafy-grid-row">column 2</div>
+        <div class="initiafy-grid-row">column 3</div>
+        <div class="initiafy-grid-row">column 4</div>
+        <div class="initiafy-grid-row">column 5</div>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <div class="initiafy-grid five-columns">
+                <div class="initiafy-grid-row">column 1</div>
+                <div class="initiafy-grid-row">column 2</div>
+                <div class="initiafy-grid-row">column 3</div>
+                <div class="initiafy-grid-row">column 4</div>
+                <div class="initiafy-grid-row">column 5</div>
+            </div>
+            ```
+        </markdown>
+    </div>
+
     <div class="initiafy-grid one-three-columns">
         <div class="initiafy-grid-row">column 1</div>
         <div class="initiafy-grid-row">column 2</div>
@@ -80,6 +101,23 @@
             <div class="initiafy-grid three-one-columns">
                 <div class="initiafy-grid-row">column 1</div>
                 <div class="initiafy-grid-row">column 2</div>
+            </div>
+            ```
+        </markdown>
+    </div>
+
+    <div class="initiafy-grid three-one-one-columns">
+        <div class="initiafy-grid-row">column 1</div>
+        <div class="initiafy-grid-row">column 2</div>
+        <div class="initiafy-grid-row">column 3</div>
+    </div>
+    <div class="margin-bottom-32" *ngIf="showCode">
+        <markdown ngPreserveWhitespaces>
+            ```html
+            <div class="initiafy-grid three-one-one-columns">
+                <div class="initiafy-grid-row">column 1</div>
+                <div class="initiafy-grid-row">column 2</div>
+                <div class="initiafy-grid-row">column 3</div>
             </div>
             ```
         </markdown>

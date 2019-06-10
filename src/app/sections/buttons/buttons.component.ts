@@ -25,6 +25,8 @@ export class ButtonsComponent implements OnInit {
     this.buttons.push(this.buttonsService.getButtons('stroke', 'secondary', 'Stroke'));
     this.buttons.push(this.buttonsService.getButtons('white', '', 'White'));
     this.buttons.push(this.buttonsService.getButtons('basic', '', 'Basic'));
+    this.buttons.push(this.buttonsService.getButtons('basic', 'primary', 'Basic'));
+    this.buttons.push(this.buttonsService.getButtons('basic', 'secondary', 'Basic'));
   }
 
   public handleSlideChange(event: MatSlideToggleChange): void {
