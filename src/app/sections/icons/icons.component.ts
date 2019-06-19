@@ -56,6 +56,7 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('help_outline', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('home', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('image', ''));
+    this.iconsList.push(this.iconsService.getIcons('important_devices', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('insert_invitation', ''));
     this.iconsList.push(this.iconsService.getIcons('location_on', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('mail', ''));
