@@ -2463,14 +2463,14 @@ mat-card, mat-expansion-panel, mat-expansion-panel-header {
   margin: 0;
 }
 mat-expansion-panel-header {
-  padding: 0 12px;
+  padding: 0 16px !important;
 }
 mat-sidenav-content {
   box-sizing: border-box;
   overflow: visible;
 }
 .mat-list-base {
-  padding-top: 0;
+  padding-top: 0 !important;
 }
 .mat-list-item {
   padding-left: $spacing;
