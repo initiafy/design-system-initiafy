@@ -77,5 +77,14 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('view_module', ''));
     this.iconsList.push(this.iconsService.getIcons('visibility', ''));
     this.iconsList.push(this.iconsService.getIcons('warning', ''));
+    this.iconsList.push(this.iconsService.getIcons('top-empty', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('top-full', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('top-half', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('middle-empty', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('middle-full', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('middle-half', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('bottom-empty', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('bottom-full', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('bottom-half', 'initiafy'));
   }
 }

@@ -14,7 +14,8 @@ import {
   StructureComponent,
   CssComponent,
   DataTableComponent,
-  CardDocumentationComponent
+  CardDocumentationComponent,
+  RatingComponent
 } from './sections';
 import { DocumentationService } from './core';
 import {
@@ -47,7 +48,8 @@ export function startupServiceFactory(
     StructureComponent,
     ContentComponent,
     SearchBarComponent,
-    CardDocumentationComponent
+    CardDocumentationComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule,

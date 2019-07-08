@@ -22,6 +22,7 @@ import { InitiafyLoadingCardModule } from './lib/loading-card/loading-card.modul
 import { InitiafyIconModule } from './lib/icon/icon.module';
 import { InitiafyModalModule } from './lib/modal/modal.module';
 import { InitiafyProgressBarModule } from './lib/progress-bar/progress-bar.module';
+import { InitiafyRatingModule } from './lib/rating/rating.module';
 import { InitiafyResultModule } from './lib/result/result.module';
 import { InitiafySearchBarModule } from './lib/search-bar/search-bar.module';
 import { InitiafySnackBarModule } from './lib/snack-bar/snack-bar.module';
@@ -47,7 +48,8 @@ import { InitiafyYesOrNoModule } from './lib/yes-or-no/yes-or-no.module';
     InitiafySearchBarModule,
     InitiafySnackBarModule,
     InitiafySpinnerModule,
-    InitiafyYesOrNoModule
+    InitiafyYesOrNoModule,
+    InitiafyRatingModule
   ],
   exports: [
     InitiafyHeaderModule,
@@ -67,7 +69,8 @@ import { InitiafyYesOrNoModule } from './lib/yes-or-no/yes-or-no.module';
     InitiafySearchBarModule,
     InitiafySnackBarModule,
     InitiafySpinnerModule,
-    InitiafyYesOrNoModule
+    InitiafyYesOrNoModule,
+    InitiafyRatingModule
   ],
   declarations: []
 })
