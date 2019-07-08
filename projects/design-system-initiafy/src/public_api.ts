@@ -12,6 +12,7 @@ export * from './lib/data-table';
 export * from './lib/icon/icon.module';
 export * from './lib/loading-card/loading-card.module';
 export * from './lib/modal/modal.module';
+export * from './lib/modal/modal.component';
 export * from './lib/progress-bar/progress-bar.module';
 export * from './lib/result/result.module';
 export * from './lib/search-bar/search-bar.module';
