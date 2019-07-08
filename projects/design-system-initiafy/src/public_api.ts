@@ -15,6 +15,7 @@ export * from './lib/modal/modal.module';
 export * from './lib/modal/modal.component';
 export * from './lib/progress-bar/progress-bar.module';
 export * from './lib/result/result.module';
+export * from './lib/rating/rating.module';
 export * from './lib/search-bar/search-bar.module';
 export * from './lib/snack-bar';
 export * from './lib/spinner/spinner.module';

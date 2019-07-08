@@ -39,7 +39,8 @@ import {
     InitiafySearchBarModule,
     InitiafySpinnerModule,
     InitiafySnackBarModule,
-    InitiafyYesOrNoModule
+    InitiafyYesOrNoModule,
+    InitiafyRatingModule
 } from 'projects/design-system-initiafy/src/public_api';
 
 @NgModule({
@@ -94,6 +95,7 @@ import {
         InitiafyLoadingCardModule,
         InitiafyModalModule,
         InitiafyProgressBarModule,
+        InitiafyRatingModule,
         InitiafyResultModule,
         InitiafySearchBarModule,
         InitiafySpinnerModule,
@@ -134,6 +136,7 @@ import {
         InitiafyLoadingCardModule,
         InitiafyModalModule,
         InitiafyProgressBarModule,
+        InitiafyRatingModule,
         InitiafyResultModule,
         InitiafySearchBarModule,
         InitiafySpinnerModule,

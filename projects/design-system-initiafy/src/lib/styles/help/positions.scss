@@ -81,14 +81,26 @@
 .right {
   right: 0;
 }
+.right-50-pc {
+  right: 50%;
+}
 .left {
   left: 0;
+}
+.left-50-pc {
+  left: 50%;
 }
 .bottom {
   bottom: 0;
 }
+.bottom-50-pc {
+  bottom: 50%;
+}
 .top {
   top: 0;
+}
+.top-50-pc {
+  top: 50%;
 }
 .right-std {
   right: $spacing;
