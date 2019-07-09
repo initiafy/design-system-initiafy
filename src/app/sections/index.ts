@@ -8,6 +8,7 @@ export * from './grid/grid.component';
 export * from './icons/icons.component';
 export * from './initiafy-card/initiafy-card.component';
 export * from './loading-card/loading-card.component';
+export * from './progress-bar/progress-bar.component';
 export * from './rating/rating.component';
 export * from './search-bar/search-bar.component';
 export * from './structure/structure.component';
