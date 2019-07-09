@@ -5,16 +5,16 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   templateUrl: './rating.component.html',
   styleUrls: ['./rating.component.scss']
 })
-export class InitiafyRatingComponent implements OnInit {
+export class RatingComponent implements OnInit {
 
   /** Total of stars for rating */
   @Input() total: number = 5;
-  /** Rate */
+  /** Rate value for display rating */
   @Input() rate: number;
-  /** If element is only showing rate stars and not rating */
+  /** Element read only for display rating */
   @Input() readOnly: boolean = false;
-  /** Callback when selecting a rate star */
-  @Output() callback = new EventEmitter();
+  /** Callback when clickin on a rate star */
+  @Output() callback = new EventEmitter<number>();
 
   public array: Array<Number> = [];
 
@@ -27,7 +27,7 @@ export class InitiafyRatingComponent implements OnInit {
   private generateArray(): Array<Number> {
     const array = [];
     const total = this.total;
-    for (let i = 1; i <= total; i++) { array.push(i); }
+    for (let i = total; i >= 1; i--) { array.push(i); }
     return array;
   }
 

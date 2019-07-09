@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class RatingComponent implements OnInit {
   public componentName = 'RatingComponent';
   public module = 'InitiafyRatingModule';
+  public rate: number;
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  getRate(rate: number) {
+    this.rate = rate;
   }
 
 }

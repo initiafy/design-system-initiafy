@@ -1,20 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InitiafyRatingComponent } from './rating.component';
+import { RatingComponent } from './rating.component';
+import { InitiafyIconModule } from '../icon/icon.module';
 
-describe('InitiafyRatingComponent', () => {
-  let component: InitiafyRatingComponent;
-  let fixture: ComponentFixture<InitiafyRatingComponent>;
+describe('RatingComponent', () => {
+  let component: RatingComponent;
+  let fixture: ComponentFixture<RatingComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InitiafyRatingComponent ]
+      declarations: [ RatingComponent ],
+      imports: [InitiafyIconModule]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InitiafyRatingComponent);
+    fixture = TestBed.createComponent(RatingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

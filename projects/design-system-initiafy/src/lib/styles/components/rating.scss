@@ -1,0 +1,13 @@
+@import "../imports/variables";
+
+.initiafy-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  color: $Disable;
+}
+.initiafy-rating:not(.readOnly) .star-rating:hover,
+.initiafy-rating:not(.readOnly) .star-rating:hover ~ .star-rating {
+  color: $RagAmber;
+  filter: brightness(105%);
+}

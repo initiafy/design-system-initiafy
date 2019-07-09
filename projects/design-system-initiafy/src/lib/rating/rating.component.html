@@ -1,6 +1,11 @@
 <div class="initiafy-rating" [class.readOnly]="readOnly">
   <ng-container *ngFor="let item of array">
-    <initiafy-icon [icon]="(item <= rate) ? 'star' : 'star_border'" (click)="chooseRating(item)" class="disable-color"
-      [ngClass]="{ 'pointer padding-right-8' : !readOnly }" [class.rag-amber-color]="item <= rate"></initiafy-icon>
+    <initiafy-icon
+      class="star-rating"
+      [icon]="(item <= rate) ? 'star' : 'star_border'"
+      [ngClass]="{ 'pointer padding-right-8' : !readOnly }"
+      [class.rag-amber-color]="item <= rate"
+      (click)="chooseRating(item)"
+      ></initiafy-icon>
   </ng-container>
 </div>
