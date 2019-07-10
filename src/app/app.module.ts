@@ -19,6 +19,7 @@ import {
   ProgressBarComponent
 } from './sections';
 import { DocumentationService } from './core';
+import { HeaderComponent as HeaderDemoComponent } from './sections/header/header.component';
 import {
   HeaderComponent,
   FooterComponent,
@@ -44,6 +45,7 @@ export function startupServiceFactory(
     ActionsComponent,
     IconsComponent,
     CssComponent,
+    HeaderDemoComponent,
     HeaderComponent,
     FooterComponent,
     StructureComponent,
