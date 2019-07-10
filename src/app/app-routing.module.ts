@@ -13,6 +13,7 @@ import {
   GridComponent,
   CardDocumentationComponent
 } from './sections';
+import { HeaderComponent } from './sections/header/header.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,7 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   { path: 'actions', component: ActionsComponent },
+  { path: 'header', component: HeaderComponent },
   { path: 'search-bar', component: SearchBarComponent },
   { path: 'buttons', component: ButtonsComponent },
   { path: 'colors', component: ColorsComponent },
