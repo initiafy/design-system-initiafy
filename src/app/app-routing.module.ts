@@ -12,7 +12,8 @@ import {
   ColorsComponent,
   GridComponent,
   CardDocumentationComponent,
-  RatingComponent
+  RatingComponent,
+  ProgressBarComponent
 } from './sections';
 
 const routes: Routes = [
@@ -53,6 +54,7 @@ const routes: Routes = [
   { path: 'data-table', component: DataTableComponent },
   { path: 'card', component: CardDocumentationComponent },
   { path: 'rating', component: RatingComponent },
+  { path: 'progress-bar', component: ProgressBarComponent },
   { path: '**', redirectTo: '' }
 ];
 

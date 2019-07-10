@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InitiafyRatingComponent } from './rating.component';
-import { BrowserModule } from '@angular/platform-browser';
+import { RatingComponent } from './rating.component';
 import { InitiafyIconModule } from '../icon/icon.module';
 
 @NgModule({
-  declarations: [InitiafyRatingComponent],
-  imports: [CommonModule, BrowserModule, InitiafyIconModule],
-  exports: [InitiafyRatingComponent]
+  declarations: [RatingComponent],
+  imports: [CommonModule, InitiafyIconModule],
+  exports: [RatingComponent]
 })
 export class InitiafyRatingModule { }
