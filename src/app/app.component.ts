@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   @ViewChild('content') content: ContentComponent;
   constructor(private startup: DocumentationService, private router: Router) {}
   ngOnInit() {
+    console.log('hello world');
     // If there is no startup data received (maybe an error!)
     // navigate to error route
     if (!this.startup.startupData) {
