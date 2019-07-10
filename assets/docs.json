@@ -3523,377 +3523,6 @@
 			]
 		},
 		{
-			"id": 262,
-			"name": "InitiafyRatingComponent",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "Component",
-					"type": {
-						"type": "reference",
-						"name": "Component"
-					},
-					"arguments": {
-						"obj": "{\n  selector: 'initiafy-rating',\n  templateUrl: './rating.component.html',\n  styleUrls: ['./rating.component.scss']\n}"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 268,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 269,
-							"name": "new InitiafyRatingComponent",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"type": {
-								"type": "reference",
-								"name": "InitiafyRatingComponent",
-								"id": 262
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "rating/rating.component.ts",
-							"line": 19,
-							"character": 35
-						}
-					]
-				},
-				{
-					"id": 267,
-					"name": "array",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPublic": true,
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "rating/rating.component.ts",
-							"line": 19,
-							"character": 14
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "Array",
-						"typeArguments": [
-							{
-								"type": "reference",
-								"name": "Number"
-							}
-						]
-					},
-					"defaultValue": " []"
-				},
-				{
-					"id": 266,
-					"name": "callback",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Callback when selecting a rate star"
-					},
-					"decorators": [
-						{
-							"name": "Output",
-							"type": {
-								"type": "reference",
-								"name": "Output"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "rating/rating.component.ts",
-							"line": 17,
-							"character": 20
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "EventEmitter",
-						"typeArguments": [
-							{
-								"type": "intrinsic",
-								"name": "Object"
-							}
-						]
-					},
-					"defaultValue": " new EventEmitter()"
-				},
-				{
-					"id": 264,
-					"name": "rate",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Rate"
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "rating/rating.component.ts",
-							"line": 13,
-							"character": 15
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					}
-				},
-				{
-					"id": 265,
-					"name": "readOnly",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "If element is only showing rate stars and not rating"
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "rating/rating.component.ts",
-							"line": 15,
-							"character": 19
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					},
-					"defaultValue": "false"
-				},
-				{
-					"id": 263,
-					"name": "total",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Total of stars for rating"
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "rating/rating.component.ts",
-							"line": 11,
-							"character": 16
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "number"
-					},
-					"defaultValue": "5"
-				},
-				{
-					"id": 274,
-					"name": "chooseRating",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 275,
-							"name": "chooseRating",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 276,
-									"name": "rating",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "number"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "rating/rating.component.ts",
-							"line": 34,
-							"character": 14
-						}
-					]
-				},
-				{
-					"id": 272,
-					"name": "generateArray",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPrivate": true,
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 273,
-							"name": "generateArray",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "reference",
-								"name": "Array",
-								"typeArguments": [
-									{
-										"type": "reference",
-										"name": "Number"
-									}
-								]
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "rating/rating.component.ts",
-							"line": 27,
-							"character": 23
-						}
-					]
-				},
-				{
-					"id": 270,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 271,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "rating/rating.component.ts",
-							"line": 23,
-							"character": 10
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						268
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						267,
-						266,
-						264,
-						265,
-						263
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						274,
-						272,
-						270
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "rating/rating.component.ts",
-					"line": 8,
-					"character": 36
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
-				}
-			]
-		},
-		{
 			"id": 277,
 			"name": "InitiafyRatingModule",
 			"kind": 128,
@@ -3909,14 +3538,14 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  declarations: [InitiafyRatingComponent],\n  imports: [CommonModule, BrowserModule, InitiafyIconModule],\n  exports: [InitiafyRatingComponent]\n}"
+						"obj": "{\n  declarations: [RatingComponent],\n  imports: [CommonModule, InitiafyIconModule],\n  exports: [RatingComponent]\n}"
 					}
 				}
 			],
 			"sources": [
 				{
 					"fileName": "rating/rating.module.ts",
-					"line": 12,
+					"line": 11,
 					"character": 33
 				}
 			]
@@ -5067,6 +4696,377 @@
 					"fileName": "progress-bar/progress-bar.component.ts",
 					"line": 8,
 					"character": 33
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 262,
+			"name": "RatingComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'initiafy-rating',\n  templateUrl: './rating.component.html',\n  styleUrls: ['./rating.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 268,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 269,
+							"name": "new RatingComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "RatingComponent",
+								"id": 262
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 19,
+							"character": 35
+						}
+					]
+				},
+				{
+					"id": 267,
+					"name": "array",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isPublic": true,
+						"isExported": true
+					},
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 19,
+							"character": 14
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "Array",
+						"typeArguments": [
+							{
+								"type": "reference",
+								"name": "Number"
+							}
+						]
+					},
+					"defaultValue": " []"
+				},
+				{
+					"id": 266,
+					"name": "callback",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Callback when clickin on a rate star"
+					},
+					"decorators": [
+						{
+							"name": "Output",
+							"type": {
+								"type": "reference",
+								"name": "Output"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 17,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "reference",
+						"name": "EventEmitter",
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "number"
+							}
+						]
+					},
+					"defaultValue": " new EventEmitter<number>()"
+				},
+				{
+					"id": 264,
+					"name": "rate",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Rate value for display rating"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 13,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
+				},
+				{
+					"id": 265,
+					"name": "readOnly",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Element read only for display rating"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 15,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 263,
+					"name": "total",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Total of stars for rating"
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 11,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					},
+					"defaultValue": "5"
+				},
+				{
+					"id": 274,
+					"name": "chooseRating",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 275,
+							"name": "chooseRating",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"parameters": [
+								{
+									"id": 276,
+									"name": "rating",
+									"kind": 32768,
+									"kindString": "Parameter",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 34,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 272,
+					"name": "generateArray",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isPrivate": true,
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 273,
+							"name": "generateArray",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "Array",
+								"typeArguments": [
+									{
+										"type": "reference",
+										"name": "Number"
+									}
+								]
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 27,
+							"character": 23
+						}
+					]
+				},
+				{
+					"id": 270,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 271,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "rating/rating.component.ts",
+							"line": 23,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						268
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						267,
+						266,
+						264,
+						265,
+						263
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						274,
+						272,
+						270
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "rating/rating.component.ts",
+					"line": 8,
+					"character": 28
 				}
 			],
 			"implementedTypes": [
@@ -8939,7 +8939,6 @@
 				244,
 				261,
 				243,
-				262,
 				277,
 				287,
 				312,
@@ -8950,6 +8949,7 @@
 				221,
 				245,
 				233,
+				262,
 				278,
 				291,
 				78,
