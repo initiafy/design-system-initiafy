@@ -14,7 +14,9 @@ import {
   StructureComponent,
   CssComponent,
   DataTableComponent,
-  CardDocumentationComponent
+  CardDocumentationComponent,
+  RatingComponent,
+  ProgressBarComponent
 } from './sections';
 import { DocumentationService } from './core';
 import {
@@ -47,14 +49,16 @@ export function startupServiceFactory(
     StructureComponent,
     ContentComponent,
     SearchBarComponent,
-    CardDocumentationComponent
+    CardDocumentationComponent,
+    RatingComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
     SharedModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [
     DocumentationService,

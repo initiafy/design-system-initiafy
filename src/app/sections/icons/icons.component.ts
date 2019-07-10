@@ -56,6 +56,7 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('help_outline', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('home', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('image', ''));
+    this.iconsList.push(this.iconsService.getIcons('important_devices', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('insert_invitation', ''));
     this.iconsList.push(this.iconsService.getIcons('location_on', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('mail', ''));
@@ -76,5 +77,14 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('view_module', ''));
     this.iconsList.push(this.iconsService.getIcons('visibility', ''));
     this.iconsList.push(this.iconsService.getIcons('warning', ''));
+    this.iconsList.push(this.iconsService.getIcons('top-empty', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('top-full', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('top-half', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('middle-empty', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('middle-full', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('middle-half', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('bottom-empty', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('bottom-full', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('bottom-half', 'initiafy'));
   }
 }

@@ -1,0 +1,13 @@
+<app-documentation [componentName]="componentName" [module]="module"
+    [codeTitle]="'initiafy-rating/initiafy-rating.html'">
+    <p>Rating <b *ngIf="rate"> - {{ rate }} star<span *ngIf="rate > 1">s</span></b> </p>
+    <initiafy-rating (callback)="getRate($event)"></initiafy-rating>
+    <br />
+    <p>Display rating</p>
+    <initiafy-rating rate="0" readOnly="true"></initiafy-rating>
+    <initiafy-rating rate="1" readOnly="true"></initiafy-rating>
+    <initiafy-rating rate="2" readOnly="true"></initiafy-rating>
+    <initiafy-rating rate="3" readOnly="true"></initiafy-rating>
+    <initiafy-rating rate="4" readOnly="true"></initiafy-rating>
+    <initiafy-rating rate="5" readOnly="true"></initiafy-rating>
+</app-documentation>

@@ -11,7 +11,9 @@ import {
   ButtonsComponent,
   ColorsComponent,
   GridComponent,
-  CardDocumentationComponent
+  CardDocumentationComponent,
+  RatingComponent,
+  ProgressBarComponent
 } from './sections';
 import { HeaderComponent } from './sections/header/header.component';
 
@@ -53,6 +55,8 @@ const routes: Routes = [
   { path: 'typography', component: TypographyComponent },
   { path: 'data-table', component: DataTableComponent },
   { path: 'card', component: CardDocumentationComponent },
+  { path: 'rating', component: RatingComponent },
+  { path: 'progress-bar', component: ProgressBarComponent },
   { path: '**', redirectTo: '' }
 ];
 
