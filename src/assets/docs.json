@@ -3575,7 +3575,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  declarations: [RatingComponent],\r\n  imports: [CommonModule, InitiafyIconModule],\r\n  exports: [RatingComponent]\r\n}"
+						"obj": "{\n  declarations: [RatingComponent],\n  imports: [CommonModule, InitiafyIconModule],\n  exports: [RatingComponent]\n}"
 					}
 				}
 			],
@@ -4758,7 +4758,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-rating',\r\n  templateUrl: './rating.component.html',\r\n  styleUrls: ['./rating.component.scss']\r\n}"
+						"obj": "{\n  selector: 'initiafy-rating',\n  templateUrl: './rating.component.html',\n  styleUrls: ['./rating.component.scss']\n}"
 					}
 				}
 			],
