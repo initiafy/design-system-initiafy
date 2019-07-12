@@ -609,11 +609,6 @@
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
-.ngx-datatable.material .datatable-body-row .datatable-row-group .datatable-body-cell a {
-  color: $Black;
-  cursor: pointer;
-  text-decoration: none;
-}
 .ngx-datatable.material .datatable-body-row .datatable-row-group .datatable-body-cell a:hover {
   color: $SMain;
 }
@@ -687,13 +682,13 @@ table[mat-table] {
 
 /* Sorting */
 .sort-btn {
-  font-family: "FontAwesome";
+  font-family: "Initiafy Icons", sans-serif;
   margin-left: 6px;
-  font-size: 8px;
+  font-size: 12px;
 }
 .sort-btn.datatable-icon-up:before {
-  content: "\f077";
+  content: "\e910";
 }
 .sort-btn.datatable-icon-down:before {
-  content: "\f078";
+  content: "\e906";
 }
