@@ -6,7 +6,7 @@
     "url": "https://github.com/initiafy/design-system-initiafy.git"
   },
   "homepage": "https://github.com/initiafy/design-system-initiafy/tree/develop/projects/design-system-initiafy",
-  "version": "0.0.52",
+  "version": "0.0.53",
   "scripts": {
     "build": "ng-packagr -p package.json",
     "postbuild": "gulp"
