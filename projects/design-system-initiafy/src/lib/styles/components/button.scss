@@ -121,12 +121,15 @@
   &[disabled][disabled] {
     border-color: transparent;
     background-color: $Ripple;
+    background-color: var(--Ripple);
     color: $Disable;
+    color: var(--Disable);
     box-shadow: none;
     pointer-events: none;
     cursor: default;
     &:hover {
       background-color: $Ripple;
+      background-color: var(--Ripple);
       box-shadow: none;
     }
   }
