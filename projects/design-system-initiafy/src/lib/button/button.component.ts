@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   /** Design of the button */
-  @Input() design: 'main' | 'stroke' | 'basic' | 'white' = 'basic';
+  @Input() design: 'main' | 'stroke' | 'basic' | 'white' | 'float' = 'basic';
   /** Color palette of the button */
   @Input() color: 'primary' | 'secondary';
   /** Text label for the button  */
@@ -18,7 +18,8 @@ export class ButtonComponent implements OnInit {
   @Input() icon: string;
   /** Icon library to whivh the icon belongs */
   @Input() iconFont: 'initiafy' | 'glyphicon' |
-    'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
+    'font-awesome-brand' | 'font-awesome-solid' |
+    'material-icons' | 'material-outlined' = 'material-icons';
   /** Additional css classes to apply to the button */
   @Input() cssClass: string = '';
   /** Text for the button's tooltip */

@@ -38,7 +38,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 20px;
   border: none;
   background-color: $BackgroundDefault;
-  background: var(--BackgroundDefault);
+  background-color: var(--BackgroundDefault);
 }
 
 input:-webkit-autofill {

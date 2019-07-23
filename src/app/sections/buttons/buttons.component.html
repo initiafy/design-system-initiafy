@@ -3,12 +3,16 @@
   <mat-slide-toggle (change)="handleSlideChange($event)" class="margin-y-16">Dark Mode</mat-slide-toggle>
   <mat-divider></mat-divider>
   <div [ngClass]="darkBackground ? 'black-bgcolor' : 'white-bgcolor'">
-      <div *ngFor="let button of buttons"  class="flex column elements-margin-right">
+      <div *ngFor="let button of buttons" class="flex column elements-margin-right">
           <div class="flex wrap">
             <initiafy-button class="margin-y-8 margin-x-8" *ngFor="let b of button" design="{{ b.design }}" color="{{ b.color }}" label="{{ b.label }}"
               icon="{{ b.icon }}" iconFont="{{ b.iconFont }}" tooltip="{{ b.tooltip }}" disabled="{{ b.disabled }}"></initiafy-button>
           </div>
           <mat-divider></mat-divider>
+      </div>
+      <div class="flex row">
+        <initiafy-button design="float" color="primary" icon="edit" tooltip="Edit" cssClass="relative" class="padding-top-36 padding-left-36 inline-block"></initiafy-button>
+        <initiafy-button design="float" color="secondary" icon="save" tooltip="Save" cssClass="relative" class="padding-top-36 padding-left-36 inline-block"></initiafy-button>
       </div>
   </div>
 </app-documentation>

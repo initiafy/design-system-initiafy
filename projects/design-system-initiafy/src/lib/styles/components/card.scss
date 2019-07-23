@@ -11,6 +11,8 @@
     align-items: center;
     border: 1px dashed $Ripple;
     background-color: $BackgroundDefault;
+    background-color: var(--BackgroundDefault);
     color: $Grey;
+    color: var(--Grey);
     box-shadow: none;
 }

@@ -12,7 +12,7 @@
   cursor: pointer;
   letter-spacing: $letter-spacing;
 
-  /* Main Button */
+  /* Stroke Button */
   &.stroke {
     padding: 0 16px;
   }
@@ -116,17 +116,61 @@
     }
   }
 
+  /* Float Button */
+  &.float {
+    position: fixed;
+    z-index: 999;
+    bottom: $spacing-big;
+    right: $spacing-big;
+    width: $header-height;
+    height: $header-height;
+    line-height: $header-height;
+    border-radius: 100%;
+    padding: 0;
+    text-align: center;
+    i {
+      font-size: 40px;
+    }
+    @media only screen and (max-width: $media-mobile) {
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      i {
+        font-size: 22px;
+      }
+    }
+  }
+
+  /* Float Primary Button */
+  &.float.primary {
+    @include button-main(var(--PMain), $PMain);
+    .mat-ripple-element {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  /* Float Secondary Button */
+  &.float.secondary {
+    @include button-main(var(--SMain), $SMain);
+    .mat-ripple-element {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
   /* Disabled Button */
   &[disabled],
   &[disabled][disabled] {
     border-color: transparent;
     background-color: $Ripple;
+    background-color: var(--Ripple);
     color: $Disable;
+    color: var(--Disable);
     box-shadow: none;
     pointer-events: none;
     cursor: default;
     &:hover {
       background-color: $Ripple;
+      background-color: var(--Ripple);
       box-shadow: none;
     }
   }
