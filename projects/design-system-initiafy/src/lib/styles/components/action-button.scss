@@ -3,6 +3,7 @@
 
 .action-button {
   color: $Grey;
+  color: var(--Grey);
   cursor: pointer;
   background: #fff;
   border-radius: $radius-std;
@@ -12,6 +13,7 @@
   &:active,
   &:focus {
     background-color: $Hover;
+    background-color: var(--Hover);
     @include shadow-btn();
   }
 
