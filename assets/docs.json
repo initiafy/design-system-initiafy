@@ -862,7 +862,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 31,
+							"line": 32,
 							"character": 42
 						}
 					]
@@ -891,7 +891,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 31,
+							"line": 32,
 							"character": 20
 						}
 					],
@@ -973,7 +973,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 23,
+							"line": 24,
 							"character": 19
 						}
 					],
@@ -1029,6 +1029,10 @@
 							{
 								"type": "stringLiteral",
 								"value": "white"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "float"
 							}
 						]
 					},
@@ -1058,7 +1062,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 27,
+							"line": 28,
 							"character": 19
 						}
 					],
@@ -1092,7 +1096,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 29,
+							"line": 30,
 							"character": 28
 						}
 					],
@@ -1251,7 +1255,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 25,
+							"line": 26,
 							"character": 18
 						}
 					],
@@ -1341,6 +1345,10 @@
 									{
 										"type": "stringLiteral",
 										"value": "white"
+									},
+									{
+										"type": "stringLiteral",
+										"value": "float"
 									}
 								]
 							}
@@ -1349,7 +1357,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 37,
+							"line": 38,
 							"character": 13
 						}
 					]
@@ -1378,7 +1386,7 @@
 					"sources": [
 						{
 							"fileName": "button/button.component.ts",
-							"line": 35,
+							"line": 36,
 							"character": 10
 						}
 					]
