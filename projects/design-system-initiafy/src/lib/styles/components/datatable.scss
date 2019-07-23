@@ -62,6 +62,8 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  border-top: 1px solid #eee !important;
+  margin-top: -1px;
 }
 
 .ngx-datatable.fixed-row .datatable-scroll .datatable-body-row .datatable-body-group-cell {
@@ -315,10 +317,6 @@
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAFklEQVQI12PQkNdi1VTQ5gbSwkAsDQARLAIGtOSFUAAAAABJRU5ErkJggg==);
 }
 
-.ngx-datatable.material .datatable-header {
-  border-bottom: 1px solid $Ripple;
-}
-
 .ngx-datatable.material .datatable-header .datatable-header-cell {
   padding: 0.9rem 1.2rem;
   color: $Grey;
@@ -363,8 +361,10 @@
 }
 
 .ngx-datatable.material .datatable-body .datatable-row-detail {
-  background: #f5f5f5;
-  padding: 10px;
+  background: #fff;
+  margin-top: -1px;
+  padding: 0 0 10px 0;
+  position: relative;
 }
 
 .ngx-datatable.material .datatable-body .datatable-group-header {
@@ -611,10 +611,20 @@
 .ngx-datatable.material:not(.cell-selection) .datatable-body-row:hover,
 .ngx-datatable.material:not(.cell-selection) .datatable-body-row:hover .datatable-row-group {
   background-color: #eee;
-  transition-property: background;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
+  transition: none;
+  & ~ .datatable-row-detail {
+    background-color: #eee;
+    transition: none;
+  }
 }
+
+.ngx-datatable.material .datatable-row-detail:hover,
+.ngx-datatable.material .datatable-row-detail:hover ~ .datatable-body-row,
+.ngx-datatable.material .datatable-row-detail:hover ~ .datatable-body-cell {
+  background-color: #eee;
+  transition: none;
+}
+
 .ngx-datatable.material .datatable-body-row .datatable-row-group .datatable-body-cell a:hover {
   color: $SMain;
   color: var(--SMain);
@@ -638,9 +648,8 @@
   width: 100% !important;
   justify-content: space-between;
 }
-.ngx-datatable .datatable-body .datatable-body-row .datatable-row-center,
-.ngx-datatable.fixed-row .datatable-scroll .datatable-body-row .datatable-body-cell {
-  border-bottom: 1px solid #efefef;
+.ngx-datatable .datatable-body .datatable-body-row .datatable-row-center {
+  border-top: 1px solid #efefef;
 }
 
 .ngx-datatable .datatable-row-wrapper {

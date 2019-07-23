@@ -92,6 +92,7 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('remove_circle_outline', ''));
     this.iconsList.push(this.iconsService.getIcons('settings', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('settings_backup_restore', ''));
+    this.iconsList.push(this.iconsService.getIcons('save', ''));
     this.iconsList.push(this.iconsService.getIcons('star', ''));
     this.iconsList.push(this.iconsService.getIcons('star_border', ''));
     this.iconsList.push(this.iconsService.getIcons('tune', 'material-outlined'));
