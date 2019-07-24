@@ -196,10 +196,6 @@
   display: inline-block;
 }
 
-.ngx-datatable .datatable-body .datatable-row-detail {
-  overflow-y: hidden;
-}
-
 .ngx-datatable .datatable-body .datatable-row-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -291,7 +287,7 @@
   text-align: left;
   padding: 0.5rem 1.2rem;
   vertical-align: top;
-  border-top: 0;
+  border-top: 1px solid #eee;
 }
 
 .ngx-datatable.material .loading-row {
@@ -362,9 +358,12 @@
 
 .ngx-datatable.material .datatable-body .datatable-row-detail {
   background: #fff;
+  height: auto !important;
   margin-top: -1px;
+  overflow-y: hidden;
   padding: 0 0 10px 0;
   position: relative;
+  font-size: 14px;
 }
 
 .ngx-datatable.material .datatable-body .datatable-group-header {
@@ -393,6 +392,11 @@
   transition: width 0.3s ease;
   font-size: 14px;
   font-weight: 400;
+}
+
+.ngx-datatable.material .status-cell .datatable-body-cell-label,
+.ngx-datatable.material .status-header .datatable-header-cell-template-wrap {
+  text-align: center;
 }
 
 .ngx-datatable.material .datatable-body .progress-linear {
@@ -610,19 +614,22 @@
 .ngx-datatable.material:not(.cell-selection) .datatable-body-row:hover .datatable-row-group .datatable-body-cell,
 .ngx-datatable.material:not(.cell-selection) .datatable-body-row:hover,
 .ngx-datatable.material:not(.cell-selection) .datatable-body-row:hover .datatable-row-group {
-  background-color: #eee;
-  transition: none;
+  background: none;
+  background-color: none;
   & ~ .datatable-row-detail {
-    background-color: #eee;
-    transition: none;
+    background: none;
+    background-color: none;
   }
 }
 
-.ngx-datatable.material .datatable-row-detail:hover,
-.ngx-datatable.material .datatable-row-detail:hover ~ .datatable-body-row,
-.ngx-datatable.material .datatable-row-detail:hover ~ .datatable-body-cell {
+.ngx-datatable.material .datatable-row-wrapper:hover,
+.ngx-datatable.material .datatable-row-wrapper:hover .datatable-row-detail,
+.ngx-datatable.material .datatable-row-wrapper:hover .datatable-body-row,
+.ngx-datatable.material .datatable-row-wrapper:hover .datatable-body-cell {
   background-color: #eee;
-  transition: none;
+  transition-property: background;
+  transition-duration: 0;
+  transition-timing-function: linear;
 }
 
 .ngx-datatable.material .datatable-body-row .datatable-row-group .datatable-body-cell a:hover {
