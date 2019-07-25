@@ -1,6 +1,7 @@
 <button 
   class="action-button ripple"
   [ngClass]="classes"
+  [type]="type"
   [matTooltip]="tooltip"
   [disabled]="disabled"
   (click)="callback.emit($event)">
