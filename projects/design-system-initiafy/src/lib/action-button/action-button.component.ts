@@ -8,6 +8,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ActionButtonComponent {
   @Input() label: string = '';
   @Input() icon: string = '';
+  @Input() type = 'button';
   @Input() iconFont: 'initiafy' | 'glyphicon' | 'font-awesome-brand' | 'font-awesome-solid' | 'material-icons' | 'material-outlined' = 'material-icons';
   @Input() tooltip: string = '';
   @Input() cssClass: string = '';
