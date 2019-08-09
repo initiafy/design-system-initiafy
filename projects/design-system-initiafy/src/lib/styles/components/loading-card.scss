@@ -5,10 +5,6 @@
   @extend %base-card;
   width: 100%;
   padding: 0;
-  .loading-card-content {
-    padding: $spacing;
-    width: 100%;
-  }
   .loading-card-bar {
     position: absolute;
     z-index: 1;
@@ -31,4 +27,9 @@
   &.big {
     max-width: $modal-big;
   }
+}
+
+.loading-card-content {
+  padding: $spacing;
+  width: 100%;
 }

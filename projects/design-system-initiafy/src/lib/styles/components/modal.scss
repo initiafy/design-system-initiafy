@@ -27,6 +27,11 @@
   .initiafy-modal-close {
     display: none;
   }
+  .initiafy-modal-scroll {
+    max-height: calc(100vh - 250px);
+    overflow: auto;
+    padding-right: $spacing;
+  }
 }
 
 /* Is Overlay */

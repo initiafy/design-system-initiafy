@@ -1,5 +1,5 @@
 <div class="loading-card" [ngClass]="classes">
-  <div class="loading-card-content">
+  <div class="loading-card-content" [ngClass]="internalClass">
     <ng-content></ng-content>
   </div>
   <initiafy-progress-bar [isLoading]="isLoading" [mode]="mode" [value]="value" class="loading-card-bar"></initiafy-progress-bar>
