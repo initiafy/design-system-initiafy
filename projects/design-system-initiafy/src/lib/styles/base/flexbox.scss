@@ -38,7 +38,7 @@
     flex: #{$i};
   }
   .flex-grow-#{$i} {
-    flex: #{$i};
+    flex-grow: #{$i};
   }
 }
 

@@ -1,8 +1,8 @@
 @import "../imports/variables";
 
-body {
-  color: $Black;
-  color: var(--Black);
+body, button {
+  color: $Grey;
+  color: var(--Grey);
 }
 
 .primary-color {

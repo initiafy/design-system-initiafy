@@ -18,8 +18,6 @@
   align-items: center;
   background-color: white;
   padding: 0 $spacing;
-  color: $Grey;
-  color: var(--Grey);
   @include shadow-std();
 }
 
