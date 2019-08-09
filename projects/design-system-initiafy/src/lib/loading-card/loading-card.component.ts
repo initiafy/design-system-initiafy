@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class LoadingCardComponent implements OnInit {
   @Input() cssClass = '';
+  @Input() internalClass = '';
   @Input() size: 'small' | 'std' | 'medium' | 'big' | 'full' = 'std';
   @Input() isLoading: boolean = false;
   @Input() mode: 'indeterminate' | 'determinate' = 'indeterminate';
@@ -14,8 +15,7 @@ export class LoadingCardComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   get classes() {
     return this.cssClass + ' ' + this.size;
