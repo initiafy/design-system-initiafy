@@ -2,8 +2,6 @@
 @import "../imports/mixins";
 
 .action-button {
-  color: $Grey;
-  color: var(--Grey);
   cursor: pointer;
   background: #fff;
   border-radius: $radius-std;

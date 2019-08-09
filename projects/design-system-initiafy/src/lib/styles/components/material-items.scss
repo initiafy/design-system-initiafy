@@ -588,11 +588,6 @@ textarea.cdk-textarea-autosize-measuring {
   padding: 2px 0 !important;
   box-sizing: content-box !important;
 }
-
-.mat-option {
-  color: $Black;
-  color: var(--Black);
-}
 .mat-option:hover:not(.mat-option-disabled), .mat-option:focus:not(.mat-option-disabled) {
   background: rgba(0, 0, 0, 0.04);
 }
@@ -601,8 +596,6 @@ textarea.cdk-textarea-autosize-measuring {
 }
 .mat-option.mat-active {
   background: rgba(0, 0, 0, 0.04);
-  color: $Black;
-  color: var(--Black);
 }
 .mat-option.mat-option-disabled {
   color: $Disable;
@@ -621,11 +614,6 @@ textarea.cdk-textarea-autosize-measuring {
 
 .mat-warn .mat-option.mat-selected:not(.mat-option-disabled) {
   color: $RagRed;
-}
-
-.mat-optgroup-label {
-  color: $Grey;
-  color: var(--Grey);
 }
 
 .mat-optgroup-disabled .mat-optgroup-label {
@@ -766,8 +754,6 @@ textarea.cdk-textarea-autosize-measuring {
 
 .mat-app-background {
   background-color: #fafafa;
-  color: $Black;
-  color: var(--Black);
 }
 
 .mat-theme-loaded-marker {
@@ -776,8 +762,6 @@ textarea.cdk-textarea-autosize-measuring {
 
 .mat-autocomplete-panel {
   background: white;
-  color: $Black;
-  color: var(--Black);
 }
 .mat-autocomplete-panel:not([class*=mat-elevation-z]) {
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
@@ -1534,20 +1518,10 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 
 .mat-expansion-panel {
   background: white;
-  color: $Black;
-  color: var(--Black);
 }
 
 .mat-action-row {
   border-top-color: rgba(0, 0, 0, 0.12);
-}
-
-.mat-form-field-label {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.mat-hint {
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .mat-form-field.mat-focused .mat-form-field-label {
@@ -1602,8 +1576,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 
 .mat-form-field-appearance-legacy .mat-form-field-label {
   font-size: 1.1rem;
-  color: $Grey;
-  color: var(--Grey);
   top: 1.2em;
 }
 .mat-form-field-appearance-legacy .mat-hint {
@@ -1728,19 +1700,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
   color: $RagRed;
 }
 
-.mat-list .mat-list-item, .mat-nav-list .mat-list-item, .mat-selection-list .mat-list-item {
-  color: $Black;
-  color: var(--Black);
-}
-.mat-list .mat-list-option, .mat-nav-list .mat-list-option, .mat-selection-list .mat-list-option {
-  color: $Black;
-  color: var(--Black);
-}
-.mat-list .mat-subheader, .mat-nav-list .mat-subheader, .mat-selection-list .mat-subheader {
-  color: $Grey;
-  color: var(--Grey);
-}
-
 .mat-list-item-disabled {
   background-color: #eeeeee;
 }
@@ -1760,8 +1719,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 
 .mat-menu-item {
   background: transparent;
-  color: $Black;
-  color: var(--Black);
 }
 .mat-menu-item .mat-icon.material-icons {
   margin-right: 5px;
@@ -1920,11 +1877,6 @@ th.mat-header-cell, td.mat-cell, td.mat-footer-cell {
 }
 .mat-radio-button .mat-ripple-element {
   background-color: black;
-}
-
-.mat-select-value {
-  color: $Black;
-  color: var(--Black);
 }
 
 .mat-select-placeholder {
@@ -2498,8 +2450,6 @@ mat-sidenav-content {
 .mat-dialog-container {
   @include shadow-std();
   background: white;
-  color: $Black;
-  color: var(--Black);
   .mat-dialog-title {
     font: 500 20px/32px;
   }
