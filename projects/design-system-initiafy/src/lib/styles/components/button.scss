@@ -121,10 +121,11 @@
     position: fixed;
     z-index: 999;
     bottom: $spacing-big;
-    right: $spacing-big;
-    width: $header-height;
-    height: $header-height;
-    line-height: $header-height;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
     border-radius: 100%;
     padding: 0;
     text-align: center;
@@ -136,6 +137,7 @@
       width: 40px;
       height: 40px;
       line-height: 40px;
+      margin-left: -20px;
       i {
         font-size: 22px;
       }
@@ -155,6 +157,31 @@
     @include button-main(var(--SMain), $SMain);
     .mat-ripple-element {
       background: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  /* Float Cancel Button */
+  &.float-cancel {
+    position: fixed;
+    z-index: 999;
+    bottom: $spacing-big;
+    left: 50%;
+    margin-left: -75px;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 100%;
+    padding: 0;
+    text-align: center;
+    background: white;
+    @include shadow-btn();
+    i {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    @media only screen and (max-width: $media-mobile) {
+      margin-left: -60px;
     }
   }
 

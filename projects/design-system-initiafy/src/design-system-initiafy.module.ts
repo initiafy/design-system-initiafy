@@ -6,8 +6,8 @@ import { CommonModule } from '@angular/common';
  * Alphabetical order please
  */
 import { InitiafyHeaderModule } from './lib/core-components/header/header.module';
-import { InitiafySidenavModule } from './lib/core-components/sidenav/sidenav.module';
 import { InitiafyContentModule } from './lib/core-components/content/content.module';
+import { InitiafySidenavModule } from './lib/core-components/sidenav/sidenav.module';
 
 /*
  * Components Lib Modules
@@ -21,13 +21,10 @@ import { InitiafyDataTableModule } from './lib/data-table/data-table.module';
 import { InitiafyLoadingCardModule } from './lib/loading-card/loading-card.module';
 import { InitiafyIconModule } from './lib/icon/icon.module';
 import { InitiafyModalModule } from './lib/modal/modal.module';
+import { InitiafyPopoverModule } from './lib/popover/popover.module';
 import { InitiafyProgressBarModule } from './lib/progress-bar/progress-bar.module';
 import { InitiafyRatingModule } from './lib/rating/rating.module';
-import { InitiafyResultModule } from './lib/result/result.module';
-import { InitiafySearchBarModule } from './lib/search-bar/search-bar.module';
-import { InitiafySnackBarModule } from './lib/snack-bar/snack-bar.module';
 import { InitiafySpinnerModule } from './lib/spinner/spinner.module';
-import { InitiafyYesOrNoModule } from './lib/yes-or-no/yes-or-no.module';
 
 @NgModule({
   imports: [
@@ -43,12 +40,9 @@ import { InitiafyYesOrNoModule } from './lib/yes-or-no/yes-or-no.module';
     InitiafyIconModule,
     InitiafyLoadingCardModule,
     InitiafyModalModule,
+    InitiafyPopoverModule,
     InitiafyProgressBarModule,
-    InitiafyResultModule,
-    InitiafySearchBarModule,
-    InitiafySnackBarModule,
     InitiafySpinnerModule,
-    InitiafyYesOrNoModule,
     InitiafyRatingModule
   ],
   exports: [
@@ -63,15 +57,10 @@ import { InitiafyYesOrNoModule } from './lib/yes-or-no/yes-or-no.module';
     InitiafyIconModule,
     InitiafyLoadingCardModule,
     InitiafyModalModule,
+    InitiafyPopoverModule,
     InitiafyProgressBarModule,
-    InitiafySearchBarModule,
-    InitiafyResultModule,
-    InitiafySearchBarModule,
-    InitiafySnackBarModule,
     InitiafySpinnerModule,
-    InitiafyYesOrNoModule,
     InitiafyRatingModule
-  ],
-  declarations: []
+  ]
 })
 export class DesignSystemInitiafyModule {}

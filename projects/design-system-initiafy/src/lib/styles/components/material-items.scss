@@ -2415,3 +2415,11 @@ mat-sidenav-content {
   color: $SMain;
   color: var(--SMain);
 }
+
+/* Workgroup customisations */
+.workgroup-qualification .mat-expansion-panel-body {
+  padding: 0px !important;
+}
+.workgroup-qualification .mat-expansion-panel-header-description {
+  margin-right: 0px;
+}

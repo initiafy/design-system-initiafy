@@ -135,6 +135,19 @@ body, button {
   border-color: var(--RagRed);
 }
 
+.rag-red-light-color {
+  color: $RagRedLight;
+  color: var(--RagRed);
+}
+.rag-red-light-bgcolor {
+  background-color: $RagRedLight;
+  background-color: var(--RagRedLight);
+}
+.rag-red-light-border-color {
+  border-color: $RagRedLight;
+  border-color: var(--RagRedLight);
+}
+
 .rag-amber-color {
   color: $RagAmber;
   color: var(--RagAmber);
@@ -148,6 +161,19 @@ body, button {
   border-color: var(--RagAmber);
 }
 
+.rag-amber-light-color {
+  color: $RagAmberLight;
+  color: var(--RagAmberLight);
+}
+.rag-amber-light-bgcolor {
+  background-color: $RagAmberLight;
+  background-color: var(--RagAmberLight);
+}
+.rag-amber-light-border-color {
+  border-color: $RagAmberLight;
+  border-color: var(--RagAmberLight);
+}
+
 .rag-green-color {
   color: $RagGreen;
   color: var(--RagGreen);
@@ -159,6 +185,19 @@ body, button {
 .rag-green-border-color {
   border-color: $RagGreen;
   border-color: var(--RagGreen);
+}
+
+.rag-green-light-color {
+  color: $RagGreenLight;
+  color: var(--RagGreenLight);
+}
+.rag-green-light-bgcolor {
+  background-color: $RagGreenLight;
+  background-color: var(--RagGreenLight);
+}
+.rag-green-light-border-color {
+  border-color: $RagGreenLight;
+  border-color: var(--RagGreenLight);
 }
 
 .bgDropdownButtons {
