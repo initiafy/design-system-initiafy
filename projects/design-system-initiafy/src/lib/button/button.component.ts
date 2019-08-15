@@ -7,7 +7,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   /** Design of the button */
-  @Input() design: 'main' | 'stroke' | 'basic' | 'white' | 'float' = 'basic';
+  @Input() design: 'main' | 'stroke' | 'basic' | 'white' | 'float' | 'float-cancel' = 'basic';
   /** Color palette of the button */
   @Input() color: 'primary' | 'secondary';
   /** Text label for the button  */

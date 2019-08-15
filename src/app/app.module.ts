@@ -16,21 +16,15 @@ import {
   DataTableComponent,
   CardDocumentationComponent,
   RatingComponent,
-  ProgressBarComponent
+  ProgressBarComponent,
+  PopoverComponent
 } from './sections';
 import { DocumentationService } from './core';
 import { HeaderComponent as HeaderDemoComponent } from './sections/header/header.component';
-import {
-  HeaderComponent,
-  FooterComponent,
-  ContentComponent
-} from './layout';
-import { SearchBarComponent } from './sections/search-bar/search-bar.component';
+import { HeaderComponent, FooterComponent, ContentComponent } from './layout';
 import { SharedModule } from './shared/shared.modules';
 
-export function startupServiceFactory(
-  startupService: DocumentationService
-): Function {
+export function startupServiceFactory(startupService: DocumentationService): Function {
   return () => startupService.load();
 }
 
@@ -50,10 +44,10 @@ export function startupServiceFactory(
     FooterComponent,
     StructureComponent,
     ContentComponent,
-    SearchBarComponent,
     CardDocumentationComponent,
     RatingComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    PopoverComponent
   ],
   imports: [
     BrowserModule,

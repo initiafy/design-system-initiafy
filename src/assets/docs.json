@@ -1065,6 +1065,10 @@
 							{
 								"type": "stringLiteral",
 								"value": "float"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "float-cancel"
 							}
 						]
 					},
@@ -1381,6 +1385,10 @@
 									{
 										"type": "stringLiteral",
 										"value": "float"
+									},
+									{
+										"type": "stringLiteral",
+										"value": "float-cancel"
 									}
 								]
 							}
@@ -3572,6 +3580,34 @@
 			]
 		},
 		{
+			"id": 276,
+			"name": "InitiafyPopoverModule",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "NgModule",
+					"type": {
+						"type": "reference",
+						"name": "NgModule"
+					},
+					"arguments": {
+						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MdePopoverModule,\r\n    FormsModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  declarations: [PopoverComponent],\r\n  exports: [PopoverComponent]\r\n}"
+					}
+				}
+			],
+			"sources": [
+				{
+					"fileName": "popover/popover.module.ts",
+					"line": 18,
+					"character": 34
+				}
+			]
+		},
+		{
 			"id": 89,
 			"name": "InitiafyProgressBarModule",
 			"kind": 128,
@@ -3600,7 +3636,7 @@
 			]
 		},
 		{
-			"id": 280,
+			"id": 292,
 			"name": "InitiafyRatingModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3624,62 +3660,6 @@
 					"fileName": "rating/rating.module.ts",
 					"line": 11,
 					"character": 33
-				}
-			]
-		},
-		{
-			"id": 290,
-			"name": "InitiafyResultModule",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "NgModule",
-					"type": {
-						"type": "reference",
-						"name": "NgModule"
-					},
-					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [ResultComponent],\r\n  exports: [ResultComponent]\r\n}"
-					}
-				}
-			],
-			"sources": [
-				{
-					"fileName": "result/result.module.ts",
-					"line": 14,
-					"character": 33
-				}
-			]
-		},
-		{
-			"id": 315,
-			"name": "InitiafySearchBarModule",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "NgModule",
-					"type": {
-						"type": "reference",
-						"name": "NgModule"
-					},
-					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    FormsModule,\r\n    ReactiveFormsModule,\r\n    MatFormFieldModule,\r\n    MatInputModule,\r\n    MatButtonModule,\r\n    MatIconModule,\r\n    InitiafyButtonModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [SearchBarComponent],\r\n  exports: [SearchBarComponent]\r\n}"
-					}
-				}
-			],
-			"sources": [
-				{
-					"fileName": "search-bar/search-bar.module.ts",
-					"line": 26,
-					"character": 36
 				}
 			]
 		},
@@ -3712,35 +3692,7 @@
 			]
 		},
 		{
-			"id": 363,
-			"name": "InitiafySnackBarModule",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "NgModule",
-					"type": {
-						"type": "reference",
-						"name": "NgModule"
-					},
-					"arguments": {
-						"obj": "{\r\n  declarations: [SnackBarComponent],\r\n  imports: [\r\n    CommonModule,\r\n    MatSnackBarModule,\r\n    InitiafyIconModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  providers: [SnackBarService],\r\n  entryComponents: [SnackBarComponent]\r\n}"
-					}
-				}
-			],
-			"sources": [
-				{
-					"fileName": "snack-bar/snack-bar.module.ts",
-					"line": 20,
-					"character": 35
-				}
-			]
-		},
-		{
-			"id": 369,
+			"id": 298,
 			"name": "InitiafySpinnerModule",
 			"kind": 128,
 			"kindString": "Class",
@@ -3763,34 +3715,6 @@
 				{
 					"fileName": "spinner/spinner.module.ts",
 					"line": 11,
-					"character": 34
-				}
-			]
-		},
-		{
-			"id": 395,
-			"name": "InitiafyYesOrNoModule",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "NgModule",
-					"type": {
-						"type": "reference",
-						"name": "NgModule"
-					},
-					"arguments": {
-						"obj": "{\r\n  declarations: [\r\n    YesOrNoDialogComponent\r\n  ],\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyIconModule,\r\n    MatButtonModule,\r\n    MatDialogModule\r\n  ],\r\n  exports: [\r\n    YesOrNoDialogComponent\r\n  ],\r\n  providers: [\r\n    YesOrNoService\r\n  ],\r\n  entryComponents: [\r\n    YesOrNoDialogComponent\r\n  ]\r\n}"
-					}
-				}
-			],
-			"sources": [
-				{
-					"fileName": "yes-or-no/yes-or-no.module.ts",
-					"line": 28,
 					"character": 34
 				}
 			]
@@ -4554,6 +4478,320 @@
 			]
 		},
 		{
+			"id": 265,
+			"name": "PopoverComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'initiafy-popover',\n  templateUrl: './popover.component.html',\n  styleUrls: ['./popover.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 272,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 273,
+							"name": "new PopoverComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "PopoverComponent",
+								"id": 265
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 15,
+							"character": 46
+						}
+					]
+				},
+				{
+					"id": 271,
+					"name": "hideLabelOnMobile",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 15,
+							"character": 28
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					},
+					"defaultValue": "false"
+				},
+				{
+					"id": 267,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 11,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 268,
+					"name": "iconFont",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 12,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 269,
+					"name": "label",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 13,
+							"character": 16
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 270,
+					"name": "text",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 14,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 266,
+					"name": "triggerOn",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 10,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "click"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "hover"
+							}
+						]
+					},
+					"defaultValue": "\"hover\""
+				},
+				{
+					"id": 274,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 275,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "popover/popover.component.ts",
+							"line": 19,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						272
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						271,
+						267,
+						268,
+						269,
+						270,
+						266
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						274
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "popover/popover.component.ts",
+					"line": 8,
+					"character": 29
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
 			"id": 79,
 			"name": "ProgressBarComponent",
 			"kind": 128,
@@ -4815,7 +5053,7 @@
 			]
 		},
 		{
-			"id": 265,
+			"id": 277,
 			"name": "RatingComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -4836,7 +5074,7 @@
 			],
 			"children": [
 				{
-					"id": 271,
+					"id": 283,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -4845,7 +5083,7 @@
 					},
 					"signatures": [
 						{
-							"id": 272,
+							"id": 284,
 							"name": "new RatingComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -4853,7 +5091,7 @@
 							"type": {
 								"type": "reference",
 								"name": "RatingComponent",
-								"id": 265
+								"id": 277
 							}
 						}
 					],
@@ -4866,7 +5104,7 @@
 					]
 				},
 				{
-					"id": 270,
+					"id": 282,
 					"name": "array",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4894,7 +5132,7 @@
 					"defaultValue": " []"
 				},
 				{
-					"id": 269,
+					"id": 281,
 					"name": "callback",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4934,7 +5172,7 @@
 					"defaultValue": " new EventEmitter<number>()"
 				},
 				{
-					"id": 267,
+					"id": 279,
 					"name": "rate",
 					"kind": 1024,
 					"kindString": "Property",
@@ -4967,7 +5205,7 @@
 					}
 				},
 				{
-					"id": 268,
+					"id": 280,
 					"name": "readOnly",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5001,7 +5239,7 @@
 					"defaultValue": "false"
 				},
 				{
-					"id": 266,
+					"id": 278,
 					"name": "total",
 					"kind": 1024,
 					"kindString": "Property",
@@ -5035,7 +5273,7 @@
 					"defaultValue": "5"
 				},
 				{
-					"id": 277,
+					"id": 289,
 					"name": "chooseRating",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5044,14 +5282,14 @@
 					},
 					"signatures": [
 						{
-							"id": 278,
+							"id": 290,
 							"name": "chooseRating",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 279,
+									"id": 291,
 									"name": "rating",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -5077,7 +5315,7 @@
 					]
 				},
 				{
-					"id": 275,
+					"id": 287,
 					"name": "generateArray",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5087,7 +5325,7 @@
 					},
 					"signatures": [
 						{
-							"id": 276,
+							"id": 288,
 							"name": "generateArray",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5113,7 +5351,7 @@
 					]
 				},
 				{
-					"id": 273,
+					"id": 285,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -5122,7 +5360,7 @@
 					},
 					"signatures": [
 						{
-							"id": 274,
+							"id": 286,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -5147,27 +5385,27 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						271
+						283
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						270,
-						269,
-						267,
-						268,
-						266
+						282,
+						281,
+						279,
+						280,
+						278
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						277,
-						275,
-						273
+						289,
+						287,
+						285
 					]
 				}
 			],
@@ -5176,802 +5414,6 @@
 					"fileName": "rating/rating.component.ts",
 					"line": 8,
 					"character": 28
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
-				}
-			]
-		},
-		{
-			"id": 281,
-			"name": "ResultComponent",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "Component",
-					"type": {
-						"type": "reference",
-						"name": "Component"
-					},
-					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-result',\r\n  templateUrl: './result.component.html',\r\n  styleUrls: ['./result.component.scss']\r\n}"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 286,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 287,
-							"name": "new ResultComponent",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"type": {
-								"type": "reference",
-								"name": "ResultComponent",
-								"id": 281
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "result/result.component.ts",
-							"line": 12,
-							"character": 36
-						}
-					]
-				},
-				{
-					"id": 285,
-					"name": "hasData",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "result/result.component.ts",
-							"line": 12,
-							"character": 18
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					},
-					"defaultValue": "false"
-				},
-				{
-					"id": 282,
-					"name": "icon",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "result/result.component.ts",
-							"line": 9,
-							"character": 15
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"\""
-				},
-				{
-					"id": 283,
-					"name": "iconFont",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "result/result.component.ts",
-							"line": 10,
-							"character": 19
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"\""
-				},
-				{
-					"id": 284,
-					"name": "message",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "result/result.component.ts",
-							"line": 11,
-							"character": 18
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"\""
-				},
-				{
-					"id": 288,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 289,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "result/result.component.ts",
-							"line": 16,
-							"character": 10
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						286
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						285,
-						282,
-						283,
-						284
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						288
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "result/result.component.ts",
-					"line": 8,
-					"character": 28
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
-				}
-			]
-		},
-		{
-			"id": 294,
-			"name": "SearchBarComponent",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "Component",
-					"type": {
-						"type": "reference",
-						"name": "Component"
-					},
-					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-search-bar',\r\n  templateUrl: './search-bar.component.html',\r\n  styleUrls: ['./search-bar.component.scss']\r\n}"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 307,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 308,
-							"name": "new SearchBarComponent",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"type": {
-								"type": "reference",
-								"name": "SearchBarComponent",
-								"id": 294
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 39,
-							"character": 3
-						}
-					]
-				},
-				{
-					"id": 299,
-					"name": "buttonicon",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Icon to display on button when component is collapsed"
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 24,
-							"character": 21
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"search\""
-				},
-				{
-					"id": 298,
-					"name": "buttontext",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Text to display on expand button when component is collapsed"
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 22,
-							"character": 21
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"Search\""
-				},
-				{
-					"id": 304,
-					"name": "collapsedChange",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Event triggered when the collapsed state of the component is toggled"
-					},
-					"decorators": [
-						{
-							"name": "Output",
-							"type": {
-								"type": "reference",
-								"name": "Output"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 35,
-							"character": 27
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "EventEmitter",
-						"typeArguments": [
-							{
-								"type": "intrinsic",
-								"name": "Object"
-							}
-						]
-					},
-					"defaultValue": " new EventEmitter()"
-				},
-				{
-					"id": 301,
-					"name": "collapsedValue",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 29,
-							"character": 16
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					},
-					"defaultValue": "false"
-				},
-				{
-					"id": 296,
-					"name": "color",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Color Scheme for the component"
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 18,
-							"character": 16
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "stringLiteral",
-								"value": "primary"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "secondary"
-							}
-						]
-					},
-					"defaultValue": "\"primary\""
-				},
-				{
-					"id": 295,
-					"name": "placeholder",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Placeholder text for the Input"
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 16,
-							"character": 22
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"Enter search term\""
-				},
-				{
-					"id": 300,
-					"name": "search",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Event triggered when the form is submitted"
-					},
-					"decorators": [
-						{
-							"name": "Output",
-							"type": {
-								"type": "reference",
-								"name": "Output"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 26,
-							"character": 18
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "EventEmitter",
-						"typeArguments": [
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
-					},
-					"defaultValue": " new EventEmitter<string>()"
-				},
-				{
-					"id": 297,
-					"name": "value",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Initial Value for the Input"
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 20,
-							"character": 16
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"Search term\""
-				},
-				{
-					"id": 302,
-					"name": "collapsed",
-					"kind": 262144,
-					"kindString": "Accessor",
-					"flags": {
-						"isExported": true
-					},
-					"comment": {
-						"shortText": "Whether the component is collapsed"
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"getSignature": [
-						{
-							"id": 303,
-							"name": "__get",
-							"kind": 524288,
-							"kindString": "Get signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Whether the component is collapsed"
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						}
-					],
-					"setSignature": [
-						{
-							"id": 305,
-							"name": "__set",
-							"kind": 1048576,
-							"kindString": "Set signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Whether the component is collapsed"
-							},
-							"parameters": [
-								{
-									"id": 306,
-									"name": "value",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "boolean"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 31,
-							"character": 24
-						},
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 36,
-							"character": 15
-						}
-					]
-				},
-				{
-					"id": 309,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 310,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 43,
-							"character": 10
-						}
-					]
-				},
-				{
-					"id": 311,
-					"name": "onSubmit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 312,
-							"name": "onSubmit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 45,
-							"character": 10
-						}
-					]
-				},
-				{
-					"id": 313,
-					"name": "unCollapse",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 314,
-							"name": "unCollapse",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 49,
-							"character": 12
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						307
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						299,
-						298,
-						304,
-						301,
-						296,
-						295,
-						300,
-						297
-					]
-				},
-				{
-					"title": "Accessors",
-					"kind": 262144,
-					"children": [
-						302
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						309,
-						311,
-						313
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "search-bar/search-bar.component.ts",
-					"line": 14,
-					"character": 31
 				}
 			],
 			"implementedTypes": [
@@ -6093,683 +5535,7 @@
 			]
 		},
 		{
-			"id": 326,
-			"name": "SnackBarComponent",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "Component",
-					"type": {
-						"type": "reference",
-						"name": "Component"
-					},
-					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-snack-bar',\r\n  templateUrl: './snack-bar.component.html',\r\n  styleUrls: ['./snack-bar.component.css']\r\n}"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 327,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 330,
-							"name": "new SnackBarComponent",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 331,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"decorators": [
-										{
-											"name": "Inject",
-											"type": {
-												"type": "reference",
-												"name": "Inject"
-											},
-											"arguments": {
-												"token": "MAT_SNACK_BAR_DATA"
-											}
-										}
-									],
-									"type": {
-										"type": "reference",
-										"name": "SnackBarData",
-										"id": 319
-									}
-								},
-								{
-									"id": 332,
-									"name": "snackBar",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "MatSnackBar"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"name": "SnackBarComponent",
-								"id": 326
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar/snack-bar.component.ts",
-							"line": 10,
-							"character": 50
-						}
-					]
-				},
-				{
-					"id": 328,
-					"name": "data",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPublic": true,
-						"isExported": true,
-						"isConstructorProperty": true
-					},
-					"decorators": [
-						{
-							"name": "Inject",
-							"type": {
-								"type": "reference",
-								"name": "Inject"
-							},
-							"arguments": {
-								"token": "MAT_SNACK_BAR_DATA"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar/snack-bar.component.ts",
-							"line": 13,
-							"character": 43
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "SnackBarData",
-						"id": 319
-					}
-				},
-				{
-					"id": 329,
-					"name": "snackBar",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true,
-						"isExported": true,
-						"isConstructorProperty": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar/snack-bar.component.ts",
-							"line": 14,
-							"character": 20
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "MatSnackBar"
-					}
-				},
-				{
-					"id": 337,
-					"name": "action",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true,
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 338,
-							"name": "action",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar/snack-bar.component.ts",
-							"line": 24,
-							"character": 15
-						}
-					]
-				},
-				{
-					"id": 335,
-					"name": "dismiss",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true,
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 336,
-							"name": "dismiss",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar/snack-bar.component.ts",
-							"line": 20,
-							"character": 16
-						}
-					]
-				},
-				{
-					"id": 333,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 334,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar/snack-bar.component.ts",
-							"line": 17,
-							"character": 10
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						327
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						328,
-						329
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						337,
-						335,
-						333
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "snack-bar/snack-bar/snack-bar.component.ts",
-					"line": 10,
-					"character": 30
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
-				}
-			]
-		},
-		{
-			"id": 339,
-			"name": "SnackBarService",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "Injectable",
-					"type": {
-						"type": "reference",
-						"name": "Injectable"
-					},
-					"arguments": {
-						"options": "{\r\n  providedIn: 'root'\r\n}"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 341,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 344,
-							"name": "new SnackBarService",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 345,
-									"name": "router",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "Router"
-									}
-								},
-								{
-									"id": 346,
-									"name": "snackBar",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "MatSnackBar"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"name": "SnackBarService",
-								"id": 339
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar.service.ts",
-							"line": 10,
-							"character": 39
-						}
-					]
-				},
-				{
-					"id": 340,
-					"name": "isAPersistentMessage",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true,
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar.service.ts",
-							"line": 10,
-							"character": 30
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					},
-					"defaultValue": "false"
-				},
-				{
-					"id": 342,
-					"name": "router",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true,
-						"isExported": true,
-						"isConstructorProperty": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar.service.ts",
-							"line": 11,
-							"character": 28
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "Router"
-					}
-				},
-				{
-					"id": 343,
-					"name": "snackBar",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPrivate": true,
-						"isExported": true,
-						"isConstructorProperty": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar.service.ts",
-							"line": 11,
-							"character": 54
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "MatSnackBar"
-					}
-				},
-				{
-					"id": 361,
-					"name": "dismissPersistentMessages",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 362,
-							"name": "dismissPersistentMessages",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar.service.ts",
-							"line": 68,
-							"character": 27
-						}
-					]
-				},
-				{
-					"id": 358,
-					"name": "error",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 359,
-							"name": "error",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 360,
-									"name": "message",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "string"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar.service.ts",
-							"line": 56,
-							"character": 7
-						}
-					]
-				},
-				{
-					"id": 355,
-					"name": "handleServerErrors",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 356,
-							"name": "handleServerErrors",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 357,
-									"name": "array",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"name": "Error"
-										}
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar.service.ts",
-							"line": 50,
-							"character": 20
-						}
-					]
-				},
-				{
-					"id": 347,
-					"name": "help",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 348,
-							"name": "help",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 349,
-									"name": "message",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "string"
-									}
-								},
-								{
-									"id": 350,
-									"name": "helpActionLabel",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "string"
-									}
-								},
-								{
-									"id": 351,
-									"name": "helpFunction",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "Function"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar.service.ts",
-							"line": 20,
-							"character": 6
-						}
-					]
-				},
-				{
-					"id": 352,
-					"name": "success",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 353,
-							"name": "success",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 354,
-									"name": "message",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "intrinsic",
-										"name": "string"
-									}
-								}
-							],
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "snack-bar/snack-bar.service.ts",
-							"line": 38,
-							"character": 9
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						341
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						340,
-						342,
-						343
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						361,
-						358,
-						355,
-						347,
-						352
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "snack-bar/snack-bar.service.ts",
-					"line": 9,
-					"character": 28
-				}
-			]
-		},
-		{
-			"id": 364,
+			"id": 293,
 			"name": "SpinnerComponent",
 			"kind": 128,
 			"kindString": "Class",
@@ -6790,7 +5556,7 @@
 			],
 			"children": [
 				{
-					"id": 365,
+					"id": 294,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
@@ -6799,7 +5565,7 @@
 					},
 					"signatures": [
 						{
-							"id": 366,
+							"id": 295,
 							"name": "new SpinnerComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
@@ -6807,7 +5573,7 @@
 							"type": {
 								"type": "reference",
 								"name": "SpinnerComponent",
-								"id": 364
+								"id": 293
 							}
 						}
 					],
@@ -6820,7 +5586,7 @@
 					]
 				},
 				{
-					"id": 367,
+					"id": 296,
 					"name": "ngOnInit",
 					"kind": 2048,
 					"kindString": "Method",
@@ -6829,7 +5595,7 @@
 					},
 					"signatures": [
 						{
-							"id": 368,
+							"id": 297,
 							"name": "ngOnInit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -6854,14 +5620,14 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						365
+						294
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						367
+						296
 					]
 				}
 			],
@@ -6876,440 +5642,6 @@
 				{
 					"type": "reference",
 					"name": "OnInit"
-				}
-			]
-		},
-		{
-			"id": 376,
-			"name": "YesOrNoDialogComponent",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "Component",
-					"type": {
-						"type": "reference",
-						"name": "Component"
-					},
-					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-yes-or-no',\r\n  templateUrl: './yes-or-no.component.html',\r\n  styleUrls: ['./yes-or-no.component.css']\r\n}"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 377,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 380,
-							"name": "new YesOrNoDialogComponent",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 381,
-									"name": "dialogRef",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "MatDialogRef",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"name": "YesOrNoDialogComponent",
-												"id": 376
-											}
-										]
-									}
-								},
-								{
-									"id": 382,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"decorators": [
-										{
-											"name": "Inject",
-											"type": {
-												"type": "reference",
-												"name": "Inject"
-											},
-											"arguments": {
-												"token": "MAT_DIALOG_DATA"
-											}
-										}
-									],
-									"type": {
-										"type": "reference",
-										"name": "YesOrNoDialogData",
-										"id": 370
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"name": "YesOrNoDialogComponent",
-								"id": 376
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
-							"line": 10,
-							"character": 55
-						}
-					]
-				},
-				{
-					"id": 379,
-					"name": "data",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPublic": true,
-						"isExported": true,
-						"isConstructorProperty": true
-					},
-					"decorators": [
-						{
-							"name": "Inject",
-							"type": {
-								"type": "reference",
-								"name": "Inject"
-							},
-							"arguments": {
-								"token": "MAT_DIALOG_DATA"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
-							"line": 13,
-							"character": 42
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "YesOrNoDialogData",
-						"id": 370
-					}
-				},
-				{
-					"id": 378,
-					"name": "dialogRef",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPublic": true,
-						"isExported": true,
-						"isConstructorProperty": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
-							"line": 12,
-							"character": 22
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "MatDialogRef",
-						"typeArguments": [
-							{
-								"type": "reference",
-								"name": "YesOrNoDialogComponent",
-								"id": 376
-							}
-						]
-					}
-				},
-				{
-					"id": 385,
-					"name": "closeDialog",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true,
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 386,
-							"name": "closeDialog",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
-							"line": 18,
-							"character": 20
-						}
-					]
-				},
-				{
-					"id": 383,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 384,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
-							"line": 16,
-							"character": 10
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						377
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						379,
-						378
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						385,
-						383
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "yes-or-no/yes-or-no/yes-or-no.component.ts",
-					"line": 10,
-					"character": 35
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
-				}
-			]
-		},
-		{
-			"id": 387,
-			"name": "YesOrNoService",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "Injectable",
-					"type": {
-						"type": "reference",
-						"name": "Injectable"
-					},
-					"arguments": {
-						"options": "{\r\n  providedIn: 'root'\r\n}"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 388,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 390,
-							"name": "new YesOrNoService",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"parameters": [
-								{
-									"id": 391,
-									"name": "dialog",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "MatDialog"
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"name": "YesOrNoService",
-								"id": 387
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "yes-or-no/yes-or-no.service.ts",
-							"line": 9,
-							"character": 29
-						}
-					]
-				},
-				{
-					"id": 389,
-					"name": "dialog",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isPublic": true,
-						"isExported": true,
-						"isConstructorProperty": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/yes-or-no.service.ts",
-							"line": 11,
-							"character": 27
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "MatDialog"
-					}
-				},
-				{
-					"id": 392,
-					"name": "show",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isPublic": true,
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 393,
-							"name": "show",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"comment": {
-								"shortText": "Example usage\nreturns MatDialogRef generated by MatDialog.open();\ntherefore same api applies:\nDialogService.show(data: YesOrNoDialogData).afterClosed() returns an Observable of type boolean indeicating yes or no"
-							},
-							"parameters": [
-								{
-									"id": 394,
-									"name": "data",
-									"kind": 32768,
-									"kindString": "Parameter",
-									"flags": {},
-									"type": {
-										"type": "reference",
-										"name": "YesOrNoDialogData",
-										"id": 370
-									}
-								}
-							],
-							"type": {
-								"type": "reference",
-								"name": "MatDialogRef",
-								"typeArguments": [
-									{
-										"type": "reference",
-										"name": "YesOrNoDialogComponent",
-										"id": 376
-									},
-									{
-										"type": "intrinsic",
-										"name": "boolean"
-									}
-								]
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "yes-or-no/yes-or-no.service.ts",
-							"line": 18,
-							"character": 13
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						388
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						389
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						392
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "yes-or-no/yes-or-no.service.ts",
-					"line": 9,
-					"character": 27
 				}
 			]
 		},
@@ -8593,428 +6925,6 @@
 					"character": 34
 				}
 			]
-		},
-		{
-			"id": 316,
-			"name": "Error",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 317,
-					"name": "component",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/error.ts",
-							"line": 2,
-							"character": 13
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 318,
-					"name": "message",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/error.ts",
-							"line": 3,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						317,
-						318
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "snack-bar/models/error.ts",
-					"line": 1,
-					"character": 22
-				}
-			]
-		},
-		{
-			"id": 291,
-			"name": "SearchItem",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 293,
-					"name": "dataName",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 6,
-							"character": 10
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 292,
-					"name": "title",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "search-bar/search-bar.component.ts",
-							"line": 5,
-							"character": 7
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						293,
-						292
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "search-bar/search-bar.component.ts",
-					"line": 4,
-					"character": 27
-				}
-			]
-		},
-		{
-			"id": 319,
-			"name": "SnackBarData",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 324,
-					"name": "actionButtonFunction",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-data.ts",
-							"line": 6,
-							"character": 24
-						}
-					],
-					"type": {
-						"type": "reference",
-						"name": "Function"
-					}
-				},
-				{
-					"id": 323,
-					"name": "actionButtonLabel",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-data.ts",
-							"line": 5,
-							"character": 21
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 325,
-					"name": "closeButton",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-data.ts",
-							"line": 7,
-							"character": 15
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 320,
-					"name": "icon",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-data.ts",
-							"line": 2,
-							"character": 8
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 321,
-					"name": "iconFont",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-data.ts",
-							"line": 3,
-							"character": 12
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 322,
-					"name": "message",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "snack-bar/models/snack-bar-data.ts",
-							"line": 4,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						324,
-						323,
-						325,
-						320,
-						321,
-						322
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "snack-bar/models/snack-bar-data.ts",
-					"line": 1,
-					"character": 29
-				}
-			]
-		},
-		{
-			"id": 370,
-			"name": "YesOrNoDialogData",
-			"kind": 256,
-			"kindString": "Interface",
-			"flags": {
-				"isExported": true
-			},
-			"children": [
-				{
-					"id": 372,
-					"name": "message",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/dialogData.ts",
-							"line": 3,
-							"character": 11
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 374,
-					"name": "noButtonLabel",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/dialogData.ts",
-							"line": 5,
-							"character": 17
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 371,
-					"name": "title",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/dialogData.ts",
-							"line": 2,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 375,
-					"name": "width",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true,
-						"isOptional": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/dialogData.ts",
-							"line": 6,
-							"character": 9
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				},
-				{
-					"id": 373,
-					"name": "yesButtonLabel",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"sources": [
-						{
-							"fileName": "yes-or-no/models/dialogData.ts",
-							"line": 4,
-							"character": 18
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					}
-				}
-			],
-			"groups": [
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						372,
-						374,
-						371,
-						375,
-						373
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "yes-or-no/models/dialogData.ts",
-					"line": 1,
-					"character": 34
-				}
-			]
 		}
 	],
 	"groups": [
@@ -9047,26 +6957,18 @@
 				40,
 				247,
 				264,
+				276,
 				89,
-				280,
-				290,
-				315,
+				292,
 				96,
-				363,
-				369,
-				395,
+				298,
 				234,
 				248,
-				79,
 				265,
-				281,
-				294,
+				79,
+				277,
 				91,
-				326,
-				339,
-				364,
-				376,
-				387
+				293
 			]
 		},
 		{
@@ -9077,11 +6979,7 @@
 				105,
 				167,
 				132,
-				144,
-				316,
-				291,
-				319,
-				370
+				144
 			]
 		}
 	]
