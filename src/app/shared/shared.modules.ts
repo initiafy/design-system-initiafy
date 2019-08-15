@@ -35,12 +35,9 @@ import {
     InitiafyLoadingCardModule,
     InitiafyModalModule,
     InitiafyProgressBarModule,
-    InitiafyResultModule,
-    InitiafySearchBarModule,
     InitiafySpinnerModule,
-    InitiafySnackBarModule,
-    InitiafyYesOrNoModule,
-    InitiafyRatingModule
+    InitiafyRatingModule,
+    InitiafyPopoverModule
 } from 'projects/design-system-initiafy/src/public_api';
 
 @NgModule({
@@ -96,11 +93,8 @@ import {
         InitiafyModalModule,
         InitiafyProgressBarModule,
         InitiafyRatingModule,
-        InitiafyResultModule,
-        InitiafySearchBarModule,
         InitiafySpinnerModule,
-        InitiafySnackBarModule,
-        InitiafyYesOrNoModule
+        InitiafyPopoverModule
     ],
     exports: [
         CodeComponent, DocumentationComponent,
@@ -137,13 +131,8 @@ import {
         InitiafyModalModule,
         InitiafyProgressBarModule,
         InitiafyRatingModule,
-        InitiafyResultModule,
-        InitiafySearchBarModule,
         InitiafySpinnerModule,
-        InitiafySnackBarModule,
-        InitiafyYesOrNoModule,
-        InitiafySnackBarModule,
-        InitiafyYesOrNoModule
+        InitiafyPopoverModule
     ]
 })
 export class SharedModule { }

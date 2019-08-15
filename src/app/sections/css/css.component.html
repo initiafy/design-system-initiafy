@@ -1,5 +1,5 @@
 <initiafy-card>
-    <h1 class="default margin-top-0">CSS</h1>
+    <h1 class="default margin-top-0">CSS Helper Classes</h1>
     <p>CSS classes to help write consistent and maintanable code, based on Google Style Guide patterns and SMACSS.</p>
     
     <h3 class="margin-top-32">Flexbox structure</h3>    
@@ -25,7 +25,7 @@
         ```
     </markdown>
 
-    <h3 class="margin-top-32">Alignment</h3>    
+    <h3 class="margin-top-32">Flexbox Alignment</h3>    
     <markdown ngPreserveWhitespaces>
         ```html
         .align-items-x              [ add this class to align items, where x = center|stretch|start|end ]
@@ -37,7 +37,7 @@
         ```
     </markdown>
     
-    <h3 class="margin-top-32">Standard elements</h3>
+    <h3 class="margin-top-32">Standard positions, spacings and colors</h3>
     <markdown ngPreserveWhitespaces>
         ```html
         .radius-std                                 [ add border radius standard to an element]
@@ -64,7 +64,7 @@
         ```
     </markdown>
     
-    <h3 class="margin-top-32">Display</h3>
+    <h3 class="margin-top-32">Displays</h3>
     <markdown ngPreserveWhitespaces>
         ```html
         .hide, .hidden  [ add display none to an element ]                
@@ -82,11 +82,12 @@
     <h3 class="margin-top-32">Visibility</h3>
     <markdown ngPreserveWhitespaces>
         ```html
-        .visibility-[hidden-visible]    [ add visibility to an element ]
+        .visibility-hidden      [ add visibility hidden to an element ]
+        .visibility-visible     [ add visibility visible to an element ]
         ```
     </markdown>
     
-    <h3 class="margin-top-32">Margin</h3>
+    <h3 class="margin-top-32">Margins</h3>
     <markdown ngPreserveWhitespaces>
         ```html
         .margin-[x]                                 [ add top, bottom, left and right margins to an element, where x = a number from 0 to 60 multiples of 2 ]   
@@ -102,7 +103,7 @@
         ```
     </markdown>
     
-    <h3 class="margin-top-32">Padding</h3>
+    <h3 class="margin-top-32">Paddings</h3>
     <markdown ngPreserveWhitespaces>
         ```html
         .padding-[x]                            [ add padding to an element, where x = a number from 0 to 60 multiples of 4]   
@@ -141,12 +142,27 @@
         ```
     </markdown>
 
-    <h3 class="margin-top-32">Colors</h3>
+    <h3 class="margin-top-32">Text, border and background colors</h3>
     <markdown ngPreserveWhitespaces>
         ```html
-        .[primary|secondary|black|grey|disable|ripple|hover|rag-red|rag-amber|rag-green|white]-color        [ set variables for colors to an element ]   
-        .[primary|secondary|black|grey|disable|ripple|hover|rag-red|rag-amber|rag-green|white]-bgcolor      [ set variables for background color to an element ]   
-        .[primary|secondary|black|grey|disable|ripple|hover|rag-red|rag-amber|rag-green|white]-border-color [ set variables for border color to an element ]  
+        .primary-color        | .secondary-color          [ setting theme colors to elements ]
+        .primary-bgcolor      | .secondary-bgcolor        [ setting background theme colors to elements ]
+        .primary-border-color | .secondary-border-color   [ setting border theme colors to elements ]
+
+        .black-color          | .grey-color         | .disable-color         | .ripple-color         | .hover-color          [ set grey scale colors to an element ]
+        .black-bgcolor        | .grey-bgcolor       | .disable-bgcolor       | .ripple-bgcolor       | .hover-bgcolor        [ set grey scale background colors to an element ]
+        .black-border-color   | .grey-border-color  | .disable-border-color  | .ripple-border-color  | .hover-border-color   [ set grey scale border colors to an element ]
+
+        .rag-red-color        | .rag-amber-color        | .rag-green-color          [ set rag colors to an element ]
+        .rag-red-bgcolor      | .rag-amber-bgcolor      | .rag-green-bgcolor        [ set rag background colors to an element ]
+        .rag-red-border-color | .rag-amber-border-color | .rag-green-border-color   [ set rag border colors to an element ]
+
+        .rag-red-light-color        | .rag-amber-light-color        | .rag-green-light-color          [ set rag light colors to an element ]
+        .rag-red-light-bgcolor      | .rag-amber-light-bgcolor      | .rag-green-light-bgcolor        [ set rag light background colors to an element ]
+        .rag-red-light-border-color | .rag-amber-light-border-color | .rag-green-light-border-color   [ set rag light border colors to an element ]
+
+        .white-color          [ set white color to an element ]   
+        .feedback-color       [ set feedback color to an element ]
         ```
     </markdown>
 

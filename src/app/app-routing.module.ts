@@ -7,13 +7,13 @@ import {
   TypographyComponent,
   DataTableComponent,
   ActionsComponent,
-  SearchBarComponent,
   ButtonsComponent,
   ColorsComponent,
   GridComponent,
   CardDocumentationComponent,
   RatingComponent,
-  ProgressBarComponent
+  ProgressBarComponent,
+  PopoverComponent
 } from './sections';
 import { HeaderComponent } from './sections/header/header.component';
 
@@ -29,23 +29,12 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'yes-or-no',
-    loadChildren: './sections/yes-or-no/yes-or-no.module#YesOrNoModule',
-    pathMatch: 'full',
-  },
-  {
-    path: 'snack-bar',
-    loadChildren: './sections/snack-bar/snack-bar.module#SnackBarModule',
-    pathMatch: 'full',
-  },
-  {
     path: 'modal',
     loadChildren: './sections/modal/modal.module#ModalModule',
     pathMatch: 'full',
   },
   { path: 'actions', component: ActionsComponent },
   { path: 'header', component: HeaderComponent },
-  { path: 'search-bar', component: SearchBarComponent },
   { path: 'buttons', component: ButtonsComponent },
   { path: 'colors', component: ColorsComponent },
   { path: 'grid', component: GridComponent },
@@ -57,6 +46,7 @@ const routes: Routes = [
   { path: 'card', component: CardDocumentationComponent },
   { path: 'rating', component: RatingComponent },
   { path: 'progress-bar', component: ProgressBarComponent },
+  { path: 'popover', component: PopoverComponent },
   { path: '**', redirectTo: '' }
 ];
 

@@ -1,9 +1,0 @@
-<ng-template [ngIf]="hasData" [ngIfElse]="emptyContainer">
-  <ng-content></ng-content>
-</ng-template>
-<ng-template #emptyContainer>
-  <div class="full-width flex-justify-align-center column default height-500">
-    <initiafy-icon cssClass="feedback-color" icon="{{ icon }}" iconFont="{{ iconFont }}" size="big"></initiafy-icon>
-    <p class="text24 feedback-color text-center margin-y-std">{{ message }}</p>
-  </div>
-</ng-template>
