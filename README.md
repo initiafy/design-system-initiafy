@@ -1,7 +1,7 @@
-<p align="center" style="max-width: 217px;"><img alt="initiafy-logo" width="210" src="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2017/12/initiafy-logo.svg"></p>
+<img alt="GoContractor" width="210" src="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2019/08/Formerly-Initiafy-Horizontal-Blue-Grey-01-01N.svg" style="margin-auto" />
 
 
-# Initiafy Design System
+# GoContractor Design System
 
 [![Build Status](https://semaphoreci.com/api/v1/admin-initiafy-25/design-system-initiafy/branches/master/badge.svg)](https://semaphoreci.com/admin-initiafy-25/design-system-initiafy)
 
