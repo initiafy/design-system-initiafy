@@ -24,7 +24,8 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/assets",
-              {"glob": "**/*", "input": "dist/design-system-initiafy/lib/styles", "output": "./assets/"}
+              {"glob": "**/*.svg", "input": "dist/design-system-initiafy/lib/styles", "output": "src/assets/"},
+              {"glob": "**/*.ico", "input": "dist/design-system-initiafy/lib/styles", "output": "src/assets/"}
             ],
             "styles": [
               "src/styles.scss",
