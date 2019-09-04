@@ -31,7 +31,7 @@ gulp.task('css', gulp.series((done) => {
 
 /*
  * COPY gulp function
- * Select all font files of this lib
+ * Select all font files and icons of this lib
  * Save into dist folder
  */
 gulp.task('copy', gulp.series((done) => {
@@ -41,6 +41,7 @@ gulp.task('copy', gulp.series((done) => {
         "src/lib/styles/imports/*.ttf",
         "src/lib/styles/imports/*.woff",
         "src/lib/styles/imports/*.ico",
+        "src/lib/styles/imports/*.png"
     ])
     .pipe(gulp.dest('../../dist/design-system-initiafy/lib/styles/'));
     done();

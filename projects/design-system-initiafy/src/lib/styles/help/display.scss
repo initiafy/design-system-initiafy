@@ -35,12 +35,6 @@
 }
 
 @media only screen and (min-width: $media-tablet-min) {
-    .tablet-hide {
-        display: none !important;
-    }    
-}
-
-@media only screen and (min-width: $media-desktop-min) {
     .desktop-hide {
         display: none !important;
     }    
