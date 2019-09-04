@@ -2,7 +2,6 @@
 
 body, button {
   color: $Grey;
-  color: var(--Grey);
 }
 
 .primary-color {
@@ -59,150 +58,116 @@ body, button {
 
 .black-color {
   color: $Black;
-  color: var(--Black);
 }
 .black-bgcolor {
   background-color: $Black;
-  background-color: var(--Black);
 }
 .black-border-color {
   border-color: $Black;
-  border-color: var(--Black);
 }
 
 .grey-color {
   color: $Grey;
-  color: var(--Grey);
 }
 .grey-bgcolor {
   background-color: $Grey;
-  background-color: var(--Grey);
 }
 .grey-border-color {
   border-color: $Grey;
-  border-color: var(--Grey);
 }
 
 .disable-color {
   color: $Disable;
-  color: var(--Disable);
 }
 .disable-bgcolor {
   background-color: $Disable;
-  background-color: var(--Disable);
 }
 .disable-border-color {
   border-color: $Disable;
-  border-color: var(--Disable);
 }
 
 .ripple-color {
   color: $Ripple;
-  color: var(--Ripple);
 }
 .ripple-bgcolor {
   background-color: $Ripple;
-  background-color: var(--Ripple);
 }
 .ripple-border-color {
   border-color: $Ripple;
-  border-color: var(--Ripple);
 }
 
 .hover-color {
   color: $Hover;
-  color: var(--Hover);
 }
 .hover-bgcolor {
   background-color: $Hover;
-  background-color: var(--Hover);
 }
 .hover-border-color {
   border-color: $Hover;
-  border-color: var(--Hover);
 }
 
 .rag-red-color {
   color: $RagRed;
-  color: var(--RagRed);
 }
 .rag-red-bgcolor {
   background-color: $RagRed;
-  background-color: var(--RagRed);
 }
 .rag-red-border-color {
   border-color: $RagRed;
-  border-color: var(--RagRed);
 }
 
 .rag-red-light-color {
   color: $RagRedLight;
-  color: var(--RagRed);
 }
 .rag-red-light-bgcolor {
   background-color: $RagRedLight;
-  background-color: var(--RagRedLight);
 }
 .rag-red-light-border-color {
   border-color: $RagRedLight;
-  border-color: var(--RagRedLight);
 }
 
 .rag-amber-color {
   color: $RagAmber;
-  color: var(--RagAmber);
 }
 .rag-amber-bgcolor {
   background-color: $RagAmber;
-  background-color: var(--RagAmber);
 }
 .rag-amber-border-color {
   border-color: $RagAmber;
-  border-color: var(--RagAmber);
 }
 
 .rag-amber-light-color {
   color: $RagAmberLight;
-  color: var(--RagAmberLight);
 }
 .rag-amber-light-bgcolor {
   background-color: $RagAmberLight;
-  background-color: var(--RagAmberLight);
 }
 .rag-amber-light-border-color {
   border-color: $RagAmberLight;
-  border-color: var(--RagAmberLight);
 }
 
 .rag-green-color {
   color: $RagGreen;
-  color: var(--RagGreen);
 }
 .rag-green-bgcolor {
   background-color: $RagGreen;
-  background-color: var(--RagGreen);
 }
 .rag-green-border-color {
   border-color: $RagGreen;
-  border-color: var(--RagGreen);
 }
 
 .rag-green-light-color {
   color: $RagGreenLight;
-  color: var(--RagGreenLight);
 }
 .rag-green-light-bgcolor {
   background-color: $RagGreenLight;
-  background-color: var(--RagGreenLight);
 }
 .rag-green-light-border-color {
   border-color: $RagGreenLight;
-  border-color: var(--RagGreenLight);
 }
 
 .bgDropdownButtons {
   background-color: $BackgroundDefault;
-  background-color: var(--BackgroundDefault);
 }
 
 .white-color {
@@ -232,17 +197,14 @@ body, button {
 /* Standards */
 .bg-hover, .bg-hover-hover:hover {
   background: $Hover;
-  background: var(--Hover);
 }
 
 .bg-std, .bg-std-hover:hover {
   background-color: $BackgroundDefault;
-  background-color: var(--BackgroundDefault);
 }
 
 .std-border-color {
   border-color: $BackgroundDefault;
-  border-color: var(--BackgroundDefault);
 }
 
 .feedback-color {
