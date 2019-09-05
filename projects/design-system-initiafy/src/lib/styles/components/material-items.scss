@@ -2669,3 +2669,13 @@ mat-sidenav-content {
 .workgroup-qualification .mat-expansion-panel-header-description {
   margin-right: 0px;
 }
+
+/* Color fix */
+input, textarea {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0px);
+}
+
+input:disabled {
+  color: $Disable;
+}
