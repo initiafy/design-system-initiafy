@@ -2678,4 +2678,5 @@ input, textarea {
 
 input:disabled {
   color: $Disable;
+  -webkit-text-fill-color: $Disable;
 }
