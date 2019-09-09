@@ -52,3 +52,9 @@ input:-webkit-autofill {
 .none-events {
   pointer-events: none !important;
 }
+
+/* Color fix for disable fields in IOS */
+input:disabled {
+  color: $Disable;
+  -webkit-text-fill-color: $Disable;
+}
