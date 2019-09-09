@@ -33,6 +33,11 @@
                 "glob": "**/*.ico",
                 "input": "dist/design-system-initiafy/lib/styles",
                 "output": "./assets/"
+              },
+              {
+                "glob": "**/*.png",
+                "input": "dist/design-system-initiafy/lib/styles",
+                "output": "./assets/"
               }
             ],
             "styles": [
@@ -120,6 +125,11 @@
               },
               {
                 "glob": "**/*.ico",
+                "input": "dist/design-system-initiafy/lib/styles",
+                "output": "./assets/"
+              },
+              {
+                "glob": "**/*.png",
                 "input": "dist/design-system-initiafy/lib/styles",
                 "output": "./assets/"
               }
