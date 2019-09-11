@@ -41,7 +41,9 @@ gulp.task('copy', gulp.series((done) => {
         "src/lib/styles/imports/*.ttf",
         "src/lib/styles/imports/*.woff",
         "src/lib/styles/imports/*.ico",
-        "src/lib/styles/imports/*.png"
+        "src/lib/styles/imports/*.png",
+        "src/lib/styles/imports/*.json",
+        "src/lib/styles/imports/*.xml"
     ])
     .pipe(gulp.dest('../../dist/design-system-initiafy/lib/styles/'));
     done();
