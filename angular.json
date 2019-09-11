@@ -38,6 +38,11 @@
                 "glob": "**/*.png",
                 "input": "dist/design-system-initiafy/lib/styles",
                 "output": "./assets/"
+              },
+              {
+                "glob": "**/*.json",
+                "input": "dist/design-system-initiafy/lib/styles",
+                "output": "./assets/"
               }
             ],
             "styles": [
