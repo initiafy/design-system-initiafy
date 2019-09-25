@@ -40,14 +40,14 @@
     -ms-grid-rows: 1fr;
     grid-template-columns: 3fr 1fr;
   }
-
-  &.three-one-one-columns {
+  
+  &.three-two-columns {
     -ms-grid-columns: 3fr 1fr 1fr;
     -ms-grid-rows: 1fr;
     grid-template-columns: 3fr 1fr 1fr;
   }
-  
-  &.three-two-columns {
+
+  &.three-one-one-columns {
     -ms-grid-columns: 3fr 1fr 1fr;
     -ms-grid-rows: 1fr;
     grid-template-columns: 3fr 1fr 1fr;
