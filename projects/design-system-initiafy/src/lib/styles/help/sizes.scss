@@ -77,6 +77,18 @@
   max-width: 21rem;
 }
 
+@media only screen and (max-width: 500px) {
+  .width-100-pc-mobile-small {
+    width: 100%;
+  }
+  .width-50-pc-mobile-small {
+    width: 50%;
+  }
+  .width-auto-mobile-small {
+    width: auto;
+  }
+}
+
 /* Height sizes */
 @for $i from 1 through 150 {
   .height-#{$i * 5} {

@@ -43,3 +43,15 @@
 .responsivePadding8to24 {
   padding: calc( 8px + (24 - 8)*(100vw - 320px) / (1300 - 320) );
 }
+
+@media only screen and (max-width: 500px) {
+  .padding-0-mobile-small {
+    padding: 0;
+  }
+  .padding-bottom-0-mobile-small {
+    padding-bottom: 0;
+  }
+  .padding-top-0-mobile-small {
+    padding-top: 0;
+  }
+}

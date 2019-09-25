@@ -58,3 +58,19 @@ input:disabled {
   color: $Disable;
   -webkit-text-fill-color: $Disable;
 }
+
+/* Color fix for placeholder */
+::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+ color: #bdbdbd;
+}
+
+@media only screen and (max-width: 500px) {
+  .allow-smaller-mat-input .mat-form-field-infix {
+    width: auto;
+  }
+}

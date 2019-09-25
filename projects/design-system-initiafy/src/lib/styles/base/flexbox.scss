@@ -131,3 +131,15 @@
     flex-wrap: wrap;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .order-1-mobile-small {
+    order: 1;
+  }
+  .order-2-mobile-small {
+    order: 2;
+  }
+  .order-3-mobile-small {
+    order: 3;
+  }
+}
