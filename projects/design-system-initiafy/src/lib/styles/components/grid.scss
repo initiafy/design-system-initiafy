@@ -46,6 +46,18 @@
     -ms-grid-rows: 1fr;
     grid-template-columns: 3fr 1fr 1fr;
   }
+  
+  &.three-two-columns {
+    -ms-grid-columns: 3fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-columns: 3fr 1fr 1fr;
+  }
+  
+  &.four-one-columns {
+    -ms-grid-columns: 4fr 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-columns: 4fr 1fr;
+  }
 
   .initiafy-grid-row {
     word-wrap: break-word;

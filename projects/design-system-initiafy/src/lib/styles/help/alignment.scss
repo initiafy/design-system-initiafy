@@ -21,6 +21,12 @@
   text-align: justify;
 }
 
+@media only screen and (max-width: 500px) {
+  .text-center-mobile-small {
+    text-align: center;
+  }
+}
+
 /* Personalized alignments */
 .align-items-middle {
   width: 100vw;
@@ -38,11 +44,29 @@
 }
 
 .button-wrapper {
+  align-items: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin-top: $spacing;
+}
+@media only screen and (max-width: $media-mobile) {
+  .button-wrapper.column-mobile {
+    flex-direction: column;
+    & > * {
+      margin: 0 0 $spacing;
+    }
+  }
+}
+
+@media only screen and (max-width: $media-mobile-small) {
+  .button-wrapper.column-mobile-small {
+    flex-direction: column;
+    & > * {
+      margin: 0 0 $spacing;
+    }
+  }
 }
 
 /* Align items */
