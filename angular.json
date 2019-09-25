@@ -43,6 +43,11 @@
                 "glob": "**/*.json",
                 "input": "dist/design-system-initiafy/lib/styles",
                 "output": "./assets/"
+              },
+              {
+                "glob": "**/*.xml",
+                "input": "dist/design-system-initiafy/lib/styles",
+                "output": "./assets/"
               }
             ],
             "styles": [

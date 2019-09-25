@@ -35,6 +35,9 @@
 .mat-checkbox-layout .mat-checkbox-label {
 	line-height: 24px;
 }
+.mat-checkbox-layout, .mat-radio-label-content {
+  white-space: normal !important;
+}
 .mat-chip {
 	font-size: 14px;
 	font-weight: 500;
@@ -1330,6 +1333,10 @@ th.mat-header-cell {
 .mat-expansion-panel-header[aria-disabled="true"] .mat-expansion-panel-header-description,
 .mat-expansion-panel-header[aria-disabled="true"] .mat-expansion-panel-header-title {
 	color: inherit;
+}
+.mat-expansion-panel-header.mat-expanded:focus,
+.mat-expansion-panel-header.mat-expanded:hover {
+  background-color: #f8f8f8;
 }
 .mat-form-field.mat-focused .mat-form-field-label {
 	color: $PMain;
