@@ -1,5 +1,5 @@
-<mat-sidenav-container class="initiafy-wrapper" autosize>
-  <mat-sidenav #drawer class="initiafy-sidenav" [mode]="smallScreen ? 'over' : 'side'" [fixedInViewport]="true"
+<mat-sidenav-container class="gctr-wrapper" autosize>
+  <mat-sidenav #drawer class="gctr-sidenav" [mode]="smallScreen ? 'over' : 'side'" [fixedInViewport]="true"
     [fixedTopGap]="64">
     <nav>
       <ul>
@@ -23,7 +23,7 @@
     </nav>
   </mat-sidenav>
 
-  <div class="initiafy-content">
+  <div class="gctr-content">
     <ng-content></ng-content>
   </div>
 </mat-sidenav-container>

@@ -11,7 +11,7 @@ import { ClipboardService } from 'src/app/core/clipboard/clipboard.service';
 })
 export class IconsComponent implements OnInit {
   public componentName = 'IconComponent';
-  public module = 'InitiafyIconModule';
+  public module = 'GctrIconModule';
   public showCode: boolean = false;
   public iconsList: Array<Array<Icons>> = [];
 
@@ -27,7 +27,7 @@ export class IconsComponent implements OnInit {
   copyToClipboard(icon: string, iconFont: string): void {
     this.clipboard.copyToClipboard(
       `<gctr-icon icon="${icon}"${iconFont &&
-        ` iconFont="${iconFont}"`}></initiafy-icon>`
+        ` iconFont="${iconFont}"`}></gctr-icon>`
     );
   }
 
@@ -40,7 +40,7 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('block', ''));
     this.iconsList.push(this.iconsService.getIcons('book', ''));
     this.iconsList.push(this.iconsService.getIcons('cancel', ''));
-    this.iconsList.push(this.iconsService.getIcons('characterbox', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('characterbox', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('check_box', ''));
     this.iconsList.push(this.iconsService.getIcons('check_circle', ''));
     this.iconsList.push(this.iconsService.getIcons('chevron_right', ''));
@@ -51,8 +51,8 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('delete', ''));
     this.iconsList.push(this.iconsService.getIcons('description', ''));
     this.iconsList.push(this.iconsService.getIcons('done', ''));
-    this.iconsList.push(this.iconsService.getIcons('dotlogo', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('downward', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('dotlogo', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('downward', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('drafts', ''));
     this.iconsList.push(this.iconsService.getIcons('drag_handle', ''));
     this.iconsList.push(this.iconsService.getIcons('edit', ''));
@@ -78,8 +78,8 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('monetization_on', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('more_vert', ''));
     this.iconsList.push(this.iconsService.getIcons('notifications_none', 'material-outlined'));
-    this.iconsList.push(this.iconsService.getIcons('number', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('optional-empty', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('number', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('optional-empty', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('pan_tool', ''));
     this.iconsList.push(this.iconsService.getIcons('pause', ''));
     this.iconsList.push(this.iconsService.getIcons('person', 'material-outlined'));
@@ -87,7 +87,7 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('photo_camera', ''));
     this.iconsList.push(this.iconsService.getIcons('play_arrow', ''));
     this.iconsList.push(this.iconsService.getIcons('publish', ''));
-    this.iconsList.push(this.iconsService.getIcons('qualification', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('qualification', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('radio_button_checked', ''));
     this.iconsList.push(this.iconsService.getIcons('remove_circle_outline', ''));
     this.iconsList.push(this.iconsService.getIcons('settings', 'material-outlined'));
@@ -97,7 +97,7 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('star_border', ''));
     this.iconsList.push(this.iconsService.getIcons('tune', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('timelapse', ''));
-    this.iconsList.push(this.iconsService.getIcons('upward', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('upward', 'gctr'));
     this.iconsList.push(this.iconsService.getIcons('verified_user', 'material-outlined'));
     this.iconsList.push(this.iconsService.getIcons('view_list', ''));
     this.iconsList.push(this.iconsService.getIcons('view_module', ''));
@@ -108,14 +108,14 @@ export class IconsComponent implements OnInit {
     this.iconsList.push(this.iconsService.getIcons('facebook-f', 'font-awesome-brand'));
     this.iconsList.push(this.iconsService.getIcons('linkedin-in', 'font-awesome-brand'));
     this.iconsList.push(this.iconsService.getIcons('twitter', 'font-awesome-brand'));
-    this.iconsList.push(this.iconsService.getIcons('top-empty', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('top-full', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('top-half', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('middle-empty', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('middle-full', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('middle-half', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('bottom-empty', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('bottom-full', 'initiafy'));
-    this.iconsList.push(this.iconsService.getIcons('bottom-half', 'initiafy'));
+    this.iconsList.push(this.iconsService.getIcons('top-empty', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('top-full', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('top-half', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('middle-empty', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('middle-full', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('middle-half', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('bottom-empty', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('bottom-full', 'gctr'));
+    this.iconsList.push(this.iconsService.getIcons('bottom-half', 'gctr'));
   }
 }

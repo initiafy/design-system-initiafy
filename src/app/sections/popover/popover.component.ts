@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopoverComponent implements OnInit {
   public componentName = 'PopoverComponent';
-  public module = 'InitiafyPopoverModule';
+  public module = 'GctrPopoverModule';
 
   constructor() { }
 

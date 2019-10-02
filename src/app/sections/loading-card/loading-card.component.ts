@@ -8,7 +8,7 @@ import { MatSlideToggleChange } from '@angular/material';
 })
 export class LoadingCardDocumentationComponent implements OnInit {
   public componentName = 'LoadingCardComponent';
-  public module = 'InitiafyLoadingCardModule';
+  public module = 'GctrLoadingCardModule';
   public simulatedLoading: boolean;
   public simulatedDeterminateLoading: boolean;
 

@@ -4,7 +4,7 @@ import { OverlayModule, FullscreenOverlayContainer, OverlayContainer } from '@an
 
 import { ModalRoutingModule } from './modal-routing.module';
 import { ModalDocumentationComponent } from './modal.component';
-import { InitiafyModalModule } from 'projects/design-system-initiafy/src/public_api';
+import { GctrModalModule } from 'projects/gctr-design-system/src/public_api';
 import { SharedModule } from 'src/app/shared/shared.modules';
 import { ExampleModalComponent } from './example-modal/example-modal.component';
 
@@ -15,7 +15,7 @@ import { ExampleModalComponent } from './example-modal/example-modal.component';
     SharedModule,
     OverlayModule,
     ModalRoutingModule,
-    InitiafyModalModule
+    GctrModalModule
   ],
   providers: [{provide: OverlayContainer, useClass: FullscreenOverlayContainer}],
   entryComponents: [ExampleModalComponent]

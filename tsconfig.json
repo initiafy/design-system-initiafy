@@ -19,17 +19,17 @@
       "dom"
     ],
     "paths": {
-      "design-system-initiafy": [
-        "dist/design-system-initiafy"
+      "gctr-design-system": [
+        "dist/gctr-design-system"
       ],
-      "design-system-initiafy/*": [
-        "dist/design-system-initiafy/*"
+      "gctr-design-system/*": [
+        "dist/gctr-design-system/*"
       ],
-      "InitiafyDesignSystem": [
-        "dist/InitiafyDesignSystem"
+      "GctrDesignSystem": [
+        "dist/GctrDesignSystem"
       ],
-      "InitiafyDesignSystem/*": [
-        "dist/InitiafyDesignSystem/*"
+      "GctrDesignSystem/*": [
+        "dist/GctrDesignSystem/*"
       ]
     }
   }

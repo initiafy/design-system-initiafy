@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "InitiafyDesignSystem": {
+    "GctrDesignSystem": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/InitiafyDesignSystem",
+            "outputPath": "dist/GctrDesignSystem",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,33 +26,33 @@
               "src/assets",
               {
                 "glob": "**/*.svg",
-                "input": "dist/design-system-initiafy/lib/styles",
+                "input": "dist/gctr-design-system/lib/styles",
                 "output": "./assets/"
               },
               {
                 "glob": "**/*.ico",
-                "input": "dist/design-system-initiafy/lib/styles",
+                "input": "dist/gctr-design-system/lib/styles",
                 "output": "./assets/"
               },
               {
                 "glob": "**/*.png",
-                "input": "dist/design-system-initiafy/lib/styles",
+                "input": "dist/gctr-design-system/lib/styles",
                 "output": "./assets/"
               },
               {
                 "glob": "**/*.json",
-                "input": "dist/design-system-initiafy/lib/styles",
+                "input": "dist/gctr-design-system/lib/styles",
                 "output": "./assets/"
               },
               {
                 "glob": "**/*.xml",
-                "input": "dist/design-system-initiafy/lib/styles",
+                "input": "dist/gctr-design-system/lib/styles",
                 "output": "./assets/"
               }
             ],
             "styles": [
               "src/styles.scss",
-              "dist/design-system-initiafy/lib/styles/style.min.css",
+              "dist/gctr-design-system/lib/styles/style.min.css",
               "node_modules/prismjs/themes/prism-okaidia.css",
               "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
               "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css"
@@ -97,18 +97,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "InitiafyDesignSystem:build"
+            "browserTarget": "GctrDesignSystem:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "InitiafyDesignSystem:build:production"
+              "browserTarget": "GctrDesignSystem:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "InitiafyDesignSystem:build"
+            "browserTarget": "GctrDesignSystem:build"
           }
         },
         "test": {
@@ -120,7 +120,7 @@
             "karmaConfig": "src/karma.conf.js",
             "styles": [
               "src/styles.scss",
-              "dist/design-system-initiafy/lib/styles/style.min.css",
+              "dist/gctr-design-system/lib/styles/style.min.css",
               "node_modules/prismjs/themes/prism-okaidia.css",
               "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
               "node_modules/prismjs/plugins/line-highlight/prism-line-highlight.css"
@@ -130,17 +130,17 @@
               "src/assets",
               {
                 "glob": "**/*.svg",
-                "input": "dist/design-system-initiafy/lib/styles",
+                "input": "dist/gctr-design-system/lib/styles",
                 "output": "./assets/"
               },
               {
                 "glob": "**/*.ico",
-                "input": "dist/design-system-initiafy/lib/styles",
+                "input": "dist/gctr-design-system/lib/styles",
                 "output": "./assets/"
               },
               {
                 "glob": "**/*.png",
-                "input": "dist/design-system-initiafy/lib/styles",
+                "input": "dist/gctr-design-system/lib/styles",
                 "output": "./assets/"
               }
             ]
@@ -160,7 +160,7 @@
         }
       }
     },
-    "InitiafyDesignSystem-e2e": {
+    "GctrDesignSystem-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -169,11 +169,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "InitiafyDesignSystem:serve"
+            "devServerTarget": "GctrDesignSystem:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "InitiafyDesignSystem:serve:production"
+              "devServerTarget": "GctrDesignSystem:serve:production"
             }
           }
         },
@@ -188,33 +188,33 @@
         }
       }
     },
-    "design-system-initiafy": {
-      "root": "projects/design-system-initiafy",
-      "sourceRoot": "projects/design-system-initiafy/src",
+    "gctr-design-system": {
+      "root": "projects/gctr-design-system",
+      "sourceRoot": "projects/gctr-design-system/src",
       "projectType": "library",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/design-system-initiafy/tsconfig.lib.json",
-            "project": "projects/design-system-initiafy/ng-package.json"
+            "tsConfig": "projects/gctr-design-system/tsconfig.lib.json",
+            "project": "projects/gctr-design-system/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/design-system-initiafy/src/test.ts",
-            "tsConfig": "projects/design-system-initiafy/tsconfig.spec.json",
-            "karmaConfig": "projects/design-system-initiafy/karma.conf.js"
+            "main": "projects/gctr-design-system/src/test.ts",
+            "tsConfig": "projects/gctr-design-system/tsconfig.spec.json",
+            "karmaConfig": "projects/gctr-design-system/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/design-system-initiafy/tsconfig.lib.json",
-              "projects/design-system-initiafy/tsconfig.spec.json"
+              "projects/gctr-design-system/tsconfig.lib.json",
+              "projects/gctr-design-system/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -224,5 +224,5 @@
       }
     }
   },
-  "defaultProject": "InitiafyDesignSystem"
+  "defaultProject": "GctrDesignSystem"
 }

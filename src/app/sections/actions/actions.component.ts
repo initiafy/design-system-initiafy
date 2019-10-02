@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActionsComponent implements OnInit {
   public componentName = 'ActionButtonComponent';
-  public module = 'InitiafyActionButtonModule';
+  public module = 'GctrActionButtonModule';
 
   constructor() { }
 

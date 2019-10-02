@@ -1,20 +1,20 @@
 {
-  "name": "design-system-initiafy",
+  "name": "@gocontractor/gctr-design-system",
   "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "npm run npm-pack && ng serve",
-    "gh": "ng build --prod --base-href \"https://initiafy.github.io/design-system-initiafy/\"",
-    "gh-pub": "npx angular-cli-ghpages --dir=dist/InitiafyDesignSystem",
+    "gh": "ng build --prod --base-href \"https://gctr.github.io/gctr-design-system/\"",
+    "gh-pub": "npx angular-cli-ghpages --dir=dist/GctrDesignSystem",
     "build": "npm run build-lib && npm run docs && ng serve",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "gulp": "gulp",
-    "build-lib": "ng build design-system-initiafy && cd projects/design-system-initiafy && gulp",
-    "publish-lib": "cd dist/design-system-initiafy && npm publish",
-    "npm-pack": "cd dist/design-system-initiafy && npm pack",
-    "docs": "typedoc --exclude *.scss --exclude *.html --exclude *.spec.ts --mode file --json src/assets/docs.json ./projects/design-system-initiafy/src/lib/"
+    "build-lib": "ng build gctr-design-system && cd projects/gctr-design-system && gulp",
+    "publish-lib": "cd dist/gctr-design-system && npm publish",
+    "npm-pack": "cd dist/gctr-design-system && npm pack",
+    "docs": "typedoc --exclude *.scss --exclude *.html --exclude *.spec.ts --mode file --json src/assets/docs.json ./projects/gctr-design-system/src/lib/"
   },
   "private": false,
   "dependencies": {

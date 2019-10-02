@@ -6,7 +6,7 @@ import { MatSlideToggleChange } from '@angular/material';
 })
 export class HeaderComponent {
     public componentName = 'HeaderComponent';
-    public module = 'InitiafyHeaderModule';
+    public module = 'GctrHeaderModule';
     public simulatedLoading = true;
     public slideChange(event: MatSlideToggleChange) {
         this.simulatedLoading = event.checked;

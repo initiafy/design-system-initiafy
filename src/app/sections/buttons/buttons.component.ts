@@ -11,7 +11,7 @@ import { MatSlideToggleChange } from '@angular/material';
 })
 export class ButtonsComponent implements OnInit {
   public componentName = 'ButtonComponent';
-  public module = 'InitiafyButtonModule';
+  public module = 'GctrButtonModule';
   public buttons: Array<Array<Buttons>> = [];
   public darkBackground: boolean;
   constructor(

@@ -3,7 +3,7 @@
     <h1 class="scroll-x scrollChild">{{ componentDocs.name }}</h1>
   </div>
   <ng-content></ng-content>
-</initiafy-card>
+</gctr-card>
 
 <gctr-card cssClass="margin-top-32">
   <h2>Usage</h2>
@@ -12,7 +12,7 @@
     <h3>Module:</h3>
     <markdown ngPreserveWhitespaces>
       ```typescript
-      import &#123; {{ module }} &#125; from 'design-system-initiafy'
+      import &#123; {{ module }} &#125; from 'gctr-design-system'
       ```
     </markdown>
   </div>
@@ -29,30 +29,30 @@
   <div *ngIf="codeTitle" class="margin-top-16">
     <app-code [title]="codeTitle"></app-code>
   </div>
-</initiafy-card>
+</gctr-card>
 <ng-container *ngIf="inputs.data.length > 0">
   <gctr-card cssClass="margin-top-32">
     <h3 class="margin-top-16">Inputs</h3>
-    <gctr-data-table [dataTableSettings]="inputDataTableSettings"></initiafy-data-table>
-  </initiafy-card>
+    <gctr-data-table [dataTableSettings]="inputDataTableSettings"></gctr-data-table>
+  </gctr-card>
 </ng-container>
 <ng-container *ngIf="outputs.data.length > 0">
   <gctr-card cssClass="margin-top-32">
     <h3 class="margin-top-16">Outputs</h3>
-    <gctr-data-table [dataTableSettings]="outputDataTableSettings"></initiafy-data-table>
-  </initiafy-card>
+    <gctr-data-table [dataTableSettings]="outputDataTableSettings"></gctr-data-table>
+  </gctr-card>
 </ng-container>
 <ng-container *ngIf="twoWayBound.data.length > 0">
   <gctr-card cssClass="margin-top-32">
     <h3 class="margin-top-16">Two-Way bound properties</h3>
-    <gctr-data-table [dataTableSettings]="twoWayDataTableSettings"></initiafy-data-table>
-  </initiafy-card>
+    <gctr-data-table [dataTableSettings]="twoWayDataTableSettings"></gctr-data-table>
+  </gctr-card>
 </ng-container>
 <ng-container *ngIf="methods.data.length > 0">
   <gctr-card cssClass="margin-top-32">
     <h3 class="margin-top-32">Methods:</h3>
-    <gctr-data-table [dataTableSettings]="methodDataTableSettings"></initiafy-data-table>
-  </initiafy-card>
+    <gctr-data-table [dataTableSettings]="methodDataTableSettings"></gctr-data-table>
+  </gctr-card>
 </ng-container>
 <ng-container *ngIf="classes.length > 0">
   <gctr-card cssClass="margin-top-32">
@@ -65,5 +65,5 @@
         </li>
       </ul>
     </div>
-  </initiafy-card>
+  </gctr-card>
 </ng-container>

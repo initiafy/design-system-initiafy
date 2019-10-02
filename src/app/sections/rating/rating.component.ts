@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RatingComponent implements OnInit {
   public componentName = 'RatingComponent';
-  public module = 'InitiafyRatingModule';
+  public module = 'GctrRatingModule';
   public rate: number;
 
   constructor() { }

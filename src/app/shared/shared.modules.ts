@@ -23,22 +23,22 @@ import {
     MatDividerModule
 } from '@angular/material';
 import {
-    InitiafyHeaderModule,
-    InitiafySidenavModule,
-    InitiafyContentModule,
-    InitiafyActionBarModule,
-    InitiafyActionButtonModule,
-    InitiafyButtonModule,
-    InitiafyCardModule,
-    InitiafyDataTableModule,
-    InitiafyIconModule,
-    InitiafyLoadingCardModule,
-    InitiafyModalModule,
-    InitiafyProgressBarModule,
-    InitiafySpinnerModule,
-    InitiafyRatingModule,
-    InitiafyPopoverModule
-} from 'projects/design-system-initiafy/src/public_api';
+    GctrHeaderModule,
+    GctrSidenavModule,
+    GctrContentModule,
+    GctrActionBarModule,
+    GctrActionButtonModule,
+    GctrButtonModule,
+    GctrCardModule,
+    GctrDataTableModule,
+    GctrIconModule,
+    GctrLoadingCardModule,
+    GctrModalModule,
+    GctrProgressBarModule,
+    GctrSpinnerModule,
+    GctrRatingModule,
+    GctrPopoverModule
+} from 'projects/gctr-design-system/src/public_api';
 
 @NgModule({
     declarations: [
@@ -80,21 +80,21 @@ import {
             }
         }),
         // Design System
-        InitiafyHeaderModule,
-        InitiafySidenavModule,
-        InitiafyContentModule,
-        InitiafyActionBarModule,
-        InitiafyActionButtonModule,
-        InitiafyButtonModule,
-        InitiafyCardModule,
-        InitiafyDataTableModule,
-        InitiafyIconModule,
-        InitiafyLoadingCardModule,
-        InitiafyModalModule,
-        InitiafyProgressBarModule,
-        InitiafyRatingModule,
-        InitiafySpinnerModule,
-        InitiafyPopoverModule
+        GctrHeaderModule,
+        GctrSidenavModule,
+        GctrContentModule,
+        GctrActionBarModule,
+        GctrActionButtonModule,
+        GctrButtonModule,
+        GctrCardModule,
+        GctrDataTableModule,
+        GctrIconModule,
+        GctrLoadingCardModule,
+        GctrModalModule,
+        GctrProgressBarModule,
+        GctrRatingModule,
+        GctrSpinnerModule,
+        GctrPopoverModule
     ],
     exports: [
         CodeComponent, DocumentationComponent,
@@ -118,21 +118,21 @@ import {
         ReactiveFormsModule,
         MarkdownModule,
         // Design System
-        InitiafyHeaderModule,
-        InitiafySidenavModule,
-        InitiafyContentModule,
-        InitiafyActionBarModule,
-        InitiafyActionButtonModule,
-        InitiafyButtonModule,
-        InitiafyCardModule,
-        InitiafyDataTableModule,
-        InitiafyIconModule,
-        InitiafyLoadingCardModule,
-        InitiafyModalModule,
-        InitiafyProgressBarModule,
-        InitiafyRatingModule,
-        InitiafySpinnerModule,
-        InitiafyPopoverModule
+        GctrHeaderModule,
+        GctrSidenavModule,
+        GctrContentModule,
+        GctrActionBarModule,
+        GctrActionButtonModule,
+        GctrButtonModule,
+        GctrCardModule,
+        GctrDataTableModule,
+        GctrIconModule,
+        GctrLoadingCardModule,
+        GctrModalModule,
+        GctrProgressBarModule,
+        GctrRatingModule,
+        GctrSpinnerModule,
+        GctrPopoverModule
     ]
 })
 export class SharedModule { }

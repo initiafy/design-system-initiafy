@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressBarComponent implements OnInit {
   public componentName = 'ProgressBarComponent';
-  public module = 'InitiafyProgressBarModule';
+  public module = 'GctrProgressBarModule';
   public value = 40;
 
   constructor() { }

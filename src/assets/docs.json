@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "design-system-initiafy",
+	"name": "gctr-design-system",
 	"kind": 0,
 	"flags": {},
 	"children": [
@@ -172,7 +172,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-action-bar',\r\n  templateUrl: './action-bar.component.html',\r\n  styleUrls: ['./action-bar.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-action-bar',\n  templateUrl: './action-bar.component.html',\n  styleUrls: ['./action-bar.component.scss']\n}"
 					}
 				}
 			],
@@ -421,7 +421,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-action-button',\r\n  templateUrl: './action-button.component.html',\r\n  styleUrls: ['./action-button.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-action-button',\n  templateUrl: './action-button.component.html',\n  styleUrls: ['./action-button.component.scss']\n}"
 					}
 				}
 			],
@@ -616,7 +616,7 @@
 						"types": [
 							{
 								"type": "stringLiteral",
-								"value": "initiafy"
+								"value": "gctr"
 							},
 							{
 								"type": "stringLiteral",
@@ -864,7 +864,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-button',\r\n  templateUrl: './button.component.html',\r\n  styleUrls: ['./button.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.scss']\n}"
 					}
 				}
 			],
@@ -1208,7 +1208,7 @@
 						"types": [
 							{
 								"type": "stringLiteral",
-								"value": "initiafy"
+								"value": "gctr"
 							},
 							{
 								"type": "stringLiteral",
@@ -1502,7 +1502,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-card',\r\n  templateUrl: './card.component.html',\r\n  styleUrls: ['./card.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-card',\n  templateUrl: './card.component.html',\n  styleUrls: ['./card.component.scss']\n}"
 					}
 				}
 			],
@@ -1609,7 +1609,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-content',\r\n  templateUrl: './content.component.html',\r\n  styleUrls: ['./content.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-content',\n  templateUrl: './content.component.html',\n  styleUrls: ['./content.component.scss']\n}"
 					}
 				}
 			],
@@ -1742,541 +1742,8 @@
 			]
 		},
 		{
-			"id": 73,
-			"name": "HeaderComponent",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "Component",
-					"type": {
-						"type": "reference",
-						"name": "Component"
-					},
-					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-header',\r\n  templateUrl: './header.component.html',\r\n  styleUrls: ['./header.component.scss']\r\n}"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 75,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 76,
-							"name": "new HeaderComponent",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"type": {
-								"type": "reference",
-								"name": "HeaderComponent",
-								"id": 73
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "core-components/header/header.component.ts",
-							"line": 9,
-							"character": 30
-						}
-					]
-				},
-				{
-					"id": 74,
-					"name": "isLoading",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "core-components/header/header.component.ts",
-							"line": 9,
-							"character": 20
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "boolean"
-					}
-				},
-				{
-					"id": 77,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 78,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "core-components/header/header.component.ts",
-							"line": 12,
-							"character": 10
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						75
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						74
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						77
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "core-components/header/header.component.ts",
-					"line": 8,
-					"character": 28
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
-				}
-			]
-		},
-		{
-			"id": 26,
-			"name": "IconComponent",
-			"kind": 128,
-			"kindString": "Class",
-			"flags": {
-				"isExported": true
-			},
-			"decorators": [
-				{
-					"name": "Component",
-					"type": {
-						"type": "reference",
-						"name": "Component"
-					},
-					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-icon',\r\n  templateUrl: './icon.component.html',\r\n  styleUrls: ['./icon.component.scss']\r\n}"
-					}
-				}
-			],
-			"children": [
-				{
-					"id": 32,
-					"name": "constructor",
-					"kind": 512,
-					"kindString": "Constructor",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 33,
-							"name": "new IconComponent",
-							"kind": 16384,
-							"kindString": "Constructor signature",
-							"flags": {},
-							"type": {
-								"type": "reference",
-								"name": "IconComponent",
-								"id": 26
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 15,
-							"character": 24
-						}
-					]
-				},
-				{
-					"id": 30,
-					"name": "cssClass",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 14,
-							"character": 19
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"\""
-				},
-				{
-					"id": 27,
-					"name": "icon",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 10,
-							"character": 15
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"\""
-				},
-				{
-					"id": 28,
-					"name": "iconFont",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 11,
-							"character": 19
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "stringLiteral",
-								"value": "initiafy"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "glyphicon"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "font-awesome-brand"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "font-awesome-solid"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "material-icons"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "material-outlined"
-							}
-						]
-					},
-					"defaultValue": "\"material-icons\""
-				},
-				{
-					"id": 29,
-					"name": "size",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 13,
-							"character": 15
-						}
-					],
-					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "stringLiteral",
-								"value": "smaller"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "small"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "medium"
-							},
-							{
-								"type": "stringLiteral",
-								"value": "big"
-							}
-						]
-					},
-					"defaultValue": "\"small\""
-				},
-				{
-					"id": 31,
-					"name": "tooltip",
-					"kind": 1024,
-					"kindString": "Property",
-					"flags": {
-						"isExported": true
-					},
-					"decorators": [
-						{
-							"name": "Input",
-							"type": {
-								"type": "reference",
-								"name": "Input"
-							},
-							"arguments": {}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 15,
-							"character": 18
-						}
-					],
-					"type": {
-						"type": "intrinsic",
-						"name": "string"
-					},
-					"defaultValue": "\"\""
-				},
-				{
-					"id": 36,
-					"name": "iconClasses",
-					"kind": 262144,
-					"kindString": "Accessor",
-					"flags": {
-						"isExported": true
-					},
-					"getSignature": [
-						{
-							"id": 37,
-							"name": "__get",
-							"kind": 524288,
-							"kindString": "Get signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "string"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 22,
-							"character": 17
-						}
-					]
-				},
-				{
-					"id": 38,
-					"name": "showText",
-					"kind": 262144,
-					"kindString": "Accessor",
-					"flags": {
-						"isExported": true
-					},
-					"getSignature": [
-						{
-							"id": 39,
-							"name": "__get",
-							"kind": 524288,
-							"kindString": "Get signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 52,
-							"character": 14
-						}
-					]
-				},
-				{
-					"id": 34,
-					"name": "ngOnInit",
-					"kind": 2048,
-					"kindString": "Method",
-					"flags": {
-						"isExported": true
-					},
-					"signatures": [
-						{
-							"id": 35,
-							"name": "ngOnInit",
-							"kind": 4096,
-							"kindString": "Call signature",
-							"flags": {},
-							"type": {
-								"type": "intrinsic",
-								"name": "void"
-							}
-						}
-					],
-					"sources": [
-						{
-							"fileName": "icon/icon.component.ts",
-							"line": 20,
-							"character": 10
-						}
-					]
-				}
-			],
-			"groups": [
-				{
-					"title": "Constructors",
-					"kind": 512,
-					"children": [
-						32
-					]
-				},
-				{
-					"title": "Properties",
-					"kind": 1024,
-					"children": [
-						30,
-						27,
-						28,
-						29,
-						31
-					]
-				},
-				{
-					"title": "Accessors",
-					"kind": 262144,
-					"children": [
-						36,
-						38
-					]
-				},
-				{
-					"title": "Methods",
-					"kind": 2048,
-					"children": [
-						34
-					]
-				}
-			],
-			"sources": [
-				{
-					"fileName": "icon/icon.component.ts",
-					"line": 9,
-					"character": 26
-				}
-			],
-			"implementedTypes": [
-				{
-					"type": "reference",
-					"name": "OnInit"
-				}
-			]
-		},
-		{
 			"id": 11,
-			"name": "InitiafyActionBarModule",
+			"name": "GctrActionBarModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -2290,7 +1757,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [ActionBarComponent],\r\n  exports: [ActionBarComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [ActionBarComponent],\n  exports: [ActionBarComponent]\n}"
 					}
 				}
 			],
@@ -2298,13 +1765,13 @@
 				{
 					"fileName": "action-bar/action-bar.module.ts",
 					"line": 11,
-					"character": 36
+					"character": 32
 				}
 			]
 		},
 		{
 			"id": 41,
-			"name": "InitiafyActionButtonModule",
+			"name": "GctrActionButtonModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -2318,7 +1785,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatTooltipModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [ActionButtonComponent],\r\n  exports: [ActionButtonComponent]\r\n}"
+						"obj": "{\n  imports: [\n    CommonModule,\n    MatTooltipModule,\n    GctrIconModule\n  ],\n  declarations: [ActionButtonComponent],\n  exports: [ActionButtonComponent]\n}"
 					}
 				}
 			],
@@ -2326,13 +1793,13 @@
 				{
 					"fileName": "action-button/action-button.module.ts",
 					"line": 17,
-					"character": 39
+					"character": 35
 				}
 			]
 		},
 		{
 			"id": 60,
-			"name": "InitiafyButtonModule",
+			"name": "GctrButtonModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -2346,7 +1813,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MatButtonModule,\r\n    MatTooltipModule,\r\n    InitiafyIconModule\r\n  ],\r\n  declarations: [ButtonComponent],\r\n  exports: [ButtonComponent]\r\n}"
+						"obj": "{\n  imports: [\n    CommonModule,\n    MatButtonModule,\n    MatTooltipModule,\n    GctrIconModule\n  ],\n  declarations: [ButtonComponent],\n  exports: [ButtonComponent]\n}"
 					}
 				}
 			],
@@ -2354,13 +1821,13 @@
 				{
 					"fileName": "button/button.module.ts",
 					"line": 19,
-					"character": 33
+					"character": 29
 				}
 			]
 		},
 		{
 			"id": 65,
-			"name": "InitiafyCardModule",
+			"name": "GctrCardModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -2374,7 +1841,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [CardComponent],\r\n  exports: [CardComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [CardComponent],\n  exports: [CardComponent]\n}"
 					}
 				}
 			],
@@ -2382,13 +1849,13 @@
 				{
 					"fileName": "card/card.module.ts",
 					"line": 11,
-					"character": 31
+					"character": 27
 				}
 			]
 		},
 		{
 			"id": 72,
-			"name": "InitiafyContentModule",
+			"name": "GctrContentModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -2402,7 +1869,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [ContentComponent],\r\n  exports: [ContentComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [ContentComponent],\n  exports: [ContentComponent]\n}"
 					}
 				}
 			],
@@ -2410,13 +1877,13 @@
 				{
 					"fileName": "core-components/content/content.module.ts",
 					"line": 11,
-					"character": 34
+					"character": 30
 				}
 			]
 		},
 		{
 			"id": 178,
-			"name": "InitiafyDataTableComponent",
+			"name": "GctrDataTableComponent",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -2433,7 +1900,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-data-table',\r\n  templateUrl: './data-table.component.html',\r\n  styleUrls: ['./data-table.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-data-table',\n  templateUrl: './data-table.component.html',\n  styleUrls: ['./data-table.component.scss']\n}"
 					}
 				}
 			],
@@ -2458,13 +1925,13 @@
 					"signatures": [
 						{
 							"id": 193,
-							"name": "new InitiafyDataTableComponent",
+							"name": "new GctrDataTableComponent",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"name": "InitiafyDataTableComponent",
+								"name": "GctrDataTableComponent",
 								"id": 178
 							}
 						}
@@ -3425,7 +2892,7 @@
 				{
 					"fileName": "data-table/data-table/data-table.component.ts",
 					"line": 22,
-					"character": 39
+					"character": 35
 				}
 			],
 			"implementedTypes": [
@@ -3441,7 +2908,7 @@
 		},
 		{
 			"id": 233,
-			"name": "InitiafyDataTableModule",
+			"name": "GctrDataTableModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3455,7 +2922,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  declarations: [InitiafyDataTableComponent],\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyButtonModule,\r\n    MatIconModule,\r\n    MatCheckboxModule,\r\n    MatMenuModule,\r\n    MatFormFieldModule,\r\n    MatPaginatorModule,\r\n    MatTableModule,\r\n    MatInputModule\r\n  ],\r\n  exports: [InitiafyDataTableComponent]\r\n}"
+						"obj": "{\n  declarations: [GctrDataTableComponent],\n  imports: [\n    CommonModule,\n    GctrButtonModule,\n    MatIconModule,\n    MatCheckboxModule,\n    MatMenuModule,\n    MatFormFieldModule,\n    MatPaginatorModule,\n    MatTableModule,\n    MatInputModule\n  ],\n  exports: [GctrDataTableComponent]\n}"
 					}
 				}
 			],
@@ -3463,13 +2930,13 @@
 				{
 					"fileName": "data-table/data-table.module.ts",
 					"line": 30,
-					"character": 36
+					"character": 32
 				}
 			]
 		},
 		{
 			"id": 90,
-			"name": "InitiafyHeaderModule",
+			"name": "GctrHeaderModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3483,7 +2950,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    InitiafyProgressBarModule\r\n  ],\r\n  declarations: [HeaderComponent],\r\n  exports: [HeaderComponent]\r\n}"
+						"obj": "{\n  imports: [\n    CommonModule,\n    GctrProgressBarModule\n  ],\n  declarations: [HeaderComponent],\n  exports: [HeaderComponent]\n}"
 					}
 				}
 			],
@@ -3491,13 +2958,13 @@
 				{
 					"fileName": "core-components/header/header.module.ts",
 					"line": 15,
-					"character": 33
+					"character": 29
 				}
 			]
 		},
 		{
 			"id": 40,
-			"name": "InitiafyIconModule",
+			"name": "GctrIconModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3511,7 +2978,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule, MatTooltipModule],\r\n  declarations: [IconComponent],\r\n  exports: [IconComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule, MatTooltipModule],\n  declarations: [IconComponent],\n  exports: [IconComponent]\n}"
 					}
 				}
 			],
@@ -3519,13 +2986,13 @@
 				{
 					"fileName": "icon/icon.module.ts",
 					"line": 11,
-					"character": 31
+					"character": 27
 				}
 			]
 		},
 		{
 			"id": 247,
-			"name": "InitiafyLoadingCardModule",
+			"name": "GctrLoadingCardModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3539,7 +3006,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule, InitiafyCardModule, InitiafyProgressBarModule],\r\n  declarations: [LoadingCardComponent],\r\n  exports: [LoadingCardComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule, GctrCardModule, GctrProgressBarModule],\n  declarations: [LoadingCardComponent],\n  exports: [LoadingCardComponent]\n}"
 					}
 				}
 			],
@@ -3547,13 +3014,13 @@
 				{
 					"fileName": "loading-card/loading-card.module.ts",
 					"line": 14,
-					"character": 38
+					"character": 34
 				}
 			]
 		},
 		{
 			"id": 264,
-			"name": "InitiafyModalModule",
+			"name": "GctrModalModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3567,7 +3034,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule, InitiafyIconModule],\r\n  declarations: [ModalComponent],\r\n  exports: [ModalComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule, GctrIconModule],\n  declarations: [ModalComponent],\n  exports: [ModalComponent]\n}"
 					}
 				}
 			],
@@ -3575,13 +3042,13 @@
 				{
 					"fileName": "modal/modal.module.ts",
 					"line": 12,
-					"character": 32
+					"character": 28
 				}
 			]
 		},
 		{
 			"id": 276,
-			"name": "InitiafyPopoverModule",
+			"name": "GctrPopoverModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3595,7 +3062,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [\r\n    CommonModule,\r\n    MdePopoverModule,\r\n    FormsModule,\r\n    InitiafyButtonModule\r\n  ],\r\n  declarations: [PopoverComponent],\r\n  exports: [PopoverComponent]\r\n}"
+						"obj": "{\n  imports: [\n    CommonModule,\n    MdePopoverModule,\n    FormsModule,\n    GctrButtonModule\n  ],\n  declarations: [PopoverComponent],\n  exports: [PopoverComponent]\n}"
 					}
 				}
 			],
@@ -3603,13 +3070,13 @@
 				{
 					"fileName": "popover/popover.module.ts",
 					"line": 18,
-					"character": 34
+					"character": 30
 				}
 			]
 		},
 		{
 			"id": 89,
-			"name": "InitiafyProgressBarModule",
+			"name": "GctrProgressBarModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3623,7 +3090,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [ProgressBarComponent],\r\n  exports: [ProgressBarComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [ProgressBarComponent],\n  exports: [ProgressBarComponent]\n}"
 					}
 				}
 			],
@@ -3631,13 +3098,13 @@
 				{
 					"fileName": "progress-bar/progress-bar.module.ts",
 					"line": 11,
-					"character": 38
+					"character": 34
 				}
 			]
 		},
 		{
 			"id": 292,
-			"name": "InitiafyRatingModule",
+			"name": "GctrRatingModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3651,7 +3118,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\n  declarations: [RatingComponent],\n  imports: [CommonModule, InitiafyIconModule],\n  exports: [RatingComponent]\n}"
+						"obj": "{\n  declarations: [RatingComponent],\n  imports: [CommonModule, GctrIconModule],\n  exports: [RatingComponent]\n}"
 					}
 				}
 			],
@@ -3659,13 +3126,13 @@
 				{
 					"fileName": "rating/rating.module.ts",
 					"line": 11,
-					"character": 33
+					"character": 29
 				}
 			]
 		},
 		{
 			"id": 96,
-			"name": "InitiafySidenavModule",
+			"name": "GctrSidenavModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3679,7 +3146,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [CommonModule],\r\n  declarations: [SidenavComponent],\r\n  exports: [SidenavComponent]\r\n}"
+						"obj": "{\n  imports: [CommonModule],\n  declarations: [SidenavComponent],\n  exports: [SidenavComponent]\n}"
 					}
 				}
 			],
@@ -3687,13 +3154,13 @@
 				{
 					"fileName": "core-components/sidenav/sidenav.module.ts",
 					"line": 11,
-					"character": 34
+					"character": 30
 				}
 			]
 		},
 		{
 			"id": 298,
-			"name": "InitiafySpinnerModule",
+			"name": "GctrSpinnerModule",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {
@@ -3707,7 +3174,7 @@
 						"name": "NgModule"
 					},
 					"arguments": {
-						"obj": "{\r\n  imports: [MatProgressSpinnerModule],\r\n  declarations: [SpinnerComponent],\r\n  exports: [SpinnerComponent]\r\n}"
+						"obj": "{\n  imports: [MatProgressSpinnerModule],\n  declarations: [SpinnerComponent],\n  exports: [SpinnerComponent]\n}"
 					}
 				}
 			],
@@ -3715,7 +3182,540 @@
 				{
 					"fileName": "spinner/spinner.module.ts",
 					"line": 11,
-					"character": 34
+					"character": 30
+				}
+			]
+		},
+		{
+			"id": 73,
+			"name": "HeaderComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-header',\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 75,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 76,
+							"name": "new HeaderComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "HeaderComponent",
+								"id": 73
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/header/header.component.ts",
+							"line": 9,
+							"character": 30
+						}
+					]
+				},
+				{
+					"id": 74,
+					"name": "isLoading",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/header/header.component.ts",
+							"line": 9,
+							"character": 20
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 77,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 78,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "core-components/header/header.component.ts",
+							"line": 12,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						75
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						74
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						77
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "core-components/header/header.component.ts",
+					"line": 8,
+					"character": 28
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
+				}
+			]
+		},
+		{
+			"id": 26,
+			"name": "IconComponent",
+			"kind": 128,
+			"kindString": "Class",
+			"flags": {
+				"isExported": true
+			},
+			"decorators": [
+				{
+					"name": "Component",
+					"type": {
+						"type": "reference",
+						"name": "Component"
+					},
+					"arguments": {
+						"obj": "{\n  selector: 'gctr-icon',\n  templateUrl: './icon.component.html',\n  styleUrls: ['./icon.component.scss']\n}"
+					}
+				}
+			],
+			"children": [
+				{
+					"id": 32,
+					"name": "constructor",
+					"kind": 512,
+					"kindString": "Constructor",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 33,
+							"name": "new IconComponent",
+							"kind": 16384,
+							"kindString": "Constructor signature",
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"name": "IconComponent",
+								"id": 26
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 15,
+							"character": 24
+						}
+					]
+				},
+				{
+					"id": 30,
+					"name": "cssClass",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 14,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 27,
+					"name": "icon",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 10,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 28,
+					"name": "iconFont",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 11,
+							"character": 19
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "gctr"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "glyphicon"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-brand"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "font-awesome-solid"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-icons"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "material-outlined"
+							}
+						]
+					},
+					"defaultValue": "\"material-icons\""
+				},
+				{
+					"id": 29,
+					"name": "size",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 13,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "stringLiteral",
+								"value": "smaller"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "small"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "medium"
+							},
+							{
+								"type": "stringLiteral",
+								"value": "big"
+							}
+						]
+					},
+					"defaultValue": "\"small\""
+				},
+				{
+					"id": 31,
+					"name": "tooltip",
+					"kind": 1024,
+					"kindString": "Property",
+					"flags": {
+						"isExported": true
+					},
+					"decorators": [
+						{
+							"name": "Input",
+							"type": {
+								"type": "reference",
+								"name": "Input"
+							},
+							"arguments": {}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 15,
+							"character": 18
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					},
+					"defaultValue": "\"\""
+				},
+				{
+					"id": 36,
+					"name": "iconClasses",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 37,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 22,
+							"character": 17
+						}
+					]
+				},
+				{
+					"id": 38,
+					"name": "showText",
+					"kind": 262144,
+					"kindString": "Accessor",
+					"flags": {
+						"isExported": true
+					},
+					"getSignature": [
+						{
+							"id": 39,
+							"name": "__get",
+							"kind": 524288,
+							"kindString": "Get signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 52,
+							"character": 14
+						}
+					]
+				},
+				{
+					"id": 34,
+					"name": "ngOnInit",
+					"kind": 2048,
+					"kindString": "Method",
+					"flags": {
+						"isExported": true
+					},
+					"signatures": [
+						{
+							"id": 35,
+							"name": "ngOnInit",
+							"kind": 4096,
+							"kindString": "Call signature",
+							"flags": {},
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					],
+					"sources": [
+						{
+							"fileName": "icon/icon.component.ts",
+							"line": 20,
+							"character": 10
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"kind": 512,
+					"children": [
+						32
+					]
+				},
+				{
+					"title": "Properties",
+					"kind": 1024,
+					"children": [
+						30,
+						27,
+						28,
+						29,
+						31
+					]
+				},
+				{
+					"title": "Accessors",
+					"kind": 262144,
+					"children": [
+						36,
+						38
+					]
+				},
+				{
+					"title": "Methods",
+					"kind": 2048,
+					"children": [
+						34
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "icon/icon.component.ts",
+					"line": 9,
+					"character": 26
+				}
+			],
+			"implementedTypes": [
+				{
+					"type": "reference",
+					"name": "OnInit"
 				}
 			]
 		},
@@ -3735,7 +3735,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-loading-card',\r\n  templateUrl: './loading-card.component.html',\r\n  styleUrls: ['./loading-card.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-loading-card',\n  templateUrl: './loading-card.component.html',\n  styleUrls: ['./loading-card.component.scss']\n}"
 					}
 				}
 			],
@@ -4110,7 +4110,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-modal',\r\n  templateUrl: './modal.component.html',\r\n  styleUrls: ['./modal.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-modal',\n  templateUrl: './modal.component.html',\n  styleUrls: ['./modal.component.scss']\n}"
 					}
 				}
 			],
@@ -4493,7 +4493,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'initiafy-popover',\n  templateUrl: './popover.component.html',\n  styleUrls: ['./popover.component.scss']\n}"
+						"obj": "{\n  selector: 'gctr-popover',\n  templateUrl: './popover.component.html',\n  styleUrls: ['./popover.component.scss']\n}"
 					}
 				}
 			],
@@ -4807,7 +4807,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-progress-bar',\r\n  templateUrl: './progress-bar.component.html',\r\n  styleUrls: ['./progress-bar.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-progress-bar',\n  templateUrl: './progress-bar.component.html',\n  styleUrls: ['./progress-bar.component.scss']\n}"
 					}
 				}
 			],
@@ -5068,7 +5068,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\n  selector: 'initiafy-rating',\n  templateUrl: './rating.component.html',\n  styleUrls: ['./rating.component.scss']\n}"
+						"obj": "{\n  selector: 'gctr-rating',\n  templateUrl: './rating.component.html',\n  styleUrls: ['./rating.component.scss']\n}"
 					}
 				}
 			],
@@ -5439,7 +5439,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-sidenav',\r\n  templateUrl: './sidenav.component.html',\r\n  styleUrls: ['./sidenav.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-sidenav',\n  templateUrl: './sidenav.component.html',\n  styleUrls: ['./sidenav.component.scss']\n}"
 					}
 				}
 			],
@@ -5550,7 +5550,7 @@
 						"name": "Component"
 					},
 					"arguments": {
-						"obj": "{\r\n  selector: 'initiafy-spinner',\r\n  templateUrl: './spinner.component.html',\r\n  styleUrls: ['./spinner.component.scss']\r\n}"
+						"obj": "{\n  selector: 'gctr-spinner',\n  templateUrl: './spinner.component.html',\n  styleUrls: ['./spinner.component.scss']\n}"
 					}
 				}
 			],
@@ -6944,8 +6944,6 @@
 				42,
 				61,
 				66,
-				73,
-				26,
 				11,
 				41,
 				60,
@@ -6962,6 +6960,8 @@
 				292,
 				96,
 				298,
+				73,
+				26,
 				234,
 				248,
 				265,

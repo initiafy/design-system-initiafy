@@ -9,7 +9,7 @@ import { ClipboardService } from 'src/app/core/clipboard/clipboard.service';
 export class ColorsComponent {
   public title = 'icon.html';
   public componentName = 'IconComponent';
-  public module = 'InitiafyIconModule';
+  public module = 'GctrIconModule';
   public showCode = false;
 
   constructor(private clipboard: ClipboardService) {}

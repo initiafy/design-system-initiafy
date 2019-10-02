@@ -1,17 +1,17 @@
-<img alt="GoContractor" width="210" src="https://initiafy-website-images.s3.amazonaws.com/wordpress-upload/2019/08/Formerly-Initiafy-Horizontal-Blue-Grey-01-01N.svg" style="margin-auto" />
+<img alt="GoContractor" width="210" src="https://gctr-website-images.s3.amazonaws.com/wordpress-upload/2019/08/Formerly-Gctr-Horizontal-Blue-Grey-01-01N.svg" style="margin-auto" />
 
 
 # GoContractor Design System
 
-[![Build Status](https://semaphoreci.com/api/v1/admin-initiafy-25/design-system-initiafy/branches/master/badge.svg)](https://semaphoreci.com/admin-initiafy-25/design-system-initiafy)
+[![Build Status](https://semaphoreci.com/api/v1/admin-gctr-25/gctr-design-system/branches/master/badge.svg)](https://semaphoreci.com/admin-gctr-25/gctr-design-system)
 
 ### Usage
 
-Run `npm install design-system-initiafy` to add the library to your project.
+Run `npm install gctr-design-system` to add the library to your project.
 
-Add the file `./node_modules/design-system-initiafy/lib/styles/style.min.css` to the styles array of your angular.json file.
+Add the file `./node_modules/gctr-design-system/lib/styles/style.min.css` to the styles array of your angular.json file.
 
-See the [docs website](https://initiafy.github.io/design-system-initiafy/) for api.
+See the [docs website](https://gctr.github.io/gctr-design-system/) for api.
 
 ### Contributors
 
@@ -23,13 +23,13 @@ The following commands are run from the root, i.e. the same directory as this RE
 
 - Run `npm run build`
 
-#### Build design-system-initiafy package
+#### Build gctr-design-system package
 
 *Update public_api if neccessary*
 
 - Run `npm run build-lib`
 
-#### Publishing design-system-initiafy package in npm
+#### Publishing gctr-design-system package in npm
 
 *Bump package version if not already done*
 

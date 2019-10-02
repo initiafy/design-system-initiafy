@@ -11,7 +11,7 @@ import { CONTAINER_DATA, InjectionData } from './constants';
 })
 export class ModalDocumentationComponent implements OnInit {
   public componentName = 'ModalComponent';
-  public module = 'InitiafyModalModule';
+  public module = 'GctrModalModule';
   public injectionData: InjectionData;
 
   constructor(private _overlay: Overlay, private _injector: Injector) { }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatTableDataSource, MatCheckboxChange } from '@angular/material';
-import { DataColumnMode, DataTableMenuItem, DataTableSettings } from 'projects/design-system-initiafy/src/public_api';
+import { DataColumnMode, DataTableMenuItem, DataTableSettings } from 'projects/gctr-design-system/src/public_api';
 import { SelectionModel } from '@angular/cdk/collections';
 import { FormControl } from '@angular/forms';
 
@@ -86,8 +86,8 @@ export class DataTableComponent implements OnInit {
   // Documentation Properties
   public showBasicCode: boolean;
   public showAdvancedCode: boolean;
-  public componentName = 'InitiafyDataTableComponent';
-  public module = 'InitiafyDataTableModule';
+  public componentName = 'GctrDataTableComponent';
+  public module = 'GctrDataTableModule';
   public classes = [
     'DataColumnDefinition',
     'DataColumnMode',

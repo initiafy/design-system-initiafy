@@ -6,7 +6,7 @@ export * from './dashboard/dashboard.component';
 export * from './data-table/data-table.component';
 export * from './grid/grid.component';
 export * from './icons/icons.component';
-export * from './initiafy-card/initiafy-card.component';
+export * from './gctr-card/gctr-card.component';
 export * from './popover/popover.component';
 export * from './loading-card/loading-card.component';
 export * from './popover/popover.component';

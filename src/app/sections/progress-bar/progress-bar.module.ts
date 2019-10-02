@@ -9,4 +9,4 @@ import { SharedModule } from 'src/app/shared/shared.modules';
     SharedModule
   ]
 })
-export class InitiafyProgressBarModule { }
+export class GctrProgressBarModule { }
