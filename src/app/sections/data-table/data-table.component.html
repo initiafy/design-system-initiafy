@@ -12,7 +12,7 @@
   </mat-form-field>
   <mat-card class="initiafy-card">
     <ng-template [ngIf]="!showBasicCode" [ngIfElse]="basicCode">
-      <initiafy-data-table [dataTableSettings]="basicExampleDataTableSettings"
+      <gctr-data-table [dataTableSettings]="basicExampleDataTableSettings"
         [(selectionModel)]="exampleSelectionModel">
       </initiafy-data-table>
     </ng-template>
@@ -30,7 +30,7 @@
   </div>
   <mat-card class="initiafy-card">
     <ng-template [ngIf]="!showAdvancedCode" [ngIfElse]="advancedCode">
-      <initiafy-data-table [dataTableSettings]="inputsExampleDataTableSettings"
+      <gctr-data-table [dataTableSettings]="inputsExampleDataTableSettings"
         [(selectionModel)]="exampleSelectionModel">
       </initiafy-data-table>
     </ng-template>

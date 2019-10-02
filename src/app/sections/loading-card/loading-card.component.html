@@ -1,9 +1,9 @@
 <app-documentation [componentName]="componentName" [module]="module" [codeTitle]="'loading-card/loading-card.html'">
-  <initiafy-loading-card [isLoading]="simulatedLoading" cssClass="padding-bottom-0">
+  <gctr-loading-card [isLoading]="simulatedLoading" cssClass="padding-bottom-0">
     <mat-slide-toggle (change)="slideChange($event)">Simulate Indeterminate Loading</mat-slide-toggle>
   </initiafy-loading-card>
   <div class="margin-top-32"></div>
-  <initiafy-loading-card [isLoading]="simulatedDeterminateLoading" mode="determinate" value="40">
+  <gctr-loading-card [isLoading]="simulatedDeterminateLoading" mode="determinate" value="40">
     <mat-slide-toggle (change)="slideDeterminateChange($event)">Simulate Determinate Loading</mat-slide-toggle>
   </initiafy-loading-card>
 </app-documentation>

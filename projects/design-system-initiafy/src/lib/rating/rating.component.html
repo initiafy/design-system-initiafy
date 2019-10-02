@@ -1,6 +1,6 @@
 <div class="initiafy-rating" [class.readOnly]="readOnly">
   <ng-container *ngFor="let item of array">
-    <initiafy-icon
+    <gctr-icon
       class="star-rating"
       [icon]="(item <= rate) ? 'star' : 'star_border'"
       [ngClass]="{ 'pointer padding-right-8' : !readOnly }"

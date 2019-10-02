@@ -3,7 +3,7 @@
   [module]="module"
   [codeTitle]="'icon.html'"
 >
-  <initiafy-icon
+  <gctr-icon
     icon="code"
     class="pointer absolute top-16 right-16"
     (click)="showCode = !showCode"
@@ -12,7 +12,7 @@
   <div class="color-palette icons margin-top-32">
     <div *ngFor="let icon of iconsList" class="items-block">
       <div *ngFor="let i of icon">
-        <initiafy-icon
+        <gctr-icon
           icon="{{ i.icon }}"
           iconFont="{{ i.iconFont }}"
           size="{{ i.size }}"

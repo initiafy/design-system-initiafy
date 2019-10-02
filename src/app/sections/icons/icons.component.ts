@@ -26,7 +26,7 @@ export class IconsComponent implements OnInit {
 
   copyToClipboard(icon: string, iconFont: string): void {
     this.clipboard.copyToClipboard(
-      `<initiafy-icon icon="${icon}"${iconFont &&
+      `<gctr-icon icon="${icon}"${iconFont &&
         ` iconFont="${iconFont}"`}></initiafy-icon>`
     );
   }
